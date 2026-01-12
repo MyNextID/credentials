@@ -8,11 +8,12 @@ This repository provides standardized schema definitions and reference examples 
 
 ## Schemas
 
-| Credential Type               | Standard        | Schema                                                                                                      | Example                                                                                                       |
-|-------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| **Certificate of Attendance** | ELM             | [elm-coa-schema.json](certificate-of-attendance/elm/elm-coa-schema.json)                                    | [elm-coa-example.json](certificate-of-attendance/elm/elm-coa-example.json)                                    |
-| **Microcredential**           | ELM             | [elm-microcredential-schema.json](microcredential/elm/elm-microcredential-schema.json)                      | [elm-microcredential-example.json](microcredential/elm/elm-microcredential-example.json)                      |
-| **Microcredential**           | Open Badges 3.0 | [open-badge-microcredential-schema.json](microcredential/open-badge/open-badge-microcredential-schema.json) | [open-badge-microcredential-example.json](microcredential/open-badge/open-badge-microcredential-example.json) |
+| Credential Type                   | Standard        | Schema                                                                                                      | Example                                                                                                       |
+|-----------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| **Certificate of Advanced Study** | ELM             | [elm-cas-schema.json](certificate-of-advanced-study/elm/elm-cas-schema.json)                                | [elm-cas-example.json](certificate-of-advanced-study/elm/elm-cas-example.json)                                |
+| **Certificate of Attendance**     | ELM             | [elm-coa-schema.json](certificate-of-attendance/elm/elm-coa-schema.json)                                    | [elm-coa-example.json](certificate-of-attendance/elm/elm-coa-example.json)                                    |
+| **Microcredential**               | ELM             | [elm-microcredential-schema.json](microcredential/elm/elm-microcredential-schema.json)                      | [elm-microcredential-example.json](microcredential/elm/elm-microcredential-example.json)                      |
+| **Microcredential**               | Open Badges 3.0 | [open-badge-microcredential-schema.json](microcredential/open-badge/open-badge-microcredential-schema.json) | [open-badge-microcredential-example.json](microcredential/open-badge/open-badge-microcredential-example.json) |
 
 ## Standards Compliance
 
