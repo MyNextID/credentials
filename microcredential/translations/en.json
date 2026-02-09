@@ -1,0 +1,16 @@
+{
+    "fullName": "Full name",
+    "achievementDescription": "Achievement description",
+    "dateIssued": "Date",
+    "gradeAchieved": "Grade achieved",
+    "verificationMethod": "Method",
+    "type": "Type",
+    "mode": "Mode",
+    "title": "Title",
+    "ectsPoints": "ECTS points",
+    "achievementTitle": "Achievement title",
+    "hoursOfLearning": "Hours of learning",
+    "nationalId": "National ID",
+    "awardingStatement": "Awarding statement",
+    "credentialTitle":  "Credential title"
+}

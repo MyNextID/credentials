@@ -1,0 +1,171 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Simplified European Digital Credential",
+    "description": "A simplified schema for European Digital Credential that is compatible with the full ELM 3.2 schema",
+    "type": "object",
+    "properties": {
+        "fullName": {
+            "title":"Full name",
+            "description": "The full name of the recipient of this credential",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+              
+        },
+        "achievementDescription":{
+            "title": "Achievement description",
+            "description": "A mapping of language codes to string values.",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },
+        "dateIssued":{
+            "title":"Issued date",
+            "description": "Issued date.",
+            "type": "string",
+            "format": "date-time"
+        },
+        "gradeAchieved":{
+            "title": "Grade achieved",
+            "description": "A mapping of language codes to string values.",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },
+        "verificationMethod": {
+            "title": "Method",
+            "description": "A mapping of language codes to string values.",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },
+        "type": {
+            "title": "Type",
+            "description": "A mapping of language codes to string values.",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+              "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+              }
+            },
+            "additionalProperties": false
+        },
+        "mode":{
+            "title":"Mode",
+            "description": "A mapping of language codes to string values.",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+              "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+              }
+            },
+            "additionalProperties": false
+        },
+        "title":{
+            "title":"Title",
+            "description": "A mapping of language codes to string values.",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+            "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+            }
+            },
+            "additionalProperties": false
+        },
+        "ectsPoints":{
+            "title":"ECTS points",
+            "description": "ECTS points.",
+            "type": "string"
+            
+        },
+        "achievementTitle":{
+            "title": "Achievement title",
+            "description": "A mapping of language codes to string values.",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+              "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+              }
+            },
+            "additionalProperties": false
+        },
+        "hoursOfLearning":{
+            "title":"Hours of learning",
+            "description": "Hours of learning.",
+            "type": "string",
+            "format": "duration"
+        },
+        "nationalId":{
+            "title":"National ID",
+            "description": "Notation or code for the legal identifier.",
+            "type": "string"
+        },
+        "awardingStatement":{
+            "title":"Awarding Statement",
+            "description": "A mapping of language codes to string values.",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },
+        "credentialTitle":{
+            "title":"Credential title",
+            "description": "A mapping of language codes to string values.",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "required": [
+      "fullName",
+      "gradeAchieved",
+      "title",
+      "ectsPoints",
+      "achievementTitle",
+      "awardingStatement",
+      "credentialTitle"
+    ]
+}
