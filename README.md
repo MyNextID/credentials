@@ -142,4 +142,4 @@ To add a new credential type:
 
 ## License
 
-See [LICENSE](LICENSE) for details.
+See [LICENSE](https://github.com/MyNextID/credentials/blob/feat/readme/LICENSE) for details.
