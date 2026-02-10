@@ -38,23 +38,23 @@ or short courses.
 
 ### Certificate of Advanced Study
 
-A certificate of advanced study recognizes completion of specialized
+A certificate of advanced study recognises completion of specialised
 postgraduate-level coursework in a specific field or discipline. Typically
 offered by universities and professional institutions, it represents focused
 study beyond a bachelor's degree but is less extensive than a full master's
-program. Often pursued by professionals seeking expertise in a specialized area
+program. Often pursued by professionals seeking expertise in a specialised area
 without committing to a full graduate degree.
 
 - **ELMv3**: [Schema](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-advanced-study/elm/elm-cas-schema.json) | [Example](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-advanced-study/elm/elm-cas-example.json) | [Signed](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-advanced-study/elm/elm-cas-signed.jsonld)
 
 ### Certificate of Participation in Summer School
 
-A certificate of participation in summer school documents successful completion
-of intensive short-term academic programs typically held during summer breaks.
-These programs often focus on specialized topics, research methods, or
-interdisciplinary studies, and may include international students and faculty.
-Commonly used in higher education to recognize engagement in supplementary
-learning opportunities outside regular academic terms.
+A certificate of participation in summer school documents successful completion of 
+intensive short-term programs typically held during summer breaks. These programs 
+may be academic (specialised coursework, research methods), professional 
+(skills development, industry training), or experiential (cultural exchange, 
+youth participation initiatives). They often include interdisciplinary approaches 
+and international participants, and are commonly used to recognise engagement in supplementary learning and development opportunities outside regular academic or professional contexts.
 
 - **ELMv3**: [Schema](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-participation-in-summer-school/elm/elm-cps-schema.json) | [Example](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-participation-in-summer-school/elm/elm-cps-example.json) | [Signed](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-participation-in-summer-school/elm/elm-cps-signed.jsonld)
 
@@ -74,7 +74,7 @@ purposes. It typically includes details such as enrollment status
 A degree certificate is the formal academic credential awarded upon successful
 completion of an undergraduate, graduate, or doctoral program. It represents the
 highest level of educational achievement certification, documenting the
-qualification level (bachelor's, master's, doctorate), field of study, honors or
+qualification level (bachelor's, master's, doctorate), field of study, honours or
 distinctions, and conferring institution. Degree certificates are essential for
 employment verification, further education applications, and professional
 licensing.
@@ -95,13 +95,14 @@ acceptance and registration rather than ongoing status.
 
 ### Microcredential
 
-A microcredential certifies achievement of specific skills, competencies, or
-learning outcomes in a focused subject area. These short-form credentials are
-designed to be stackable, portable, and aligned with industry needs, making them
-valuable for continuous professional development and career advancement.
-Microcredentials typically require less time investment than traditional
-qualifications while providing verifiable proof of targeted expertise in areas
-such as digital skills, professional competencies, or specialized knowledge.
+A microcredential certifies achievement of specific, defined learning outcomes, skills, 
+or competencies through a focused learning experience. Typically requiring 10-200 hours 
+of effort, these credentials are designed to be stackable, portable, and digitally verifiable. 
+Unlike participation-based certificates, microcredentials are competency-based and 
+require demonstrated achievement through assessment. They provide flexible pathways 
+for professional development, reskilling, and specialised expertise, responding quickly 
+to emerging skill demands while being recognised within established quality assurance 
+frameworks such as the European Qualifications Framework.
 
 - **ELMv3**: [Schema](https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/elm/elm-mc-schema.json) | [Example](https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/elm/elm-mc-example.json) | [Signed](https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/elm/elm-mc-signed.jsonld)
 - **Open Badges v3**: [Schema](https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/open-badge/open-badge-mc-schema.json) | [Example](https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/open-badge/open-badge-mc-example.json) | [Signed (JWT)](https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/open-badge/open-badge-mc-signed.jwt)
