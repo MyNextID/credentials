@@ -1,0 +1,37 @@
+{
+
+    "fullName": {
+        "en": "John Doe"
+    },
+    "achievementDescription":{
+        "en": "Description example"
+    },
+    "dateIssued":"2026-01-02T15:04:05Z",
+    "gradeAchieved":{
+        "en": "10"
+    },
+    "verificationMethod":{
+        "en": "Pass"
+    },
+    "type":{
+        "en": "Graded exercises"
+    },
+    "mode":{
+        "en": "Online"
+    },
+    "title":{
+        "en": "Title of qualification"
+    },
+    "ectsPoints":"9",
+    "achievementTitle":{
+        "en": "Achievement example"
+    },
+    "hoursOfLearning":"PT60H",
+    "nationalId":"12345",
+    "awardingStatement":{
+        "en": "Awarding statement"
+    },
+    "credentialTitle":{
+        "en": "Microcredential"
+    }
+}
