@@ -1,10 +1,9 @@
 # Input fields
 
-This folder defines the structure and configuration of input fields used to generate microcredentials.  
-It includes schema definitions, examples, and localization resources.
+Input fields are simple key-value pairs that let you provide verifiable credential inputs in a format-agnostic way. Define your data once and the credential engine handles the rest, constructing credentials in any format you need.
 
-## Contents
+Input fields are accompanied by
 
 - [translations](translations) - Localization files for microcredential input fields.
-- [input-fields-example](input-fields-example) - Example configuration of supported input fields.
-- [input-fields-schema](input-fields-schema) - JSON Schema definition for microcredential input fields.
+- [input-fields-example](input-fields-example) - Input field examples.
+- [input-fields-schema](input-fields-schema) - JSON Schema definition of input fields.
