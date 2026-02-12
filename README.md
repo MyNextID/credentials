@@ -93,7 +93,7 @@ acceptance and registration rather than ongoing status.
 
 - **ELMv3**: [Schema](https://github.com/MyNextID/credentials/blob/feat/readme/matriculation/elm/elm-matriculation-schema.json) | [Example](https://github.com/MyNextID/credentials/blob/feat/readme/matriculation/elm/elm-matriculation-example.json) | [Signed](https://github.com/MyNextID/credentials/blob/feat/readme/matriculation/elm/elm-matriculation-signed.jsonld)
 
-### [Microcredential](/microcredential)
+### [Microcredential](https://github.com/MyNextID/credentials/tree/feat/readme/microcredential)
 
 A microcredential certifies achievement of specific, defined learning outcomes, skills, 
 or competencies through a focused learning experience. Typically requiring 10-200 hours 
