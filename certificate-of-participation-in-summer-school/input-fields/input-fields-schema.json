@@ -1,0 +1,96 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Certificate of Participation in Summer School",
+    "type": "object",
+    "properties": {
+        "credentialTitle":{
+            "title":  "Credential title",
+            "description": "Credential title to display on frontend",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },"fullName":{
+            "title":"Full name",
+            "description": "",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },"dateOfBirth": {
+            "title": "Date of birth",
+            "description": "",
+            "type": "string",
+            "format": "date-time"
+        }, "placeOfBirth":{
+            "title": "Country of birth",
+            "description": "",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },"fullAddress":{
+            "title": "City of birth",
+            "description": "",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        }, "studentNumber":{
+            "title": "Student number",
+            "description": "",
+            "type": "string"
+        },"academicYear":{
+            "title": "Academic Year",
+            "description": "",
+            "type": "string"
+        }, "programmeTitle":{
+            "title": "Programme Title",
+            "description": "",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },"workload": {
+            "title":"Duration in hours",
+            "description": "",
+            "type": "string",
+            "format": "duration"
+        }, "validUntil":{
+            "title": "Valid until",
+            "description": "Date the certificate becomes expired.",
+            "type": "string",
+            "format": "date-time"
+        }
+    }, "required": [
+        "credentialTitle",
+        "programmeTitle",
+        "placeOfBirth",
+        "fullAddress"
+    ]
+}

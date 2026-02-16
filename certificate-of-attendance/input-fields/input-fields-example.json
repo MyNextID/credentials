@@ -1,0 +1,23 @@
+{
+    "credentialTitle":{
+        "en": "Credential title example"
+    }, "fullName" : {
+        "en": "John Doe"
+    }, "achievementTitle":{
+        "en": "Achievement title example"
+    },"achievementDescription":{
+        "en": "Achievement description example"
+    }, "country":{
+        "en": "Slovenia"
+    }, "address":{
+        "en": "A Great Address 2, 2025 Spicetown"
+    }, "location":{
+        "en": "Conference center"
+    }, "url": "https://www.example.com",
+    "endDate":"2026-01-01T00:00:00Z", 
+    "startDate": "2026-01-02T00:00:00Z",
+    "workload":"PT60H",
+    "awardingStatement":{
+        "en": "Awarding statement example"
+    }
+}

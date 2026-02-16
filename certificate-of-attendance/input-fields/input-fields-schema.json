@@ -1,0 +1,131 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Certificate of Attendance Schema",
+    "type": "object",
+    "properties": {
+        "credentialTitle":{
+            "title": "Credential title",
+            "description": "The full name of the recipient of this credential",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        }, "fullName" : {
+            "title": "Full name",
+            "description": "The full name of the recipient of this credential",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        }, "achievementTitle":{
+            "title": "Achievement title",
+            "description": "A mapping of language codes to string values.",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },"achievementDescription":{
+            "title": "Achievement description",
+            "description": "A mapping of language codes to string values.",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        }, "country":{
+            "title": "Country",
+            "description": "A mapping of language codes to string values.",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        }, "address":{
+            "title": "Address",
+            "description": "A mapping of language codes to string values.",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        }, "location":{
+            "title": "Location",
+            "description": "A mapping of language codes to string values.",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        }, "url":{
+            "title": "Website",
+            "description": "The URL of the web resource.",
+            "type": "string",
+            "format": "uri"
+        }, "endDate":{
+            "title": "End Date",
+            "description": "",
+            "type": "string",
+            "format": "date-time"
+        }, "startDate":{
+            "title": "Start Date",
+            "description": "",
+            "type": "string",
+            "format": "date-time"
+        }, "workload": {
+            "title": "Duration in hours",
+            "description": "",
+            "type": "string",
+            "format": "duration"
+        }, "awardingStatement":{
+            "title": "Awarding statement",
+            "description": "A mapping of language codes to string values.",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "required": [
+        "credentialTitle",
+        "achievementTitle",
+        "country",
+        "address",
+        "url"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "fullName": {
+        "en":"John Doe"     
+    },
+    "dateOfBirth":"1990-01-01T00:00:00Z",
+    "countryOfBirth":{
+        "en": "Slovenia"
+    }, "cityOfBirth":{
+        "en": "Ljubljana"
+    },"programmeTitle": {
+        "en": "Programme Title example"
+    }, "studentNumber": "123456"
+}

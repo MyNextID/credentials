@@ -1,0 +1,14 @@
+{
+    "fullName": "Full name",
+    "dateOfBirth": "Date of birth", 
+    "identityNumber": "Identity Number",
+    "studentDiscount": "Student Discount",
+    "studentId":  "Student ID",
+    "asvzAuthorization": "ASVZ Authorization",
+    "vsethMembership": "VSETH Membership",
+    "cardNumber":  "Card Number",
+    "libraryCode": "Library Code",
+    "organisationalResponsibility":"Organisational Responsibility",
+    "professionalRole":  "Professional Role",
+    "validUntil":  "Valid until"
+}

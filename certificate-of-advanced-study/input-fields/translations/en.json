@@ -1,0 +1,10 @@
+{
+    "credentialTitle": "Credential title",
+    "fullName": "Full name",
+    "dateOfBirth": "Date of birth",
+    "countryOfBirth": "Country of birth",
+    "cityOfBirth": "City of birth",
+    "ectsPoints": "ECTS Points",
+    "qrCode": "QR Code",
+    "validUntil": "Valid until"
+}

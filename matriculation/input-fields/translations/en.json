@@ -1,0 +1,15 @@
+{
+    "credentialTitle": "Credential title",
+    "fullName": "Full name",
+    "dateOfBirth": "Date of birth",
+    "personTitle": "Person title",
+    "studentNumber":  "Student number",
+    "currentEcts":  "Current ECTS",
+    "maxEcts": "Max ECTS",
+    "deadline": "Deadline",
+    "matriculationStart":"Matriculation Start",
+    "matriculationEnd": "Matriculation End",
+    "programmeTitle":  "Programme Title",
+    "programmeStatus": "Status",
+    "validUntil":  "Valid until"
+}

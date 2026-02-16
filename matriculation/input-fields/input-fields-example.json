@@ -1,0 +1,21 @@
+{
+
+    "credentialTitle":{
+        "en": "Credential title"
+    },
+    "fullName":{
+        "en": "John Doe"
+    },"dateOfBirth":"1990-01-01T00:00:00Z",
+    "personTitle":{
+        "en": "Person title"
+    },"studentNumber": "123456", 
+    "currentEcts":9,
+    "maxEcts": 10,
+    "deadline": "2026-12-01T00:00:00Z", 
+    "matriculationStart":"2026-01-01T00:00:00Z",
+    "matriculationEnd": "2026-12-15T00:00:00Z",
+    "programmeTitle":{
+        "en": "Programme Title"
+    }, "programmeStatus":"withDegree",
+    "validUntil":"2030-01-01T00:00:00Z"
+}

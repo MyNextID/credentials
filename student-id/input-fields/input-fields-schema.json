@@ -1,0 +1,68 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Student ID",
+    "type": "object",
+    "properties": {
+        "fullName":{
+            "title": "Full name",
+            "description": "",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },"dateOfBirth":{
+            "title":  "Date of birth",
+            "description": "",
+            "type": "string",
+            "format": "date-time"
+        },"identityNumber":{
+            "title": "Identity Number",
+            "description": "",
+            "type": "string"
+        }, "studentDiscount":{
+            "title": "Student Discount",
+            "description": "",
+            "type": "string"
+        },"studentId" : {
+            "title": "Student ID",
+            "description": "",
+            "type": "string"
+        },"asvzAuthorization":{
+            "title": "ASVZ Authorization",
+            "description": "student credentials of Academic Sports Association of Zurich",
+            "type": "string"
+        }, "vsethMembership": {
+            "title": "VSETH Membership",
+            "description": "",
+             "type": "string"
+        },"cardNumber":{
+            "title": "Card Number",
+            "description": "",
+            "type": "string"
+        }, "libraryCode":{
+            "title": "Library Code",
+            "description": "",
+            "type": "string"
+        }, "organisationalResponsibility":{
+            "title":  "Organisational Responsibility",
+            "description": "",
+            "type": "string"
+        }, "professionalRole":{
+            "title": "Professional Role",
+            "description": "",
+            "type": "string"
+        }, "validUntil":{
+            "title": "Valid until",
+            "description": "Date the certificate becomes expired.",
+            "type": "string",
+            "format": "date-time"
+        }
+    }, "required": [
+
+    ]
+}

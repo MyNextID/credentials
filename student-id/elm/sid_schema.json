@@ -1,612 +1,526 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Student ID",
-  "type": "object",
-  "properties": {
-    "@context": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "const": [
-        "https://www.w3.org/2018/credentials/v1",
-        "http://data.europa.eu/snb/model/context/edc-ap"
-      ],
-      "minItems": 2,
-      "maxItems": 2,
-      "uniqueItems": true
-    },
-    "id": {
-      "type": "string",
-      "format": "uri"
-    },
-    "type": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "const": [
-        "VerifiableCredential",
-        "EuropeanDigitalCredential"
-      ],
-      "minItems": 2,
-      "maxItems": 2,
-      "uniqueItems": true
-    },
-    "issuer": {
-      "$ref": "#/definitions/organisation"
-    },
-    "issued": {
-      "type": "string",
-      "format": "date-time",
-      "description": "Date the certificate was issued."
-    },
-    "issuanceDate": {
-      "type": "string",
-      "format": "date-time",
-      "description": "Date the certificate was issued."
-    },
-    "validFrom": {
-      "type": "string",
-      "format": "date-time",
-      "description": "Date the certificate becomes valid."
-    },
-    "validUntil": {
-      "type": "string",
-      "format": "date-time",
-      "description": "Date the certificate becomes expired."
-    },
-    "expirationDate": {
-      "type": "string",
-      "format": "date-time"
-    },
-    "credentialSubject": {
-      "type": "object",
-      "properties": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Student ID",
+    "type": "object",
+    "properties": {
+        "@context": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "const": [
+                "https://www.w3.org/2018/credentials/v1",
+                "http://data.europa.eu/snb/model/context/edc-ap"
+            ],
+            "minItems": 2,
+            "maxItems": 2,
+            "uniqueItems": true
+        },
         "id": {
-          "type": "string",
-          "format": "uri"
+            "type": "string",
+            "format": "uri"
         },
         "type": {
-          "type": "string",
-          "const": "Person"
-        },
-        "studentId": {
-          "type": "string"
-        },
-        "fullName": {
-          "$ref": "#/definitions/languageMap",
-          "description": "Full name of the credential subject in various languages."
-        },
-        "dateOfBirth": {
-          "type": "string",
-          "format": "date-time"
-        },
-        "asvzAuthorization": {
-          "type": "string",
-          "description": "student credentials of Academic Sports Association of Zurich"
-        },
-        "studentDiscount": {
-          "type": "string"
-        },
-        "professionalRole": {
-          "type": "string"
-        },
-        "organisationalResponsibility": {
-          "type": "string"
-        },
-        "identityNumber": {
-          "type": "string"
-        },
-        "vsethMembership": {
-          "type": "string"
-        },
-        "cardNumber": {
-          "type": "string"
-        },
-        "libraryCode": {
-          "type": "string"
-        },
-        "hasClaim": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "string",
-              "format": "uri"
+            "type": "array",
+            "items": {
+                "type": "string"
             },
-            "type": {
-              "type": "string"
-            },
-            "title": {
-              "$ref": "#/definitions/languageMap",
-              "description": "Title of the claim in various languages."
-            },
-            "description": {
-              "$ref": "#/definitions/languageMap",
-              "description": "Description of the claim in various languages."
-            },
-            "awardedBy": {
-              "type": "object",
-              "properties": {
+            "const": ["VerifiableCredential", "EuropeanDigitalCredential"],
+            "minItems": 2,
+            "maxItems": 2,
+            "uniqueItems": true
+        },
+        "issuer": {
+            "$ref": "#/definitions/organisation"
+        },
+        "issued": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Date the certificate was issued."
+        },
+        "issuanceDate": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Date the certificate was issued."
+        },
+        "validFrom": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Date the certificate becomes valid."
+        },
+        "validUntil": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Date the certificate becomes expired."
+        },
+        "expirationDate": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "credentialSubject": {
+            "type": "object",
+            "properties": {
                 "id": {
-                  "type": "string",
-                  "const": "urn:epass:awardingProcess:1",
-                  "format": "uri",
-                  "description": "A unique URI identifier for the awarding process."
+                    "type": "string",
+                    "format": "uri"
                 },
                 "type": {
-                  "type": "string",
-                  "const": "AwardingProcess",
-                  "description": "The type of the awarding process."
+                    "type": "string",
+                    "const": "Person"
                 },
-                "awardingBody": {
-                  "$ref": "#/definitions/organisation"
+                "studentId": {
+                    "type": "string"
+                },
+                "fullName": {
+                    "$ref": "#/definitions/languageMap",
+                    "description": "Full name of the credential subject in various languages."
+                },
+                "dateOfBirth": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "asvzAuthorization": {
+                    "type": "string",
+                    "description": "student credentials of Academic Sports Association of Zurich"
+                },
+                "studentDiscount": {
+                    "type": "string"
+                },
+                "professionalRole": {
+                    "type": "string"
+                },
+                "organisationalResponsibility": {
+                    "type": "string"
+                },
+                "identityNumber": {
+                    "type": "string"
+                },
+                "vsethMembership": {
+                    "type": "string"
+                },
+                "cardNumber": {
+                    "type": "string"
+                },
+                "libraryCode": {
+                    "type": "string"
+                },
+                "hasClaim": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string",
+                            "format": "uri"
+                        },
+                        "type": {
+                            "type": "string"
+                        },
+                        "title": {
+                            "$ref": "#/definitions/languageMap",
+                            "description": "Title of the claim in various languages."
+                        },
+                        "description": {
+                            "$ref": "#/definitions/languageMap",
+                            "description": "Description of the claim in various languages."
+                        },
+                        "awardedBy": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string",
+                                    "const": "urn:epass:awardingProcess:1",
+                                    "format": "uri",
+                                    "description": "A unique URI identifier for the awarding process."
+                                },
+                                "type": {
+                                    "type": "string",
+                                    "const": "AwardingProcess",
+                                    "description": "The type of the awarding process."
+                                },
+                                "awardingBody": {
+                                    "$ref": "#/definitions/organisation"
+                                }
+                            },
+                            "required": ["id", "type", "awardingBody"]
+                        }
+                    },
+                    "required": ["id", "type", "awardedBy"]
+                },
+                "contactPoint": {
+                    "$ref": "#/definitions/contactPoint",
+                    "description": "Contact point details of the group."
                 }
-              },
-              "required": [
-                "id",
-                "type",
-                "awardingBody"
-              ]
-            }
-          },
-          "required": [
-            "id",
-            "type",
-            "awardedBy"
-          ]
+            },
+            "required": ["id", "type", "hasClaim", "contactPoint"]
+        },
+        "displayParameter": {
+            "$ref": "#/definitions/displayParameter",
+            "description": "Object that holds credential display properties"
+        },
+        "credentialSchema": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "uri"
+                },
+                "type": {
+                    "type": "string",
+                    "enum": ["ShaclValidator2017", "JsonSchema"]
+                }
+            },
+            "required": ["id", "type"]
+        },
+        "credentialProfiles": {
+            "$ref": "#/definitions/concept",
+            "description": "An object defining profiles applicable to the credential."
+        }
+    },
+    "required": [
+        "@context",
+        "id",
+        "type",
+        "credentialSchema",
+        "credentialSubject",
+        "credentialProfiles",
+        "issuer",
+        "validFrom"
+    ],
+    "additionalProperties": false,
+    "definitions": {
+        "displayParameter": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "A unique URI identifier for the display parameter."
+                },
+                "type": {
+                    "type": "string",
+                    "enum": ["DisplayParameter"],
+                    "description": "Defines the type of object."
+                },
+                "title": {
+                    "$ref": "#/definitions/languageMap",
+                    "description": "Credential title to display on frontend"
+                },
+                "individualDisplay": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string",
+                            "description": "A unique URI identifier for the display parameter."
+                        },
+                        "type": {
+                            "type": "string",
+                            "enum": ["IndividualDisplay"],
+                            "description": "Defines the type of object."
+                        },
+                        "displayDetail": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string",
+                                    "description": "A unique URI identifier for the display detail."
+                                },
+                                "type": {
+                                    "type": "string",
+                                    "enum": ["DisplayDetail"],
+                                    "description": "Defines the type of object."
+                                },
+                                "image": {
+                                    "$ref": "#/definitions/mediaObject",
+                                    "description": "Logo of the credential."
+                                },
+                                "page": {
+                                    "type": "integer"
+                                }
+                            },
+                            "required": ["id", "type", "image"]
+                        },
+                        "language": {
+                            "$ref": "#/definitions/concept"
+                        }
+                    },
+                    "required": ["id", "type", "language", "displayDetail"]
+                },
+                "language": {
+                    "$ref": "#/definitions/concept"
+                },
+                "primaryLanguage": {
+                    "$ref": "#/definitions/concept"
+                },
+                "description": {
+                    "$ref": "#/definitions/languageMap",
+                    "description": "Description of the credential."
+                }
+            },
+            "required": ["id", "type", "title", "language"]
+        },
+        "concept": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "A unique URI identifier for the concept."
+                },
+                "inScheme": {
+                    "$ref": "#/definitions/conceptScheme"
+                },
+                "notation": {
+                    "type": "string",
+                    "description": "Notation for the concept."
+                },
+                "prefLabel": {
+                    "$ref": "#/definitions/languageMap"
+                },
+                "type": {
+                    "type": "string",
+                    "const": "Concept",
+                    "enum": ["Concept"]
+                }
+            },
+            "required": ["id", "type", "inScheme", "prefLabel"]
+        },
+        "conceptScheme": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "A unique URI identifier for the concept scheme."
+                },
+                "type": {
+                    "type": "string",
+                    "const": "ConceptScheme",
+                    "enum": ["ConceptScheme"]
+                }
+            },
+            "required": ["id", "type"]
+        },
+        "languageMap": {
+            "type": "object",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false,
+            "description": "A mapping of language codes to string values."
         },
         "contactPoint": {
-          "$ref": "#/definitions/contactPoint",
-          "description": "Contact point details of the group."
-        }
-      },
-      "required": [
-        "id",
-        "type",
-        "hasClaim",
-        "contactPoint"
-      ]
-    },
-    "displayParameter": {
-      "$ref": "#/definitions/displayParameter",
-      "description": "Object that holds credential display properties"
-    },
-    "credentialSchema": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "id": {
-          "type": "string",
-          "format": "uri"
-        },
-        "type": {
-          "type": "string",
-          "enum": [
-            "ShaclValidator2017",
-            "JsonSchema"
-          ]
-        }
-      },
-      "required": [
-        "id",
-        "type"
-      ]
-    },
-    "credentialProfiles": {
-      "$ref": "#/definitions/concept",
-      "description": "An object defining profiles applicable to the credential."
-    }
-  },
-  "required": [
-    "@context",
-    "id",
-    "type",
-    "credentialSchema",
-    "credentialSubject",
-    "credentialProfiles",
-    "issuer",
-    "validFrom"
-  ],
-  "additionalProperties": false,
-  "definitions": {
-    "displayParameter": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "string",
-          "description": "A unique URI identifier for the display parameter."
-        },
-        "type": {
-          "type": "string",
-          "enum": [
-            "DisplayParameter"
-          ],
-          "description": "Defines the type of object."
-        },
-        "title": {
-          "$ref": "#/definitions/languageMap",
-          "description": "Credential title to display on frontend"
-        },
-        "individualDisplay": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "string",
-              "description": "A unique URI identifier for the display parameter."
-            },
-            "type": {
-              "type": "string",
-              "enum": [
-                "IndividualDisplay"
-              ],
-              "description": "Defines the type of object."
-            },
-            "displayDetail": {
-              "type": "object",
-              "properties": {
+            "type": "object",
+            "properties": {
                 "id": {
-                  "type": "string",
-                  "description": "A unique URI identifier for the display detail."
+                    "type": "string",
+                    "format": "uri",
+                    "const": "urn:epass:contactPoint:1",
+                    "description": "A unique URI identifier for the contact point."
                 },
                 "type": {
-                  "type": "string",
-                  "enum": [
-                    "DisplayDetail"
-                  ],
-                  "description": "Defines the type of object."
+                    "type": "string",
+                    "const": "ContactPoint",
+                    "description": "The type of the contact point."
                 },
-                "image": {
-                  "$ref": "#/definitions/mediaObject",
-                  "description": "Logo of the credential."
-                },
-                "page": {
-                  "type": "integer"
+                "emailAddress": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string",
+                            "format": "uri",
+                            "const": "mailto:",
+                            "description": "A unique URI identifier for the email address."
+                        },
+                        "type": {
+                            "type": "string",
+                            "const": "Mailbox",
+                            "description": "The type of the email address."
+                        }
+                    },
+                    "required": ["id", "type"],
+                    "additionalProperties": false
                 }
-              },
-              "required": [
-                "id",
-                "type",
-                "image"
-              ]
             },
-            "language": {
-              "$ref": "#/definitions/concept"
-            }
-          },
-          "required": [
-            "id",
-            "type",
-            "language",
-            "displayDetail"
-          ]
+            "required": ["id", "type", "emailAddress"],
+            "additionalProperties": false
         },
-        "language": {
-          "$ref": "#/definitions/concept"
-        },
-        "primaryLanguage": {
-          "$ref": "#/definitions/concept"
-        },
-        "description": {
-          "$ref": "#/definitions/languageMap",
-          "description": "Description of the credential."
-        }
-      },
-      "required": [
-        "id",
-        "type",
-        "title",
-        "language"
-      ]
-    },
-    "concept": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "string",
-          "description": "A unique URI identifier for the concept."
-        },
-        "inScheme": {
-          "$ref": "#/definitions/conceptScheme"
-        },
-        "notation": {
-          "type": "string",
-          "description": "Notation for the concept."
-        },
-        "prefLabel": {
-          "$ref": "#/definitions/languageMap"
-        },
-        "type": {
-          "type": "string",
-          "const": "Concept",
-          "enum": [
-            "Concept"
-          ]
-        }
-      },
-      "required": [
-        "id",
-        "type",
-        "inScheme",
-        "prefLabel"
-      ]
-    },
-    "conceptScheme": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "string",
-          "description": "A unique URI identifier for the concept scheme."
-        },
-        "type": {
-          "type": "string",
-          "const": "ConceptScheme",
-          "enum": [
-            "ConceptScheme"
-          ]
-        }
-      },
-      "required": [
-        "id",
-        "type"
-      ]
-    },
-    "languageMap": {
-      "type": "object",
-      "patternProperties": {
-        "^[a-z]{2}$": {
-          "type": "string",
-          "description": "A string value for a specific language code."
-        }
-      },
-      "additionalProperties": false,
-      "description": "A mapping of language codes to string values."
-    },
-    "contactPoint": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "string",
-          "format": "uri",
-          "const": "urn:epass:contactPoint:1",
-          "description": "A unique URI identifier for the contact point."
-        },
-        "type": {
-          "type": "string",
-          "const": "ContactPoint",
-          "description": "The type of the contact point."
-        },
-        "emailAddress": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "string",
-              "format": "uri",
-              "const": "mailto:",
-              "description": "A unique URI identifier for the email address."
+        "organisation": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "A unique URI identifier for the organisation."
+                },
+                "type": {
+                    "type": "string",
+                    "const": "Organisation",
+                    "description": "The type of the organisation."
+                },
+                "location": {
+                    "$ref": "#/definitions/location",
+                    "description": "Location details of the organisation."
+                },
+                "logo": {
+                    "$ref": "#/definitions/mediaObject",
+                    "description": "Logo of the organisation."
+                },
+                "legalName": {
+                    "$ref": "#/definitions/languageMap",
+                    "description": "Legal name of the organisation in various languages."
+                },
+                "registration": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "A unique URI identifier for the legal identifier."
+                        },
+                        "type": {
+                            "type": "string",
+                            "const": "LegalIdentifier",
+                            "description": "The type of the legal identifier."
+                        },
+                        "notation": {
+                            "type": "string",
+                            "description": "Notation or code for the legal identifier."
+                        },
+                        "spatial": {
+                            "$ref": "#/definitions/concept",
+                            "description": "Spatial information related to the legal identifier."
+                        }
+                    },
+                    "required": ["id", "type", "spatial"]
+                },
+                "homepage": {
+                    "$ref": "#/definitions/webResource"
+                }
             },
-            "type": {
-              "type": "string",
-              "const": "Mailbox",
-              "description": "The type of the email address."
-            }
-          },
-          "required": [
-            "id",
-            "type"
-          ],
-          "additionalProperties": false
-        }
-      },
-      "required": [
-        "id",
-        "type",
-        "emailAddress"
-      ],
-      "additionalProperties": false
-    },
-    "organisation": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "string",
-          "format": "uri",
-          "description": "A unique URI identifier for the organisation."
-        },
-        "type": {
-          "type": "string",
-          "const": "Organisation",
-          "description": "The type of the organisation."
+            "required": ["id", "type", "location", "legalName"],
+            "additionalProperties": false
         },
         "location": {
-          "$ref": "#/definitions/location",
-          "description": "Location details of the organisation."
-        },
-        "logo": {
-          "$ref": "#/definitions/mediaObject",
-          "description": "Logo of the organisation."
-        },
-        "legalName": {
-          "$ref": "#/definitions/languageMap",
-          "description": "Legal name of the organisation in various languages."
-        },
-        "registration": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "string",
-              "format": "uri",
-              "description": "A unique URI identifier for the legal identifier."
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "A unique URI identifier for the location."
+                },
+                "type": {
+                    "type": "string",
+                    "const": "Location",
+                    "description": "The type of the location."
+                },
+                "address": {
+                    "$ref": "#/definitions/address",
+                    "description": "Address details of the location."
+                },
+                "description": {
+                    "$ref": "#/definitions/languageMap",
+                    "description": "Location description."
+                }
             },
-            "type": {
-              "type": "string",
-              "const": "LegalIdentifier",
-              "description": "The type of the legal identifier."
-            },
-            "notation": {
-              "type": "string",
-              "description": "Notation or code for the legal identifier."
-            },
-            "spatial": {
-              "$ref": "#/definitions/concept",
-              "description": "Spatial information related to the legal identifier."
-            }
-          },
-          "required": [
-            "id",
-            "type",
-            "spatial"
-          ]
-        },
-        "homepage": {
-          "$ref": "#/definitions/webResource"
-        }
-      },
-      "required": [
-        "id",
-        "type",
-        "location",
-        "legalName"
-      ],
-      "additionalProperties": false
-    },
-    "location": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "string",
-          "format": "uri",
-          "description": "A unique URI identifier for the location."
-        },
-        "type": {
-          "type": "string",
-          "const": "Location",
-          "description": "The type of the location."
+            "required": ["id", "type", "address"],
+            "additionalProperties": false
         },
         "address": {
-          "$ref": "#/definitions/address",
-          "description": "Address details of the location."
-        },
-        "description": {
-          "$ref": "#/definitions/languageMap",
-          "description": "Location description."
-        }
-      },
-      "required": [
-        "id",
-        "type",
-        "address"
-      ],
-      "additionalProperties": false
-    },
-    "address": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "string",
-          "format": "uri",
-          "description": "A unique URI identifier for the address."
-        },
-        "type": {
-          "type": "string",
-          "const": "Address",
-          "description": "The type of the address."
-        },
-        "countryCode": {
-          "$ref": "#/definitions/concept",
-          "description": "Country code for the address."
-        },
-        "fullAddress": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "string",
-              "format": "uri",
-              "description": "A unique URI identifier for the address."
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "A unique URI identifier for the address."
+                },
+                "type": {
+                    "type": "string",
+                    "const": "Address",
+                    "description": "The type of the address."
+                },
+                "countryCode": {
+                    "$ref": "#/definitions/concept",
+                    "description": "Country code for the address."
+                },
+                "fullAddress": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "A unique URI identifier for the address."
+                        },
+                        "type": {
+                            "type": "string",
+                            "const": "Note",
+                            "description": "The type of the address."
+                        },
+                        "noteLiteral": {
+                            "$ref": "#/definitions/languageMap"
+                        }
+                    },
+                    "required": ["id", "type", "noteLiteral"]
+                }
             },
-            "type": {
-              "type": "string",
-              "const": "Note",
-              "description": "The type of the address."
+            "required": ["id", "type", "countryCode"],
+            "additionalProperties": false
+        },
+        "mediaObject": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "A unique URI identifier for the media object."
+                },
+                "type": {
+                    "type": "string",
+                    "const": "MediaObject",
+                    "description": "The type of the media object."
+                },
+                "content": {
+                    "type": "string",
+                    "description": "The content of the media object (e.g., base64 encoded data)."
+                },
+                "contentEncoding": {
+                    "$ref": "#/definitions/concept",
+                    "description": "Encoding type of the media content."
+                },
+                "contentType": {
+                    "$ref": "#/definitions/concept",
+                    "description": "MIME type of the media content."
+                }
             },
-            "noteLiteral": {
-              "$ref": "#/definitions/languageMap"
-            }
-          },
-          "required": [
-            "id",
-            "type",
-            "noteLiteral"
-          ]
+            "required": [
+                "id",
+                "type",
+                "content",
+                "contentEncoding",
+                "contentType"
+            ],
+            "additionalProperties": false
+        },
+        "webResource": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "A unique URI identifier for the web resource."
+                },
+                "type": {
+                    "type": "string",
+                    "const": "WebResource",
+                    "description": "The type of the web resource."
+                },
+                "contentURL": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "The URL of the web resource."
+                }
+            },
+            "required": ["id", "type", "contentURL"],
+            "additionalProperties": false
         }
-      },
-      "required": [
-        "id",
-        "type",
-        "countryCode"
-      ],
-      "additionalProperties": false
-    },
-    "mediaObject": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "string",
-          "format": "uri",
-          "description": "A unique URI identifier for the media object."
-        },
-        "type": {
-          "type": "string",
-          "const": "MediaObject",
-          "description": "The type of the media object."
-        },
-        "content": {
-          "type": "string",
-          "description": "The content of the media object (e.g., base64 encoded data)."
-        },
-        "contentEncoding": {
-          "$ref": "#/definitions/concept",
-          "description": "Encoding type of the media content."
-        },
-        "contentType": {
-          "$ref": "#/definitions/concept",
-          "description": "MIME type of the media content."
-        }
-      },
-      "required": [
-        "id",
-        "type",
-        "content",
-        "contentEncoding",
-        "contentType"
-      ],
-      "additionalProperties": false
-    },
-    "webResource": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "string",
-          "format": "uri",
-          "description": "A unique URI identifier for the web resource."
-        },
-        "type": {
-          "type": "string",
-          "const": "WebResource",
-          "description": "The type of the web resource."
-        },
-        "contentURL": {
-          "type": "string",
-          "format": "uri",
-          "description": "The URL of the web resource."
-        }
-      },
-      "required": [
-        "id",
-        "type",
-        "contentURL"
-      ],
-      "additionalProperties": false
     }
-  }
 }

@@ -1,0 +1,83 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Certificate of Advanced Study",
+    "type": "object",
+    "properties": {
+        "credentialTitle":{
+            "title": "Credential title",
+            "description": "A mapping of language codes to string values.",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        }, "fullName":{
+            "title":"Full name",
+            "description": "A mapping of language codes to string values.",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },
+        "dateOfBirth":{
+            "title":"Date of birth",
+            "description": "Date of birth of the recipient of this credential",
+            "type": "string",
+            "format": "date-time"
+        },"countryOfBirth":{
+            "title":"Country of birth",
+            "description": "A mapping of language codes to string values.",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },"cityOfBirth":{
+            "title": "City of birth",
+            "description": "A mapping of language codes to string values.",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+
+        },"ectsPoints":{
+            "title":"ECTS points",
+            "description": "ECTS points of the recipient of this credential",
+            "type": "number"
+        }, "qrCode": {
+            "title": "QR Code",
+            "description": "Base64 encoded QR-code content.",
+            "type": "string"
+        }, "validUntil":{
+            "title":"Valid until",
+            "description": "Date the certificate becomes expired.",
+            "type": "string",
+            "format": "date-time"
+        }
+    },
+    "required": [
+        "credentialTitle",
+        "dateOfBirth",
+        "countryOfBirth",
+        "cityOfBirth",
+        "ectsPoints"
+    ]
+}

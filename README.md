@@ -25,7 +25,7 @@ challenging. This repository provides:
 
 ## Available Credentials
 
-### Certificate of Attendance
+### <a href="https://github.com/MyNextID/credentials/tree/feat/readme/certificate-of-attendance" target="_blank"  style="color: #F0F6FC" >Certificate of Attendance</a> 
 
 A certificate of attendance verifies that an individual participated in a
 specific learning activity, event, workshop, or training session. Unlike
@@ -36,7 +36,7 @@ or short courses.
 
 - **ELMv3**: [Schema](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-attendance/elm/elm-coa-schema.json) | [Example](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-attendance/elm/elm-coa-example.json) | [Signed](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-attendance/elm/elm-coa-signed.jsonld) | [Details](./certificate-of-attendance/README.md)
 
-### Certificate of Advanced Study
+### <a href="https://github.com/MyNextID/credentials/tree/feat/readme/certificate-of-advanced-study" target="_blank"  style="color: #F0F6FC" >Certificate of Advanced Study</a>
 
 A certificate of advanced study recognises completion of specialised
 postgraduate-level coursework in a specific field or discipline. Typically
@@ -47,7 +47,7 @@ without committing to a full graduate degree.
 
 - **ELMv3**: [Schema](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-advanced-study/elm/elm-cas-schema.json) | [Example](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-advanced-study/elm/elm-cas-example.json) | [Signed](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-advanced-study/elm/elm-cas-signed.jsonld)
 
-### Certificate of Participation in Summer School
+### <a href="https://github.com/MyNextID/credentials/tree/feat/readme/certificate-of-participation-in-summer-school" target="_blank"  style="color: #F0F6FC" >Certificate of Participation in Summer School</a>
 
 A certificate of participation in summer school documents successful completion of 
 intensive short-term programs typically held during summer breaks. These programs 
@@ -58,7 +58,7 @@ and international participants, and are commonly used to recognise engagement in
 
 - **ELMv3**: [Schema](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-participation-in-summer-school/elm/elm-cps-schema.json) | [Example](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-participation-in-summer-school/elm/elm-cps-example.json) | [Signed](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-participation-in-summer-school/elm/elm-cps-signed.jsonld)
 
-### Confirmation of Enrolment
+### <a href="https://github.com/MyNextID/credentials/tree/feat/readme/confirmation-of-enrolment" target="_blank"  style="color: #F0F6FC" >Confirmation of Enrolment</a>
 
 A confirmation of enrolment is an official document verifying that a student is
 currently registered in a specific educational program or institution. This
@@ -69,7 +69,7 @@ purposes. It typically includes details such as enrollment status
 
 - **ELMv3**: [Schema](https://github.com/MyNextID/credentials/blob/feat/readme/confirmation-of-enrolment/elm/elm-coe-schema.json) | [Example](https://github.com/MyNextID/credentials/blob/feat/readme/confirmation-of-enrolment/elm/elm-coe-example.json) | [Signed](https://github.com/MyNextID/credentials/blob/feat/readme/confirmation-of-enrolment/elm/elm-coe-signed.jsonld)
 
-### Degree Certificate
+### <a href="https://github.com/MyNextID/credentials/tree/feat/readme/degree-certificate" target="_blank"  style="color: #F0F6FC" >Degree Certificate</a>
 
 A degree certificate is the formal academic credential awarded upon successful
 completion of an undergraduate, graduate, or doctoral program. It represents the
@@ -81,7 +81,7 @@ licensing.
 
 - **ELMv3**: [Schema](https://github.com/MyNextID/credentials/blob/feat/readme/degree-certificate/elm/elm-dc-schema.json) | [Example](https://github.com/MyNextID/credentials/blob/feat/readme/degree-certificate/elm/elm-dc-example.json) | [Signed](https://github.com/MyNextID/credentials/blob/feat/readme/degree-certificate/elm/elm-dc-signed.jsonld)
 
-### Matriculation
+### <a href="https://github.com/MyNextID/credentials/tree/feat/readme/matriculation" target="_blank"  style="color: #F0F6FC" >Matriculation</a>
 
 A matriculation credential confirms formal admission and enrollment of a student
 into an educational institution, marking their official entry into a degree
@@ -93,7 +93,7 @@ acceptance and registration rather than ongoing status.
 
 - **ELMv3**: [Schema](https://github.com/MyNextID/credentials/blob/feat/readme/matriculation/elm/elm-matriculation-schema.json) | [Example](https://github.com/MyNextID/credentials/blob/feat/readme/matriculation/elm/elm-matriculation-example.json) | [Signed](https://github.com/MyNextID/credentials/blob/feat/readme/matriculation/elm/elm-matriculation-signed.jsonld)
 
-### [Microcredential](https://github.com/MyNextID/credentials/tree/feat/readme/microcredential)
+### <a href="https://github.com/MyNextID/credentials/tree/feat/readme/microcredential" target="_blank"  style="color: #F0F6FC" >Microcredential</a>
 
 A microcredential certifies achievement of specific, defined learning outcomes, skills, 
 or competencies through a focused learning experience. Typically requiring 10-200 hours 
@@ -125,7 +125,7 @@ We welcome contributions! Here's how you can help:
 
 ### Report Issues
 
-Found a bug or have a suggestion? [Open an issue](https://github.com/mynextid/credential-repository/issues/new) with:
+Found a bug or have a suggestion? [Open an issue](https://github.com/MyNextID/credentials/issues/new) with:
 
 - Clear description of the problem or proposal
 - Relevant credential type and standard

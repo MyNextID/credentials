@@ -1,0 +1,17 @@
+{
+    "credentialTitle":{
+        "en":  "Credential title"
+    },"fullName":{
+        "en":"John Doe"
+    },"dateOfBirth":"1990-01-01T00:00:00Z", 
+    "placeOfBirth":{
+        "en": "Slovenia"
+    },"fullAddress":{
+        "en": "Give full address"
+    }, "studentNumber":"123456",
+    "academicYear":"",
+    "programmeTitle":{
+        "en": "Programme Title"
+    },"workload": "PT60H", 
+    "validUntil":"2030-01-01T00:00:00Z"
+}
