@@ -7,8 +7,8 @@
     "address": "Address",
     "location": "Location",
     "url": "Website",
-    "endDate": "End Date",
     "startDate": "Start Date",
+    "endDate": "End Date",
     "workload": "Duration in hours",
     "awardingStatement": "Awarding statement"
 }

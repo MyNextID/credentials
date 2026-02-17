@@ -19,12 +19,12 @@
         },
         "dateOfBirth":{
             "title":"Date of birth",
-            "description": "",
+            "description": "Date of birth of the recipient of this credential",
             "type": "string",
             "format": "date-time"
-        }, "countryOfBirth":{
+        }, "placeOfBirth":{
             "title": "Country of birth",
-            "description": "",
+            "description": "The country where the recipient was born",
             "type": "object",
             "x-format": "languageMap",
             "patternProperties": {
@@ -34,9 +34,9 @@
                 }
             },
             "additionalProperties": false
-        }, "cityOfBirth":{
+        }, "fullAddress":{
             "title": "City of birth",
-            "description": "",
+            "description": "The recipient's full address, including street details and city",
             "type": "object",
             "x-format": "languageMap",
             "patternProperties": {
@@ -49,7 +49,7 @@
 
         },"programmeTitle": {
             "title": "Programme Title",
-            "description": "",
+            "description": "The official title of the academic programme or course of study",
             "type": "object",
             "x-format": "languageMap",
             "patternProperties": {
@@ -61,12 +61,12 @@
             "additionalProperties": false
         }, "studentNumber": {
             "title": "Student number",
-            "description": "",
+            "description": "The official student number used to uniquely identify the recipient",
             "type": "string"
         }
     }, "required": [
-        "countryOfBirth",
-        "cityOfBirth",
+        "placeOfBirth",
+        "fullAddress",
         "programmeTitle"
     ]
 }

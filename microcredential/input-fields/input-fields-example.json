@@ -1,17 +1,19 @@
 {
-
+    "credentialTitle":{
+        "en": "Microcredential"
+    },
     "fullName": {
         "en": "John Doe"
     },
     "achievementDescription":{
-        "en": "Description example"
+        "en": "For the completion of the short course on Developmental Psychology I., at the Department of Psychology, Faculty of Social Sciences, Lalaland University, on the 5th May 2025."
     },
     "dateIssued":"2026-01-02T15:04:05Z",
     "gradeAchieved":{
-        "en": "10"
+        "en": "Pass"
     },
     "verificationMethod":{
-        "en": "Pass"
+        "en": "Supervised with ID Verification"
     },
     "type":{
         "en": "Graded exercises"
@@ -20,18 +22,15 @@
         "en": "Online"
     },
     "title":{
-        "en": "Title of qualification"
+        "en": "Written Exam"
     },
-    "ectsPoints":"9",
+    "ectsPoints":"5",
     "achievementTitle":{
-        "en": "Achievement example"
+        "en": "Title of the Qualification"
     },
     "hoursOfLearning":"PT60H",
     "nationalId":"12345",
     "awardingStatement":{
-        "en": "Awarding statement"
-    },
-    "credentialTitle":{
-        "en": "Microcredential"
+        "en": "is awarded to"
     }
 }

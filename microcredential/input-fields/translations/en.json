@@ -1,4 +1,5 @@
 {
+    "credentialTitle":  "Credential title",
     "fullName": "Full name",
     "achievementDescription": "Achievement description",
     "dateIssued": "Date",
@@ -11,6 +12,5 @@
     "achievementTitle": "Achievement title",
     "hoursOfLearning": "Hours of learning",
     "nationalId": "National ID",
-    "awardingStatement": "Awarding statement",
-    "credentialTitle":  "Credential title"
+    "awardingStatement": "Awarding statement"
 }

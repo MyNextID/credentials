@@ -5,7 +5,7 @@
     "properties": {
         "credentialTitle":{
             "title": "Credential title",
-            "description": "",
+            "description": "The official title of the credential being issued",
             "type": "object",
             "x-format": "languageMap",
             "patternProperties": {
@@ -17,7 +17,7 @@
             "additionalProperties": false
         },"fullName":{
             "title": "Full name",
-            "description": "",
+            "description": "The full name of the recipient of this credential",
             "type": "object",
             "x-format": "languageMap",
             "patternProperties": {
@@ -29,13 +29,13 @@
             "additionalProperties": false
         },"dateOfBirth":{
             "title":  "Date of birth",
-            "description": "",
+            "description": "Date of birth of the recipient of this credential",
             "type": "string",
             "format": "date-time"
 
         },"placeOfBirth":{
             "title": "Country of birth",
-            "description": "",
+            "description": "The country where the recipient was born",
             "x-format": "languageMap",
             "patternProperties": {
                 "^[a-z]{2}$": {
@@ -46,7 +46,7 @@
             "additionalProperties": false
         },"fullAddress":{
             "title": "City of birth",
-            "description": "",
+            "description": "The recipient's full address, including street details and city",
             "type": "object",
             "x-format": "languageMap",
             "patternProperties": {
@@ -58,15 +58,15 @@
             "additionalProperties": false
         },"studentNumber":{
             "title": "Student number",
-            "description": "",
+            "description": "The official student number used to uniquely identify the recipient",
             "type": "string"
         },"academicYear":{
             "title":  "Academic Year",
-            "description": "",
+            "description": "The academic year associated with the credential or enrollment",
             "type": "string"
         }, "programmeTitle":{
             "title": "Programme Title",
-            "description": "",
+            "description": "The official title of the academic programme or course of study",
             "type": "object",
             "x-format": "languageMap",
             "patternProperties": {

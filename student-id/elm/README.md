@@ -4,4 +4,4 @@ This folder contains resources related to the **European Learning Model (ELM)** 
 
 ## Contents
 
-- [sid-schema](sid-schema.json) - JSON Schema definition of the ELM Student Id.
+- [sid-schema](sid_schema.json) - JSON Schema definition of the ELM Student Id.

@@ -5,7 +5,7 @@
     "properties": {
         "credentialTitle":{
             "title": "Credential title",
-            "description": "The full name of the recipient of this credential",
+            "description": "The official title of the credential being issued",
             "type": "object",
             "x-format": "languageMap",
             "patternProperties": {
@@ -29,7 +29,7 @@
             "additionalProperties": false
         }, "achievementTitle":{
             "title": "Achievement title",
-            "description": "A mapping of language codes to string values.",
+            "description": "The title of the achievement awarded to the recipient",
             "type": "object",
             "x-format": "languageMap",
             "patternProperties": {
@@ -41,7 +41,7 @@
             "additionalProperties": false
         },"achievementDescription":{
             "title": "Achievement description",
-            "description": "A mapping of language codes to string values.",
+            "description": "A detailed description of the achievement, including its significance or requirements",
             "type": "object",
             "x-format": "languageMap",
             "patternProperties": {
@@ -53,7 +53,7 @@
             "additionalProperties": false
         }, "country":{
             "title": "Country",
-            "description": "A mapping of language codes to string values.",
+            "description": "The full country name in text format (e.g., not an ISO code)",
             "type": "object",
             "x-format": "languageMap",
             "patternProperties": {
@@ -65,7 +65,7 @@
             "additionalProperties": false
         }, "address":{
             "title": "Address",
-            "description": "A mapping of language codes to string values.",
+            "description": "The recipient's full address, including street details and city",
             "type": "object",
             "x-format": "languageMap",
             "patternProperties": {
@@ -77,7 +77,7 @@
             "additionalProperties": false
         }, "location":{
             "title": "Location",
-            "description": "A mapping of language codes to string values.",
+            "description": "",
             "type": "object",
             "x-format": "languageMap",
             "patternProperties": {
@@ -92,24 +92,24 @@
             "description": "The URL of the web resource.",
             "type": "string",
             "format": "uri"
-        }, "endDate":{
-            "title": "End Date",
-            "description": "",
-            "type": "string",
-            "format": "date-time"
         }, "startDate":{
             "title": "Start Date",
-            "description": "",
+            "description": "The date and time when the credential or achievement begins, formatted in ISO 8601 (YYYY-MM-DDThh:mm:ssZ)",
+            "type": "string",
+            "format": "date-time"
+        }, "endDate":{
+            "title": "End Date",
+            "description": "The date and time when the credential or achievement ends, formatted in ISO 8601 (YYYY-MM-DDThh:mm:ssZ)",
             "type": "string",
             "format": "date-time"
         }, "workload": {
             "title": "Duration in hours",
-            "description": "",
+            "description": "The workload required to complete the credential or achievement, expressed as an ISO 8601 duration string (e.g., 'PT60H' for 60 hours)",
             "type": "string",
             "format": "duration"
         }, "awardingStatement":{
             "title": "Awarding statement",
-            "description": "A mapping of language codes to string values.",
+            "description": "The statement displayed on the credential indicating that it has been awarded to the recipient",
             "type": "object",
             "x-format": "languageMap",
             "patternProperties": {

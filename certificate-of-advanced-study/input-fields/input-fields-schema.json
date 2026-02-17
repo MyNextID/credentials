@@ -5,7 +5,7 @@
     "properties": {
         "credentialTitle":{
             "title": "Credential title",
-            "description": "A mapping of language codes to string values.",
+            "description": "The official title of the credential being issued",
             "type": "object",
             "x-format": "languageMap",
             "patternProperties": {
@@ -17,7 +17,7 @@
             "additionalProperties": false
         }, "fullName":{
             "title":"Full name",
-            "description": "A mapping of language codes to string values.",
+            "description": "The full name of the recipient of this credential",
             "type": "object",
             "x-format": "languageMap",
             "patternProperties": {
@@ -33,9 +33,9 @@
             "description": "Date of birth of the recipient of this credential",
             "type": "string",
             "format": "date-time"
-        },"countryOfBirth":{
+        },"placeOfBirth":{
             "title":"Country of birth",
-            "description": "A mapping of language codes to string values.",
+            "description": "The country where the recipient was born",
             "type": "object",
             "x-format": "languageMap",
             "patternProperties": {
@@ -45,9 +45,9 @@
                 }
             },
             "additionalProperties": false
-        },"cityOfBirth":{
+        },"fullAddress":{
             "title": "City of birth",
-            "description": "A mapping of language codes to string values.",
+            "description": "The recipient's full address, including street details and city",
             "type": "object",
             "x-format": "languageMap",
             "patternProperties": {
@@ -76,8 +76,8 @@
     "required": [
         "credentialTitle",
         "dateOfBirth",
-        "countryOfBirth",
-        "cityOfBirth",
+        "placeOfBirth",
+        "fullAddress",
         "ectsPoints"
     ]
 }

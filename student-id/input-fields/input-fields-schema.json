@@ -5,7 +5,7 @@
     "properties": {
         "fullName":{
             "title": "Full name",
-            "description": "",
+            "description": "The full name of the recipient of this credential",
             "type": "object",
             "x-format": "languageMap",
             "patternProperties": {
@@ -17,7 +17,7 @@
             "additionalProperties": false
         },"dateOfBirth":{
             "title":  "Date of birth",
-            "description": "",
+            "description": "Date of birth of the recipient of this credential",
             "type": "string",
             "format": "date-time"
         },"identityNumber":{

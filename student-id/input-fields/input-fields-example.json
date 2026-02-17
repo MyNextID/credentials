@@ -7,8 +7,8 @@
     "studentId" : "123456",
     "asvzAuthorization":"", 
     "vsethMembership": "",
-    "cardNumber":"123", 
-    "libraryCode": "123", 
+    "cardNumber":"123456", 
+    "libraryCode": "123456", 
     "organisationalResponsibility":"",
     "professionalRole": "", 
     "validUntil":"2030-01-01T00:00:00Z"

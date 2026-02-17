@@ -1,16 +1,16 @@
 {
     "credentialTitle":{
-        "en": "Credential title"
+        "en": "Confirmation of Enrolment"
     },"fullName":{
         "en": "John Doe"
     },"dateOfBirth":"1990-01-01T00:00:00Z",
     "placeOfBirth":{
         "en": "Slovenia"
     },"fullAddress":{
-        "en": "City of birth"
-    },"studentNumber": "123456",
-    "academicYear": "",
+        "en": "A Great Address 2, 2025 Spicetown"
+    },"studentNumber": "12-345-678",
+    "academicYear": "2026",
     "programmeTitle":{
-        "en": "Programme Title"
+        "en": "Mechanical Engineering"
     }, "validUntil":"2030-01-01T00:00:00Z"
 }
