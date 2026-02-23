@@ -34,7 +34,10 @@ mastery of content. Commonly used for professional development tracking,
 continuing education requirements, and participation in conferences, seminars,
 or short courses.
 
-- **ELMv3**: [Schema](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-attendance/elm/elm-coa-schema.json) | [Example](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-attendance/elm/elm-coa-example.json) | [Signed](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-attendance/elm/elm-coa-signed.jsonld) | [Details](./certificate-of-attendance/README.md)
+
+- **ELMv3**: <a href="https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-attendance/elm/elm-coa-schema.json" target="_blank">Schema</a> |
+   <a href="https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-attendance/elm/elm-coa-example.json" target="_blank">Example</a> | 
+   <a href="https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-attendance/elm/elm-coa-signed.jsonld" target="_blank">Signed</a>
 
 ### <a href="https://github.com/MyNextID/credentials/tree/feat/readme/certificate-of-advanced-study" target="_blank" >Certificate of Advanced Study</a>
 
@@ -45,7 +48,9 @@ study beyond a bachelor's degree but is less extensive than a full master's
 program. Often pursued by professionals seeking expertise in a specialised area
 without committing to a full graduate degree.
 
-- **ELMv3**: [Schema](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-advanced-study/elm/elm-cas-schema.json) | [Example](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-advanced-study/elm/elm-cas-example.json) | [Signed](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-advanced-study/elm/elm-cas-signed.jsonld)
+- **ELMv3**: <a href="https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-advanced-study/elm/elm-cas-schema.json" target="_blank">Schema</a> | 
+  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-advanced-study/elm/elm-cas-example.json" target="_blank">Example</a> | 
+  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-advanced-study/elm/elm-cas-signed.jsonld" target="_blank">Signed</a>
 
 ### <a href="https://github.com/MyNextID/credentials/tree/feat/readme/certificate-of-participation-in-summer-school" target="_blank" >Certificate of Participation in Summer School</a>
 
@@ -56,7 +61,9 @@ may be academic (specialised coursework, research methods), professional
 youth participation initiatives). They often include interdisciplinary approaches 
 and international participants, and are commonly used to recognise engagement in supplementary learning and development opportunities outside regular academic or professional contexts.
 
-- **ELMv3**: [Schema](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-participation-in-summer-school/elm/elm-cps-schema.json) | [Example](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-participation-in-summer-school/elm/elm-cps-example.json) | [Signed](https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-participation-in-summer-school/elm/elm-cps-signed.jsonld)
+- **ELMv3**: <a href="https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-participation-in-summer-school/elm/elm-cps-schema.json" target="_blank">Schema</a> | 
+  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-participation-in-summer-school/elm/elm-cps-example.json" target="_blank">Example</a> | 
+  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-participation-in-summer-school/elm/elm-cps-signed.jsonld" target="_blank">Signed</a>
 
 ### <a href="https://github.com/MyNextID/credentials/tree/feat/readme/confirmation-of-enrolment" target="_blank" >Confirmation of Enrolment</a>
 
@@ -67,7 +74,9 @@ scholarship eligibility, student discounts, loan applications, and insurance
 purposes. It typically includes details such as enrollment status
 (full-time/part-time), program of study, and expected completion date.
 
-- **ELMv3**: [Schema](https://github.com/MyNextID/credentials/blob/feat/readme/confirmation-of-enrolment/elm/elm-coe-schema.json) | [Example](https://github.com/MyNextID/credentials/blob/feat/readme/confirmation-of-enrolment/elm/elm-coe-example.json) | [Signed](https://github.com/MyNextID/credentials/blob/feat/readme/confirmation-of-enrolment/elm/elm-coe-signed.jsonld)
+- **ELMv3**: <a href="https://github.com/MyNextID/credentials/blob/feat/readme/confirmation-of-enrolment/elm/elm-coe-schema.json" target="_blank">Schema</a> | 
+  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/confirmation-of-enrolment/elm/elm-coe-example.json" target="_blank">Example</a> | 
+  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/confirmation-of-enrolment/elm/elm-coe-signed.jsonld" target="_blank">Signed</a>
 
 ### <a href="https://github.com/MyNextID/credentials/tree/feat/readme/degree-certificate" target="_blank" >Degree Certificate</a>
 
@@ -79,7 +88,9 @@ distinctions, and conferring institution. Degree certificates are essential for
 employment verification, further education applications, and professional
 licensing.
 
-- **ELMv3**: [Schema](https://github.com/MyNextID/credentials/blob/feat/readme/degree-certificate/elm/elm-dc-schema.json) | [Example](https://github.com/MyNextID/credentials/blob/feat/readme/degree-certificate/elm/elm-dc-example.json) | [Signed](https://github.com/MyNextID/credentials/blob/feat/readme/degree-certificate/elm/elm-dc-signed.jsonld)
+- **ELMv3**: <a href="https://github.com/MyNextID/credentials/blob/feat/readme/degree-certificate/elm/elm-dc-schema.json" target="_blank">Schema</a> | 
+  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/degree-certificate/elm/elm-dc-example.json" target="_blank">Example</a> | 
+  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/degree-certificate/elm/elm-dc-signed.jsonld" target="_blank">Signed</a>
 
 ### <a href="https://github.com/MyNextID/credentials/tree/feat/readme/matriculation" target="_blank" >Matriculation</a>
 
@@ -91,7 +102,9 @@ community and their right to pursue the specified qualification. This credential
 is distinct from confirmation of enrollment as it represents the initial
 acceptance and registration rather than ongoing status.
 
-- **ELMv3**: [Schema](https://github.com/MyNextID/credentials/blob/feat/readme/matriculation/elm/elm-matriculation-schema.json) | [Example](https://github.com/MyNextID/credentials/blob/feat/readme/matriculation/elm/elm-matriculation-example.json) | [Signed](https://github.com/MyNextID/credentials/blob/feat/readme/matriculation/elm/elm-matriculation-signed.jsonld)
+- **ELMv3**: <a href="https://github.com/MyNextID/credentials/blob/feat/readme/matriculation/elm/elm-matriculation-schema.json" target="_blank">Schema</a> | 
+  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/matriculation/elm/elm-matriculation-example.json" target="_blank">Example</a> | 
+  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/matriculation/elm/elm-matriculation-signed.jsonld" target="_blank">Signed</a>
 
 ### <a href="https://github.com/MyNextID/credentials/tree/feat/readme/microcredential" target="_blank" >Microcredential</a>
 
@@ -104,13 +117,17 @@ for professional development, reskilling, and specialised expertise, responding 
 to emerging skill demands while being recognised within established quality assurance 
 frameworks such as the European Qualifications Framework.
 
-- **ELMv3**: [Schema](https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/elm/elm-mc-schema.json) | [Example](https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/elm/elm-mc-example.json) | [Signed](https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/elm/elm-mc-signed.jsonld)
-- **Open Badges v3**: [Schema](https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/open-badge/open-badge-mc-schema.json) | [Example](https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/open-badge/open-badge-mc-example.json) | [Signed (JWT)](https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/open-badge/open-badge-mc-signed.jwt)
+- **ELMv3**: <a href="https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/elm/elm-mc-schema.json" target="_blank">Schema</a> | 
+  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/elm/elm-mc-example.json" target="_blank">Example</a> | 
+  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/elm/elm-mc-signed.jsonld" target="_blank">Signed</a>
+- **Open Badges v3**: <a href="https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/open-badge/open-badge-mc-schema.json" target="_blank">Schema</a> | 
+  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/open-badge/open-badge-mc-example.json" target="_blank">Example</a> | 
+  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/open-badge/open-badge-mc-signed.jwt" target="_blank">Signed (JWT)</a>
 
 ## Standards and Compliance
 
-- **ELM v3**: Aligned with European Commission's [European Learning Model specification](https://europass.europa.eu/en/european-learning-model-stakeholders)
-- **Open Badges 3.0**: Compliant with [IMS Global Open Badges specification](https://www.imsglobal.org/spec/ob/v3p0/)
+- **ELM v3**: Aligned with European Commission's <a href="https://europass.europa.eu/en/european-learning-model-stakeholders" target="_blank">European Learning Model specification</a>
+- **Open Badges 3.0**: Compliant with <a href="https://www.imsglobal.org/spec/ob/v3p0/" target="_blank">IMS Global Open Badges specification</a>
 
 ## Roadmap
 
@@ -125,7 +142,7 @@ We welcome contributions! Here's how you can help:
 
 ### Report Issues
 
-Found a bug or have a suggestion? [Open an issue](https://github.com/MyNextID/credentials/issues/new) with:
+Found a bug or have a suggestion? <a href="https://github.com/MyNextID/credentials/issues/new" target="_blank">Open an issue</a> with:
 
 - Clear description of the problem or proposal
 - Relevant credential type and standard
@@ -143,4 +160,4 @@ To add a new credential type:
 
 ## License
 
-See [LICENSE](https://github.com/MyNextID/credentials/blob/feat/readme/LICENSE) for details.
+See <a href="https://github.com/MyNextID/credentials/blob/feat/readme/LICENSE" target="_blank">LICENSE</a> for details.
