@@ -25,7 +25,7 @@ challenging. This repository provides:
 
 ## Available Credentials
 
-### <a href="https://github.com/MyNextID/credentials/tree/feat/readme/certificate-of-attendance" target="_blank" >Certificate of Attendance</a> 
+### [Certificate of Attendance](/certificate-of-attendance)
 
 A certificate of attendance verifies that an individual participated in a
 specific learning activity, event, workshop, or training session. Unlike
@@ -35,11 +35,11 @@ continuing education requirements, and participation in conferences, seminars,
 or short courses.
 
 
-- **ELMv3**: <a href="https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-attendance/elm/elm-coa-schema.json" target="_blank">Schema</a> |
-   <a href="https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-attendance/elm/elm-coa-example.json" target="_blank">Example</a> | 
-   <a href="https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-attendance/elm/elm-coa-signed.jsonld" target="_blank">Signed</a>
+- **ELMv3**: [Schema](/certificate-of-attendance/elm/elm-coa-schema.json) |
+   [Example](/certificate-of-attendance/elm/elm-coa-example.json) | 
+   [Signed](/certificate-of-attendance/elm/elm-coa-signed.jsonld)
 
-### <a href="https://github.com/MyNextID/credentials/tree/feat/readme/certificate-of-advanced-study" target="_blank" >Certificate of Advanced Study</a>
+### [Certificate of Advanced Study](/certificate-of-advanced-study)
 
 A certificate of advanced study recognises completion of specialised
 postgraduate-level coursework in a specific field or discipline. Typically
@@ -48,11 +48,11 @@ study beyond a bachelor's degree but is less extensive than a full master's
 program. Often pursued by professionals seeking expertise in a specialised area
 without committing to a full graduate degree.
 
-- **ELMv3**: <a href="https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-advanced-study/elm/elm-cas-schema.json" target="_blank">Schema</a> | 
-  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-advanced-study/elm/elm-cas-example.json" target="_blank">Example</a> | 
-  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-advanced-study/elm/elm-cas-signed.jsonld" target="_blank">Signed</a>
+- **ELMv3**: [Schema](/certificate-of-advanced-study/elm/elm-cas-schema.json) | 
+  [Example](/certificate-of-advanced-study/elm/elm-cas-example.json) | 
+  [Signed](/certificate-of-advanced-study/elm/elm-cas-signed.jsonld)
 
-### <a href="https://github.com/MyNextID/credentials/tree/feat/readme/certificate-of-participation-in-summer-school" target="_blank" >Certificate of Participation in Summer School</a>
+### [Certificate of Participation in Summer School](/certificate-of-participation-in-summer-school)
 
 A certificate of participation in summer school documents successful completion of 
 intensive short-term programs typically held during summer breaks. These programs 
@@ -61,11 +61,11 @@ may be academic (specialised coursework, research methods), professional
 youth participation initiatives). They often include interdisciplinary approaches 
 and international participants, and are commonly used to recognise engagement in supplementary learning and development opportunities outside regular academic or professional contexts.
 
-- **ELMv3**: <a href="https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-participation-in-summer-school/elm/elm-cps-schema.json" target="_blank">Schema</a> | 
-  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-participation-in-summer-school/elm/elm-cps-example.json" target="_blank">Example</a> | 
-  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/certificate-of-participation-in-summer-school/elm/elm-cps-signed.jsonld" target="_blank">Signed</a>
+- **ELMv3**: [Schema](/certificate-of-participation-in-summer-school/elm/elm-cps-schema.json) | 
+  [Example](/certificate-of-participation-in-summer-school/elm/elm-cps-example.json) | 
+  [Signed](/certificate-of-participation-in-summer-school/elm/elm-cps-signed.jsonld)
 
-### <a href="https://github.com/MyNextID/credentials/tree/feat/readme/confirmation-of-enrolment" target="_blank" >Confirmation of Enrolment</a>
+### [Confirmation of Enrolment](/confirmation-of-enrolment)
 
 A confirmation of enrolment is an official document verifying that a student is
 currently registered in a specific educational program or institution. This
@@ -74,11 +74,11 @@ scholarship eligibility, student discounts, loan applications, and insurance
 purposes. It typically includes details such as enrollment status
 (full-time/part-time), program of study, and expected completion date.
 
-- **ELMv3**: <a href="https://github.com/MyNextID/credentials/blob/feat/readme/confirmation-of-enrolment/elm/elm-coe-schema.json" target="_blank">Schema</a> | 
-  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/confirmation-of-enrolment/elm/elm-coe-example.json" target="_blank">Example</a> | 
-  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/confirmation-of-enrolment/elm/elm-coe-signed.jsonld" target="_blank">Signed</a>
+- **ELMv3**: [Schema](/confirmation-of-enrolment/elm/elm-coe-schema.json) | 
+  [Example](/confirmation-of-enrolment/elm/elm-coe-example.json) | 
+  [Signed](/confirmation-of-enrolment/elm/elm-coe-signed.jsonld)
 
-### <a href="https://github.com/MyNextID/credentials/tree/feat/readme/degree-certificate" target="_blank" >Degree Certificate</a>
+### [Degree Certificate](/degree-certificate)
 
 A degree certificate is the formal academic credential awarded upon successful
 completion of an undergraduate, graduate, or doctoral program. It represents the
@@ -88,11 +88,11 @@ distinctions, and conferring institution. Degree certificates are essential for
 employment verification, further education applications, and professional
 licensing.
 
-- **ELMv3**: <a href="https://github.com/MyNextID/credentials/blob/feat/readme/degree-certificate/elm/elm-dc-schema.json" target="_blank">Schema</a> | 
-  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/degree-certificate/elm/elm-dc-example.json" target="_blank">Example</a> | 
-  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/degree-certificate/elm/elm-dc-signed.jsonld" target="_blank">Signed</a>
+- **ELMv3**: [Schema](/degree-certificate/elm/elm-dc-schema.json) | 
+  [Example](/degree-certificate/elm/elm-dc-example.json) | 
+  [Signed](/degree-certificate/elm/elm-dc-signed.jsonld)
 
-### <a href="https://github.com/MyNextID/credentials/tree/feat/readme/matriculation" target="_blank" >Matriculation</a>
+### [Matriculation](/matriculation)
 
 A matriculation credential confirms formal admission and enrollment of a student
 into an educational institution, marking their official entry into a degree
@@ -102,11 +102,11 @@ community and their right to pursue the specified qualification. This credential
 is distinct from confirmation of enrollment as it represents the initial
 acceptance and registration rather than ongoing status.
 
-- **ELMv3**: <a href="https://github.com/MyNextID/credentials/blob/feat/readme/matriculation/elm/elm-matriculation-schema.json" target="_blank">Schema</a> | 
-  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/matriculation/elm/elm-matriculation-example.json" target="_blank">Example</a> | 
-  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/matriculation/elm/elm-matriculation-signed.jsonld" target="_blank">Signed</a>
+- **ELMv3**: [Schema](/matriculation/elm/elm-matriculation-schema.json) | 
+  [Example](/matriculation/elm/elm-matriculation-example.json) | 
+  [Signed](/matriculation/elm/elm-matriculation-signed.jsonld)
 
-### <a href="https://github.com/MyNextID/credentials/tree/feat/readme/microcredential" target="_blank" >Microcredential</a>
+### [Microcredential](/microcredential)
 
 A microcredential certifies achievement of specific, defined learning outcomes, skills, 
 or competencies through a focused learning experience. Typically requiring 10-200 hours 
@@ -117,17 +117,17 @@ for professional development, reskilling, and specialised expertise, responding 
 to emerging skill demands while being recognised within established quality assurance 
 frameworks such as the European Qualifications Framework.
 
-- **ELMv3**: <a href="https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/elm/elm-mc-schema.json" target="_blank">Schema</a> | 
-  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/elm/elm-mc-example.json" target="_blank">Example</a> | 
-  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/elm/elm-mc-signed.jsonld" target="_blank">Signed</a>
-- **Open Badges v3**: <a href="https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/open-badge/open-badge-mc-schema.json" target="_blank">Schema</a> | 
-  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/open-badge/open-badge-mc-example.json" target="_blank">Example</a> | 
-  <a href="https://github.com/MyNextID/credentials/blob/feat/readme/microcredential/open-badge/open-badge-mc-signed.jwt" target="_blank">Signed (JWT)</a>
+- **ELMv3**: [Schema](/microcredential/elm/elm-mc-schema.json) | 
+  [Example](/microcredential/elm/elm-mc-example.json) | 
+  [Signed](/microcredential/elm/elm-mc-signed.jsonld)
+- **Open Badges v3**: [Schema](/microcredential/open-badge/open-badge-mc-schema.json) | 
+  [Example](/microcredential/open-badge/open-badge-mc-example.json) | 
+  [Signed (JWT)](/microcredential/open-badge/open-badge-mc-signed.jwt)
 
 ## Standards and Compliance
 
-- **ELM v3**: Aligned with European Commission's <a href="https://europass.europa.eu/en/european-learning-model-stakeholders" target="_blank">European Learning Model specification</a>
-- **Open Badges 3.0**: Compliant with <a href="https://www.imsglobal.org/spec/ob/v3p0/" target="_blank">IMS Global Open Badges specification</a>
+- **ELM v3**: Aligned with European Commission's [European Learning Model specification](https://europass.europa.eu/en/european-learning-model-stakeholders)
+- **Open Badges 3.0**: Compliant with [IMS Global Open Badges specification](https://www.imsglobal.org/spec/ob/v3p0/)
 
 ## Roadmap
 
@@ -142,7 +142,7 @@ We welcome contributions! Here's how you can help:
 
 ### Report Issues
 
-Found a bug or have a suggestion? <a href="https://github.com/MyNextID/credentials/issues/new" target="_blank">Open an issue</a> with:
+Found a bug or have a suggestion? [Open an issue](https://github.com/MyNextID/credentials/issues/new) with:
 
 - Clear description of the problem or proposal
 - Relevant credential type and standard
@@ -160,4 +160,4 @@ To add a new credential type:
 
 ## License
 
-See <a href="https://github.com/MyNextID/credentials/blob/feat/readme/LICENSE" target="_blank">LICENSE</a> for details.
+See [LICENSE](/LICENSE) for details.
