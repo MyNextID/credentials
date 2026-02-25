@@ -1,0 +1,12 @@
+{
+    "credentialTitle": "Credential title",
+    "fullName": "Full name",
+    "dateOfBirth":  "Date of birth",
+    "placeOfBirth": "Country of birth",
+    "fullAddress":  "City of birth",
+    "studentNumber": "Student number",
+    "academicYear":"Academic Year",
+    "programmeTitle": "Programme Title",
+    "workload": "Duration in hours",
+    "validUntil": "Valid until"
+}

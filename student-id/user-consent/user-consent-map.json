@@ -1,0 +1,14 @@
+{
+    "fullName": "identity-profile",
+    "dateOfBirth": "identity-profile",
+    "identityNumber": "identity-profile",
+    "studentDiscount": "auth-privileges",
+    "studentId": "identity-profile",
+    "asvzAuthorization": "auth-privileges",
+    "vsethMembership": "auth-privileges",
+    "cardNumber":"auth-privileges",
+    "libraryCode": "auth-privileges",
+    "organisationalResponsibility": "auth-privileges",
+    "professionalRole": "auth-privileges",
+    "validUntil": "credential-info"
+}

@@ -1,0 +1,21 @@
+{
+
+    "credentialTitle":{
+        "en": "Confirmation of Matriculation for Spring Semester 2025"
+    },
+    "fullName":{
+        "en": "John Doe"
+    },"dateOfBirth":"1990-01-01T00:00:00Z",
+    "personTitle":{
+        "en": ""
+    },"studentNumber": "12-345-678", 
+    "currentEcts":0,
+    "maxEcts": 15,
+    "deadline": "2026-12-01T00:00:00Z", 
+    "matriculationStart":"2026-01-01T00:00:00Z",
+    "matriculationEnd": "2026-12-01T00:00:00Z",
+    "programmeTitle":{
+        "en": "Mechanical Engineering BSc"
+    }, "programmeStatus":"withDegree",
+    "validUntil":"2030-01-01T00:00:00Z"
+}

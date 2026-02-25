@@ -1,0 +1,15 @@
+{
+    "fullName":{
+        "en": "John Doe"
+    },"dateOfBirth":"1990-01-01T00:00:00Z",
+    "identityNumber":"123456",
+    "studentDiscount":"",
+    "studentId" : "123456",
+    "asvzAuthorization":"", 
+    "vsethMembership": "",
+    "cardNumber":"123456", 
+    "libraryCode": "123456", 
+    "organisationalResponsibility":"",
+    "professionalRole": "", 
+    "validUntil":"2030-01-01T00:00:00Z"
+}

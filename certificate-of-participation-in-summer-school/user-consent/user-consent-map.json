@@ -1,0 +1,12 @@
+{
+    "credentialTitle": "credential-info",
+    "fullName": "identity-profile",
+    "dateOfBirth": "identity-profile",
+    "placeOfBirth":"identity-profile",
+    "fullAddress" :"identity-profile",
+    "studentNumber": "identity-profile",
+    "academicYear":"education-qualifications",
+    "programmeTitle":"education-qualifications",
+    "workload": "education-qualifications",
+    "validUntil": "credential-info"
+}

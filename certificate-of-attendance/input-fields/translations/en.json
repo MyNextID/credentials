@@ -1,0 +1,14 @@
+{
+    "credentialTitle": "Credential title",
+    "fullName": "Full name",
+    "achievementTitle": "Achievement title",
+    "achievementDescription": "Achievement description",
+    "country": "Country",
+    "address": "Address",
+    "location": "Location",
+    "url": "Website",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "workload": "Duration in hours",
+    "awardingStatement": "Awarding statement"
+}

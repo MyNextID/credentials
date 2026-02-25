@@ -1,0 +1,109 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Confirmation of Matriculation",
+    "type": "object",
+    "properties": {
+        "credentialTitle":{
+            "title": "Credential title",
+            "description": "The official title of the credential being issued",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },
+        "fullName":{
+            "title": "Full name",
+            "description": "The full name of the recipient of this credential",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },"dateOfBirth":{
+            "title":"Date of birth",
+            "description": "Date of birth of the recipient of this credential",
+            "type": "string",
+            "format": "date-time"
+        },"personTitle":{
+            "title": "Person title",
+            "description": "",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },"studentNumber":{
+            "title":  "Student number",
+            "description": "The official student number used to uniquely identify the recipient",
+            "type": "string"
+        }, "currentEcts":{
+            "title":"Current ECTS",
+            "description": "",
+            "type": "number"
+        }, "maxEcts":{
+            "title": "Max ECTS",
+            "description": "",
+            "type": "number"
+        }, "deadline": {
+            "title": "Deadline",
+            "description": "",
+            "type": "string",
+            "format": "date-time"
+        }, "matriculationStart":{
+            "title": "Matriculation Start",
+            "description": "The date and time when the matriculation begins, formatted in ISO 8601 (YYYY-MM-DDThh:mm:ssZ)",
+            "type": "string",
+            "format": "date-time"
+
+        }, "matriculationEnd": {
+            "title": "Matriculation End",
+            "description": "The date and time when the matriculation ends, formatted in ISO 8601 (YYYY-MM-DDThh:mm:ssZ)",
+            "type": "string",
+            "format": "date-time"
+
+        }, "programmeTitle":{
+            "title": "Programme Title",
+            "description": "The official title of the academic programme or course of study",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        }, "programmeStatus":{
+            "title":"Status",
+            "description": "",
+            "type": "string",
+            "enum": ["current", "withoutDegree", "withDegree"]
+        }, "validUntil":{
+            "title": "Valid until",
+            "description": "Date the certificate becomes expired.",
+            "type": "string",
+            "format": "date-time"
+        }
+    }, "required": [
+        "credentialTitle",
+        "currentEcts",
+        "maxEcts",
+        "matriculationStart",
+        "matriculationEnd",
+        "programmeTitle",
+        "programmeStatus"
+    ]
+}

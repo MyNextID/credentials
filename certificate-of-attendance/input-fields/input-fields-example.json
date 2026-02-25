@@ -1,0 +1,23 @@
+{
+    "credentialTitle":{
+        "en": "Certificate of Attendance"
+    }, "fullName" : {
+        "en": "John Doe"
+    }, "achievementTitle":{
+        "en": "Title of your Conference"
+    },"achievementDescription":{
+        "en": "Here you should describe the activity of the event for which the recipient is receiving the Certificate of Attendance."
+    }, "country":{
+        "en": "Slovenia"
+    }, "address":{
+        "en": "A Great Address 2, 2025 Spicetown"
+    }, "location":{
+        "en": "Conference center"
+    }, "url": "https://www.example.com",
+    "startDate": "2026-01-01T00:00:00Z",
+    "endDate":"2026-02-01T00:00:00Z", 
+    "workload":"PT60H",
+    "awardingStatement":{
+        "en": "is awarded to"
+    }
+}

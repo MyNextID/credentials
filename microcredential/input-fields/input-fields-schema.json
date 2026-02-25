@@ -1,0 +1,171 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Simplified European Digital Credential",
+    "description": "A simplified schema for European Digital Credential that is compatible with the full ELM 3.2 schema",
+    "type": "object",
+    "properties": {
+        "credentialTitle":{
+            "title":"Credential title",
+            "description": "The official title of the credential being issued",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },
+        "fullName": {
+            "title":"Full name",
+            "description": "The full name of the recipient of this credential",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+              
+        },
+        "achievementDescription":{
+            "title": "Achievement description",
+            "description": "A detailed description of the achievement, including its significance or requirements",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },
+        "dateIssued":{
+            "title":"Issued date",
+            "description": "Issued date.",
+            "type": "string",
+            "format": "date-time"
+        },
+        "gradeAchieved":{
+            "title": "Grade achieved",
+            "description": "",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },
+        "verificationMethod": {
+            "title": "Method",
+            "description": "",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },
+        "type": {
+            "title": "Type",
+            "description": "",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+              "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+              }
+            },
+            "additionalProperties": false
+        },
+        "mode":{
+            "title":"Mode",
+            "description": "",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+              "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+              }
+            },
+            "additionalProperties": false
+        },
+        "title":{
+            "title":"Title",
+            "description": "",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+            "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+            }
+            },
+            "additionalProperties": false
+        },
+        "ectsPoints":{
+            "title":"ECTS points",
+            "description": "ECTS points.",
+            "type": "string"
+            
+        },
+        "achievementTitle":{
+            "title": "Achievement title",
+            "description": "The title of the achievement awarded to the recipient",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+              "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+              }
+            },
+            "additionalProperties": false
+        },
+        "hoursOfLearning":{
+            "title":"Hours of learning",
+            "description": "Hours of learning.",
+            "type": "string",
+            "format": "duration"
+        },
+        "nationalId":{
+            "title":"National ID",
+            "description": "Notation or code for the legal identifier.",
+            "type": "string"
+        },
+        "awardingStatement":{
+            "title":"Awarding Statement",
+            "description": "The statement displayed on the credential indicating that it has been awarded to the recipient",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "required": [
+      "credentialTitle",
+      "fullName",
+      "gradeAchieved",
+      "title",
+      "ectsPoints",
+      "achievementTitle",
+      "awardingStatement"
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Certificate of Participation in Summer School",
+    "type": "object",
+    "properties": {
+        "credentialTitle":{
+            "title":  "Credential title",
+            "description": "The official title of the credential being issued",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },"fullName":{
+            "title":"Full name",
+            "description": "The full name of the recipient of this credential",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },"dateOfBirth": {
+            "title": "Date of birth",
+            "description": "Date of birth of the recipient of this credential",
+            "type": "string",
+            "format": "date-time"
+        }, "placeOfBirth":{
+            "title": "Country of birth",
+            "description": "The country where the recipient was born",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },"fullAddress":{
+            "title": "City of birth",
+            "description": "The recipient's full address, including street details and city",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        }, "studentNumber":{
+            "title": "Student number",
+            "description": "The official student number used to uniquely identify the recipient",
+            "type": "string"
+        },"academicYear":{
+            "title": "Academic Year",
+            "description": "The academic year associated with the credential or enrollment",
+            "type": "string"
+        }, "programmeTitle":{
+            "title": "Programme Title",
+            "description": "The official title of the academic programme or course of study",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                "type": "string",
+                "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },"workload": {
+            "title":"Duration in hours",
+            "description": "The workload required to complete the credential or achievement, expressed as an ISO 8601 duration string (e.g., 'PT60H' for 60 hours)",
+            "type": "string",
+            "format": "duration"
+        }, "validUntil":{
+            "title": "Valid until",
+            "description": "Date the certificate becomes expired.",
+            "type": "string",
+            "format": "date-time"
+        }
+    }, "required": [
+        "credentialTitle",
+        "programmeTitle",
+        "placeOfBirth",
+        "fullAddress"
+    ]
+}
