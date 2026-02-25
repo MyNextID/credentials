@@ -1,0 +1,15 @@
+{
+    "credentialTitle": "education-qualifications",
+    "fullName": "identity-profile",
+    "dateOfBirth": "identity-profile",
+    "personTitle": "identity-profile",
+    "studentNumber": "identity-profile",
+    "currentEcts": "education-qualifications",
+    "maxEcts": "education-qualifications",
+    "deadline": "education-qualifications",
+    "matriculationStart": "education-qualifications",
+    "matriculationEnd": "education-qualifications",
+    "programmeTitle": "education-qualifications",
+    "programmeStatus":"education-qualifications",
+    "validUntil": "credential-info"
+}

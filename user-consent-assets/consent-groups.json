@@ -1,0 +1,22 @@
+{
+    "identity-profile":{
+        "title":"Identity Profile",
+        "description": "Personal and identifying information of the credential holder.",
+        "icon": "./icons/user.svg"
+    },
+    "education-qualifications":{
+        "title":"Education and Qualifications",
+        "description": "Information about your studies, completed learning activities and results.",
+        "icon": "./icons/education.svg"
+    },
+    "auth-privileges":{
+        "title":"Authorization & Privileges",
+        "description": "Information about your memberships, authorizations, and access privileges.",
+        "icon": "./icons/user-card.svg"
+    },
+    "credential-info":{
+        "title":"Credential Information",
+        "description": "Information about this credential, including its issuance, validity, and verification.",
+        "icon": "./icons/credential.svg"
+    }    
+}

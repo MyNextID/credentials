@@ -14,3 +14,4 @@ and international participants, and are commonly used to recognise engagement in
 
 - [elm](elm) - European Learning Model (ELM) schemas, example credentials and signed files.
 - [input-fields](input-fields) - Input field schema definitions, configuration examples, mappings, and localization resources.
+- [user-consent](user-consent) - Mapping between user consent groups and input fields.

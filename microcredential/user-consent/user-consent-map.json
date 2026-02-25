@@ -1,0 +1,16 @@
+{
+    "credentialTitle": "credential-info",
+    "fullName": "identity-profile",
+    "achievementDescription": "education-qualifications",
+    "dateIssued": "credential-info",
+    "gradeAchieved": "education-qualifications",
+    "verificationMethod": "education-qualifications",
+    "type": "education-qualifications",
+    "mode": "education-qualifications",
+    "title": "education-qualifications",
+    "ectsPoints": "education-qualifications",
+    "achievementTitle": "education-qualifications",
+    "hoursOfLearning": "education-qualifications",
+    "nationalId": "identity-profile",
+    "awardingStatement": "education-qualifications"
+}
