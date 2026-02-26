@@ -1,0 +1,18 @@
+{
+    "identity-profile":{
+        "title":"Identity Profile",
+        "description": "Core personal details that establish and verify an individual’s identity."
+    },
+    "education-qualifications":{
+        "title":"Education and Qualifications",
+        "description": "Information about your studies, completed learning activities and results."
+    },
+    "auth-privileges":{
+        "title":"Authorization & Privileges",
+        "description": "Active licenses, permissions, and approved operating rights associated with the individual."
+    },
+    "credential-info":{
+        "title":"Credential Information",
+        "description": "Information related to the issuance of official documents or credentials."
+    }    
+}

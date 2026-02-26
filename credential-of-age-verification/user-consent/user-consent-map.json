@@ -1,0 +1,6 @@
+{
+    "ageOver18": "age_info",
+    "ageOver21": "age_info",
+    "issuingCountry": "credential-info",
+    "expiryDate": "credential-info"
+}

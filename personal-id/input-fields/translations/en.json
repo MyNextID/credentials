@@ -1,0 +1,16 @@
+{
+    "familyName": "Family name",
+    "givenName": "Given name",
+    "birthDate": "Birth date",
+    "birthPlace": "Place of birth",
+    "nationality": "Nationality",
+    "portrait": "Portrait", 
+    "familyNameBirth": "Family name at birth",
+    "issuingAuthority": "Issuing authority",
+    "issuingCountry": "Issuing country",
+    "issuanceDate": "Issuance date",
+    "expiryDate": "Expiry date",
+    "ageOver18": "Age over 18",
+    "ageInYears": "Age in years",
+    "ageBirthYear": "Birth year"
+}

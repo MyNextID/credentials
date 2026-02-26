@@ -7,4 +7,6 @@ It includes credential schema, field definitions, mappings, and localization res
 
 - [elm](elm) - European Learning Model (ELM) schema.
 - [input-fields](input-fields) - Input field schema definitions, configuration examples, mappings, and localization resources.
-- [user-consent](user-consent) - Mapping between user consent groups and input fields.
+- [translations](translations) - Localization files for credential title.
+- [user-consent](user-consent) - Mapping between user consent groups and corresponding input fields.
+  

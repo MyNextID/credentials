@@ -7,4 +7,5 @@ User consent mappings are defined per credential structure and can be found in t
 ## Contents
 
 - [icons](icons) - Default SVG icons for each consent group.
+- [translations](translations) - Localization files for consent groups and related resources.
 - [consent-groups.json](consent-groups.json) - JSON file defining all consent groups.

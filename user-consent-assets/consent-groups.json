@@ -1,7 +1,7 @@
 {
     "identity-profile":{
         "title":"Identity Profile",
-        "description": "Personal and identifying information of the credential holder.",
+        "description": "Core personal details that establish and verify an individual’s identity.",
         "icon": "./icons/user.svg"
     },
     "education-qualifications":{
@@ -11,12 +11,17 @@
     },
     "auth-privileges":{
         "title":"Authorization & Privileges",
-        "description": "Information about your memberships, authorizations, and access privileges.",
+        "description": "Active licenses, permissions, and approved operating rights associated with the individual.",
         "icon": "./icons/user-card.svg"
     },
     "credential-info":{
         "title":"Credential Information",
-        "description": "Information about this credential, including its issuance, validity, and verification.",
+        "description": "Information related to the issuance of official documents or credentials.",
         "icon": "./icons/credential.svg"
-    }    
+    },
+    "age_info":{
+        "title":"Age Qualification",
+        "description": "Age-related information presented in a privacy-conscious way.",
+        "icon": "./icons/calendar.svg"
+    }
 }

@@ -1,3 +1,16 @@
 {
-
+    "familyName": "identity-profile",
+    "givenName": "identity-profile",
+    "birthDate": "identity-profile",
+    "birthPlace": "identity-profile",
+    "nationality": "identity-profile",
+    "portrait": "identity-profile", 
+    "familyNameBirth": "identity-profile",
+    "issuingAuthority": "credential-info",
+    "issuingCountry": "credential-info",
+    "issuanceDate": "credential-info",
+    "expiryDate": "credential-info",
+    "ageOver18": "age_info",
+    "ageInYears": "age_info",
+    "ageBirthYear": "age_info"
 }

@@ -1,6 +1,6 @@
-# Mobile driver's licence
+# Credential of Age verification
 
-This folder contains all technical assets related to the **Mobile driver's licence**.  
+This folder contains all technical assets related to the **Credential of Age verification**.  
 It includes field mappings and localization resources required for credential generation and validation.
 
 ## Contents
