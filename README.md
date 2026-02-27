@@ -35,9 +35,9 @@ continuing education requirements, and participation in conferences, seminars,
 or short courses.
 
 
-- **EDC**: [Schema](/certificate-of-attendance/elm/elm-coa-schema.json) |
-   [Example](/certificate-of-attendance/elm/elm-coa-example.json) | 
-   [Signed](/certificate-of-attendance/elm/elm-coa-signed.jsonld)
+- **EDC**: [Schema](/certificate-of-attendance/edc/edc-coa-schema.json) |
+   [Example](/certificate-of-attendance/edc/edc-coa-example.json) | 
+   [Signed](/certificate-of-attendance/edc/edc-coa-signed.jsonld)
 
 ### [Certificate of Advanced Study](/certificate-of-advanced-study)
 
@@ -48,9 +48,9 @@ study beyond a bachelor's degree but is less extensive than a full master's
 program. Often pursued by professionals seeking expertise in a specialised area
 without committing to a full graduate degree.
 
-- **EDC**: [Schema](/certificate-of-advanced-study/elm/elm-cas-schema.json) | 
-  [Example](/certificate-of-advanced-study/elm/elm-cas-example.json) | 
-  [Signed](/certificate-of-advanced-study/elm/elm-cas-signed.jsonld)
+- **EDC**: [Schema](/certificate-of-advanced-study/edc/edc-cas-schema.json) | 
+  [Example](/certificate-of-advanced-study/edc/edc-cas-example.json) | 
+  [Signed](/certificate-of-advanced-study/edc/edc-cas-signed.jsonld)
 
 ### [Certificate of Participation in Summer School](/certificate-of-participation-in-summer-school)
 
@@ -61,9 +61,9 @@ may be academic (specialised coursework, research methods), professional
 youth participation initiatives). They often include interdisciplinary approaches 
 and international participants, and are commonly used to recognise engagement in supplementary learning and development opportunities outside regular academic or professional contexts.
 
-- **EDC**: [Schema](/certificate-of-participation-in-summer-school/elm/elm-cps-schema.json) | 
-  [Example](/certificate-of-participation-in-summer-school/elm/elm-cps-example.json) | 
-  [Signed](/certificate-of-participation-in-summer-school/elm/elm-cps-signed.jsonld)
+- **EDC**: [Schema](/certificate-of-participation-in-summer-school/edc/edc-cps-schema.json) | 
+  [Example](/certificate-of-participation-in-summer-school/edc/edc-cps-example.json) | 
+  [Signed](/certificate-of-participation-in-summer-school/edc/edc-cps-signed.jsonld)
 
 ### [Confirmation of Enrolment](/confirmation-of-enrolment)
 
@@ -74,9 +74,9 @@ scholarship eligibility, student discounts, loan applications, and insurance
 purposes. It typically includes details such as enrollment status
 (full-time/part-time), program of study, and expected completion date.
 
-- **EDC**: [Schema](/confirmation-of-enrolment/elm/elm-coe-schema.json) | 
-  [Example](/confirmation-of-enrolment/elm/elm-coe-example.json) | 
-  [Signed](/confirmation-of-enrolment/elm/elm-coe-signed.jsonld)
+- **EDC**: [Schema](/confirmation-of-enrolment/edc/edc-coe-schema.json) | 
+  [Example](/confirmation-of-enrolment/edc/edc-coe-example.json) | 
+  [Signed](/confirmation-of-enrolment/edc/edc-coe-signed.jsonld)
 
 ### [Degree Certificate](/degree-certificate)
 
@@ -88,9 +88,9 @@ distinctions, and conferring institution. Degree certificates are essential for
 employment verification, further education applications, and professional
 licensing.
 
-- **EDC**: [Schema](/degree-certificate/elm/elm-dc-schema.json) | 
-  [Example](/degree-certificate/elm/elm-dc-example.json) | 
-  [Signed](/degree-certificate/elm/elm-dc-signed.jsonld)
+- **EDC**: [Schema](/degree-certificate/edc/edc-dc-schema.json) | 
+  [Example](/degree-certificate/edc/edc-dc-example.json) | 
+  [Signed](/degree-certificate/edc/edc-dc-signed.jsonld)
 
 ### [Matriculation](/matriculation)
 
@@ -102,9 +102,9 @@ community and their right to pursue the specified qualification. This credential
 is distinct from confirmation of enrollment as it represents the initial
 acceptance and registration rather than ongoing status.
 
-- **EDC**: [Schema](/matriculation/elm/elm-matriculation-schema.json) | 
-  [Example](/matriculation/elm/elm-matriculation-example.json) | 
-  [Signed](/matriculation/elm/elm-matriculation-signed.jsonld)
+- **EDC**: [Schema](/matriculation/edc/edc-matriculation-schema.json) | 
+  [Example](/matriculation/edc/edc-matriculation-example.json) | 
+  [Signed](/matriculation/edc/edc-matriculation-signed.jsonld)
 
 ### [Microcredential](/microcredential)
 
@@ -117,9 +117,9 @@ for professional development, reskilling, and specialised expertise, responding 
 to emerging skill demands while being recognised within established quality assurance 
 frameworks such as the European Qualifications Framework.
 
-- **EDC**: [Schema](/microcredential/elm/elm-mc-schema.json) | 
-  [Example](/microcredential/elm/elm-mc-example.json) | 
-  [Signed](/microcredential/elm/elm-mc-signed.jsonld)
+- **EDC**: [Schema](/microcredential/edc/edc-mc-schema.json) | 
+  [Example](/microcredential/edc/edc-mc-example.json) | 
+  [Signed](/microcredential/edc/edc-mc-signed.jsonld)
 - **Open Badges v3**: [Schema](/microcredential/open-badge/open-badge-mc-schema.json) | 
   [Example](/microcredential/open-badge/open-badge-mc-example.json) | 
   [Signed (JWT)](/microcredential/open-badge/open-badge-mc-signed.jwt)
