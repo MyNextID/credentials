@@ -7,4 +7,4 @@ Input fields are accompanied by
 - [translations](translations) - Localization files for Degree Certificate input fields.
 - [input-fields-example](input-fields-example.json) - Input field examples.
 - [input-fields-schema](input-fields-schema.json) - JSON Schema definition of input fields.
-- [input-fields-to-credential-map](input-fields-to-credential-map.json) - Mapping between user-friendly input fields and the ELM Degree Certificate fields. 
+- [input-fields-to-credential-map](input-fields-to-credential-map.json) - Mapping between user-friendly input fields and the EDC Degree Certificate fields. 
