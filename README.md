@@ -18,7 +18,7 @@ challenging. This repository provides:
 
 | Standard                      | Version | Status      |
 | ----------------------------- | ------- | ----------- |
-| European Learning Model (ELM) | v3      | Available   |
+| European Digital Credentials (EDC) | v3      | Available   |
 | Open Badges (OB)              | v3      | Available   |
 | ISO 18013-5 mDoc/mDL          | -       | Coming Soon |
 | ETSI (Q)EAA (EUDI-compliant)  | -       | Coming Soon |
@@ -35,7 +35,7 @@ continuing education requirements, and participation in conferences, seminars,
 or short courses.
 
 
-- **ELMv3**: [Schema](/certificate-of-attendance/elm/elm-coa-schema.json) |
+- **EDC**: [Schema](/certificate-of-attendance/elm/elm-coa-schema.json) |
    [Example](/certificate-of-attendance/elm/elm-coa-example.json) | 
    [Signed](/certificate-of-attendance/elm/elm-coa-signed.jsonld)
 
@@ -48,7 +48,7 @@ study beyond a bachelor's degree but is less extensive than a full master's
 program. Often pursued by professionals seeking expertise in a specialised area
 without committing to a full graduate degree.
 
-- **ELMv3**: [Schema](/certificate-of-advanced-study/elm/elm-cas-schema.json) | 
+- **EDC**: [Schema](/certificate-of-advanced-study/elm/elm-cas-schema.json) | 
   [Example](/certificate-of-advanced-study/elm/elm-cas-example.json) | 
   [Signed](/certificate-of-advanced-study/elm/elm-cas-signed.jsonld)
 
@@ -61,7 +61,7 @@ may be academic (specialised coursework, research methods), professional
 youth participation initiatives). They often include interdisciplinary approaches 
 and international participants, and are commonly used to recognise engagement in supplementary learning and development opportunities outside regular academic or professional contexts.
 
-- **ELMv3**: [Schema](/certificate-of-participation-in-summer-school/elm/elm-cps-schema.json) | 
+- **EDC**: [Schema](/certificate-of-participation-in-summer-school/elm/elm-cps-schema.json) | 
   [Example](/certificate-of-participation-in-summer-school/elm/elm-cps-example.json) | 
   [Signed](/certificate-of-participation-in-summer-school/elm/elm-cps-signed.jsonld)
 
@@ -74,7 +74,7 @@ scholarship eligibility, student discounts, loan applications, and insurance
 purposes. It typically includes details such as enrollment status
 (full-time/part-time), program of study, and expected completion date.
 
-- **ELMv3**: [Schema](/confirmation-of-enrolment/elm/elm-coe-schema.json) | 
+- **EDC**: [Schema](/confirmation-of-enrolment/elm/elm-coe-schema.json) | 
   [Example](/confirmation-of-enrolment/elm/elm-coe-example.json) | 
   [Signed](/confirmation-of-enrolment/elm/elm-coe-signed.jsonld)
 
@@ -88,7 +88,7 @@ distinctions, and conferring institution. Degree certificates are essential for
 employment verification, further education applications, and professional
 licensing.
 
-- **ELMv3**: [Schema](/degree-certificate/elm/elm-dc-schema.json) | 
+- **EDC**: [Schema](/degree-certificate/elm/elm-dc-schema.json) | 
   [Example](/degree-certificate/elm/elm-dc-example.json) | 
   [Signed](/degree-certificate/elm/elm-dc-signed.jsonld)
 
@@ -102,7 +102,7 @@ community and their right to pursue the specified qualification. This credential
 is distinct from confirmation of enrollment as it represents the initial
 acceptance and registration rather than ongoing status.
 
-- **ELMv3**: [Schema](/matriculation/elm/elm-matriculation-schema.json) | 
+- **EDC**: [Schema](/matriculation/elm/elm-matriculation-schema.json) | 
   [Example](/matriculation/elm/elm-matriculation-example.json) | 
   [Signed](/matriculation/elm/elm-matriculation-signed.jsonld)
 
@@ -117,7 +117,7 @@ for professional development, reskilling, and specialised expertise, responding 
 to emerging skill demands while being recognised within established quality assurance 
 frameworks such as the European Qualifications Framework.
 
-- **ELMv3**: [Schema](/microcredential/elm/elm-mc-schema.json) | 
+- **EDC**: [Schema](/microcredential/elm/elm-mc-schema.json) | 
   [Example](/microcredential/elm/elm-mc-example.json) | 
   [Signed](/microcredential/elm/elm-mc-signed.jsonld)
 - **Open Badges v3**: [Schema](/microcredential/open-badge/open-badge-mc-schema.json) | 
@@ -126,7 +126,7 @@ frameworks such as the European Qualifications Framework.
 
 ## Standards and Compliance
 
-- **ELM v3**: Aligned with European Commission's [European Learning Model specification](https://europass.europa.eu/en/european-learning-model-stakeholders)
+- **EDC**: European Digital Credentials, a serialization of the [European Learning Model (ELM)](https://europass.europa.eu/en/european-learning-model-stakeholders) ontology
 - **Open Badges 3.0**: Compliant with [IMS Global Open Badges specification](https://www.imsglobal.org/spec/ob/v3p0/)
 
 ## Roadmap

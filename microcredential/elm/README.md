@@ -1,10 +1,10 @@
-# ELM
+# EDC
 
-This folder contains resources related to the **European Learning Model (ELM)** credential format used for microcredentials.
+This folder contains resources related to the **European Digital Credentials (EDC)** format, a serialization of the ELM ontology, used for microcredentials.
 
 ## Contents
 
-- [elm-mc-example](elm-mc-example.json) - Example of an ELM-compliant microcredential.
-- [elm-mc-schema](elm-mc-schema.json) - JSON Schema definition of the ELM microcredential.
-- [elm-mc-signed](elm-mc-signed.jsonld) - Example of an ELM microcredential signed with JAdES digital signature.
-- [input-fields-to-credential-map](input-fields-to-credential-map.json) - Mapping between user-friendly input fields and the ELM microcredential fields.
+- [elm-mc-example](elm-mc-example.json) - Example of an EDC-compliant microcredential.
+- [elm-mc-schema](elm-mc-schema.json) - JSON Schema definition of the EDC microcredential.
+- [elm-mc-signed](elm-mc-signed.jsonld) - Example of an EDC microcredential signed with JAdES digital signature.
+- [input-fields-to-credential-map](input-fields-to-credential-map.json) - Mapping between user-friendly input fields and the EDC microcredential fields.

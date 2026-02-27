@@ -7,7 +7,7 @@ A microcredential certifies achievement of specific, defined learning outcomes, 
 
 ## Contents
 
-- [elm](elm) - European Learning Model (ELM) schemas, example credentials, signed files, and input field mappings.
+- [elm](elm) - European Digital Credentials (EDC) schemas, example credentials, signed files, and input field mappings.
 - [open-badge](open-badge) - Open Badge schemas, example badges, and signed `.jwt` files.
 - [input-fields](input-fields) - Input field schema definitions, configuration examples, and localization resources.
 - [translations](translations) - Localization files for credential title.

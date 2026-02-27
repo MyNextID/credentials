@@ -12,7 +12,7 @@ or short courses.
 
 ## Contents
 
-- [elm](elm) - European Learning Model (ELM) schemas, example credentials and signed files.
+- [elm](elm) - European Digital Credentials (EDC) schemas, example credentials and signed files.
 - [input-fields](input-fields) - Input field schema definitions, configuration examples, mappings, and localization resources.
 - [translations](translations) - Localization files for credential title.
 - [user-consent](user-consent) - Mapping between user consent groups and corresponding input fields.
