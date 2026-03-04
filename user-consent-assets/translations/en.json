@@ -1,18 +1,27 @@
 {
     "identity-profile":{
         "title":"Identity Profile",
-        "description": "Core personal details that establish and verify an individual’s identity."
+        "description": "Core personal details that establish and verify an individual’s identity.",
+        "icon": "./icons/user.svg"
     },
     "education-qualifications":{
         "title":"Education and Qualifications",
-        "description": "Information about your studies, completed learning activities and results."
+        "description": "Information about your studies, completed learning activities and results.",
+        "icon": "./icons/education.svg"
     },
     "auth-privileges":{
         "title":"Authorization & Privileges",
-        "description": "Active licenses, permissions, and approved operating rights associated with the individual."
+        "description": "Active licenses, permissions, and approved operating rights associated with the individual.",
+         "icon": "./icons/user-card.svg"
     },
     "credential-info":{
         "title":"Credential Information",
-        "description": "Information related to the issuance of official documents or credentials."
+        "description": "Information related to the issuance of official documents or credentials.",
+        "icon": "./icons/credential.svg"
+    },
+    "age_info":{
+        "title":"Age Qualification",
+        "description": "Age-related information presented in a privacy-conscious way.",
+        "icon": "./icons/calendar.svg"
     }    
 }

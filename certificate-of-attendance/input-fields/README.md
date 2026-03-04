@@ -7,4 +7,4 @@ Input fields are accompanied by
 - [translations](translations) - Translated input field labels organised by language.
 - [input-fields-example](input-fields-example.json) - Input field examples.
 - [input-fields-schema](input-fields-schema.json) - JSON Schema definition of input fields.
-- [input-fields-to-credential-map](input-fields-to-credential-map.json) - Mapping between user-friendly input fields and the EDC Certificate of Attendance fields. 
+- [input-fields-to-credential-map](input-fields-to-credential-map.json) - Mapping between user-friendly input fields and the EDC Certificate of Attendance fields.
