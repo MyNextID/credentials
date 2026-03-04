@@ -4,6 +4,6 @@ Input fields are simple key-value pairs that let you provide verifiable credenti
 
 Input fields are accompanied by
 
-- [translations](translations) - Localization files for microcredential input fields.
+- [translations](translations) - Translated input field labels organised by language.
 - [input-fields-example](input-fields-example.json) - Input field examples.
 - [input-fields-schema](input-fields-schema.json) - JSON Schema definition of input fields.

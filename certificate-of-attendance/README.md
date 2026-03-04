@@ -1,7 +1,7 @@
 # Certificate of Attendance
 
 This folder contains all technical assets related to the **Certificate of Attendance**.  
-It includes credential schemas, signed examples, field definitions, mappings, and localization resources used for credential generation and validation.
+It includes credential schemas, signed examples, field definitions, mappings, and translation files used for credential generation and validation.
 
 A certificate of attendance verifies that an individual participated in a
 specific learning activity, event, workshop, or training session. Unlike
@@ -13,6 +13,6 @@ or short courses.
 ## Contents
 
 - [edc](edc) - European Digital Credentials (EDC) schemas, example credentials and signed files.
-- [input-fields](input-fields) - Input field schema definitions, configuration examples, mappings, and localization resources.
-- [translations](translations) - Localization files for credential title.
+- [input-fields](input-fields) - Input field schema definitions, configuration examples, mappings, and related translation files.
+- [translations](translations) - Translated credential titles organised by language.
 - [user-consent](user-consent) - Mapping between user consent groups and corresponding input fields.

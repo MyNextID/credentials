@@ -1,11 +1,11 @@
 # Mobile driver's licence
 
 This folder contains all technical assets related to the **Mobile driver's licence**.  
-It includes field mappings and localization resources required for credential generation and validation.
+It includes field mappings and translation files used for credential generation and validation.
 
 ## Contents
 
-- [input-fields](input-fields) - Localization resources for credential input fields.
-- [translations](translations) - Localization files for credential title.
+- [input-fields](input-fields) - Translated input fields organised by language.
+- [translations](translations) - Translated credential titles organised by language.
 - [user-consent](user-consent) - Mapping between user consent groups and corresponding input fields.
   
