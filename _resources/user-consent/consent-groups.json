@@ -1,0 +1,17 @@
+{
+    "identity-profile":{
+        "icon": "./icons/user.svg"
+    },
+    "education-qualifications":{
+        "icon": "./icons/education.svg"
+    },
+    "auth-privileges":{
+        "icon": "./icons/user-card.svg"
+    },
+    "credential-info":{
+        "icon": "./icons/credential.svg"
+    },
+    "age_info":{
+        "icon": "./icons/calendar.svg"
+    }
+}
