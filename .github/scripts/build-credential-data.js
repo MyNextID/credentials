@@ -4,6 +4,27 @@ const path = require("path");
 
 const outputDir = "_generated";
 
+// Paths 
+const userConsentResourcePath = `_resources/user-consent`
+const userConsentTranslationsPath = userConsentResourcePath + "/translations"
+function getUserConsentTranslationPath(lang) {
+    return userConsentTranslationsPath + `/${lang}.json`
+}
+const userConsentGroupsPath = userConsentResourcePath + "/consent-groups.json"
+const credentialTypesPath = outputDir + "/credential-types.json"
+function getCredentialTypeTranslationPath(credentialType, lang) {
+    if(lang) {
+        return `${credentialType}/translations/${lang}.json`
+    }
+    return `${credentialType}/translations`
+}
+function getCredentialTypeUserConsentPath(credentialType) {
+    return `${credentialType}/user-consent/user-consent-map.json`
+}
+function getCredentialTypeInputFieldsTranslationPath(credentialType, lang) {
+    return `${credentialType}/input-fields/translations/${lang}.json`
+}
+
 // make sure folder exists
 if (!fs.existsSync(outputDir)) {
   fs.mkdirSync(outputDir, { recursive: true });
@@ -61,8 +82,8 @@ const data = {
 
 // 1. Get user consent groups
 
-const translations = loadTranslations(`_resources/user-consent/translations`);
-const claimsGroups = readFileOrThrow(`_resources/user-consent/consent-groups.json`);
+const translations = loadTranslations(userConsentTranslationsPath);
+const claimsGroups = readFileOrThrow(userConsentGroupsPath);
 
 data["consent_groups"] = {
     "available_languages": translations,
@@ -76,30 +97,33 @@ Object.keys(claimsGroups).map((group => {
 
     translations.forEach(lang => {
 
-        const groupTrans = readFileOrThrow(`_resources/user-consent/translations/${lang}.json`);
+        const groupTrans = readFileOrThrow(getUserConsentTranslationPath(lang));
 
-        validatePropertyExists(`_resources/user-consent/translations/${lang}.json`, groupTrans, [group,"title"]);
-        validatePropertyExists(`_resources/user-consent/translations/${lang}.json`, groupTrans, [group,"description"]);
+        validatePropertyExists(getUserConsentTranslationPath(lang), groupTrans, [group,"title"]);
+        validatePropertyExists(getUserConsentTranslationPath(lang), groupTrans, [group,"description"]);
 
         data["consent_groups"]["groups"][group]["label"] = {[lang]:groupTrans[group].title}
         data["consent_groups"]["groups"][group]["description"] = {[lang]:groupTrans[group].description}
 
     });
 
-    validatePropertyExists(`_resources/user-consent/consent-groups.json`, claimsGroups, [group,"icon"]);
+    validatePropertyExists(userConsentGroupsPath, claimsGroups, [group,"icon"]);
 
+    if(claimsGroups[group].icon.startsWith("./")) {
+        claimsGroups[group].icon = claimsGroups[group].icon.replace(".", userConsentResourcePath)
+    }
     data["consent_groups"]["groups"][group]["icon"] = claimsGroups[group].icon
     
 }));
 
 
 // 2. Get all credential types
-const credentialTypes = readFileOrThrow("_generated/credential-types.json");
+const credentialTypes = readFileOrThrow(credentialTypesPath);
 
 for (const key of credentialTypes){
 
     // a) Get all translations for credential type
-    const translations = loadTranslations(`${key}/translations`);
+    const translations = loadTranslations(getCredentialTypeTranslationPath(key));
 
     data.credential_types[key] = {
         "label": {},
@@ -109,14 +133,14 @@ for (const key of credentialTypes){
 
     // b) Get credential type label for each language 
     translations.forEach(lang => {
-        const label = readFileOrThrow(`${key}/translations/${lang}.json`);
+        const label = readFileOrThrow(getCredentialTypeTranslationPath(key, lang));
 
-        validatePropertyExists(`${key}/translations/${lang}.json`, label, ["credential","title"]);
+        validatePropertyExists(getCredentialTypeTranslationPath(key, lang), label, ["credential","title"]);
         data.credential_types[key]["label"][lang] = label.credential.title;
     });
     
     // c). Get claims in human-readable translation
-    const claims = readFileOrThrow(`${key}/user-consent/user-consent-map.json`);
+    const claims = readFileOrThrow(getCredentialTypeUserConsentPath(key));
 
     Object.keys(claims).map(claim => {
         data.credential_types[key]["claims"][claim] = {
@@ -125,7 +149,7 @@ for (const key of credentialTypes){
         }
 
         translations.forEach(lang => {
-            const inputField = readFileOrThrow(`${key}/input-fields/translations/${lang}.json`);
+            const inputField = readFileOrThrow(getCredentialTypeInputFieldsTranslationPath(key, lang));
             data.credential_types[key]["claims"][claim]["label"][lang] = inputField[claim];
         });
 
