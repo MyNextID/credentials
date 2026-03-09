@@ -2,10 +2,10 @@ const fs = require("fs");
 
 const path = require("path");
 
-const outputDir = ".generated";
+const outputDir = "_generated";
 
 // Paths 
-const userConsentResourcePath = `.resources/user-consent`
+const userConsentResourcePath = `_resources/user-consent`
 const userConsentTranslationsPath = userConsentResourcePath + "/translations"
 function getUserConsentTranslationPath(lang) {
     return userConsentTranslationsPath + `/${lang}.json`
