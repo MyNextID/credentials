@@ -12,7 +12,7 @@ challenging. This repository provides:
 - **Human-readable descriptions** of each credential type
 - **JSON schemas** for validation and implementation
 - **Real-world examples** in both unsigned and signed formats
-- **API integration guides** for issuing credentials via VeloCert (coming soon)
+- **API integration guides** for issuing credentials via Velocert (coming soon)
 
 ## Supported Standards
 
@@ -131,7 +131,7 @@ frameworks such as the European Qualifications Framework.
 
 ## Roadmap
 
-- [ ] VeloCert API integration examples
+- [ ] Velocert API integration examples
 - [ ] ISO 18013-5 mDoc/mDL credentials
 - [ ] ETSI-compliant (Q)EAA credentials for EUDI Wallet
 - [ ] Validation tools and libraries
