@@ -1,3 +1,7 @@
+---
+title: Credential Repository
+---
+
 # Credential Repository
 
 Welcome to a curated collection of standardized schemas, examples, and
