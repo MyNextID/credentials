@@ -38,7 +38,7 @@ challenging. This repository provides:
 <tr>
 <td width="50%" valign="top">
 
-### [Certificate of Attendance](certificate-of-attendance)
+#### [Certificate of Attendance](certificate-of-attendance)
 
 A certificate of attendance verifies that an individual participated in a
 specific learning activity, event, workshop, or training session. Unlike
@@ -55,7 +55,7 @@ or short courses.
 
 <td width="50%" valign="top">
 
-### [Certificate of Advanced Study](/certificate-of-advanced-study)
+#### [Certificate of Advanced Study](/certificate-of-advanced-study)
 
 A certificate of advanced study recognises completion of specialised
 postgraduate-level coursework in a specific field or discipline. Typically
@@ -76,7 +76,7 @@ without committing to a full graduate degree.
 <tr>
 <td width="50%" valign="top">
 
-### [Certificate of Participation in Summer School](/certificate-of-participation-in-summer-school)
+#### [Certificate of Participation in Summer School](/certificate-of-participation-in-summer-school)
 
 A certificate of participation in summer school documents successful completion of 
 intensive short-term programs typically held during summer breaks. These programs 
@@ -93,7 +93,7 @@ and international participants, and are commonly used to recognise engagement in
 
 <td width="50%" valign="top">
    
-### [Confirmation of Enrolment](/confirmation-of-enrolment)
+#### [Confirmation of Enrolment](/confirmation-of-enrolment)
 
 A confirmation of enrolment is an official document verifying that a student is
 currently registered in a specific educational program or institution. This
@@ -113,7 +113,7 @@ purposes. It typically includes details such as enrollment status
 <tr>
 <td width="50%" valign="top">
    
-### [Degree Certificate](/degree-certificate)
+#### [Degree Certificate](/degree-certificate)
 
 A degree certificate is the formal academic credential awarded upon successful
 completion of an undergraduate, graduate, or doctoral program. It represents the
@@ -130,7 +130,7 @@ licensing.
 
 <td width="50%" valign="top">
    
-### [Matriculation](/matriculation)
+#### [Matriculation](/matriculation)
 
 A matriculation credential confirms formal admission and enrollment of a student
 into an educational institution, marking their official entry into a degree
@@ -152,7 +152,7 @@ acceptance and registration rather than ongoing status.
 <tr>
 <td width="50%" valign="top">
    
-### [Microcredential](/microcredential)
+#### [Microcredential](/microcredential)
 
 A microcredential certifies achievement of specific, defined learning outcomes, skills, 
 or competencies through a focused learning experience. Typically requiring 10-200 hours 
@@ -179,16 +179,16 @@ frameworks such as the European Qualifications Framework.
 <tr>
 <td width="33%" valign="top">
    
-### Personal ID
+#### Personal ID
 
 </td>
 <td width="33%" valign="top">
    
-### Mobile Driving Licence (mDL)
+#### Mobile Driving Licence (mDL)
 </td>
 <td width="33%" valign="top">
    
-### Age Verification
+#### Age Verification
 </td>
 </tr>
 </table>
