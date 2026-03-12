@@ -34,7 +34,7 @@ challenging. This repository provides:
 <tr>
 <td width="50%" valign="top">
 
-### [Certificate of Attendance](/certificate-of-attendance)
+### [Certificate of Attendance](certificate-of-attendance)
 
 A certificate of attendance verifies that an individual participated in a
 specific learning activity, event, workshop, or training session. Unlike
@@ -43,9 +43,9 @@ mastery of content. Commonly used for professional development tracking,
 continuing education requirements, and participation in conferences, seminars,
 or short courses.
 
-- **EDC**: [Schema](/certificate-of-attendance/edc/edc-coa-schema.json) |
-   [Example](/certificate-of-attendance/edc/edc-coa-example.json) | 
-   [Signed](/certificate-of-attendance/edc/edc-coa-signed.jsonld)
+- **EDC**: [Schema](certificate-of-attendance/edc/edc-coa-schema.json) |
+   [Example](certificate-of-attendance/edc/edc-coa-example.json) | 
+   [Signed](certificate-of-attendance/edc/edc-coa-signed.jsonld)
 
 </td>
 
