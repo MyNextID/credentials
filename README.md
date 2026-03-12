@@ -33,7 +33,7 @@ challenging. This repository provides:
 
 ## Available Credentials
 
-## Education Credentials
+## 1. Education Credentials
 <table>
 <tr>
 <td width="50%" valign="top">
@@ -173,7 +173,7 @@ frameworks such as the European Qualifications Framework.
 </tr>
 </table>
 
-## Personal Credentials (coming soon)
+## 2. Personal Credentials (coming soon)
 
 <table>
 <tr>
