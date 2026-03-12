@@ -1,3 +1,7 @@
+---
+title: Credential Repository
+---
+
 # Credential Repository
 
 Welcome to a curated collection of standardized schemas, examples, and
@@ -29,7 +33,7 @@ challenging. This repository provides:
 
 ## Available Credentials
 
-### Education Credentials
+## Education Credentials
 <table>
 <tr>
 <td width="50%" valign="top">
@@ -169,7 +173,7 @@ frameworks such as the European Qualifications Framework.
 </tr>
 </table>
 
-### Personal Credentials (coming soon)
+## Personal Credentials (coming soon)
 
 <table>
 <tr>
