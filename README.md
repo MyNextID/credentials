@@ -14,8 +14,6 @@ challenging. This repository provides:
 - **Real-world examples** in both unsigned and signed formats
 - **API integration guides** for issuing credentials via Velocert (coming soon)
 
-
-
 ## Supported Standards
 
 | Standard                      | Version | Status      |
@@ -25,14 +23,7 @@ challenging. This repository provides:
 | ISO 18013-5 mDoc/mDL          | -       | Coming Soon |
 | ETSI (Q)EAA (EUDI-compliant)  | -       | Coming Soon |
 
-
-
-## Available Credentials
-
-## 1. Education Credentials
-<table>
-<tr>
-<td width="50%" valign="top">
+## Education Credentials
 
 ### [Certificate of Attendance](certificate-of-attendance)
 
@@ -47,10 +38,6 @@ or short courses.
    [Example](certificate-of-attendance/edc/edc-coa-example.json) | 
    [Signed](certificate-of-attendance/edc/edc-coa-signed.jsonld)
 
-</td>
-
-<td width="50%" valign="top">
-
 ### [Certificate of Advanced Study](/certificate-of-advanced-study)
 
 A certificate of advanced study recognises completion of specialised
@@ -64,14 +51,6 @@ without committing to a full graduate degree.
   [Example](/certificate-of-advanced-study/edc/edc-cas-example.json) | 
   [Signed](/certificate-of-advanced-study/edc/edc-cas-signed.jsonld)
 
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
 ### [Certificate of Participation in Summer School](/certificate-of-participation-in-summer-school)
 
 A certificate of participation in summer school documents successful completion of 
@@ -84,10 +63,6 @@ and international participants, and are commonly used to recognise engagement in
 - **EDC**: [Schema](/certificate-of-participation-in-summer-school/edc/edc-cps-schema.json) | 
   [Example](/certificate-of-participation-in-summer-school/edc/edc-cps-example.json) | 
   [Signed](/certificate-of-participation-in-summer-school/edc/edc-cps-signed.jsonld)
-
-</td>
-
-<td width="50%" valign="top">
    
 ### [Confirmation of Enrolment](/confirmation-of-enrolment)
 
@@ -101,13 +76,6 @@ purposes. It typically includes details such as enrollment status
 - **EDC**: [Schema](/confirmation-of-enrolment/edc/edc-coe-schema.json) | 
   [Example](/confirmation-of-enrolment/edc/edc-coe-example.json) | 
   [Signed](/confirmation-of-enrolment/edc/edc-coe-signed.jsonld)
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="50%" valign="top">
    
 ### [Degree Certificate](/degree-certificate)
 
@@ -122,9 +90,6 @@ licensing.
 - **EDC**: [Schema](/degree-certificate/edc/edc-dc-schema.json) | 
   [Example](/degree-certificate/edc/edc-dc-example.json) | 
   [Signed](/degree-certificate/edc/edc-dc-signed.jsonld)
-</td>
-
-<td width="50%" valign="top">
    
 ### [Matriculation](/matriculation)
 
@@ -139,15 +104,7 @@ acceptance and registration rather than ongoing status.
 - **EDC**: [Schema](/matriculation/edc/edc-matriculation-schema.json) | 
   [Example](/matriculation/edc/edc-matriculation-example.json) | 
   [Signed](/matriculation/edc/edc-matriculation-signed.jsonld)
-</td>
-</tr>
-</table>
 
-
-<table>
-<tr>
-<td width="50%" valign="top">
-   
 ### [Microcredential](/microcredential)
 
 A microcredential certifies achievement of specific, defined learning outcomes, skills, 
@@ -165,43 +122,13 @@ frameworks such as the European Qualifications Framework.
 - **Open Badges v3**: [Schema](/microcredential/open-badge/open-badge-mc-schema.json) | 
   [Example](/microcredential/open-badge/open-badge-mc-example.json) | 
   [Signed (JWT)](/microcredential/open-badge/open-badge-mc-signed.jwt)
-</td>
-</tr>
-</table>
 
-## 2. Personal Credentials (coming soon)
-
-<table>
-<tr>
-<td width="33%" valign="top">
-   
-### Personal ID
-
-</td>
-<td width="33%" valign="top">
-   
-### Mobile Driving Licence (mDL)
-</td>
-<td width="33%" valign="top">
-   
-### Age Verification
-</td>
-</tr>
-</table>
-
-
+## Personal Credentials (coming soon)
 
 ## Standards and Compliance
 
 - **EDC**: European Digital Credentials, a serialization of the [European Learning Model (ELM)](https://europass.europa.eu/en/european-learning-model-stakeholders) ontology
 - **Open Badges 3.0**: Compliant with [IMS Global Open Badges specification](https://www.imsglobal.org/spec/ob/v3p0/)
-
-## Roadmap
-
-- [ ] Velocert API integration examples
-- [ ] ISO 18013-5 mDoc/mDL credentials
-- [ ] ETSI-compliant (Q)EAA credentials for EUDI Wallet
-- [ ] Validation tools and libraries
 
 ## Contributing
 
