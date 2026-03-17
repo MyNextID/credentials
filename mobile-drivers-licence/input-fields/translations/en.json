@@ -29,7 +29,7 @@
     "residentState": "Resident state",
     "residentPostalCode": "Resident postal code",
     "residentCountry": "Resident country",
-    "biometricTemplate": "Biometric template",
+    "biometricTemplateXX": "Biometric template",
     "familyNameNationalCharacter": "Family name in national character",
     "givenNameNationalCharacter": "Given name in national character",
     "signatureUsualMark": "Signature or usual mark"

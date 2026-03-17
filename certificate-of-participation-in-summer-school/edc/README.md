@@ -4,6 +4,7 @@ This folder contains resources related to the **European Digital Credentials (ED
 
 ## Contents
 
-- [edc-cps-example](edc-cps-example.json) - Example of an EDC-compliant Certificate of Participation in Summer School.
-- [edc-cps-schema](edc-cps-schema.json) - JSON Schema definition of the EDC Certificate of Participation in Summer School.
-- [edc-cps-signed](edc-cps-signed.jsonld) - Example of an EDC Certificate of Participation in Summer School signed with JAdES digital signature.
+- [schema](schema.json) - JSON Schema definition of the EDC Certificate of Participation in Summer School.
+- [input-fields-to-credential-map](input-fields-to-credential-map.json) - Mapping between user-friendly input fields and the EDC Certificate of Participation in Summer School fields.
+- [examples](examples) - Reference examples of an EDC-compliant Certificate of Participation in Summer School, including JAdES-signed instances.
+  

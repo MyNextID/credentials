@@ -5,8 +5,8 @@ It includes credential schema, field definitions, mappings, and translation file
 
 ## Contents
 
-- [edc](edc) - European Digital Credentials (EDC) schema.
-- [input-fields](input-fields) - Input field schema definitions, configuration examples, mappings, and related translation files.
+- [edc](edc) - European Digital Credentials (EDC) schema and mappings.
+- [input-fields](input-fields) - Input field schema definitions, configuration examples and related translation files.
 - [translations](translations) - Translated credential titles organised by language.
 - [user-consent](user-consent) - Mapping between user consent groups and corresponding input fields.
   

@@ -4,6 +4,7 @@ This folder contains resources related to the **European Digital Credentials (ED
 
 ## Contents
 
-- [edc-matriculation-example](edc-matriculation-example.json) - Example of an EDC-compliant Matriculation.
-- [edc-matriculation-schema](edc-matriculation-schema.json) - JSON Schema definition of the EDC Matriculation.
-- [edc-matriculation-signed](edc-matriculation-signed.jsonld) - Example of an EDC Matriculation signed with JAdES digital signature.
+- [schema](schema.json) - JSON Schema definition of the EDC Matriculation.
+- [input-fields-to-credential-map](input-fields-to-credential-map.json) - Mapping between user-friendly input fields and the EDC Matriculation fields.
+- [examples](examples) - Reference examples of an EDC-compliant Matriculation, including JAdES-signed instances.
+  

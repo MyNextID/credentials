@@ -4,6 +4,7 @@ This folder contains resources related to the **European Digital Credentials (ED
 
 ## Contents
 
-- [edc-cas-example](edc-cas-example.json) - Example of an EDC-compliant Certificate of Advanced Study.
-- [edc-cas-schema](edc-cas-schema.json) - JSON Schema definition of the EDC Certificate of Advanced Study.
-- [edc-cas-signed](edc-cas-signed.jsonld) - Example of an EDC Certificate of Advanced Study signed with JAdES digital signature.
+- [schema](schema.json) - JSON Schema definition of the EDC Certificate of Advanced Study.
+- [input-fields-to-credential-map](input-fields-to-credential-map.json) - Mapping between user-friendly input fields and the EDC Certificate of Advanced Study fields.
+- [examples](examples) - Reference examples of an EDC-compliant Certificate of Advanced Study, including JAdES-signed instances.
+  

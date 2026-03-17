@@ -1,0 +1,54 @@
+{
+    "iss": "https://issuer.example.gov",
+    "sub": "did:example:holder123",
+    "iat": 1710000000,
+    "exp": 1893456000,
+  
+    "vct": "urn:eudi:pid:1",
+  
+    "family_name": "Muller",
+    "given_name": "Erika",
+    "birthdate": "1985-03-15",
+  
+    "place_of_birth": {
+      "locality": "Munich",
+      "region": "Bavaria",
+      "country": "DE"
+    },
+  
+    "nationalities": ["DE", "AT"],
+  
+    "address": {
+      "formatted": "Hauptstraße 123, 80331 München, Germany",
+      "street_address": "Hauptstraße",
+      "house_number": "123",
+      "locality": "München",
+      "region": "Bavaria",
+      "postal_code": "80331",
+      "country": "DE"
+    },
+  
+    "birth_family_name": "Schmidt",
+    "birth_given_name": "Erika",
+  
+    "email": "erika.muller@example.com",
+    "phone_number": "+49-89-12345678",
+  
+    "picture": "data:image/jpeg;base64,...",
+  
+    "date_of_expiry": "2030-12-31",
+    "date_of_issuance": "2020-01-15",
+  
+    "personal_administrative_number": "123456789012",
+  
+    "sex": 2,
+  
+    "issuing_authority": "Stadt München, Kreisverwaltungsreferat",
+    "issuing_country": "DE",
+  
+    "document_number": "L01X00T47",
+  
+    "issuing_jurisdiction": "DE-BY",
+  
+    "trust_anchor": "urn:eudi:trust:anchor:de:bsi"
+  }

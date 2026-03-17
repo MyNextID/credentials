@@ -1,7 +1,3 @@
----
-title: Credential Repository
----
-
 # Credential Repository
 
 Welcome to a curated collection of standardized schemas, examples, and
@@ -17,8 +13,8 @@ challenging. This repository provides:
 - **JSON schemas** for validation and implementation
 - **Real-world examples** in both unsigned and signed formats
 - **API integration guides** for issuing credentials via Velocert (coming soon)
-
-
+- **Translations** of credential fields, which provide human-readable titles in other languages
+- **User-consent scopes** which provide human-readable titles and descriptions for end-user, to undestand what they are presenting
 
 ## Supported Standards
 
@@ -207,6 +203,33 @@ frameworks such as the European Qualifications Framework.
 - [ ] ETSI-compliant (Q)EAA credentials for EUDI Wallet
 - [ ] Validation tools and libraries
 
+## How to Use This Repository
+
+For presentation purposes, see [Presentation Use-Cases](_resources/documentation/presentation-use-case.md). This guide explains how to access translations for end-user consent screens, including titles and descriptors, and how to use the JSON files in the `_generated` folder to present credentials in a user-friendly way. It also describes how to retrieve credential schemas to verify received credentials for compliance with their schema.
+
+For issuance purposes, see [Issuance Use-Cases](_resources/documentation/issuance-use-case.md). This guide shows how to obtain valid, interoperable schemas for supported credential types, access human-readable titles and descriptors for credentials and their fields, and use simplified input-fields structures for a more developer-friendly API when issuing credentials.
+
+## Repository Structure
+
+This repository is organized to separate credential definitions, generated data, and shared resources, making it easy to understand the role of each part of the project.
+
+```text
+/
+├── _generated/
+├── _resources/
+├── <credential-type>/ 
+├── <credential-type>/ 
+├── ... (additional credential type folders)
+└── README.md
+```
+The `_generated` folder contains JSON data from all credential types and user consent definitions, including input fields and claims with translations. The `credentials.json` file contains the aggregated data from all credential types, and the `credential-types.json` file lists all available credential types.
+
+The `_resources` folder contains shared assets and documentation, including user consent group definitions, translations, and icons used across credential types.
+
+Each `<credential-type>/` folder contains the full set of assets for that credential, including EDC schemas, examples, signed credentials, input fields, translations, user consent mappings, and a README describing the credential.
+
+The root `README.md` provides an overview of the repository.
+
 ## Contributing
 
 We welcome contributions! Here's how you can help:
@@ -215,19 +238,31 @@ We welcome contributions! Here's how you can help:
 
 Found a bug or have a suggestion? [Open an issue](https://github.com/MyNextID/credentials/issues/new) with:
 
-- Clear description of the problem or proposal
-- Relevant credential type and standard
-- Expected vs actual behavior (for bugs)
+- A clear description of the problem or proposal
+- The relevant credential type and standard
+- Expected vs. actual behavior (for bugs)
+- Any additional context or examples that may help reproduce the issue
 
 ### Submit Credentials
 
-To add a new credential type:
+To add a new credential type, please follow these steps:
 
 1. Fork the repository
-2. Create a new directory following the naming convention
-3. Add schema, example, and signed files
-4. Update this README with links to your credential
-5. Submit a pull request
+2. Create a new credential type directory following the established naming conventions.
+3. Implement the required folder structure and files as described in the [Credential Type Folder Structure](_resources/documentation/credential-type-folder-structure.md) documentation.
+4. Add all required assets, including:
+   - EDC schema
+   - Example credential
+   - Signed credential example
+   - Input field definitions and mappings
+   - Translations
+   - User consent mappings
+
+5. Add the required README files and ensure they follow the structure of existing credential documentation.
+6. Validate your files to ensure schemas and examples are consistent.
+7. Submit a **Pull Request** with a clear description of the credential and its intended use.
+
+Before submitting your pull request, please review the [Credential Type Folder Structure](_resources/documentation/credential-type-folder-structure.md) to ensure that your credential implementation follows the required structure and naming conventions.
 
 ## License
 

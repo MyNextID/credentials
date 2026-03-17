@@ -1,0 +1,279 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Mobile Driving Licence (mDL) - v1",
+    "type": "object",
+    "patternProperties": {
+        "^ageOver\\d+$": {
+            "type": "boolean",
+            "title": "Age over NN",
+            "description": "Dynamic age-over flags, e.g., ageOver18, ageOver21."
+        },
+        "^biometricTemplate[A-Za-z0-9]{5}$": {
+            "title": "Biometric template",
+            "description": "A digital representation of the recipient's biometric data used for identification purposes.",
+            "type": "string",
+            "contentEncoding": "base64"
+        }
+    },
+    "properties": {
+        "familyName": {
+            "title": "Family name",
+            "description": "Last name, using Latin-1 characters",
+            "type": "string",
+            "maxLength": 150
+        },
+        "givenName": {
+            "title": "Given name",
+            "description": "First names, using Latin-1 characters",
+            "type": "string",
+            "maxLength": 150
+        },
+        "birthDate": {
+            "title": "Birth date",
+            "description": "Date of birth of the recipient of this credential",
+            "type": "string",
+            "format": "date"
+        },
+        "issueDate": {
+            "title": "Issue date",
+            "description": "The date on which this credential was officially issued to the recipient.",
+            "type": "string",
+            "format": "date"
+        },
+        "expiryDate": {
+            "title": "Expiry date",
+            "description": "The date after which this credential is no longer considered valid.",
+            "type": "string",
+            "format": "date"
+        },
+        "issuingCountry": {
+            "title": "Issuing country",
+            "description": "Alpha-2 ISO 3166-1 country code",
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+        },
+        "issuingAuthority": {
+            "title": "Issuing authority",
+            "description": "Name of the issuing authority",
+            "type": "string",
+            "maxLength": 150
+        },
+        "documentNumber": {
+            "title": "Document number",
+            "description": "The unique identifier assigned to this credential document by the issuing authority.",
+            "type": "string",
+            "maxLength": 150
+        },
+        "portrait": {
+            "title": "Portrait",
+            "description": "Base64-encoded image",
+            "type": "string",
+            "contentEncoding": "base64"
+        },
+        "drivingPrivileges": {
+            "title": "Driving privileges",
+            "description": "A list of driving privileges held by the recipient. Each entry specifies a vehicle category and any restrictions or conditions, with the ability to add multiple privileges.",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "vehicleCategoryCode": {
+                        "title": "Vehicle Category Code",
+                        "description": "Vehicle category code as defined in ISO/IEC 18013-1:2018 Annex B.",
+                        "type": "string"
+                    },
+                    "issueDate": {
+                        "title": "Issue Date",
+                        "description": "The date when this driving privilege was issued.",
+                        "type": "string",
+                        "format": "date"
+                    },
+                    "expiryDate": {
+                        "title": "Expiry Date",
+                        "description": "The date when this driving privilege expires.",
+                        "type": "string",
+                        "format": "date"
+                    },
+                    "codes": {
+                        "title": "Restriction or Condition Codes",
+                        "description": "A list of restriction or condition codes associated with this driving privilege. Multiple codes can be added.",
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "code": {
+                                    "title": "Code",
+                                    "description": "Code representing a restriction or condition.",
+                                    "type": "string"
+                                },
+                                "sign": {
+                                    "title": "Sign",
+                                    "description": "Sign associated with the code, as defined in ISO/IEC 18013-2 Annex A (optional).",
+                                    "type": "string"
+                                },
+                                "value": {
+                                    "title": "Value",
+                                    "description": "Value associated with the code, as defined in ISO/IEC 18013-2 Annex A (optional).",
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": ["vehicleCategoryCode"]
+            }
+
+        },
+        "unDistinguishingSign": {
+            "title": "Undistinguishing sign",
+            "description": "",
+            "type": "string"
+        },
+        "administrativeNumber": {
+            "title": "Administrative number",
+            "description": "The administrative reference number assigned to this credential.",
+            "type": "string",
+            "maxLength": 150
+        },
+        "sex": {
+            "title": "Sex",
+            "description": "As defined in ISO/IEC 5218, 0 unknown, 1 male, 2 female, 9 not applicable",
+            "type": "integer"
+        },
+        "height": {
+            "title": "Height",
+            "description": "The height of the recipient.",
+            "type": "integer"
+        },
+        "weight": {
+            "title": "Weight",
+            "description": "The weight of the recipient.",
+            "type": "integer"
+        },
+        "eyeColour": {
+            "title": "Eye colour",
+            "description": "The eye colour of the recipient.",
+            "type": "string",
+            "enum": [
+                "black",
+                "blue",
+                "brown",
+                "dichromatic",
+                "grey",
+                "green",
+                "hazel",
+                "maroon",
+                "pink",
+                "unknown"
+            ]
+        },
+        "hairColour": {
+            "title": "Hair colour",
+            "description": "The hair colour of the recipient.",
+            "type": "string",
+            "enum": [
+                "bald",
+                "black",
+                "blond",
+                "brown",
+                "grey",
+                "red",
+                "auburn",
+                "sandy",
+                "white",
+                "unknown"
+            ]
+        },
+        "birthPlace": {
+            "title": "Place of birth",
+            "description": "The place where the recipient was born.",
+            "type": "string",
+            "maxLength": 150
+        },
+        "residentAddress": {
+            "title": "Resident address",
+            "description": "The current residential address of the recipient.",
+            "type": "string",
+            "maxLength": 150
+        },
+        "portraitCaptureDate": {
+            "title": "Portrait capture date",
+            "description": "The date on which the recipient's portrait was captured.",
+            "type": "string",
+            "format": "date"
+        },
+        "ageInYears": {
+            "title": "Age in years",
+            "description": "",
+            "type": "integer"
+        },
+        "ageBirthYear": {
+            "title": "Age in years",
+            "description": "The year of birth of the recipient.",
+            "type": "integer"
+        },
+        "issuingJurisdiction": {
+            "title": "Issuing jurisdiction",
+            "description": "The official jurisdiction or authority that issued this credential.",
+            "type": "string"
+        },
+        "nationality": {
+            "title": "Nationality",
+            "description": "The nationality or citizenship of the recipient.",
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+        },
+        "residentCity": {
+            "title": "Resident city",
+            "description": "The city where the recipient currently resides.",
+            "type": "string",
+            "maxLength": 150
+        },
+        "residentState": {
+            "title": "Resident state",
+            "description": "The state, province, or region where the recipient currently resides.",
+            "type": "string",
+            "maxLength": 150
+        },
+        "residentPostalCode": {
+            "title": "Resident postal code",
+            "description": "The postal code of the recipient's current residence.",
+            "type": "string",
+            "maxLength": 150
+        },
+        "residentCountry": {
+            "title": "Resident country",
+            "description": "The country where the recipient currently resides.",
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+        },
+        "familyNameNationalCharacter": {
+            "title": "Family name in national character",
+            "description": "",
+            "type": "string"
+        },
+        "givenNameNationalCharacter": {
+            "title": "Given name in national character",
+            "description": "",
+            "type": "string"
+        },
+        "signatureUsualMark": {
+            "title": "Signature or usual mark",
+            "description": "The usual mark or signature used by the recipient.",
+            "type": "string",
+            "contentEncoding": "base64"
+        }
+    }, "required": [
+        "familyName",
+        "givenName",
+        "birthDate",
+        "issueDate",
+        "expiryDate",
+        "issuingCountry",
+        "issuingAuthority",
+        "documentNumber",
+        "portrait",
+        "drivingPrivileges",
+        "unDistinguishingSign"
+    ]
+}
