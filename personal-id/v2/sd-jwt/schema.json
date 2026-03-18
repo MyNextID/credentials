@@ -112,7 +112,7 @@
         "type": "object",
         "properties": {
           "locality": { "type": "string" },
-          "region": { "type": "string" },
+          "region": { "type": "string" }, 
           "country": { "$ref": "#/$defs/country_code" }
         },
         "additionalProperties": false

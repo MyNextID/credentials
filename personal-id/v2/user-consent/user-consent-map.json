@@ -1,0 +1,34 @@
+{
+    "vct": "credential-info",
+    "familyName": "identity-profile",
+    "givenName": "identity-profile",
+    "dateOfBirth": "identity-profile",
+
+    "cityOfBirth": "identity-profile",
+    "regionOfBirth": "identity-profile",
+    "countryOfBirth": "identity-profile",
+
+    "nationalities": "identity-profile",
+    "residentAddress": "identity-profile",
+    "residentCountry": "identity-profile",
+    "residentState": "identity-profile",
+    "residentCity": "identity-profile",
+    "residentPostalCode": "identity-profile",
+    "residentStreet": "identity-profile",
+    "residentHouseNumber": "identity-profile",
+
+    "familyBirthName":  "identity-profile",
+    "GivenBirthName":  "identity-profile",
+    "emailAddress":  "identity-profile",
+    "phoneNumber":  "identity-profile",
+    "portrait":  "identity-profile",
+    "expiryDate": "credential-info",
+    "issuanceDate": "credential-info",
+    "personalAdministrativeNumber": "identity-profile",
+    "sex": "identity-profile",
+    "issuingAuthority": "credential-info",
+    "issuingCountry": "credential-info",
+    "documentNumber": "credential-info",
+    "issuingJurisdiction": "credential-info",
+    "trustAnchor": "credential-info"
+}

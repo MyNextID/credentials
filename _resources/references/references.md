@@ -1,4 +1,6 @@
-# References for credential types format standards
+# Link references of credential type standards
+
+This document contains reference links to credential type standards and supporting technical documentation. Links are organized by credential type, with versioned specifications listed where applicable.
 
 - [Digital Credentials](https://europass.europa.eu/en/european-digital-credentials)
 - [Persional ID (v1)](https://eur-lex.europa.eu/eli/reg_impl/2024/2977/oj/eng)

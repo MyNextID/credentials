@@ -1,0 +1,34 @@
+{
+    "vct": "Verifiable credential type",
+    "familyName": "Family name",
+    "givenName": "Given name",
+    "dateOfBirth": "Date of birth",
+
+    "cityOfBirth": "City of birth",
+    "regionOfBirth": "Region of birth",
+    "countryOfBirth": "Country of birth",
+
+    "nationalities": "Nationalities",
+    "residentAddress": "Resident address",
+    "residentCountry": "Resident country",
+    "residentState": "Resident state",
+    "residentCity": "Resident city",
+    "residentPostalCode": "Resident postal code",
+    "residentStreet": "Resident street",
+    "residentHouseNumber": "Resident house number",
+
+    "familyBirthName": "Family name at birth",
+    "GivenBirthName": "Given name at birth",
+    "emailAddress": "Email",
+    "phoneNumber":"Phone number", 
+    "portrait": "Portrait",
+    "expiryDate": "Expiry date",
+    "issuanceDate": "Issuance date",
+    "personalAdministrativeNumber": "Personal administrative number",
+    "sex": "Sex",
+    "issuingAuthority": "Issuing authority",
+    "issuingCountry": "Issuing country",
+    "documentNumber": "Document number",
+    "issuingJurisdiction": "Issuing jurisdiction",
+    "trustAnchor": "Trust anchor"
+}

@@ -25,8 +25,6 @@ challenging. This repository provides:
 | ISO 18013-5 mDoc/mDL          | -       | Coming Soon |
 | ETSI (Q)EAA (EUDI-compliant)  | -       | Coming Soon |
 
-
-
 ## Available Credentials
 
 ## Education Credentials

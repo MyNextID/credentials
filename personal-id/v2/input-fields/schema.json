@@ -1,0 +1,171 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "EUDI Personal Identification Data (PID) Claims",
+    "type": "object",
+    "properties": {
+        "vct": {
+            "title": "Verifiable credential type",
+            "description": "Credential type identifier",
+            "type": "string",
+            "const": "urn:eudi:pid:1"
+        },
+        "familyName": {
+            "title": "Family Name",
+            "description": "",
+            "type": "string"
+        },
+        "givenName": {
+            "title": "Given name",
+            "description": "",
+            "type": "string"
+        },
+        "dateOfBirth": {
+            "title": "Date of birth",
+            "description": "",
+            "type": "string",
+            "format": "date"
+        },
+
+        "cityOfBirth": {
+            "title": "City of birth",
+            "description": "",
+            "type": "string"
+        },
+        "regionOfBirth": {
+            "title": "Region of birth",
+            "description": "",
+            "type": "string"
+        },
+        "countryOfBirth": {
+            "title": "Country of birth",
+            "description": "ISO 3166-1 alpha-2 country code",
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+        },
+
+        "nationalities":{
+            "title": "Nationalities",
+            "description": "ISO 3166-1 alpha-2 country code",
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+        },
+
+        "residentAddress":{
+            "title": "Resident address",
+            "description": "",
+            "type": "string"
+        },
+        "residentCountry":{
+            "title": "Resident country",
+            "description": "ISO 3166-1 alpha-2 country code",
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+        },
+        "residentState":{
+            "title": "Resident state",
+            "description": "",
+            "type": "string"
+        },
+        "residentCity":{
+            "title": "Resident city",
+            "description": "",
+            "type": "string"
+        },
+        "residentPostalCode":{
+            "title": "Resident postal code",
+            "description": "",
+            "type": "string"
+        },
+        "residentStreet":{
+            "title": "Resident street",
+            "description": "",
+            "type": "string" 
+        },
+        "residentHouseNumber": {
+            "title": "Resident house number",
+            "description": "",
+            "type": "string" 
+        },
+
+        "familyBirthName": {
+            "title": "",
+            "description": "",
+            "type": "string"
+        },
+        "GivenBirthName": {
+            "title":  "Given name at birth",
+            "description": "",
+            "type": "string"
+        },
+        "emailAddress": {
+            "title": "Email",
+            "description": "",
+            "type": "string",
+            "format": "email"
+        },
+        "phoneNumber": {
+            "title": "Phone number",
+            "description": "Mobile phone number",
+            "type": "string"
+        },
+        "portrait": {
+            "title": "Portrait",
+            "description": "JPEG data URL",
+            "type": "string",
+            "pattern": "^data:image\\/jpeg;base64,"
+        },
+        "expiryDate": {
+            "title": "Expiry date",
+            "description": "",
+            "type": "string",
+            "format": "date"
+        },
+        "issuanceDate": {
+            "title": "Issuance date",
+            "description": "",
+            "type": "string",
+            "format": "date"
+        },
+        "personalAdministrativeNumber": {
+            "title": "Personal administrative number",
+            "description": "",
+            "type": "string"
+        },
+        "sex": {
+            "title": "Sex",
+            "description": "0 unknown, 1 male, 2 female, 9 not applicable",
+            "type": "integer",
+            "enum": [0, 1, 2, 9]
+        },
+        "issuingAuthority": {
+            "title": "Issuing authority",
+            "description": "",
+            "type": "string"
+        },
+        "issuingCountry": {
+            "title": "Issuing country",
+            "description": "ISO 3166-1 alpha-2 country code",
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+        },
+        "documentNumber": {
+            "title": "Document number",
+            "description": "",
+            "type": "string"
+        },
+        "issuingJurisdiction": {
+            "title": "Issuing jurisdiction",
+            "description": "",
+            "type": "string"
+        },
+        "trustAnchor": {
+            "title": "Trust anchor",
+            "description": "",
+            "type": "string",
+            "format": "uri"
+        }
+    },
+    "required": [
+        "vct"
+    ]
+}
