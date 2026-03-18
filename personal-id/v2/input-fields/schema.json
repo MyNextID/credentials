@@ -19,31 +19,19 @@
             "description": "",
             "type": "string"
         },
-        "dateOfBirth": {
+        "birthDate": {
             "title": "Date of birth",
             "description": "",
             "type": "string",
             "format": "date"
         },
-
-        "cityOfBirth": {
-            "title": "City of birth",
+        "birthPlace": {
+            "title": "Place of birth",
             "description": "",
             "type": "string"
         },
-        "regionOfBirth": {
-            "title": "Region of birth",
-            "description": "",
-            "type": "string"
-        },
-        "countryOfBirth": {
-            "title": "Country of birth",
-            "description": "ISO 3166-1 alpha-2 country code",
-            "type": "string",
-            "pattern": "^[A-Z]{2}$"
-        },
 
-        "nationalities":{
+        "nationality":{
             "title": "Nationalities",
             "description": "ISO 3166-1 alpha-2 country code",
             "type": "string",
@@ -87,12 +75,12 @@
             "type": "string" 
         },
 
-        "familyBirthName": {
+        "familyNameBirth": {
             "title": "",
             "description": "",
             "type": "string"
         },
-        "GivenBirthName": {
+        "givenNameBirth": {
             "title":  "Given name at birth",
             "description": "",
             "type": "string"
@@ -103,7 +91,7 @@
             "type": "string",
             "format": "email"
         },
-        "phoneNumber": {
+        "mobilePhoneNumber": {
             "title": "Phone number",
             "description": "Mobile phone number",
             "type": "string"

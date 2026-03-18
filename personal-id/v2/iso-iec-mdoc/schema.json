@@ -1,6 +1,5 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://europa.eu/eudi/pid-claims.schema.json",
     "title": "EUDI Personal Identification Data (PID) Claims",
     "type": "object",
     "required": ["vct"],
@@ -17,7 +16,7 @@
       "given_name": {
         "type": "string"
       },
-      "birthdate": {
+      "birth_date": {
         "type": "string",
         "format": "date"
       },
@@ -26,7 +25,7 @@
         "$ref": "#/$defs/place_of_birth"
       },
   
-      "nationalities": {
+      "nationality ": {
         "type": "array",
         "items": {
           "$ref": "#/$defs/country_code"
@@ -36,49 +35,41 @@
       "address": {
         "$ref": "#/$defs/address"
       },
-  
-      "birth_family_name": {
+
+      "personal_administrative_number": {
         "type": "string"
       },
-      "birth_given_name": {
-        "type": "string"
-      },
-  
-      "email": {
-        "type": "string",
-        "format": "email"
-      },
-  
-      "phone_number": {
-        "type": "string"
-      },
-  
-      "picture": {
+
+      "portrait": {
         "type": "string",
         "pattern": "^data:image\\/jpeg;base64,",
         "description": "JPEG data URL"
       },
   
-      "date_of_expiry": {
-        "type": "string",
-        "format": "date"
-      },
-  
-      "date_of_issuance": {
-        "type": "string",
-        "format": "date"
-      },
-  
-      "personal_administrative_number": {
+      "family_name_birth": {
         "type": "string"
       },
-  
+      "given_name_birth": {
+        "type": "string"
+      },
       "sex": {
         "type": "integer",
         "enum": [0, 1, 2, 9],
         "description": "0 unknown, 1 male, 2 female, 9 not applicable"
       },
+      "email_address": {
+        "type": "string",
+        "format": "email"
+      },
   
+      "mobile_phone_number": {
+        "type": "string"
+      },
+  
+      "expiry_date": {
+        "type": "string",
+        "format": "date"
+      },  
       "issuing_authority": {
         "type": "string"
       },
@@ -94,7 +85,10 @@
       "issuing_jurisdiction": {
         "type": "string"
       },
-  
+      "issuance_date": {
+        "type": "string",
+        "format": "date"
+      },
       "trust_anchor": {
         "type": "string",
         "format": "uri"
