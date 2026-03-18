@@ -6,6 +6,7 @@ It includes field mappings and translation files used for credential generation 
 ## Contents
 
 - [input-fields](input-fields) - Translated input fields organised by language.
+- [iso-iec-18013-5](iso-iec-18013-5) - ISO/IEC 18013-5 schemas and mappings.
 - [translations](translations) - Translated credential titles organised by language.
 - [user-consent](user-consent) - Mapping between user consent groups and corresponding input fields.
   
