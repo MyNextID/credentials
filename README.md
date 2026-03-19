@@ -25,12 +25,7 @@ challenging. This repository provides:
 | ISO 18013-5 mDoc/mDL          | -       | Coming Soon |
 | ETSI (Q)EAA (EUDI-compliant)  | -       | Coming Soon |
 
-## Available Credentials
-
 ## Education Credentials
-<table>
-<tr>
-<td width="50%" valign="top">
 
 ### [Certificate of Attendance](certificate-of-attendance)
 
@@ -41,13 +36,9 @@ mastery of content. Commonly used for professional development tracking,
 continuing education requirements, and participation in conferences, seminars,
 or short courses.
 
-- **EDC**: [Schema](certificate-of-attendance/edc/edc-coa-schema.json) |
-   [Example](certificate-of-attendance/edc/edc-coa-example.json) | 
-   [Signed](certificate-of-attendance/edc/edc-coa-signed.jsonld)
-
-</td>
-
-<td width="50%" valign="top">
+- **EDC**: [Schema](certificate-of-attendance/v1/edc/schema.json) |
+   [Example](certificate-of-attendance/v1/edc/examples/edc-coa-example.json) | 
+   [Signed](certificate-of-attendance/v1/edc/examples/edc/edc-coa-signed.jsonld)
 
 ### [Certificate of Advanced Study](/certificate-of-advanced-study)
 
@@ -58,17 +49,9 @@ study beyond a bachelor's degree but is less extensive than a full master's
 program. Often pursued by professionals seeking expertise in a specialised area
 without committing to a full graduate degree.
 
-- **EDC**: [Schema](/certificate-of-advanced-study/edc/edc-cas-schema.json) | 
-  [Example](/certificate-of-advanced-study/edc/edc-cas-example.json) | 
-  [Signed](/certificate-of-advanced-study/edc/edc-cas-signed.jsonld)
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="50%" valign="top">
+- **EDC**: [Schema](/certificate-of-advanced-study/v1/edc/schema.json) | 
+  [Example](/certificate-of-advanced-study/v1/edc/examples/edc-cas-example.json) | 
+  [Signed](/certificate-of-advanced-study/v1/edc/examples/edc-cas-signed.jsonld)
 
 ### [Certificate of Participation in Summer School](/certificate-of-participation-in-summer-school)
 
@@ -79,14 +62,10 @@ may be academic (specialised coursework, research methods), professional
 youth participation initiatives). They often include interdisciplinary approaches 
 and international participants, and are commonly used to recognise engagement in supplementary learning and development opportunities outside regular academic or professional contexts.
 
-- **EDC**: [Schema](/certificate-of-participation-in-summer-school/edc/edc-cps-schema.json) | 
-  [Example](/certificate-of-participation-in-summer-school/edc/edc-cps-example.json) | 
-  [Signed](/certificate-of-participation-in-summer-school/edc/edc-cps-signed.jsonld)
+- **EDC**: [Schema](/certificate-of-participation-in-summer-school/v1/edc/schema.json) | 
+  [Example](/certificate-of-participation-in-summer-school/v1/edc/examples/edc-cps-example.json) | 
+  [Signed](/certificate-of-participation-in-summer-school/v1/edc/examples/edc-cps-signed.jsonld)
 
-</td>
-
-<td width="50%" valign="top">
-   
 ### [Confirmation of Enrolment](/confirmation-of-enrolment)
 
 A confirmation of enrolment is an official document verifying that a student is
@@ -96,17 +75,10 @@ scholarship eligibility, student discounts, loan applications, and insurance
 purposes. It typically includes details such as enrollment status
 (full-time/part-time), program of study, and expected completion date.
 
-- **EDC**: [Schema](/confirmation-of-enrolment/edc/edc-coe-schema.json) | 
-  [Example](/confirmation-of-enrolment/edc/edc-coe-example.json) | 
-  [Signed](/confirmation-of-enrolment/edc/edc-coe-signed.jsonld)
-</td>
-</tr>
-</table>
+- **EDC**: [Schema](/confirmation-of-enrolment/v1/edc/schema.json) | 
+  [Example](/confirmation-of-enrolment/v1/edc/examples/edc-coe-example.json) | 
+  [Signed](/confirmation-of-enrolment/v1/edc/examples/edc-coe-signed.jsonld)
 
-<table>
-<tr>
-<td width="50%" valign="top">
-   
 ### [Degree Certificate](/degree-certificate)
 
 A degree certificate is the formal academic credential awarded upon successful
@@ -117,13 +89,10 @@ distinctions, and conferring institution. Degree certificates are essential for
 employment verification, further education applications, and professional
 licensing.
 
-- **EDC**: [Schema](/degree-certificate/edc/edc-dc-schema.json) | 
-  [Example](/degree-certificate/edc/edc-dc-example.json) | 
-  [Signed](/degree-certificate/edc/edc-dc-signed.jsonld)
-</td>
+- **EDC**: [Schema](/degree-certificate/v1/edc/schema.json) | 
+  [Example](/degree-certificate/v1/edc/examples/edc-dc-example.json) | 
+  [Signed](/degree-certificate/v1/edc/examples/edc-dc-signed.jsonld)
 
-<td width="50%" valign="top">
-   
 ### [Matriculation](/matriculation)
 
 A matriculation credential confirms formal admission and enrollment of a student
@@ -134,18 +103,10 @@ community and their right to pursue the specified qualification. This credential
 is distinct from confirmation of enrollment as it represents the initial
 acceptance and registration rather than ongoing status.
 
-- **EDC**: [Schema](/matriculation/edc/edc-matriculation-schema.json) | 
-  [Example](/matriculation/edc/edc-matriculation-example.json) | 
-  [Signed](/matriculation/edc/edc-matriculation-signed.jsonld)
-</td>
-</tr>
-</table>
+- **EDC**: [Schema](/matriculation/v1/edc/schema.json) | 
+  [Example](/matriculation/v1/edc/examples/edc-matriculation-example.json) | 
+  [Signed](/matriculation/v1/edc/examples/edc-matriculation-signed.jsonld)
 
-
-<table>
-<tr>
-<td width="50%" valign="top">
-   
 ### [Microcredential](/microcredential)
 
 A microcredential certifies achievement of specific, defined learning outcomes, skills, 
@@ -157,49 +118,19 @@ for professional development, reskilling, and specialised expertise, responding 
 to emerging skill demands while being recognised within established quality assurance 
 frameworks such as the European Qualifications Framework.
 
-- **EDC**: [Schema](/microcredential/edc/edc-mc-schema.json) | 
-  [Example](/microcredential/edc/edc-mc-example.json) | 
-  [Signed](/microcredential/edc/edc-mc-signed.jsonld)
-- **Open Badges**: [Schema](/microcredential/open-badge/open-badge-mc-schema.json) | 
-  [Example](/microcredential/open-badge/open-badge-mc-example.json) | 
-  [Signed (JWT)](/microcredential/open-badge/open-badge-mc-signed.jwt)
-</td>
-</tr>
-</table>
+- **EDC**: [Schema](/microcredential/v1/edc/schema.json) | 
+  [Example](/microcredential/v1/edc/examples/edc-mc-example.json) | 
+  [Signed](/microcredential/v1/edc/examples/edc-mc-signed.jsonld)
+- **Open Badges**: [Schema](/microcredential/v1/open-badge/schema.json) | 
+  [Example](/microcredential/v1/open-badge/examples/open-badge-mc-example.json) | 
+  [Signed (JWT)](/microcredential/v1/open-badge/examples/open-badge-mc-signed.jwt)
 
 ## Personal Credentials (coming soon)
-
-<table>
-<tr>
-<td width="33%" valign="top">
-   
-### Personal ID
-
-</td>
-<td width="33%" valign="top">
-   
-### Mobile Driving Licence (mDL)
-</td>
-<td width="33%" valign="top">
-   
-### Age Verification
-</td>
-</tr>
-</table>
-
-
 
 ## Standards and Compliance
 
 - **EDC**: European Digital Credentials, a serialization of the [European Learning Model (ELM)](https://europass.europa.eu/en/european-learning-model-stakeholders) ontology
 - **Open Badges 3.0**: Compliant with [IMS Global Open Badges specification](https://www.imsglobal.org/spec/ob/v3p0/)
-
-## Roadmap
-
-- [ ] Velocert API integration examples
-- [ ] ISO 18013-5 mDoc/mDL credentials
-- [ ] ETSI-compliant (Q)EAA credentials for EUDI Wallet
-- [ ] Validation tools and libraries
 
 ## How to Use This Repository
 

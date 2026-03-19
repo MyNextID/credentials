@@ -9,10 +9,3 @@ offered by universities and professional institutions, it represents focused
 study beyond a bachelor's degree but is less extensive than a full master's
 program. Often pursued by professionals seeking expertise in a specialised area
 without committing to a full graduate degree.
-
-## Contents
-
-- [edc](edc) - European Digital Credentials (EDC) schemas, mappings, example credentials and signed files.
-- [input-fields](input-fields) - Input field schema definitions, configuration examples and related translation files.
-- [translations](translations) - Translated credential titles organised by language.
-- [user-consent](user-consent) - Mapping between user consent groups and corresponding input fields.

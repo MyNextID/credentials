@@ -1,7 +1,6 @@
 # Personal ID (v2)
 
-This folder contains all technical assets related to the **Personal ID**.  
-It includes field mappings and translation files used for credential generation and validation.
+This folder defines the structure and resources for the v2 implementation of **Personal ID**.  
 
 ## Contents
 

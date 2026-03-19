@@ -9,10 +9,3 @@ may be academic (specialised coursework, research methods), professional
 (skills development, industry training), or experiential (cultural exchange,
 youth participation initiatives). They often include interdisciplinary approaches
 and international participants, and are commonly used to recognise engagement in supplementary learning and development opportunities outside regular academic or professional contexts.
-
-## Contents
-
-- [edc](edc) - European Digital Credentials (EDC) schemas, mappings, example credentials and signed files.
-- [input-fields](input-fields) - Input field schema definitions, configuration examples and related translation files.
-- [translations](translations) - Translated credential titles organised by language.
-- [user-consent](user-consent) - Mapping between user consent groups and corresponding input fields.
