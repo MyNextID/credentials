@@ -4,17 +4,19 @@ Each credential type must be placed in its own folder and follow the structure s
 This structure ensures that all credentials can be validated, generated, and translated consistently across the system.
 
 ```text
-/<credential-type>/
-  ├── edc/
-  │     ├── edc-<credential-type-initials>-example.json
-  │     ├── edc-<credential-type-initials>-schema.json
-  │     └── edc-<credential-type-initials>-signed.jsonld
-  ├── input-fields/
+/<credential-type>/v1
+  ├── <format>/
+  │     ├── examples/
+  │     │     ├── <format>-<credential-type-initials>-example.json
+  │     │     └── <format>-<credential-type-initials>-signed.jsonld
+  │     ├── schema.json
+  │     ├── input-fields-to-credential-map.json (optional)
+  │     └── README.md
+  ├── input-fields/ (optional)
   │     ├── translations/
   │     │     └── en.json
-  │     ├── input-fields-example.json
-  │     ├── input-fields-schema.json
-  │     └── input-fields-to-credential-map.json (optional)
+  │     ├── example.json
+  │     ├── schema.json
   │     └── README.md
   ├── translations/
   │     └── en.json
@@ -27,27 +29,31 @@ This structure ensures that all credentials can be validated, generated, and tra
 
 For example, acronym for credential type  `certificate-of-attendance` is `coa`.
 
+`<format>` must represent the credential format or standard.
+
+For example, if the format is `EDC`, the folder should be named `edc` and all files under it should follow the same naming convention.
+
 ## Folder Descriptions
 
-### edc/
+### Format/
 
-The edc folder contains all files related to the European Digital Credential (EDC) representation of the credential type. These files define how the credential is structured, validated, and represented within the system. Together they provide the schema definition, an example credential instance, and a signed credential example used for reference and testing.
+The `<format>` folder (e.g., `edc`) contains all files related to the European Digital Credential (EDC) representation of the credential type and must be used consistently across the folder. These files define how the credential is structured, validated, and represented within the system. Together they provide the schema definition, an example credential instance, and a signed credential example used for reference and testing.
 
-`edc-<credential-type-initials>-schema.json` defines the JSON Schema for the credential according to the EDC data model. This schema describes the structure, required fields, and validation rules that every credential of this type must follow. It is used by the system to ensure that generated credentials conform to the expected format.
+`schema.json` defines the JSON Schema for the credential according to the format (e.g., EDC) data model. This schema describes the structure, required fields, and validation rules that every credential of this type must follow. It is used by the system to ensure that generated credentials conform to the expected format.
 
 `edc-<credential-type-initials>-example.json` contains an unsigned example credential that follows the schema definition. This file serves as a reference implementation of the credential structure and demonstrates how the credential data should be organized before it is signed or issued.
 
 `edc-<credential-type-initials>-signed.jsonld` provides a signed example credential in JSON-LD format. It illustrates how a valid issued credential should appear after the signing process, including the digital proof information required for verification.
 
+`input-fields-to-credential-map.json` defines the mapping between input field keys and the corresponding fields in the EDC credential schema. This mapping allows the credential generation system to transform user-provided input data into the correct credential structure.
+
 ### input-fields/
 
 The input-fields folder defines the user-facing input fields used to collect the data required to generate the credential. These input fields act as a format-agnostic abstraction layer, allowing credential data to be provided as simple key-value pairs. This approach ensures that the same input data can be reused to construct credentials in different formats while keeping the credential generation process consistent and flexible.
 
-`input-fields-schema.json` defines the JSON Schema that specifies the structure and rules for all allowed input fields. It ensures that input data follows the expected format and validation constraints.
+`schema.json` defines the JSON Schema that specifies the structure and rules for all allowed input fields. It ensures that input data follows the expected format and validation constraints.
 
-`input-fields-example.json` provides example input data that demonstrates how the defined fields can be populated. This file helps contributors understand how credential data should be supplied before being mapped into the credential format.
-
-`input-fields-to-credential-map.json` defines the mapping between input field keys and the corresponding fields in the EDC credential schema. This mapping allows the credential generation system to transform user-provided input data into the correct credential structure.
+`example.json` provides example input data that demonstrates how the defined fields can be populated. This file helps contributors understand how credential data should be supplied before being mapped into the credential format.
 
 `README.md` file must also be included in this folder to provide additional documentation or explanations specific to the input fields of this credential type. To ensure consistency across credential types, contributors should reference the **README.md file of an existing credential type** and follow the same documentation structure when creating a new one.
 

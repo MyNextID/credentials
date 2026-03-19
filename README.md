@@ -38,7 +38,7 @@ or short courses.
 
 - **EDC**: [Schema](certificate-of-attendance/v1/edc/schema.json) |
    [Example](certificate-of-attendance/v1/edc/examples/edc-coa-example.json) | 
-   [Signed](certificate-of-attendance/v1/edc/examples/edc/edc-coa-signed.jsonld)
+   [Signed](certificate-of-attendance/v1/edc/examples/edc-coa-signed.jsonld)
 
 ### [Certificate of Advanced Study](/certificate-of-advanced-study)
 
@@ -132,11 +132,13 @@ frameworks such as the European Qualifications Framework.
 - **EDC**: European Digital Credentials, a serialization of the [European Learning Model (ELM)](https://europass.europa.eu/en/european-learning-model-stakeholders) ontology
 - **Open Badges 3.0**: Compliant with [IMS Global Open Badges specification](https://www.imsglobal.org/spec/ob/v3p0/)
 
+<!-- TODO: Add documentation here when available
 ## How to Use This Repository
 
 For presentation purposes, see [Presentation Use-Cases](_resources/documentation/presentation-use-case.md). This guide explains how to access translations for end-user consent screens, including titles and descriptors, and how to use the JSON files in the `_generated` folder to present credentials in a user-friendly way. It also describes how to retrieve credential schemas to verify received credentials for compliance with their schema.
 
 For issuance purposes, see [Issuance Use-Cases](_resources/documentation/issuance-use-case.md). This guide shows how to obtain valid, interoperable schemas for supported credential types, access human-readable titles and descriptors for credentials and their fields, and use simplified input-fields structures for a more developer-friendly API when issuing credentials.
+-->
 
 ## Repository Structure
 
@@ -147,15 +149,17 @@ This repository is organized to separate credential definitions, generated data,
 ├── _generated/
 ├── _resources/
 ├── <credential-type>/ 
-├── <credential-type>/ 
 ├── ... (additional credential type folders)
 └── README.md
 ```
+
 The `_generated` folder contains JSON data from all credential types and user consent definitions, including input fields and claims with translations. The `credentials.json` file contains the aggregated data from all credential types, and the `credential-types.json` file lists all available credential types.
 
 The `_resources` folder contains shared assets and documentation, including user consent group definitions, translations, and icons used across credential types.
 
-Each `<credential-type>/` folder contains the full set of assets for that credential, including EDC schemas, examples, signed credentials, input fields, translations, user consent mappings, and a README describing the credential.
+Each `<credential-type>/` folder contains the definition of a specific credential and its available versions. It includes a `README.md` describing the credential, along with one or more version folders (e.g., `v1`, `v2`).
+
+Each version folder contains the complete set of version-specific assets, such as schemas, input fields, translations, examples, and user consent mappings.
 
 The root `README.md` provides an overview of the repository.
 
@@ -178,7 +182,7 @@ To add a new credential type, please follow these steps:
 
 1. Fork the repository
 2. Create a new credential type directory following the established naming conventions.
-3. Implement the required folder structure and files as described in the [Credential Type Folder Structure](_resources/documentation/credential-type-folder-structure.md) documentation.
+3. Implement the required folder structure and files as described in the [credential type folder structure](_resources/documentation/credential-type-folder-structure.md) documentation.
 4. Add all required assets, including:
    - EDC schema
    - Example credential
@@ -191,7 +195,7 @@ To add a new credential type, please follow these steps:
 6. Validate your files to ensure schemas and examples are consistent.
 7. Submit a **Pull Request** with a clear description of the credential and its intended use.
 
-Before submitting your pull request, please review the [Credential Type Folder Structure](_resources/documentation/credential-type-folder-structure.md) to ensure that your credential implementation follows the required structure and naming conventions.
+Before submitting your pull request, please review the [credential type folder structure](_resources/documentation/credential-type-folder-structure.md) to ensure that your credential implementation follows the required structure and naming conventions.
 
 ## License
 
