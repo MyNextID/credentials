@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "title": "Mobile Driving Licence (mDL)",
+    "title": "Age verification",
     "type": "object",
     "required": ["docType", "namespace"],
     "additionalProperties": false,
@@ -11,11 +11,11 @@
       },
       "namespace": {
         "type": "object",
-        "required": ["org.iso.18013.5.1"],
+        "required": ["eu.europa.ec.av.1"],
         "additionalProperties": false,
         "properties": {
-          "org.iso.18013.5.1": {
-            "$ref": "./org.iso.18013.5.1-mdl-schema.json"
+          "eu.europa.ec.av.1": {
+            "$ref": "./eu.europa.ec.av.1-schema.json"
           }
         }
       }

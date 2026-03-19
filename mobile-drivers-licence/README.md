@@ -10,3 +10,14 @@ It includes field mappings and translation files used for credential generation 
 - [translations](translations) - Translated credential titles organised by language.
 - [user-consent](user-consent) - Mapping between user consent groups and corresponding input fields.
   
+## Parameterized Attributes
+
+This project uses parameterized attributes to represent multiple related attributes using the pattern `<attribute>{{NN}}`, where `{{NN}}` is an integer value.
+
+### Example
+
+- `ageOver{{NN}}` → `ageOver18`, `ageOver21`
+
+### Purpose & Usage
+
+Avoids duplicating similar attributes by allowing dynamic values within a consistent naming pattern; replace `{{NN}}` with a valid value (integer) and handle it generically in code.

@@ -1,6 +1,6 @@
-# Credential of Age verification
+# Age verification
 
-This folder contains all technical assets related to the **Credential of Age verification**.  
+This folder contains all technical assets related to the **Age verification**.  
 It includes field mappings and translation files used for credential generation and validation.
 
 ## Contents

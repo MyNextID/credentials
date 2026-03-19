@@ -160,7 +160,7 @@ frameworks such as the European Qualifications Framework.
 - **EDC**: [Schema](/microcredential/edc/edc-mc-schema.json) | 
   [Example](/microcredential/edc/edc-mc-example.json) | 
   [Signed](/microcredential/edc/edc-mc-signed.jsonld)
-- **Open Badges v3**: [Schema](/microcredential/open-badge/open-badge-mc-schema.json) | 
+- **Open Badges**: [Schema](/microcredential/open-badge/open-badge-mc-schema.json) | 
   [Example](/microcredential/open-badge/open-badge-mc-example.json) | 
   [Signed (JWT)](/microcredential/open-badge/open-badge-mc-signed.jwt)
 </td>
