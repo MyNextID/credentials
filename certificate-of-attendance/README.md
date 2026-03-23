@@ -10,7 +10,7 @@ mastery of content. Commonly used for professional development tracking,
 continuing education requirements, and participation in conferences, seminars,
 or short courses.
 
-## Select a Version
+## Available Versions
 
 Choose a version of the credential type to view its specification. Currently, the latest version is:
 

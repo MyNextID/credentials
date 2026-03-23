@@ -1,6 +1,6 @@
 # Student ID
 
-## Select a Version
+## Available Versions
 
 Choose a version of the credential type to view its specification. Currently, the latest version is:
 

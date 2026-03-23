@@ -10,7 +10,7 @@ study beyond a bachelor's degree but is less extensive than a full master's
 program. Often pursued by professionals seeking expertise in a specialised area
 without committing to a full graduate degree.
 
-## Select a Version
+## Available Versions
 
 Choose a version of the credential type to view its specification. Currently, the latest version is:
 

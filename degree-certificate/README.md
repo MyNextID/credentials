@@ -11,7 +11,7 @@ distinctions, and conferring institution. Degree certificates are essential for
 employment verification, further education applications, and professional
 licensing.
 
-## Select a Version
+## Available Versions
 
 Choose a version of the credential type to view its specification. Currently, the latest version is:
 

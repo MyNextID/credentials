@@ -10,7 +10,7 @@ may be academic (specialised coursework, research methods), professional
 youth participation initiatives). They often include interdisciplinary approaches
 and international participants, and are commonly used to recognise engagement in supplementary learning and development opportunities outside regular academic or professional contexts.
 
-## Select a Version
+## Available Versions
 
 Choose a version of the credential type to view its specification. Currently, the latest version is:
 
