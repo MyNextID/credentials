@@ -10,3 +10,10 @@ qualification level (bachelor's, master's, doctorate), field of study, honours o
 distinctions, and conferring institution. Degree certificates are essential for
 employment verification, further education applications, and professional
 licensing.
+
+## Select a Version
+
+Choose a version of the credential type to view its specification. Currently, the latest version is:
+
+- [`v1`](v1/) – the first version of the Degree Certificate.
+  

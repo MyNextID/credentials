@@ -9,3 +9,10 @@ achievement-based credentials, it confirms presence and engagement rather than
 mastery of content. Commonly used for professional development tracking,
 continuing education requirements, and participation in conferences, seminars,
 or short courses.
+
+## Select a Version
+
+Choose a version of the credential type to view its specification. Currently, the latest version is:
+
+- [`v1`](v1/) – the first version of the Certificate of Attendance.
+  

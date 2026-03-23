@@ -10,3 +10,10 @@ education systems, it establishes the student's membership in the academic
 community and their right to pursue the specified qualification. This credential
 is distinct from confirmation of enrollment as it represents the initial
 acceptance and registration rather than ongoing status.
+
+## Select a Version
+
+Choose a version of the credential type to view its specification. Currently, the latest version is:
+
+- [`v1`](v1/) – the first version of the Matriculation.
+  

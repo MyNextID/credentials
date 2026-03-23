@@ -9,3 +9,9 @@ offered by universities and professional institutions, it represents focused
 study beyond a bachelor's degree but is less extensive than a full master's
 program. Often pursued by professionals seeking expertise in a specialised area
 without committing to a full graduate degree.
+
+## Select a Version
+
+Choose a version of the credential type to view its specification. Currently, the latest version is:
+
+- [`v1`](v1/) – the first version of the Certificate of Advanced Study.
