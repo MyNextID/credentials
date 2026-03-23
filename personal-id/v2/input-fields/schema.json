@@ -11,23 +11,23 @@
         },
         "familyName": {
             "title": "Family Name",
-            "description": "",
+            "description": "The current last name(s) or surname(s) of the person.",
             "type": "string"
         },
         "givenName": {
             "title": "Given name",
-            "description": "",
+            "description": "The current first and middle name(s) of the person, if applicable.",
             "type": "string"
         },
         "birthDate": {
             "title": "Date of birth",
-            "description": "",
+            "description": "The person’s date of birth (day, month, and year).",
             "type": "string",
             "format": "date"
         },
         "birthPlace": {
             "title": "Place of birth",
-            "description": "",
+            "description": "The person’s place of birth (country code or local area).",
             "type": "string"
         },
 
@@ -40,7 +40,7 @@
 
         "residentAddress":{
             "title": "Resident address",
-            "description": "",
+            "description": "The complete address where the person currently lives or can be reached (street, number, city, etc.).",
             "type": "string"
         },
         "residentCountry":{
@@ -51,49 +51,49 @@
         },
         "residentState":{
             "title": "Resident state",
-            "description": "",
+            "description": "The person’s current state, province, district, or local area.",
             "type": "string"
         },
         "residentCity":{
             "title": "Resident city",
-            "description": "",
+            "description": "The person’s current municipality, city, town, or village.",
             "type": "string"
         },
         "residentPostalCode":{
             "title": "Resident postal code",
-            "description": "",
+            "description": "The person’s current postal code.",
             "type": "string"
         },
         "residentStreet":{
             "title": "Resident street",
-            "description": "",
+            "description": "The person’s current street name.",
             "type": "string" 
         },
         "residentHouseNumber": {
             "title": "Resident house number",
-            "description": "",
+            "description": "The person’s current house number (including any suffix).",
             "type": "string" 
         },
 
         "familyNameBirth": {
-            "title": "",
-            "description": "",
+            "title": "Family name at birth",
+            "description": "The person’s birth last name(s) or surname(s).",
             "type": "string"
         },
         "givenNameBirth": {
             "title":  "Given name at birth",
-            "description": "",
+            "description": "The person’s birth first and middle name(s).",
             "type": "string"
         },
         "emailAddress": {
             "title": "Email",
-            "description": "",
+            "description": "The person’s email address (per RFC 5322).",
             "type": "string",
             "format": "email"
         },
         "mobilePhoneNumber": {
             "title": "Phone number",
-            "description": "Mobile phone number",
+            "description": "The person’s mobile number in international format (starting with '+' and country code).",
             "type": "string"
         },
         "portrait": {
@@ -104,19 +104,19 @@
         },
         "expiryDate": {
             "title": "Expiry date",
-            "description": "",
+            "description": "The date (and, if available, time) when the person’s identification data expires.",
             "type": "string",
             "format": "date"
         },
         "issuanceDate": {
             "title": "Issuance date",
-            "description": "",
+            "description": "The date (and, if available, time) when the person’s identification data was issued or became valid.",
             "type": "string",
             "format": "date"
         },
         "personalAdministrativeNumber": {
             "title": "Personal administrative number",
-            "description": "",
+            "description": "A unique personal number assigned to the person by the identification data provider, with usage policies defined by the issuing authority.",
             "type": "string"
         },
         "sex": {
@@ -127,7 +127,7 @@
         },
         "issuingAuthority": {
             "title": "Issuing authority",
-            "description": "",
+            "description": "The issuing authority of the person’s identification data, or the country code if no specific authority exists.",
             "type": "string"
         },
         "issuingCountry": {
@@ -138,17 +138,17 @@
         },
         "documentNumber": {
             "title": "Document number",
-            "description": "",
+            "description": "The identification number assigned to the person by the data provider.",
             "type": "string"
         },
         "issuingJurisdiction": {
             "title": "Issuing jurisdiction",
-            "description": "",
+            "description": "The issuing jurisdiction’s subdivision code (ISO 3166-2:2020), with the first part matching the issuing country.",
             "type": "string"
         },
         "trustAnchor": {
             "title": "Trust anchor",
-            "description": "",
+            "description": "The URL where the machine-readable trust anchor for verifying the person’s identification data is freely available.",
             "type": "string",
             "format": "uri"
         }
