@@ -2,7 +2,7 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "title": "EUDI Personal Identification Data (PID) Claims",
     "type": "object",
-    "required": ["vct"],
+    "required": ["vct", "expiry_date", "issuing_authority","issuing_country","trust_anchor"],
     "properties": {
       "vct": {
         "type": "string",

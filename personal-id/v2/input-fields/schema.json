@@ -154,6 +154,10 @@
         }
     },
     "required": [
-        "vct"
+        "vct",
+        "expiryDate",
+        "issuingAuthority",
+        "issuingCountry",
+        "trustAnchor"
     ]
 }
