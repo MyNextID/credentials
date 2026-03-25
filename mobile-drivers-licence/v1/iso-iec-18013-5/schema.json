@@ -1,0 +1,24 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Mobile Driving Licence (mDL)",
+    "type": "object",
+    "required": ["docType", "namespace"],
+    "additionalProperties": false,
+    "properties": {
+      "docType": {
+        "type": "string",
+        "const": "org.iso.18013.5.1.mDL"
+      },
+      "namespace": {
+        "type": "object",
+        "required": ["org.iso.18013.5.1"],
+        "additionalProperties": false,
+        "properties": {
+          "org.iso.18013.5.1": {
+            "$ref": "./org.iso.18013.5.1-mdl-schema.json"
+          }
+        }
+      }
+    }
+  }
+  

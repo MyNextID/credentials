@@ -1,12 +1,8 @@
-# Student Id
+# Student ID
 
-This folder contains all technical assets related to the **Student Id**.  
-It includes credential schema, field definitions, mappings, and translation files used for credential generation and validation.
+## Available Versions
 
-## Contents
+Choose a version of the credential type to view its specification. Currently, the latest version is:
 
-- [edc](edc) - European Digital Credentials (EDC) schema.
-- [input-fields](input-fields) - Input field schema definitions, configuration examples, mappings, and related translation files.
-- [translations](translations) - Translated credential titles organised by language.
-- [user-consent](user-consent) - Mapping between user consent groups and corresponding input fields.
+- [`v1`](v1/) – the first version of the Student ID.
   

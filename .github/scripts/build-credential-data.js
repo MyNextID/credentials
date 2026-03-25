@@ -25,6 +25,15 @@ function getCredentialTypeInputFieldsTranslationPath(credentialType, lang) {
     return `${credentialType}/input-fields/translations/${lang}.json`
 }
 
+
+function getCredentialTypeVersions(credentialType){
+    const entries = fs.readdirSync(`./${credentialType}`, {withFileTypes: true});
+    return entries.filter((e) => {
+        // get directories
+        return e.isDirectory();
+    }).map((dir) => dir.name)
+}
+
 // make sure folder exists
 if (!fs.existsSync(outputDir)) {
   fs.mkdirSync(outputDir, { recursive: true });
@@ -120,42 +129,54 @@ Object.keys(claimsGroups).map((group => {
 // 2. Get all credential types
 const credentialTypes = readFileOrThrow(credentialTypesPath);
 
-for (const key of credentialTypes){
+for (const credentialType of credentialTypes){
 
-    // a) Get all translations for credential type
-    const translations = loadTranslations(getCredentialTypeTranslationPath(key));
+    // a) Get all versions in credential type folder
+    const versions = getCredentialTypeVersions(credentialType); 
 
-    data.credential_types[key] = {
-        "label": {},
-        "available_languages": translations,
-        "claims":{}
-    };
+    data.credential_types[credentialType] = {};
 
-    // b) Get credential type label for each language 
-    translations.forEach(lang => {
-        const label = readFileOrThrow(getCredentialTypeTranslationPath(key, lang));
+    for (const version of versions){
 
-        validatePropertyExists(getCredentialTypeTranslationPath(key, lang), label, ["credential","title"]);
-        data.credential_types[key]["label"][lang] = label.credential.title;
-    });
-    
-    // c). Get claims in human-readable translation
-    const claims = readFileOrThrow(getCredentialTypeUserConsentPath(key));
+        const key = credentialType + "/" + version;
 
-    Object.keys(claims).map(claim => {
-        data.credential_types[key]["claims"][claim] = {
-            "label":{},
-            "group":claims[claim]
-        }
+        // b) Get all translations for credential type
+        const translations = loadTranslations(getCredentialTypeTranslationPath(key));
 
+        data.credential_types[credentialType][version] = {
+            "label": {},
+            "available_languages": translations,
+            "claims":{}
+        };
+
+        // c) Get credential type label for each language 
         translations.forEach(lang => {
-            const inputField = readFileOrThrow(getCredentialTypeInputFieldsTranslationPath(key, lang));
-            data.credential_types[key]["claims"][claim]["label"][lang] = inputField[claim];
+            const label = readFileOrThrow(getCredentialTypeTranslationPath(key, lang));
+
+            validatePropertyExists(getCredentialTypeTranslationPath(key, lang), label, ["credential","title"]);
+            data.credential_types[credentialType][version]["label"][lang] = label.credential.title;
         });
 
-    });
+        // d). Get claims in human-readable translation
+        const claims = readFileOrThrow(getCredentialTypeUserConsentPath(key));
 
-    //console.log(`✔ Processed ${key}`);
+        Object.keys(claims).map(claim => {
+            data.credential_types[credentialType][version]["claims"][claim] = {
+                "label":{},
+                "group":claims[claim]
+            }
+
+            translations.forEach(lang => {
+                const inputField = readFileOrThrow(getCredentialTypeInputFieldsTranslationPath(key, lang));
+                data.credential_types[credentialType][version]["claims"][claim]["label"][lang] = inputField[claim];
+            });
+
+        });
+
+        //console.log(`✔ Processed ${key}`);
+    }
+
+    
 }
 
-fs.writeFileSync( path.join(outputDir, "credentials.json"), JSON.stringify(data, null, 2));
+fs.writeFileSync( path.join(outputDir, "credentials.json"), JSON.stringify(data)); // (data, null, 2)); for pretty JSON

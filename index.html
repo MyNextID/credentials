@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Credential Data Reference</title>
+        <style>
+            body {
+                font-family:  Arial, sans-serif;
+                line-height: 1.6;
+                max-width: 900px;
+                margin: 40px auto;
+                padding: 0 20px;
+                color: #24292f;
+            }
+            h1 {
+                border-bottom: 2px solid #eaecef;
+                padding-bottom: 10px;
+            }
+            code {
+                background: transparent;
+                padding: 2px 6px;
+                border-radius: 4px;
+                font-size: 90%;
+                color: gray;
+            }
+            a {
+                color: #0969da;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            .note {
+                background: #f6f8fa;
+                padding: 12px;
+                border-left: 4px solid #0969da;
+                margin: 20px 0;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Credential Data Reference</h1>
+
+        <p>This page provides access to auto-generated data for all supported credential types, including their translations, claims, and consent groups.</p>
+
+        <h2>Available Data</h2>
+
+        <p>Access the full dataset of all credential instances at 
+            <a href="https://mynextid.github.io/credentials/_generated/credentials.json">credentials.json</a>.
+        </p>
+
+        <p>Access the list of all available credential types at 
+            <a href="https://mynextid.github.io/credentials/_generated/credential-types.json">credential-types.json</a>.
+        </p>
+
+        <div class="note"> <strong>Note:</strong> These files are automatically generated and located in the<code>_generated</code> directory of the repository.</div>
+
+        <h2>Source Repository</h2>
+
+        <p>The original source and generation logic can be found in the credentials GitHub repository:</p>
+
+        <ul><li>
+            <a href="https://github.com/MyNextID/credentials">
+                https://github.com/MyNextID/credentials
+            </a>
+        </li></ul>
+
+        <h2>Advanced Usage</h2>
+
+        <p>If you require more control over the data or only need a specific credential type, 
+        you can directly access the corresponding folder for that credential type in the repository.</p>
+
+        <p>
+            Each credential type contains its own structure, including schema definitions,
+            mappings, and examples. You can fetch and process this data according to your needs.
+        </p>
+
+        <h3>Credential Type Data</h3>
+
+        <!-- <p> A detailed guide is available here: <a href="https://github.com/MyNextID/credentials/tree/main/_resources/documentation/issuance-use-case">Credential type issuance use case</a>.</p> -->
+
+        <p> For a quick overview, you can retrieve data for a specific credential type as follows:</p>
+
+        <ul>
+            <li>
+                Find the desired credential type in 
+                <a href="https://mynextid.github.io/credentials/_generated/credential-types.json">
+                credential-types.json
+                </a>.
+            </li>
+            <li>
+                Use the credential type value as the folder name: <code>/&lt;credential-type&gt;/</code>.
+            </li>
+            <li>
+                Select the desired version (e.g.<code>v1</code>or latest available).
+            </li>
+            <li>
+                Access the required resources within the version folder, such as:
+                <ul>
+                <li>Input fields</li>
+                <li>Input field translations</li>
+                <li>Mapping between input fields and credential format</li>
+                <li>User consent groups for input fields</li>
+                <li>Schemas and examples</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>User Consent Data</h3>
+
+        <p>These resources are available in the<code>_resources/user-consent</code>directory of the repository.</p>
+
+        <p><strong>1. User consent groups</strong></p>
+        <ul>
+            <li>
+                <a href="https://mynextid.github.io/credentials/_resources/user-consent/consent-groups.json">
+                consent-groups.json
+                </a>
+            </li>
+        </ul>
+
+        <p><strong>2. Translations</strong></p>
+
+        <p>Translations for user consent groups are available per language at<code>translations/&lt;language&gt;.json</code>.</p>
+    
+        <p>Example (English):</p>
+        <ul>
+            <li>
+                <a href="https://mynextid.github.io/credentials/_resources/user-consent/translations/en.json">
+                translations/en.json
+                </a>
+            </li>
+        </ul>
+
+    </body>
+</html>

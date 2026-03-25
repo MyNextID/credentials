@@ -1,11 +1,8 @@
 # Mobile driver's licence
 
-This folder contains all technical assets related to the **Mobile driver's licence**.  
-It includes field mappings and translation files used for credential generation and validation.
+## Available Versions
 
-## Contents
+Choose a version of the credential type to view its specification. Currently, the latest version is:
 
-- [input-fields](input-fields) - Translated input fields organised by language.
-- [translations](translations) - Translated credential titles organised by language.
-- [user-consent](user-consent) - Mapping between user consent groups and corresponding input fields.
+- [`v1`](v1/) – the first version of the Mobile driver's licence.
   

@@ -1,0 +1,4 @@
+{
+    "ageOver18": "Age over 18",
+    "ageOver{{NN}}": "Age over {{NN}}"
+}

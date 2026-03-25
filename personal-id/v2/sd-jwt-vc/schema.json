@@ -1,0 +1,136 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "EUDI Personal Identification Data (PID) Claims",
+    "type": "object",
+    "required": ["vct", "date_of_expiry", "issuing_authority","issuing_country","trust_anchor"],
+    "properties": {
+      "vct": {
+        "type": "string",
+        "const": "urn:eudi:pid:1",
+        "description": "Credential type identifier"
+      },
+  
+      "family_name": {
+        "type": "string"
+      },
+      "given_name": {
+        "type": "string"
+      },
+      "birthdate": {
+        "type": "string",
+        "format": "date"
+      },
+  
+      "place_of_birth": {
+        "$ref": "#/$defs/place_of_birth"
+      },
+  
+      "nationalities": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/country_code"
+        }
+      },
+  
+      "address": {
+        "$ref": "#/$defs/address"
+      },
+  
+      "birth_family_name": {
+        "type": "string"
+      },
+      "birth_given_name": {
+        "type": "string"
+      },
+  
+      "email": {
+        "type": "string",
+        "format": "email"
+      },
+  
+      "phone_number": {
+        "type": "string"
+      },
+  
+      "picture": {
+        "type": "string",
+        "pattern": "^data:image\\/jpeg;base64,",
+        "description": "JPEG data URL"
+      },
+  
+      "date_of_expiry": {
+        "type": "string",
+        "format": "date"
+      },
+  
+      "date_of_issuance": {
+        "type": "string",
+        "format": "date"
+      },
+  
+      "personal_administrative_number": {
+        "type": "string"
+      },
+  
+      "sex": {
+        "type": "integer",
+        "enum": [0, 1, 2, 9],
+        "description": "0 unknown, 1 male, 2 female, 9 not applicable"
+      },
+  
+      "issuing_authority": {
+        "type": "string"
+      },
+  
+      "issuing_country": {
+        "$ref": "#/$defs/country_code"
+      },
+  
+      "document_number": {
+        "type": "string"
+      },
+  
+      "issuing_jurisdiction": {
+        "type": "string"
+      },
+  
+      "trust_anchor": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+  
+    "$defs": {
+      "country_code": {
+        "type": "string",
+        "pattern": "^[A-Z]{2}$",
+        "description": "ISO 3166-1 alpha-2 country code"
+      },
+  
+      "place_of_birth": {
+        "type": "object",
+        "properties": {
+          "locality": { "type": "string" },
+          "region": { "type": "string" }, 
+          "country": { "$ref": "#/$defs/country_code" }
+        },
+        "additionalProperties": false
+      },
+  
+      "address": {
+        "type": "object",
+        "properties": {
+          "formatted": { "type": "string" },
+          "street_address": { "type": "string" },
+          "house_number": { "type": "string" },
+          "locality": { "type": "string" },
+          "region": { "type": "string" },
+          "postal_code": { "type": "string" },
+          "country": { "$ref": "#/$defs/country_code" }
+        },
+        "additionalProperties": false
+      }
+    },
+  
+    "additionalProperties": false
+  }

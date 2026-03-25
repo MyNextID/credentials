@@ -1,0 +1,4 @@
+{
+    "ageOver18": true,
+    "ageOver{{NN}}": false
+}

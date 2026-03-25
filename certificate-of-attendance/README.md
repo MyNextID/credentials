@@ -10,10 +10,9 @@ mastery of content. Commonly used for professional development tracking,
 continuing education requirements, and participation in conferences, seminars,
 or short courses.
 
-## Contents
+## Available Versions
 
-- [edc](edc) - European Digital Credentials (EDC) schemas, example credentials and signed files.
-- [input-fields](input-fields) - Input field schema definitions, configuration examples, mappings, and related translation files.
-- [translations](translations) - Translated credential titles organised by language.
-- [user-consent](user-consent) - Mapping between user consent groups and corresponding input fields.
+Choose a version of the credential type to view its specification. Currently, the latest version is:
+
+- [`v1`](v1/) – the first version of the Certificate of Attendance.
   

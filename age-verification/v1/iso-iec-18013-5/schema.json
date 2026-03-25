@@ -1,0 +1,24 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Age verification",
+    "type": "object",
+    "required": ["docType", "namespace"],
+    "additionalProperties": false,
+    "properties": {
+      "docType": {
+        "type": "string",
+        "const": "org.iso.18013.5.1.mDL"
+      },
+      "namespace": {
+        "type": "object",
+        "required": ["eu.europa.ec.av.1"],
+        "additionalProperties": false,
+        "properties": {
+          "eu.europa.ec.av.1": {
+            "$ref": "./eu.europa.ec.av.1-schema.json"
+          }
+        }
+      }
+    }
+  }
+  

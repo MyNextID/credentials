@@ -1,11 +1,8 @@
-# Personal Id
+# Personal ID
 
-This folder contains all technical assets related to the **Personal Id**.  
-It includes field mappings and translation files used for credential generation and validation.
+## Available Versions
 
-## Contents
+Choose a version of the credential type to view its specification. Currently, the latest version is:
 
-- [input-fields](input-fields) - Translated input fields organised by language.
-- [translations](translations) - Translated credential titles organised by language.
-- [user-consent](user-consent) - Mapping between user consent groups and corresponding input fields.
+- [`v2`](v2/) – the second version of the Personal ID.
   
