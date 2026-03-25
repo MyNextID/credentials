@@ -132,36 +132,12 @@ frameworks such as the European Qualifications Framework.
 - **EDC**: European Digital Credentials, a serialization of the [European Learning Model (ELM)](https://europass.europa.eu/en/european-learning-model-stakeholders) ontology
 - **Open Badges 3.0**: Compliant with [IMS Global Open Badges specification](https://www.imsglobal.org/spec/ob/v3p0/)
 
-<!-- TODO: Add documentation here when available
-## How to Use This Repository
+## Roadmap
 
-For presentation purposes, see [Presentation Use-Cases](_resources/documentation/presentation-use-case.md). This guide explains how to access translations for end-user consent screens, including titles and descriptors, and how to use the JSON files in the `_generated` folder to present credentials in a user-friendly way. It also describes how to retrieve credential schemas to verify received credentials for compliance with their schema.
-
-For issuance purposes, see [Issuance Use-Cases](_resources/documentation/issuance-use-case.md). This guide shows how to obtain valid, interoperable schemas for supported credential types, access human-readable titles and descriptors for credentials and their fields, and use simplified input-fields structures for a more developer-friendly API when issuing credentials.
--->
-
-## Repository Structure
-
-This repository is organized to separate credential definitions, generated data, and shared resources, making it easy to understand the role of each part of the project.
-
-```text
-/
-├── _generated/
-├── _resources/
-├── <credential-type>/ 
-├── ... (additional credential type folders)
-└── README.md
-```
-
-The `_generated` folder contains JSON data from all credential types and user consent definitions, including input fields and claims with translations. The `credentials.json` file contains the aggregated data from all credential types, and the `credential-types.json` file lists all available credential types.
-
-The `_resources` folder contains shared assets and documentation, including user consent group definitions, translations, and icons used across credential types.
-
-Each `<credential-type>/` folder contains the definition of a specific credential and its available versions. It includes a `README.md` describing the credential, along with one or more version folders (e.g., `v1`, `v2`).
-
-Each version folder contains the complete set of version-specific assets, such as schemas, input fields, translations, examples, and user consent mappings.
-
-The root `README.md` provides an overview of the repository.
+- [ ] Velocert API integration examples
+- [ ] ISO 18013-5 mDoc/mDL credentials
+- [ ] ETSI-compliant (Q)EAA credentials for EUDI Wallet
+- [ ] Validation tools and libraries
 
 ## Contributing
 
