@@ -24,7 +24,9 @@ function getCredentialTypeUserConsentPath(credentialType) {
 function getCredentialTypeInputFieldsTranslationPath(credentialType, lang) {
     return `${credentialType}/input-fields/translations/${lang}.json`
 }
-
+function getCredentialTypeChangelogPath(credentialType) {
+    return `${credentialType}/changelog.md`
+}
 
 function getCredentialTypeVersions(credentialType){
     const entries = fs.readdirSync(`./${credentialType}`, {withFileTypes: true});
@@ -129,7 +131,7 @@ Object.keys(claimsGroups).map((group => {
 // 2. Get all credential types
 const credentialTypes = readFileOrThrow(credentialTypesPath);
 
-for (const credentialType of credentialTypes){
+Object.keys(credentialTypes).forEach(credentialType => {
 
     // a) Get all versions in credential type folder
     const versions = getCredentialTypeVersions(credentialType); 
@@ -143,13 +145,20 @@ for (const credentialType of credentialTypes){
         // b) Get all translations for credential type
         const translations = loadTranslations(getCredentialTypeTranslationPath(key));
 
+        // c) Get version metadata - changelog link if exists
+        const  hasChangelog = fs.existsSync(getCredentialTypeChangelogPath(key));
+        const versionMetadata = {
+            "changelogs:":  hasChangelog ? getCredentialTypeChangelogPath(key) : "",
+        }
+
         data.credential_types[credentialType][version] = {
             "label": {},
             "available_languages": translations,
+            "version_metadata": versionMetadata,
             "claims":{}
         };
 
-        // c) Get credential type label for each language 
+        // d) Get credential type label for each language 
         translations.forEach(lang => {
             const label = readFileOrThrow(getCredentialTypeTranslationPath(key, lang));
 
@@ -157,7 +166,7 @@ for (const credentialType of credentialTypes){
             data.credential_types[credentialType][version]["label"][lang] = label.credential.title;
         });
 
-        // d). Get claims in human-readable translation
+        // e). Get claims in human-readable translation
         const claims = readFileOrThrow(getCredentialTypeUserConsentPath(key));
 
         Object.keys(claims).map(claim => {
@@ -175,8 +184,6 @@ for (const credentialType of credentialTypes){
 
         //console.log(`✔ Processed ${key}`);
     }
-
-    
-}
+})
 
 fs.writeFileSync( path.join(outputDir, "credentials.json"), JSON.stringify(data)); // (data, null, 2)); for pretty JSON
