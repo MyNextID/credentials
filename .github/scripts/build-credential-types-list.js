@@ -14,10 +14,10 @@ function getCredentialTypeVersions(credentialType){
 }
 
 function getCredentialTypeInputfieldsSchemaPath(credentialType) {
-    return `/${credentialType}/input-fields/schema.json`
+    return `${credentialType}/input-fields/schema.json`
 }
 function getCredentialTypeFormatSchemaPath(credentialType,format) {
-    return `/${credentialType}/${format}/schema.json`
+    return `${credentialType}/${format}/schema.json`
 }
 function getCredentialTypeMappingPath(credentialType,format) {
     return `${credentialType}/${format}/input-fields-to-credential-map.json`
@@ -68,7 +68,7 @@ types.map(type => type.name).forEach(credentialType => {
         const hasInputFieldsSchema = fs.existsSync(getCredentialTypeInputfieldsSchemaPath(key));
 
         data[credentialType][version] = {
-            "schema": hasInputFieldsSchema ? getCredentialTypeInputfieldsSchemaPath(key) : "",
+            "schema": hasInputFieldsSchema ? "/" + getCredentialTypeInputfieldsSchemaPath(key) : "",
             "formats":{}
         };
 
@@ -92,7 +92,7 @@ types.map(type => type.name).forEach(credentialType => {
             const mapping = readFileOrThrow(getCredentialTypeMappingPath(key, format));
 
             data[credentialType][version]["formats"][format] = {
-                "schema": hasFormatSchema ? getCredentialTypeFormatSchemaPath(key,format) : "",
+                "schema": hasFormatSchema ? "/" + getCredentialTypeFormatSchemaPath(key,format) : "",
                 "map": mapping
             }
         };
