@@ -14,10 +14,10 @@ function getCredentialTypeVersions(credentialType){
 }
 
 function getCredentialTypeInputfieldsSchemaPath(credentialType) {
-    return `${credentialType}/input-fields/schema.json`
+    return `/${credentialType}/input-fields/schema.json`
 }
 function getCredentialTypeFormatSchemaPath(credentialType,format) {
-    return `${credentialType}/${format}/schema.json`
+    return `/${credentialType}/${format}/schema.json`
 }
 function getCredentialTypeMappingPath(credentialType,format) {
     return `${credentialType}/${format}/input-fields-to-credential-map.json`

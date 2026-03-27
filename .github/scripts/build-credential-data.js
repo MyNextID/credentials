@@ -26,7 +26,7 @@ function getCredentialTypeInputFieldsTranslationPath(credentialType, lang) {
     return `${credentialType}/input-fields/translations/${lang}.json`
 }
 function getCredentialTypeChangelogPath(credentialType) {
-    return `${credentialType}/changelog.md`
+    return `/${credentialType}/changelog.md`
 }
 
 function getCredentialTypeVersions(credentialType){
