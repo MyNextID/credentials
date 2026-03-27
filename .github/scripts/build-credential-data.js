@@ -10,6 +10,7 @@ const userConsentTranslationsPath = userConsentResourcePath + "/translations"
 function getUserConsentTranslationPath(lang) {
     return userConsentTranslationsPath + `/${lang}.json`
 }
+
 const userConsentGroupsPath = userConsentResourcePath + "/consent-groups.json"
 const credentialTypesPath = outputDir + "/credential-types.json"
 function getCredentialTypeTranslationPath(credentialType, lang) {
