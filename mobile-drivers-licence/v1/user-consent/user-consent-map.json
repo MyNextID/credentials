@@ -28,7 +28,7 @@
     "residentState": "identity-profile",
     "residentPostalCode": "identity-profile",
     "residentCountry": "identity-profile",
-    "biometricTemplate": "identity-profile",
+    "biometricTemplateXX": "identity-profile",
     "familyNameNationalCharacter": "identity-profile",
     "givenNameNationalCharacter": "identity-profile",
     "signatureUsualMark": "identity-profile"

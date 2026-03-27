@@ -158,7 +158,7 @@ To add a new credential type, please follow these steps:
 
 1. Fork the repository
 2. Create a new credential type directory following the established naming conventions.
-3. Implement the required folder structure and files as described in the [credential type folder structure](_resources/documentation/credential-type-folder-structure.md) documentation.
+3. Implement the required folder structure and files as described in the [credential-type-structure](_resources/documentation/credential-type-structure.md) documentation.
 4. Add all required assets, including:
    - EDC schema
    - Example credential
@@ -171,7 +171,7 @@ To add a new credential type, please follow these steps:
 6. Validate your files to ensure schemas and examples are consistent.
 7. Submit a **Pull Request** with a clear description of the credential and its intended use.
 
-Before submitting your pull request, please review the [credential type folder structure](_resources/documentation/credential-type-folder-structure.md) to ensure that your credential implementation follows the required structure and naming conventions.
+Before submitting your pull request, please review the [credential-type-structure](_resources/documentation/credential-type-structure.md) to ensure that your credential implementation follows the required structure and naming conventions.
 
 ## License
 

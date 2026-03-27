@@ -2,102 +2,148 @@
 
 ## Learn about this repository
 
-This repository contains a centralized set of credential type definitions, expressed in standardized formats and intended for reuse across multiple applications.
+This repository serves as a **schema registry** for **Verifiable Credential (VC) definitions**, which we refer to here as credential types. It provides standardized, versioned schemas and associated metadata that applications can consume at build time or runtime to validate, transform, and render credential data consistently across systems. By acting as a single source of truth, it eliminates the need for applications to maintain their own credential definitions, ensuring consistency and reusability.
 
-It acts as a single source of truth for credential schemas, formats, and related metadata. Applications that integrate this repository can programmatically consume credential definitions instead of maintaining their own implementations.
-
-One example of such an application is  [verifier.mynext.id](https://verifier.mynext.id/), which uses this repository to validate and process credentials based on the shared definitions.
-
-New credential types can be introduced by contributing to this repository. After a pull request is reviewed and approved, the new credential type becomes available to all integrated applications.
+Applications use this repository to discover credential types, read their structure, and integrate credential data into their workflows. For example, [verifier.mynext.id](https://verifier.mynext.id/) consumes these definitions to validate and process credentials according to shared schemas and mappings.
 
 ## Key Benefits
 
-### 1. Centralized and Reusable Source of Truth
+The repository is designed to simplify and standardize how applications work with credential data:
 
-- Maintains all credential type definitions, schemas, and metadata in one place
-- Ensures consistency across applications and eliminates duplication
-- Enables reuse of credential definitions across multiple systems, improving interoperability
+### 1. Centralized and Reusable
+
+All credential definitions, schemas, and metadata are maintained in one place, enabling multiple applications to reuse the same types without duplication.
   
-### 2. Integration-Friendly and Machine-Readable
+### 2. Easy to Integrate
 
-- Provides structured, auto-generated JSON files for direct programmatic use
-- Supports automation of validation, transformation, and UI generation
-- Simplifies integration for both frontend and backend applications
+Auto-generated JSON files can be consumed directly by applications, supporting tasks such as schema validation, data transformation, and dynamic UI generation.
   
-### 3. Versioning and Extensibility
+### 3. Versioned and Extensible
 
-- Supports multiple versions of each credential type to ensure backward compatibility
-- Allows controlled evolution of schemas without breaking existing implementations
-- Enables easy introduction of new credential types through a contribution workflow
+Credential types are versioned to ensure backward compatibility, and new types can be added over time through a defined contribution workflow.
   
-### 4. Dynamic Discovery and Flexible Schema Mapping
+### 4. Flexible Data Modeling
 
-- Offers a structured index for discovering credential types, versions, and schemas
-- Separates input field schemas from format-specific schemas
-- Provides mapping definitions to support multiple credential formats and transformations
+Input field schemas are separated from format-specific schemas, allowing the same data to be validated or transformed across different formats without duplicating logic.
 
-### 5. Localization and Standardized Consent Management
+### 5. Built-in Localization and Consent
 
-- Includes built-in multilingual support for credential data and consent groups
-- Provides reusable consent group definitions with labels, descriptions, and icons
-- Enables consistent, ready-to-use user consent flows across applications
+Credential data includes multilingual labels and reusable consent group definitions, which can drive localized UIs and consistent consent handling with minimal additional setup.
 
-### 6. Accelerated UI/UX Development
+### 6. Supports Dynamic UI Development
 
-- Supplies all metadata required to dynamically render forms and interfaces
-- Reduces the need for custom UI configuration
-- Speeds up development of consistent and user-friendly experiences
+All metadata needed to generate forms and interfaces dynamically is included, reducing hardcoded UI logic and maintaining consistency across applications. For example, labels and field types can be used directly to render forms in frontend frameworks.
+
+## When to Use This Repository
+
+### Use this repository if you need to
+
+- Consume multiple credential types consistently across applications.
+- Dynamically generate forms or interfaces from standardized schemas.
+- Maintain versioned, reusable credential definitions across projects or environments.
+- Ensure consistent consent handling and localization in your UIs.
+
+### This may be overkill if
+
+- Your project only uses a single credential type with a static interface.
+- You don’t need versioning, schema validation, or cross-system consistency.
+
+In short, this repository is most valuable when you want to standardize and reuse credential schemas, rather than maintaining separate definitions in each application.
 
 ## Working with Credential Data
 
-This repository provides structured, machine-readable data for working with credential types and user consent configurations. It is designed to support consistent integration, localization, and schema validation across different implementations.
+Applications interact with this repository through structured, machine-readable data that defines credential types, their fields, and associated metadata.
 
-To simplify usage, auto-generated files are provided that expose relevant credential data and its structure in a predictable and implementation-friendly format.
+In practice, this typically involves:
+
+- discovering available credential types and versions
+- reading input field definitions and metadata
+- validating or transforming data using provided schemas and mappings
+- using translations and consent groups to drive user interfaces
+
+The data is exposed through auto-generated files in a predictable format, allowing applications to integrate credential handling without maintaining their own definitions or parsing logic.
 
 ### Generated Files Overview
 
 Two auto-generated files are available to support different use cases:
 
-- `credentials.json` – provides credential definitions, claims, translations, and consent groups, and is intended for direct use in applications.
-- `credential-types.json` – provides a structured index of credential types, versions, and schema references, and is useful for discovery, validation, and dynamic integrations.
+- **`credentials.json`** – provides credential definitions, claims, translations, and consent groups, and is intended for direct use in applications.
+- **`credential-types.json`** – provides a structured index of credential types, versions, and schema references, and is useful for discovery, validation, and dynamic integrations.
   
 Both files are automatically updated whenever new credential types or versions are added, ensuring that the available data is always up to date.
 
-#### `credentials.json`
+### `credentials.json`
 
 The `credentials.json` file contains the full dataset of all supported credential types for UI/UX integration. The file includes translations, claims, version details, and associated consent groups.
 
-The file is located in the `_generated` directory and is accessible via the following link:
-[credentials.json](https://mynextid.github.io/credentials/_generated/credentials.json).
+The file is located in the `_generated` directory and is automatically updated whenever new credential types are merged. It is accessible via the following link:
 
-##### Structure
+- [credentials.json](https://mynextid.github.io/credentials/_generated/credentials.json)
+
+>**Note:** If you maintain a local copy of this file within your project, it is recommended to periodically synchronize it with the repository to ensure you have the latest credential definitions. To manually regenerate the file from the repository, run:
+`node .\.github\scripts\build-credential-data.js`
+
+#### Structure
 
 The file is a single JSON object with two main top-level keys:
 
 - `credential_types`
 - `consent_groups`
 
-##### `credential_types`
+#### Example snippet from `credentials.json`
+
+```json
+{
+    "credential_types": {
+        "age-verification": {
+            "v1": {
+                "label": {"en": "Age verification"},
+                "available_languages": ["en"],
+                "version_metadata": {"changelogs:": "/age-verification/v1/changelog.md"},
+                "claims": {
+                    "ageOver18": {
+                        "label": {"en": "Age over 18"},
+                        "group": "age_info"
+                    },
+                }
+            }
+        },
+    },
+    "consent_groups": {
+        "available_languages": ["en"],
+        "groups": {
+            "identity-profile": {
+                "label": {"en": "Identity Profile"},
+                "description": {"en": "Core personal details that establish and verify an individual’s identity."},
+                "icon": "_resources/user-consent/icons/user.svg"
+            },
+        }
+    },
+}
+
+```
+
+#### `credential_types`
 
 The `credential_types` key contains all available credential types.
 Each credential type includes versioned data (e.g., `v1`, `v2`). This versioning ensures backward compatibility, allowing existing implementations to continue functioning even when newer versions are introduced.
 
 Within each version, the following attributes are provided:
 
-- available_languages - Lists the languages in which the credential type is available, enabling easier localization during implementation.
+- available_languages - Lists the languages in which the credential type is available, using standard language codes (e.g. `en`). If a translation is missing for a specific language, a default `en` localization can be used as a fallback.
 - label - Contains translated titles of the credential type for each available language.
 - claims - Describes the input fields (attributes) and their metadata, including human-readable field name translations, associated consent groups.
 - version_metadata - Provides version details and a link to the changelog.
 
-> Input fields are attributes defined by the input fields schema. Each credential type version includes an input fields schema, represented as a flat JSON structure that defines standardized camelCase attribute names for that credential type. Each format must include an `input-fields-to-credential-map.json` file, which specifies the mapping between input fields and the format’s attributes.
+>**Note:** Input fields represent the core set of attributes that define a credential type (e.g., `firstName`, `dateOfBirth`). They are defined by the input fields schema, which serves as the canonical data model for that credential. The schema is a flat JSON structure where each key is a standardized camelCase attribute name. It defines the expected input data independent of any specific credential format.
 
-##### `consent_groups`
+#### `consent_groups`
 
 The `consent_groups` key contains all user consent group definitions.
 
 It includes:
 
-- available_languages - Specifies the languages supported for consent group translations.
+- available_languages - Specifies the languages supported for consent group translations using standard language codes (e.g. `en`). If a translation is missing for a specific language, a default `en` localization can be used as a fallback.
 - groups - Each group contains a translated label, a short translated description, and a default icon used for display in the user interface.
   
 The default icon supports out-of-the-box implementation of a user consent screen and can be customized if needed.
@@ -106,17 +152,53 @@ The default icon supports out-of-the-box implementation of a user consent screen
 
 The `credential-types.json` file provides a structured index of all supported credential types, their versions, and related schema definitions. It is useful for discovery, validation, and building dynamic integrations.
 
-The file is located in the `_generated` directory and is accessible via the following link:
-[credential-types.json](https://mynextid.github.io/credentials/_generated/credential-types.json)
+The file is located in the `_generated` directory and is automatically updated whenever new credential types are merged. It is accessible via the following link:
 
-##### Structure
+- [credential-types.json](https://mynextid.github.io/credentials/_generated/credential-types.json)
+
+>**Note:** If you maintain a local copy of this file within your project, it is recommended to periodically synchronize it with the repository to ensure you have the latest credential definitions. To manually regenerate the file from the repository, run:
+`node .\.github\scripts\build-credential-types-list.js`
+
+#### Structure
 
 The file is a single JSON object where each credential type includes versioned data (e.g., `v1`, `v2`). Each version contains the following attributes:
 
 - schema – Provides a link to the schema for the **input fields** of given version.
 - formats – An object describing the currently supported formats for this credential type. Each key is the name of a format, with the following structure:
   - schema – Defines the schema for this specific format.
-  - mapping – Maps attributes from the input field schema to the format schema, allowing implementations to transform or validate data according to the chosen format.
+  - map – Maps attributes from the input field schema to the format schema, allowing implementations to transform or validate data according to the chosen format.
+
+#### Example snippet from `credentials.json`
+
+```json
+{
+    "certificate-of-advanced-study": {
+        "v1": {
+            "schema": "/certificate-of-advanced-study/v1/input-fields/schema.json",
+            "formats": {
+                "edc": {
+                    "schema": "/certificate-of-advanced-study/v1/edc/schema.json",
+                    "map": {
+                        "credentialTitle": "/displayParameter/title",
+                        "fullName": "/credentialSubject/fullName",
+                        "dateOfBirth": "/credentialSubject/dateOfBirth",
+                        "placeOfBirth": "/credentialSubject/placeOfBirth/address/countryCode/prefLabel",
+                        "fullAddress": "/credentialSubject/placeOfBirth/address/fullAddress/noteLiteral",
+                        "ectsPoints": "/credentialSubject/ectsPoints",
+                        "qrCode": "/credentialSubject/qrCode",
+                        "validUntil": "/validUntil"
+                    }
+                }
+            }
+        }
+    },
+}
+
+```
+
+> **Note:** Each credential format has its own schema and mapping file. The `map` object listed under a format in `credential-types.json` corresponds to that format’s `input-fields-to-credential-map.json` file. This mapping specifies how canonical input fields are translated into the format-specific schema, allowing the same core data to be transformed or validated in multiple representations without duplicating logic.
+>
+>The claims listed for a credential type are essentially the attributes defined by the input fields schema, representing the fundamental data that makes up the credential.
 
 ## Integration Examples
 
@@ -124,6 +206,22 @@ These examples demonstrate how the credential repository can be integrated and u
 
 ### 1. Verifier Integration
 
+Shows how Verifier uses the repository to validate and process credentials.
+
+**Details:** See [Verifier Implementation Example](todo)
+
 ### 2. User Consent Screen
 
-### 3. Backend Implementation with Input Field
+Demonstrates how to render consent groups and associate them with credential claims in the user interface.
+
+**Details:** See [User Consent Screen Example](todo)
+
+### 3. Backend Implementation with Input Field Mapping
+
+Illustrates backend usage, including mapping input fields to specific credential formats and validating against schemas.
+
+**Details:** See [Backend Input Mapping Example](todo)
+
+## Contributing
+
+New credential types can be introduced by contributing to this repository. Once a pull request is reviewed and approved, the new credential type becomes available to all integrated applications. More information about the contribution process can be found in [credential-type-structure](credential-type-structure.md).
