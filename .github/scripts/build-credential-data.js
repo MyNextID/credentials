@@ -149,7 +149,7 @@ Object.keys(credentialTypes).forEach(credentialType => {
         // c) Get version metadata - changelog link if exists
         const  hasChangelog = fs.existsSync(getCredentialTypeChangelogPath(key));
         const versionMetadata = {
-            "changelogs:":  hasChangelog ? "/"+ getCredentialTypeChangelogPath(key) : "",
+            "changelogs:":  hasChangelog ? ("/"+ getCredentialTypeChangelogPath(key)) : "",
         }
 
         data.credential_types[credentialType][version] = {
