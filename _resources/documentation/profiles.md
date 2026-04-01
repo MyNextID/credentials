@@ -21,6 +21,10 @@ Different ecosystems and use cases require different credential representations:
 
 The table below shows which data models are supported by each profile.
 
+- W3C VC – A standard JSON/JSON-LD format for verifiable credentials that represents claims about an entity and includes cryptographic proofs for authentication and integrity.
+- SD-JWT VC – A JWT-based verifiable credential format that supports selective disclosure, letting holders reveal only specific claims while keeping others private.
+- mDoc – A CBOR-based mobile document format defined by ISO/IEC 18013-5, designed for secure and privacy-preserving exchange of digital identity and credentials on mobile devices.
+
 | Profile                                                               | W3C VC | SD-JWT VC | mDoc |
 |-----------------------------------------------------------------------|--------|-----------|------|
 | [edc](#edc-european-digital-credential-for-learning)                  | x      |           |      |

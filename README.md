@@ -18,12 +18,26 @@ challenging. This repository provides:
 
 ## Supported Standards
 
-| Standard                      | Version | Status      |
-| ----------------------------- | ------- | ----------- |
-| European Digital Credentials (EDC) | v3      | Available   |
-| Open Badges (OB)              | v3      | Available   |
-| ISO 18013-5 mDoc/mDL          | -       | Coming Soon |
-| ETSI (Q)EAA (EUDI-compliant)  | -       | Coming Soon |
+This table shows which verifiable credential profiles support each credential type.
+
+| Credential Type                               | [edc](/_resources/documentation/profiles.md#edc-european-digital-credential-for-learning)   | [open-badge](/_resources/documentation/profiles.md#open-badge)  | [eaa](/_resources/documentation/profiles.md#eaa-electronic-attestation-of-attributes)   | [qeaa](/_resources/documentation/profiles.md#qeaa-qualified-electronic-attestation-of-attributes)  | [pub-eaa](/_resources/documentation/profiles.md#pub-eaa-public-body-electronic-attestation-of-attributes) | [iso-18013-5](/_resources/documentation/profiles.md#iso-18013-5)  | [eudi.av](/_resources/documentation/profiles.md#eudiav-eu-age-verification) | [eudi.pid](/_resources/documentation/profiles.md#eudipid-person-identification-data) |
+|-----------------------------------------------|-----|------------|-----|------|---------|-------------|---------|----------|
+| [age-verification](/age-verification)                         |     |            | 🟨 | 🟨 | 🟨 |     | ✅ |     |
+| [certificate-of-advanced-study](/certificate-of-advanced-study/)                  | ✅  |            | 🟨 | 🟨 | 🟨 |     |     |     |
+| [certificate-of-attendance](/certificate-of-attendance/)                       | ✅  |            | 🟨 | 🟨 | 🟨 |     |     |     |
+| [certificate-of-participation-in-summer-school](/certificate-of-participation-in-summer-school/) | ✅  |            | 🟨 | 🟨 | 🟨 |     |     |     |
+| [confirmation-of-enrolment](/confirmation-of-enrolment/)                       | ✅  |            | 🟨 | 🟨 | 🟨 |     |     |     |
+| [degree-certificate](/degree-certificate/)                              | ✅  |            | 🟨 | 🟨 | 🟨 |     |     |     |
+| [matriculation](/matriculation/)                                   | ✅  |            | 🟨 | 🟨 | 🟨 |     |     |     |
+| [microcredential](/microcredential/)                                 | ✅  | ✅         | 🟨 | 🟨 | 🟨 |     |     |     |
+| [mobile-drivers-licence](/mobile-drivers-licence/)                           |     |            | 🟨 | 🟨 | 🟨 | ✅  |     |     |
+| [personal-id](/personal-id/)                                     |     |            | 🟨 | 🟨 | 🟨 | ✅  |     | ✅  |
+| [student-id](/student-id/)                                      | ✅  |            | 🟨 | 🟨 | 🟨 |     |     |     |
+
+**Legend:**  
+
+- ✅ Already implemented in this repository
+- 🟨 Supported in the ecosystem but not yet in this repository
 
 ## Education Credentials
 
