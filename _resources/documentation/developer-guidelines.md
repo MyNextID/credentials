@@ -6,6 +6,8 @@ This repository serves as a **schema registry** for **Verifiable Credential (VC)
 
 Applications use this repository to discover credential types, read their structure, and integrate credential data into their workflows. For example, [verifier.mynext.id](https://verifier.mynext.id/) consumes these definitions to validate and process credentials according to shared schemas and mappings.
 
+>A Verifiable Credential (VC) is a digital, tamper-evident version of a real-world credential (e.g., a driver’s license or diploma) that is cryptographically secured and machine-verifiable.
+
 ## Key Benefits
 
 The repository is designed to simplify and standardize how applications work with credential data:
@@ -32,7 +34,7 @@ Credential data includes multilingual labels and reusable consent group definiti
 
 ### 6. Supports Dynamic UI Development
 
-All metadata needed to generate forms and interfaces dynamically is included, reducing hardcoded UI logic and maintaining consistency across applications. For example, labels and field types can be used directly to render forms in frontend frameworks.
+All metadata required to generate forms and interfaces dynamically is included, reducing hardcoded UI logic and ensuring consistency across applications. For example, claim labels, data types, and constraints (e.g., required fields, formats, value ranges) can be used directly to render and validate forms in frontend frameworks.
 
 ## When to Use This Repository
 
@@ -40,7 +42,7 @@ All metadata needed to generate forms and interfaces dynamically is included, re
 
 - Consume multiple credential types consistently across applications.
 - Dynamically generate forms or interfaces from standardized schemas.
-- Maintain versioned, reusable credential definitions across projects or environments.
+- Maintain versioned, reusable credential definitions across projects or environments - even for a single credential type.
 - Ensure consistent consent handling and localization in your UIs.
 
 ### This may be overkill if
@@ -76,11 +78,11 @@ Both files are automatically updated whenever new credential types or versions a
 
 The `credentials.json` file contains the full dataset of all supported credential types for UI/UX integration. The file includes translations, claims, version details, and associated consent groups.
 
-The file is located in the `_generated` directory and is automatically updated whenever new credential types are merged. It is accessible via the following link:
+The file is located in the `_generated` directory and is automatically updated whenever new credential types are merged or existing ones are versioned or extended (e.g., adding new translations). It is accessible via the following link:
 
 - [credentials.json](https://mynextid.github.io/credentials/_generated/credentials.json)
 
->**Note:** If you maintain a local copy of this file within your project, it is recommended to periodically synchronize it with the repository to ensure you have the latest credential definitions. To manually regenerate the file from the repository, run:
+>**Note:** If you maintain a local copy of this file within your project, it is recommended to periodically synchronize it with the repository (e.g., daily or as needed) to ensure you have the latest credential definitions. To manually regenerate the file from the repository, run:
 `node .\.github\scripts\build-credential-data.js`
 
 #### Structure
@@ -99,7 +101,9 @@ The file is a single JSON object with two main top-level keys:
             "v1": {
                 "label": {"en": "Age verification"},
                 "available_languages": ["en"],
-                "version_metadata": {"changelogs:": "/age-verification/v1/changelog.md"},
+                "version_metadata": {
+                    "changelogs:": "/age-verification/v1/changelog.md"
+                },
                 "claims": {
                     "ageOver18": {
                         "label": {"en": "Age over 18"},
@@ -122,6 +126,8 @@ The file is a single JSON object with two main top-level keys:
 }
 
 ```
+
+>The claims listed for a credential type are essentially the attributes defined by the input fields schema, representing the fundamental data that makes up the credential.
 
 #### `credential_types`
 
@@ -152,11 +158,11 @@ The default icon supports out-of-the-box implementation of a user consent screen
 
 The `credential-types.json` file provides a structured index of all supported credential types, their versions, and related schema definitions. It is useful for discovery, validation, and building dynamic integrations.
 
-The file is located in the `_generated` directory and is automatically updated whenever new credential types are merged. It is accessible via the following link:
+The file is located in the `_generated` directory and is automatically updated whenever new credential types are merged or existing ones are versioned or extended (e.g., adding new translations). It is accessible via the following link:
 
 - [credential-types.json](https://mynextid.github.io/credentials/_generated/credential-types.json)
 
->**Note:** If you maintain a local copy of this file within your project, it is recommended to periodically synchronize it with the repository to ensure you have the latest credential definitions. To manually regenerate the file from the repository, run:
+>**Note:** If you maintain a local copy of this file within your project, it is recommended to periodically synchronize it with the repository (e.g., daily or as needed) to ensure you have the latest credential definitions. To manually regenerate the file from the repository, run:
 `node .\.github\scripts\build-credential-types-list.js`
 
 #### Structure
@@ -168,7 +174,7 @@ The file is a single JSON object where each credential type includes versioned d
   - schema – Defines the schema for this specific format.
   - map – Maps attributes from the input field schema to the format schema, allowing implementations to transform or validate data according to the chosen format.
 
-#### Example snippet from `credentials.json`
+#### Example snippet from `credential_types.json`
 
 ```json
 {
@@ -198,7 +204,7 @@ The file is a single JSON object where each credential type includes versioned d
 
 > **Note:** Each credential format has its own schema and mapping file. The `map` object listed under a format in `credential-types.json` corresponds to that format’s `input-fields-to-credential-map.json` file. This mapping specifies how canonical input fields are translated into the format-specific schema, allowing the same core data to be transformed or validated in multiple representations without duplicating logic.
 >
->The claims listed for a credential type are essentially the attributes defined by the input fields schema, representing the fundamental data that makes up the credential.
+> In this context, a **format (e.g., edc)** refers to a specific Verifiable Credential output standard or specification.
 
 ## Integration Examples
 

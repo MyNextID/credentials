@@ -5,14 +5,15 @@ This structure ensures that all credentials can be validated, generated, and tra
 
 ```text
 /<credential-type>/v1
-  ├── <format>/
-  │     ├── examples/
-  │     │     ├── <format>-<credential-type-initials>-example.json
-  │     │     └── <format>-<credential-type-initials>-signed.jsonld
-  │     ├── schema.json
-  │     ├── input-fields-to-credential-map.json (optional)
-  │     └── README.md
-  ├── input-fields/ (optional)
+  ├── <profile>/
+  │     ├── <data-modal>
+  │     │     ├── examples/
+  │     │     │     ├── <data-modal>-<credential-type-initials>-example.json
+  │     │     │     └── <data-modal>-<credential-type-initials>-signed.jsonld
+  │     │     ├── schema.json
+  │     │     ├── input-fields-to-credential-map.json
+  │     │     └── README.md
+  ├── input-fields/ 
   │     ├── translations/
   │     │     └── en.json
   │     ├── example.json
