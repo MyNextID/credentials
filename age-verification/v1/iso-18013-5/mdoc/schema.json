@@ -7,7 +7,7 @@
     "properties": {
       "docType": {
         "type": "string",
-        "const": "org.iso.18013.5.1.mDL"
+        "const": "eu.europa.ec.av.1"
       },
       "namespace": {
         "type": "object",

@@ -1,22 +1,15 @@
 # Age verification (v1)
 
-This folder defines the structure and resources for the v1 implementation of **Age verification**.  
-
+This directory defines the **v1 structure** of the Age Verification credential, including its profiles, input definitions, and supporting resources.  
+  
 ## Contents
 
-- [input-fields](input-fields) - Translated input fields organised by language.
-- [iso-iec-18013-5](iso-iec-18013-5) - ISO/IEC 18013-5 schemas and mappings.
-- [translations](translations) - Translated credential titles organised by language.
-- [user-consent](user-consent) - Mapping between user consent groups and corresponding input fields.
-  
-## Parameterized Attributes
+- [input-fields](input-fields) - User input schema, examples, and translations
+- [iso-18013-5](iso-18013-5) - ISO/IEC 18013-5 schemas and mappings
+- [translations](translations) - Translated credential display data
+- [user-consent](user-consent) - Mapping between consent groups and input fields
 
-This project uses parameterized attributes to represent multiple related attributes using the pattern `<attribute>{{NN}}`, where `{{NN}}` is an integer value.
+## Reference
 
-### Example
-
-- `ageOver{{NN}}` → `ageOver18`, `ageOver21`
-
-### Purpose & Usage
-
-Avoids duplicating similar attributes by allowing dynamic values within a consistent naming pattern; replace `{{NN}}` with a valid value (integer) and handle it generically in code.
+For more information on the Age Verification credential type and its structure, see the official  
+[Age Verification specification](https://ageverification.dev/).

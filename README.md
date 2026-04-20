@@ -118,8 +118,8 @@ is distinct from confirmation of enrollment as it represents the initial
 acceptance and registration rather than ongoing status.
 
 - **EDC**: [Schema](/matriculation/v1/edc/schema.json) | 
-  [Example](/matriculation/v1/edc/examples/edc-matriculation-example.json) | 
-  [Signed](/matriculation/v1/edc/examples/edc-matriculation-signed.jsonld)
+  [Example](/matriculation/v1/edc/examples/edc-mat-example.json) | 
+  [Signed](/matriculation/v1/edc/examples/edc-mat-signed.jsonld)
 
 ### [Microcredential](/microcredential)
 

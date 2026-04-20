@@ -62,10 +62,10 @@ PuB‑EAA is a verifiable credential profile representing verified attributes is
 
 ISO/IEC 18013‑5 is a verifiable credential–friendly international standard that defines how mobile driver’s licences (mDLs) and related identity credentials should be structured, secured, and exchanged on digital devices. It specifies data formats, security mechanisms, and communication protocols to ensure credentials can be authenticated and verified reliably while protecting user privacy. Designed for portability and interoperability across jurisdictions and systems, ISO/IEC 18013‑5 enables secure issuance, sharing, and verification of proof such as age or identity using a mobile device.
 
-### EUDI.AV (EU Age Verification)
+#### EUDI.AV (EU Age Verification)
 
 EUDI.AV is a verifiable credential profile designed for standardized digital age verification across online services. It defines how age‑related claims should be structured, secured, and exchanged so that users can prove they meet specific age requirements (e.g., “over 18”) without disclosing additional personal data. Built on open standards and aligned with the evolving European digital identity ecosystem, EUDI.AV enables secure issuance, sharing, and verification of age attestations in a privacy‑preserving and interoperable way across different platforms and jurisdictions.
 
-### EUDI.PID (Person Identification Data)
+#### EUDI.PID (Person Identification Data)
 
 EUDI.PID is a verifiable credential profile that represents core person identification attributes, such as full name, date of birth, nationality, and other identity details. It enables secure, digitally signed identification of a user for online services and compliance with EU digital identity requirements. EUDI.PID credentials are designed for interoperability and trusted exchange, allowing service providers to verify a user’s identity in a consistent and privacy‑preserving way across member states and platforms.

@@ -2,7 +2,7 @@
 
 ## Available Versions
 
-Choose a version of the credential type to view its specification. Currently, the latest version is:
+Select a version to view its full specification. The latest version is:
 
-- [`v1`](v1/) – the first version of the Student ID.
+- [`v1`](v1/) – Initial version of the Student ID
   

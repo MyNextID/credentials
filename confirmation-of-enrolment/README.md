@@ -1,8 +1,5 @@
 # Confirmation of Enrolment
 
-This folder contains all technical assets related to the **Confirmation of Enrolment**.  
-It includes credential schemas, signed examples, field definitions, mappings, and translation files used for credential generation and validation.
-
 A confirmation of enrolment is an official document verifying that a student is
 currently registered in a specific educational program or institution. This
 administrative credential is frequently required for visa applications,
@@ -12,7 +9,7 @@ purposes. It typically includes details such as enrollment status
 
 ## Available Versions
 
-Choose a version of the credential type to view its specification. Currently, the latest version is:
+Select a version to view its full specification. The latest version is:
 
-- [`v1`](v1/) – the first version of the Confirmation of Enrolment.
+- [`v1`](v1/) – Initial version of the Confirmation of Enrolment
   

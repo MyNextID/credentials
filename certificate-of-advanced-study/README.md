@@ -1,8 +1,5 @@
 # Certificate of Advanced Study
 
-This folder contains all technical assets related to the **Certificate of Advanced Study**.  
-It includes credential schemas, signed examples, field definitions, mappings, and translation files used for credential generation and validation.
-
 A certificate of advanced study recognises completion of specialised
 postgraduate-level coursework in a specific field or discipline. Typically
 offered by universities and professional institutions, it represents focused
@@ -12,6 +9,6 @@ without committing to a full graduate degree.
 
 ## Available Versions
 
-Choose a version of the credential type to view its specification. Currently, the latest version is:
+Select a version to view its full specification. The latest version is:
 
-- [`v1`](v1/) – the first version of the Certificate of Advanced Study.
+- [`v1`](v1/) – Initial version of the Certificate of Advanced Study

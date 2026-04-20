@@ -1,12 +1,18 @@
 # Microcredential (v1)
 
-This folder defines the structure and resources for the v1 implementation of **Microcredential**.  
+This directory defines the **v1 structure** of the Microcredential credential, including its profiles, input definitions, and supporting resources.
 
 ## Contents
 
-- [edc](edc) - European Digital Credentials (EDC) schemas, example credentials, signed files, and input field mappings.
-- [open-badge](open-badge) - Open Badge schemas, example badges, and signed `.jwt` files.
-- [input-fields](input-fields) - Input field schema definitions, configuration examples and related translation files.
-- [translations](translations) - Translated credential titles organised by language.
-- [user-consent](user-consent) - Mapping between user consent groups and corresponding input fields.
+- [edc](edc) - European Digital Credentials (EDC) schemas, mappings, examples, and signed files
+- [open-badge](open-badge) - Open Badge schemas, mappings, examples, and signed JWT files
+- [input-fields](input-fields) - User input schema, examples, and translations
+- [translations](translations) - Translated credential display data
+- [user-consent](user-consent) - Mapping between consent groups and input fields
   
+<!-- 
+## Reference
+
+For more information on the Microcredential credential type and its structure, see the official  
+[Microcredential specification](TODO).
+-->

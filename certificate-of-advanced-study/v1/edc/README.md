@@ -1,10 +1,11 @@
-# EDC
+# EDC (European Digital Credentials)
 
-This folder contains resources related to the **European Digital Credentials (EDC)** format, a serialization of the ELM ontology, used for Certificate of Advanced Study.
+This directory provides the repository’s implementation of the European Digital Credentials (EDC) profile for Certificates of Advanced Study, serving as a container for supported data models based on the ELM ontology, with links to their implementations.
 
-## Contents
+## Contents – Available Data Models
 
-- [schema](schema.json) - JSON Schema definition of the EDC Certificate of Advanced Study.
-- [input-fields-to-credential-map](input-fields-to-credential-map.json) - Mapping between user-friendly input fields and the EDC Certificate of Advanced Study fields.
-- [examples](examples) - Reference examples of an EDC-compliant Certificate of Advanced Study, including JAdES-signed instances.
+- [w3c-vc](w3c-vc) - W3C Verifiable Credentials representation of the profile
   
+## Reference
+
+For details, including a link to the European Digital Credentials specification, see the [profile documentation](../../../_resources/documentation/profiles.md#edc-european-digital-credential-for-learning).

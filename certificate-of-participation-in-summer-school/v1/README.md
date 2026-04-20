@@ -1,10 +1,17 @@
 # Certificate of Participation in Summer School (v1)
 
-This folder defines the structure and resources for the v1 implementation of **Certificate of Participation in Summer School**.
+This directory defines the **v1 structure** of the Certificate of Participation in Summer School credential, including its profiles, input definitions, and supporting resources.
 
 ## Contents
 
-- [edc](edc) - European Digital Credentials (EDC) schemas, mappings, example credentials and signed files.
-- [input-fields](input-fields) - Input field schema definitions, configuration examples and related translation files.
-- [translations](translations) - Translated credential titles organised by language.
-- [user-consent](user-consent) - Mapping between user consent groups and corresponding input fields.
+- [edc](edc) - European Digital Credentials (EDC) schemas, mappings, examples, and signed files
+- [input-fields](input-fields) - User input schema, examples, and translations
+- [translations](translations) - Translated credential display data
+- [user-consent](user-consent) - Mapping between consent groups and input fields
+
+<!-- 
+## Reference
+
+For more information on the Certificate of Participation in Summer School credential type and its structure, see the official  
+[Certificate of Participation in Summer School specification](TODO).
+-->

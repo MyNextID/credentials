@@ -1,9 +1,10 @@
-# Input fields
+# Input Fields
 
-Input fields are simple key-value pairs that let you provide verifiable credential inputs in a format-agnostic way. Define your data once and the credential engine handles the rest, constructing credentials in any format you need.
+This directory defines the input fields used to provide credential data in a format-agnostic way.
+Input fields are structured as key-value pairs and serve as the source data for credential generation across different formats.
 
-Input fields are accompanied by
+## Contents
 
-- [translations](translations) - Translated input field labels organised by language.
-- [example](example.json) - Input field examples.
-- [schema](schema.json) - JSON Schema definition of input fields.
+- [translations](translations) – Translated input field labels organised by language
+- [example.json](example.json) – Example input data for reference and testing  
+- [schema.json](schema.json) – JSON Schema defining the structure and constraints of input fields

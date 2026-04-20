@@ -1,8 +1,5 @@
 # Matriculation
 
-This folder contains all technical assets related to the **Matriculation**.  
-It includes credential schemas, signed examples, field definitions, mappings, and translation files used for credential generation and validation.
-
 A matriculation credential confirms formal admission and enrollment of a student
 into an educational institution, marking their official entry into a degree
 program or course of study. Historically significant in European higher
@@ -13,7 +10,7 @@ acceptance and registration rather than ongoing status.
 
 ## Available Versions
 
-Choose a version of the credential type to view its specification. Currently, the latest version is:
+Select a version to view its full specification. The latest version is:
 
-- [`v1`](v1/) – the first version of the Matriculation.
+- [`v1`](v1/) – Initial version of the Matriculation
   
