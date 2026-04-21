@@ -12,4 +12,4 @@ This directory defines the **v1 structure** of the Age Verification redential, i
 ## Reference
 
 For more information on the Age Verification credential type and its structure, see the official  
-[Age Verification specification](https://ageverification.dev/).
+[Age Verification specification](https://ageverification.dev/){:target="_blank" rel="noopener"}.
