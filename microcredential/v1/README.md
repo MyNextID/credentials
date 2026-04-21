@@ -13,6 +13,6 @@ This directory defines the **v1 structure** of the Microcredential credential, i
 <!-- 
 ## Reference
 
-For more information on the Microcredential credential type and its structure, see the official  
+For more information on the Microcredential credential type and its structure, see: 
 [Microcredential specification](TODO).
 -->

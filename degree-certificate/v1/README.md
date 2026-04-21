@@ -12,6 +12,6 @@ This directory defines the **v1 structure** of the Degree Certificate credential
 <!-- 
 ## Reference
 
-For more information on the Degree Certificate credential type and its structure, see the official  
+For more information on the Degree Certificate credential type and its structure, see: 
 [Degree Certificate specification](TODO).
 -->

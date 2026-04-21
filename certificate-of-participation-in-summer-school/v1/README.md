@@ -12,6 +12,6 @@ This directory defines the **v1 structure** of the Certificate of Participation 
 <!-- 
 ## Reference
 
-For more information on the Certificate of Participation in Summer School credential type and its structure, see the official  
+For more information on the Certificate of Participation in Summer School credential type and its structure, see: 
 [Certificate of Participation in Summer School specification](TODO).
 -->

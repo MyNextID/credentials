@@ -11,5 +11,5 @@ This directory defines the **v2 structure** of the Person Identification Data cr
 
 ## Reference
 
-For more information on the Person Identification Data credential type and its structure, see the official  
+For more information on the Person Identification Data credential type and its structure, see:
 [Person Identification Data specification](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=intcom:Ares%282026%291286304).

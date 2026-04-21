@@ -139,8 +139,41 @@ frameworks such as the European Qualifications Framework.
   [Example](/microcredential/v1/open-badge/examples/open-badge-mc-example.json) | 
   [Signed (JWT)](/microcredential/v1/open-badge/examples/open-badge-mc-signed.jwt)
 
-## Personal Credentials (coming soon)
+## Personal Credentials
 
+### [Age Verification Credential](/age-verification)
+
+An age verification credential enables an individual to demonstrate that they meet a specific age threshold – for example, being 18 or over – without disclosing their full identity or exact date of birth.
+
+It is implemented as a verifiable credential and relies on privacy-preserving mechanisms such as selective disclosure and zero-knowledge proofs (ZKPs) to confirm eligibility while minimising personal data exposure. This makes it suitable for accessing age-restricted services – online platforms, retail, gambling, alcohol – where only the age check is relevant and broader identity disclosure would be disproportionate.
+
+- **ISO-18013-5**: [Schema](/age-verification/v1/iso-18013-5/mdl/schema.json)
+  
+### [Mobile Driving Licence](/mobile-driving-licence)
+
+A mobile driving licence (mDL) is a digital representation of a physical driving licence, securely stored and presented via a mobile device. It is standardised under ISO/IEC 18013-5 (proximity presentation) and ISO/IEC 18013-7 (online presentation), and is issued by the relevant national or regional licensing authority.
+
+An mDL enables holders to prove both their driving entitlements and their identity in a wide range of scenarios — from roadside checks and car rental to age verification and online authentication.
+
+- **ISO-18013-5**: [Schema](/mobile-driving-licence/v1/iso-18013-5/mdl/schema.json)
+
+### [Person Identification Data](/personal-id)
+
+Person Identification Data (PID) is a structured set of personal attributes that uniquely identifies an individual within the European Digital Identity (EUDI) framework. It is issued by a Member State and constitutes the authoritative identity dataset from which other credentials and attestations can be derived and verified.
+
+PID supports secure authentication and identification across public and private services, and serves as the foundational reference layer of the EUDI Wallet ecosystem. It is designed to be interoperable across Member States, enabling cross-border identity verification while complying with applicable data protection obligations under EU law.
+
+- **ISO-18013-5**: [Schema](/personal-id/v2/iso-18013-5/mdl/schema.json)
+  
+### [Student ID](/student-id)
+
+A student ID credential confirms an individual's current enrollment or affiliation with an educational institution. It is issued as a verifiable credential within a digital identity system and typically attests to attributes such as the holder's name, institution, programme, enrolment status, and validity period.
+
+It is commonly used to access campus services, academic resources, libraries, and student discounts – both on-site and online. As a verifiable credential, it supports selective disclosure, allowing students to share only the relevant attributes for a given context (for instance, confirming student status without revealing their home institution).
+
+
+- **ISO-18013-5**: [Schema](/student-id/edc/w3c-vc/schema.json)
+  
 ## Standards and Compliance
 
 - **EDC**: European Digital Credentials, a serialization of the [European Learning Model (ELM)](https://europass.europa.eu/en/european-learning-model-stakeholders) ontology

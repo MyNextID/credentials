@@ -11,5 +11,5 @@ This directory defines the **v1 structure** of the Mobile Driving Licence (mDL) 
 
 ## Reference
 
-For more information on the Mobile Driving Licence credential type and its structure, see the official  
+For more information on the Mobile Driving Licence credential type and its structure, see:
 [Mobile Driving Licence specification](https://www.iso.org/standard/69084.html).

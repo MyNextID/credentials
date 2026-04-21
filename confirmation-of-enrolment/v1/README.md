@@ -12,6 +12,6 @@ This directory defines the **v1 structure** of the Confirmation of Enrolment cre
 <!-- 
 ## Reference
 
-For more information on the Confirmation of Enrolment credential type and its structure, see the official  
+For more information on the Confirmation of Enrolment credential type and its structure, see: 
 [Confirmation of Enrolment specification](TODO).
 -->

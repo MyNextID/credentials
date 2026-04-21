@@ -12,6 +12,6 @@ This directory defines the **v1 structure** of the Certificate of Advanced Study
 <!-- 
 ## Reference
 
-For more information on the Certificate of Advanced Study credential type and its structure, see the official  
+For more information on the Certificate of Advanced Study credential type and its structure, see: 
 [Certificate of Advanced Study specification](TODO).
 -->

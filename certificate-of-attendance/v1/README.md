@@ -12,6 +12,6 @@ This directory defines the **v1 structure** of the Certificate of Attendance cre
 <!-- 
 ## Reference
 
-For more information on the Certificate of Attendance credential type and its structure, see the official  
+For more information on the Certificate of Attendance credential type and its structure, see: 
 [Certificate of Attendance specification](TODO).
 -->

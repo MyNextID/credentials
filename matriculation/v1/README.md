@@ -12,6 +12,6 @@ This directory defines the **v1 structure** of the Matriculation credential, inc
 <!-- 
 ## Reference
 
-For more information on the Matriculation credential type and its structure, see the official  
+For more information on the Matriculation credential type and its structure, see: 
 [Matriculation specification](TODO).
 -->
