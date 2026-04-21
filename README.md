@@ -50,9 +50,9 @@ mastery of content. Commonly used for professional development tracking,
 continuing education requirements, and participation in conferences, seminars,
 or short courses.
 
-- **EDC**: [Schema](certificate-of-attendance/v1/edc/schema.json) |
-   [Example](certificate-of-attendance/v1/edc/examples/edc-coa-example.json) | 
-   [Signed](certificate-of-attendance/v1/edc/examples/edc-coa-signed.jsonld)
+- **EDC**: [Schema](certificate-of-attendance/v1/edc/w3c-vc/schema.json) |
+   [Example](certificate-of-attendance/v1/edc/w3c-vc/examples/edc-coa-example.json) | 
+   [Signed](certificate-of-attendance/v1/edc/w3c-vc/examples/edc-coa-signed.jsonld)
 
 ### [Certificate of Advanced Study](/certificate-of-advanced-study)
 
@@ -63,9 +63,9 @@ study beyond a bachelor's degree but is less extensive than a full master's
 program. Often pursued by professionals seeking expertise in a specialised area
 without committing to a full graduate degree.
 
-- **EDC**: [Schema](/certificate-of-advanced-study/v1/edc/schema.json) | 
-  [Example](/certificate-of-advanced-study/v1/edc/examples/edc-cas-example.json) | 
-  [Signed](/certificate-of-advanced-study/v1/edc/examples/edc-cas-signed.jsonld)
+- **EDC**: [Schema](/certificate-of-advanced-study/v1/edc/w3c-vc/schema.json) | 
+  [Example](/certificate-of-advanced-study/v1/edc/w3c-vc/examples/edc-cas-example.json) | 
+  [Signed](/certificate-of-advanced-study/v1/edc/w3c-vc/examples/edc-cas-signed.jsonld)
 
 ### [Certificate of Participation in Summer School](/certificate-of-participation-in-summer-school)
 
@@ -76,9 +76,9 @@ may be academic (specialised coursework, research methods), professional
 youth participation initiatives). They often include interdisciplinary approaches 
 and international participants, and are commonly used to recognise engagement in supplementary learning and development opportunities outside regular academic or professional contexts.
 
-- **EDC**: [Schema](/certificate-of-participation-in-summer-school/v1/edc/schema.json) | 
-  [Example](/certificate-of-participation-in-summer-school/v1/edc/examples/edc-cps-example.json) | 
-  [Signed](/certificate-of-participation-in-summer-school/v1/edc/examples/edc-cps-signed.jsonld)
+- **EDC**: [Schema](/certificate-of-participation-in-summer-school/v1/edc/w3c-vc/schema.json) | 
+  [Example](/certificate-of-participation-in-summer-school/v1/edc/w3c-vc/examples/edc-cps-example.json) | 
+  [Signed](/certificate-of-participation-in-summer-school/v1/edc/w3c-vc/examples/edc-cps-signed.jsonld)
 
 ### [Confirmation of Enrolment](/confirmation-of-enrolment)
 
@@ -89,9 +89,9 @@ scholarship eligibility, student discounts, loan applications, and insurance
 purposes. It typically includes details such as enrollment status
 (full-time/part-time), program of study, and expected completion date.
 
-- **EDC**: [Schema](/confirmation-of-enrolment/v1/edc/schema.json) | 
-  [Example](/confirmation-of-enrolment/v1/edc/examples/edc-coe-example.json) | 
-  [Signed](/confirmation-of-enrolment/v1/edc/examples/edc-coe-signed.jsonld)
+- **EDC**: [Schema](/confirmation-of-enrolment/v1/edc/w3c-vc/schema.json) | 
+  [Example](/confirmation-of-enrolment/v1/edc/w3c-vc/examples/edc-coe-example.json) | 
+  [Signed](/confirmation-of-enrolment/v1/edc/w3c-vc/examples/edc-coe-signed.jsonld)
 
 ### [Degree Certificate](/degree-certificate)
 
@@ -103,9 +103,9 @@ distinctions, and conferring institution. Degree certificates are essential for
 employment verification, further education applications, and professional
 licensing.
 
-- **EDC**: [Schema](/degree-certificate/v1/edc/schema.json) | 
-  [Example](/degree-certificate/v1/edc/examples/edc-dc-example.json) | 
-  [Signed](/degree-certificate/v1/edc/examples/edc-dc-signed.jsonld)
+- **EDC**: [Schema](/degree-certificate/v1/edc/w3c-vc/schema.json) | 
+  [Example](/degree-certificate/v1/edc/w3c-vc/examples/edc-dc-example.json) | 
+  [Signed](/degree-certificate/v1/edc/w3c-vc/examples/edc-dc-signed.jsonld)
 
 ### [Matriculation](/matriculation)
 
@@ -117,9 +117,9 @@ community and their right to pursue the specified qualification. This credential
 is distinct from confirmation of enrollment as it represents the initial
 acceptance and registration rather than ongoing status.
 
-- **EDC**: [Schema](/matriculation/v1/edc/schema.json) | 
-  [Example](/matriculation/v1/edc/examples/edc-mat-example.json) | 
-  [Signed](/matriculation/v1/edc/examples/edc-mat-signed.jsonld)
+- **EDC**: [Schema](/matriculation/v1/edc/w3c-vc/schema.json) | 
+  [Example](/matriculation/v1/edc/w3c-vc/examples/edc-mat-example.json) | 
+  [Signed](/matriculation/v1/edc/w3c-vc/examples/edc-mat-signed.jsonld)
 
 ### [Microcredential](/microcredential)
 
@@ -132,12 +132,12 @@ for professional development, reskilling, and specialised expertise, responding 
 to emerging skill demands while being recognised within established quality assurance 
 frameworks such as the European Qualifications Framework.
 
-- **EDC**: [Schema](/microcredential/v1/edc/schema.json) | 
-  [Example](/microcredential/v1/edc/examples/edc-mc-example.json) | 
-  [Signed](/microcredential/v1/edc/examples/edc-mc-signed.jsonld)
-- **Open Badges**: [Schema](/microcredential/v1/open-badge/schema.json) | 
-  [Example](/microcredential/v1/open-badge/examples/open-badge-mc-example.json) | 
-  [Signed (JWT)](/microcredential/v1/open-badge/examples/open-badge-mc-signed.jwt)
+- **EDC**: [Schema](/microcredential/v1/edc/w3c-vc/schema.json) | 
+  [Example](/microcredential/v1/edc/w3c-vc/examples/edc-mc-example.json) | 
+  [Signed](/microcredential/v1/edc/w3c-vc/examples/edc-mc-signed.jsonld)
+- **Open Badges**: [Schema](/microcredential/v1/open-badge/w3c-vc/schema.json) | 
+  [Example](/microcredential/v1/open-badge/w3c-vc/examples/open-badge-mc-example.json) | 
+  [Signed (JWT)](/microcredential/v1/open-badge/w3c-vc/examples/open-badge-mc-signed.jwt)
 
 ## Personal Credentials
 
