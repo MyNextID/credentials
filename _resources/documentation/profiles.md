@@ -10,20 +10,20 @@ Profiles solve this by defining a consistent way to use the VC data model for a 
 
 Different ecosystems and use cases require different credential representations:
 
-- Interoperability – Profiles like edc or open-badge align with specific ecosystems.
-- Privacy – Formats like sd-jwt-vc support selective disclosure of claims.
+- Interoperability – Profiles like edc or open-badge align with specific ecosystems
+- Privacy – Formats like sd-jwt-vc support selective disclosure of claims
 - Device & transport constraints:
   - JSON works well for web and APIs
   - CBOR is better suited for mobile wallets, offline use, and NFC
-- Multiple environments – Some profiles (e.g., eaa, qeaa) support multiple VC formats, allowing the same credential to be used across systems.
+- Multiple environments – Some profiles (e.g., eaa, qeaa) support multiple VC formats, allowing the same credential to be used across systems
 
 ## Profile Overview
 
 The table below shows which data models are supported by each profile.
 
-- W3C VC – A standard JSON/JSON-LD format for verifiable credentials that represents claims about an entity and includes cryptographic proofs for authentication and integrity.
-- SD-JWT VC – A JWT-based verifiable credential format that supports selective disclosure, letting holders reveal only specific claims while keeping others private.
-- mDoc – A CBOR-based mobile document format defined by ISO/IEC 18013-5, designed for secure and privacy-preserving exchange of digital identity and credentials on mobile devices.
+- W3C VC – A standard JSON/JSON-LD format for verifiable credentials that represents claims about an entity and includes cryptographic proofs for authentication and integrity
+- SD-JWT VC – A JWT-based verifiable credential format that supports selective disclosure, letting holders reveal only specific claims while keeping others private
+- mDoc – A CBOR-based mobile document format defined by ISO/IEC 18013-5, designed for secure and privacy-preserving exchange of digital identity and credentials on mobile devices
 
 | Profile                                                               | W3C VC | SD-JWT VC | mDoc |
 |-----------------------------------------------------------------------|--------|-----------|------|
@@ -42,30 +42,46 @@ The table below shows which data models are supported by each profile.
 
 The European Digital Credential for Learning (EDC) is a verifiable, digitally signed credential used to represent learning achievements across formal and non-formal contexts. It supports multiple credential types (e.g., diplomas, certificates, micro-credentials), is multilingual and includes built-in verification to ensure authenticity and trust. EDCs are designed for easy sharing and interoperability across education and employment systems.
 
+**Specification:** [European Digital Credentials](https://europass.europa.eu/en/european-digital-credentials)
+
 ### Open Badge
 
 Open Badges is a verifiable, digitally signed credential used to represent achievements, skills, and learning outcomes as digital badges. It supports a variety of recognition types, including course completions, certifications, and skill assertions, and includes metadata to describe the issuer, recipient, and evidence. Open Badges are designed for portability and interoperability, allowing recipients to securely share and verify their achievements across platforms and systems.
+
+**Specification:** [Open Badge](https://www.imsglobal.org/spec/ob/v3p0)
 
 ### EAA (Electronic Attestation of Attributes)
 
 EAA is a verifiable credential profile representing one or more verified attributes about a person, such as age, permissions, qualifications, or other claims. Non-qualified EAAs are issued by standard service providers and do not offer the same legal assurance as QEAA credentials, but they are useful for cases where high-level trust is not required, including education, digital payments, and commercial services. EAA credentials include metadata and cryptographic proofs to ensure the attributes are valid and can be securely shared and verified across digital systems.
 
+**Specification:** [Electronic Attestation of Attributes](https://www.etsi.org/deliver/etsi_ts/119400_119499/11947201/01.02.01_60/ts_11947201v010201p.pdf)
+
 ### QEAA (Qualified Electronic Attestation of Attributes)
 
 QEAA is a high-assurance verifiable credential profile representing verified attributes about a person, issued exclusively by Qualified Trust Service Providers (QTSPs). QEAA credentials offer the highest level of trust and legal assurance in the EU, often used together with Personal Identification Data (e.g., name, date of birth) and cross-checked against authoritative sources such as government databases. Providers are continuously monitored and audited to ensure security and compliance, making QEAA ideal for use cases that require strong confidence in digital identity verification.
+
+**Specification:** [Qualified Electronic Attestation of Attributes](https://www.etsi.org/deliver/etsi_ts/119400_119499/11947201/01.02.01_60/ts_11947201v010201p.pdf)
 
 ### PuB-EAA (Public Body Electronic Attestation of Attributes)
 
 PuB‑EAA is a verifiable credential profile representing verified attributes issued on behalf of public authorities, based on official registries or government databases. These credentials hold legal equivalence to traditional paper documents and are suitable for public services such as birth certificates, driver’s licences, or professional qualifications. PuB‑EAA credentials are signed using certificates from Qualified Trust Service Providers, ensuring legal compliance and secure verification across digital systems.
 
+**Specification:** [Public Body Electronic Attestation of Attributes](https://www.etsi.org/deliver/etsi_ts/119400_119499/11947201/01.02.01_60/ts_11947201v010201p.pdf)
+
 ### ISO 18013-5
 
 ISO/IEC 18013‑5 is a verifiable credential–friendly international standard that defines how mobile driver’s licences (mDLs) and related identity credentials should be structured, secured, and exchanged on digital devices. It specifies data formats, security mechanisms, and communication protocols to ensure credentials can be authenticated and verified reliably while protecting user privacy. Designed for portability and interoperability across jurisdictions and systems, ISO/IEC 18013‑5 enables secure issuance, sharing, and verification of proof such as age or identity using a mobile device.
+
+**Specification:** [ISO/IEC 18013‑5](https://www.iso.org/standard/69084.html)
 
 #### EUDI.AV (EU Age Verification)
 
 EUDI.AV is a verifiable credential profile designed for standardized digital age verification across online services. It defines how age‑related claims should be structured, secured, and exchanged so that users can prove they meet specific age requirements (e.g., “over 18”) without disclosing additional personal data. Built on open standards and aligned with the evolving European digital identity ecosystem, EUDI.AV enables secure issuance, sharing, and verification of age attestations in a privacy‑preserving and interoperable way across different platforms and jurisdictions.
 
+**Specification:** [EU Age Verification](https://ageverification.dev/)
+
 #### EUDI.PID (Person Identification Data)
 
 EUDI.PID is a verifiable credential profile that represents core person identification attributes, such as full name, date of birth, nationality, and other identity details. It enables secure, digitally signed identification of a user for online services and compliance with EU digital identity requirements. EUDI.PID credentials are designed for interoperability and trusted exchange, allowing service providers to verify a user’s identity in a consistent and privacy‑preserving way across member states and platforms.
+
+**Specification:** [Person Identification Data](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=intcom:Ares%282026%291286304)
