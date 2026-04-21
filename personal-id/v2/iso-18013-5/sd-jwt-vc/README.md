@@ -6,5 +6,5 @@ It defines the structure, validation rules, and mapping logic used to transform 
 
 ## Contents
 
-- [input-fields-to-credential-map](input-fields-to-credential-map.json) – Mapping rules from input fields to credential claims
+- [input-fields-to-credential-map.json](input-fields-to-credential-map.json) – Mapping rules from input fields to credential claims
 - [schema.json](schema.json) – Schema defining the structure and constraints of the SD-JWT VC data model
