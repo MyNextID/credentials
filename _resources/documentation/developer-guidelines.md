@@ -2,7 +2,7 @@
 
 ## Learn about this repository
 
-This repository serves as a **schema registry** for **Verifiable Credential (VC) definitions**, which we refer to here as credential types. It provides standardized, versioned schemas and associated metadata that applications can consume at build time or runtime to validate, transform, and render credential data consistently across systems. By acting as a single source of truth, it eliminates the need for applications to maintain their own credential definitions, ensuring consistency and reusability.
+This repository serves as a **schema registry** for **Verifiable Credential (VC) definitions**, which we refer to as credential types. It provides standardized, versioned schemas and associated metadata that applications can consume at build time or runtime to validate, transform, and render credential data consistently across systems. By acting as a single source of truth, it eliminates the need for applications to maintain their own credential definitions, ensuring consistency and reusability.
 
 Applications use this repository to discover credential types, read their structure, and integrate credential data into their workflows. For example, [verifier.mynext.id](https://verifier.mynext.id/) consumes these definitions to validate and process credentials according to shared schemas and mappings.
 

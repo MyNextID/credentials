@@ -69,32 +69,52 @@ types.map(type => type.name).forEach(credentialType => {
 
         data[credentialType][version] = {
             "schema": hasInputFieldsSchema ? ("/" + getCredentialTypeInputfieldsSchemaPath(key)) : "",
-            "formats":{}
+            "profiles":{}
         };
 
-        // c) Get all folders inside version and filter out only formats. Ignoring all files.
+        // c) Get all folders inside version and filter out only profiles. Ignoring all files.
         const folders = fs.readdirSync("./"+key, {withFileTypes: true});
+
+        // Excluded files that are NOT PROFILE
         const excluded = ["input-fields", "translations", "user-consent"];
-        const formats = folders.filter(e =>
+
+        const profiles = folders.filter(e =>
             e.isDirectory() &&
             !e.name.startsWith("_") &&
             !e.name.startsWith(".") &&
             !excluded.includes(e.name.toLowerCase())
         );
 
-        for (const formatKey of formats){
-            const format = formatKey.name;
+        for (const profileKey of profiles){
+            const profile = profileKey.name;
+            data[credentialType][version]["profiles"][profile] = {"formats":{}}
 
-            // d) Format schema url
-            const hasFormatSchema = fs.existsSync(getCredentialTypeFormatSchemaPath(key,format));
+            // d) Get all folders inside version and filter out only formats. Ignoring all files.
+            const formatfolders = fs.readdirSync("./"+key+"/"+ profile, {withFileTypes: true});
 
-            // e) Read the input-fields-to-credential-map.json
-            const mapping = readFileOrThrow(getCredentialTypeMappingPath(key, format));
+            // Excluded files that are NOT FORMAT
+            const excluded = [""];
 
-            data[credentialType][version]["formats"][format] = {
-                "schema": hasFormatSchema ? ("/" + getCredentialTypeFormatSchemaPath(key,format)) : "",
-                "map": mapping
-            }
+            const formats = formatfolders.filter(e =>
+                e.isDirectory() &&
+                !e.name.startsWith("_") &&
+                !e.name.startsWith(".") &&
+                !excluded.includes(e.name.toLowerCase())
+            );
+            for (const formatKey of formats){
+                const format = formatKey.name;
+
+                // d) Format schema url
+                const hasFormatSchema = fs.existsSync(getCredentialTypeFormatSchemaPath(key+"/"+profile,format));
+
+                // e) Read the input-fields-to-credential-map.json
+                const mapping = readFileOrThrow(getCredentialTypeMappingPath(key+"/"+profile, format));
+
+                data[credentialType][version]["profiles"][profile]["formats"][format] = {
+                    "schema": hasFormatSchema ? ("/" + getCredentialTypeFormatSchemaPath(key+"/"+profile,format)) : "",
+                    "input-fields-map": mapping
+                }
+            };
         };
     }
 })
