@@ -1,6 +1,6 @@
 # ISO/IEC 18013-5 (ORG.ISO.18013.5.1)
 
-This directory provides the repository’s implementation of the ISO/IEC 18013-5 Personal ID profile,  
+This directory provides the repository’s implementation of the ISO/IEC 18013-5 Person Identification Data (PID) profile,  
 serving as a container for the profile’s supported data models, with links to their implementations.
 
 ## Contents – Available Data Models

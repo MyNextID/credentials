@@ -1,6 +1,6 @@
-# Age verification (v1)
+# Age Verification (v1)
 
-This directory defines the **v1 structure** of the Age Verification credential, including its profiles, input definitions, and supporting resources.  
+This directory defines the **v1 structure** of the Age Verification redential, including its profiles, input definitions, and supporting resources.  
   
 ## Contents
 

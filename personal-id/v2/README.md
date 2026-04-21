@@ -1,6 +1,6 @@
-# Personal ID (v2)
+# Person Identification Data (PID) (v2)
 
-This directory defines the **v2 structure** of the Personal ID credential, including its profiles, input definitions, and supporting resources.
+This directory defines the **v2 structure** of the Person Identification Data credential, including its profiles, input definitions, and supporting resources.
 
 ## Contents
 
@@ -11,5 +11,5 @@ This directory defines the **v2 structure** of the Personal ID credential, inclu
 
 ## Reference
 
-For more information on the Personal ID credential type and its structure, see the official  
-[Personal ID specification](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=intcom:Ares%282026%291286304).
+For more information on the Person Identification Data credential type and its structure, see the official  
+[Person Identification Data specification](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=intcom:Ares%282026%291286304).

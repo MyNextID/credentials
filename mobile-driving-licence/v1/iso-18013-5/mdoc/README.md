@@ -1,6 +1,6 @@
 # mDoc (Mobile Document)
 
-This directory contains the **mDoc data model implementation** for the ISO/IEC 18013-5 Mobile driver's licence profile.
+This directory contains the **mDoc data model implementation** for the ISO/IEC 18013-5 Mobile Driving Licence profile.
 It defines the structure, validation rules, and mapping logic used to transform input fields into an mDoc credential representation.
 
 ## Contents
