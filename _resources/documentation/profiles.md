@@ -19,7 +19,7 @@ Different ecosystems and use cases require different credential representations:
 
 ## Profile Overview
 
-The table below shows which data models are supported by each profile.
+The table below shows which formats are supported by each profile.
 
 - W3C VC – A standard JSON/JSON-LD format for verifiable credentials that represents claims about an entity and includes cryptographic proofs for authentication and integrity
 - SD-JWT VC – A JWT-based verifiable credential format that supports selective disclosure, letting holders reveal only specific claims while keeping others private

@@ -170,9 +170,10 @@ The file is located in the `_generated` directory and is automatically updated w
 The file is a single JSON object where each credential type includes versioned data (e.g., `v1`, `v2`). Each version contains the following attributes:
 
 - schema – Provides a link to the schema for the **input fields** of given version.
-- formats – An object describing the currently supported formats for this credential type. Each key is the name of a format, with the following structure:
-  - schema – Defines the schema for this specific format.
-  - map – Maps attributes from the input field schema to the format schema, allowing implementations to transform or validate data according to the chosen format.
+- profiles - An object where each key is a profile name. Profiles define how a credential is structured and interpreted for a specific use case. For more details on profiles, see [profiles documentation](./profiles.md).
+  - formats – An object where each key is a format name, with the following structure:
+    - schema – Defines the schema for this specific format.
+    - input-fields-map – Maps attributes from the input field schema to the format schema, allowing implementations to transform or validate data according to the chosen format.
 
 #### Example snippet from `credential_types.json`
 
@@ -181,30 +182,32 @@ The file is a single JSON object where each credential type includes versioned d
     "certificate-of-advanced-study": {
         "v1": {
             "schema": "/certificate-of-advanced-study/v1/input-fields/schema.json",
-            "formats": {
+            "profiles": {
                 "edc": {
-                    "schema": "/certificate-of-advanced-study/v1/edc/schema.json",
-                    "map": {
-                        "credentialTitle": "/displayParameter/title",
-                        "fullName": "/credentialSubject/fullName",
-                        "dateOfBirth": "/credentialSubject/dateOfBirth",
-                        "placeOfBirth": "/credentialSubject/placeOfBirth/address/countryCode/prefLabel",
-                        "fullAddress": "/credentialSubject/placeOfBirth/address/fullAddress/noteLiteral",
-                        "ectsPoints": "/credentialSubject/ectsPoints",
-                        "qrCode": "/credentialSubject/qrCode",
-                        "validUntil": "/validUntil"
+                    "formats": {
+                        "w3c-vc": {
+                            "schema": "/certificate-of-advanced-study/v1/edc/w3c-vc/schema.json",
+                            "input-fields-map": {
+                                "credentialTitle": "/displayParameter/title",
+                                "fullName": "/credentialSubject/fullName",
+                                "dateOfBirth": "/credentialSubject/dateOfBirth",
+                                "placeOfBirth": "/credentialSubject/placeOfBirth/address/countryCode/prefLabel",
+                                "fullAddress": "/credentialSubject/placeOfBirth/address/fullAddress/noteLiteral",
+                                "ectsPoints": "/credentialSubject/ectsPoints",
+                                "qrCode": "/credentialSubject/qrCode",
+                                "validUntil": "/validUntil"
+                            }
+                        }
                     }
                 }
             }
         }
-    },
+    }
 }
 
 ```
 
-> **Note:** Each credential format has its own schema and mapping file. The `map` object listed under a format in `credential-types.json` corresponds to that format’s `input-fields-to-credential-map.json` file. This mapping specifies how canonical input fields are translated into the format-specific schema, allowing the same core data to be transformed or validated in multiple representations without duplicating logic.
->
-> In this context, a **format (e.g., edc)** refers to a specific Verifiable Credential output standard or specification.
+> **Note:** Each credential format has its own schema and mapping file. The `input-fields-map` object listed under a format in `credential-types.json` corresponds to that format’s `input-fields-to-credential-map.json` file. This mapping specifies how canonical input fields are translated into the format-specific schema, allowing the same core data to be transformed or validated in multiple representations without duplicating logic.
 
 ## Integration Examples
 
