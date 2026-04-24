@@ -10,7 +10,7 @@ This directory defines the **v1 structure** of the Certificate of Participation 
 - [user-consent](user-consent) - Mapping between consent groups and input fields
 
 <!-- 
-## Reference
+## References
 
 For more information on the Certificate of Participation in Summer School credential type and its structure, see: 
 [Certificate of Participation in Summer School specification](TODO).

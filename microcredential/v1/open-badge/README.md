@@ -6,6 +6,6 @@ This directory provides the repository’s implementation of the Open Badge prof
 
 - [w3c-vc](w3c-vc) - W3C Verifiable Credentials representation of the profile
   
-## Reference
+## References
 
 For details, including a link to the Open Badge specification, see the [profile documentation](../../../_resources/documentation/profiles.md#open-badge).

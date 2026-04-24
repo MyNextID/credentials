@@ -9,7 +9,7 @@ This directory defines the **v2 structure** of the Person Identification Data cr
 - [translations](translations) - Translated credential display data
 - [user-consent](user-consent) - Mapping between consent groups and input fields
 
-## Reference
+## References
 
 For more information on the Person Identification Data credential type and its structure, see:
 [Person Identification Data specification](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=intcom:Ares%282026%291286304).

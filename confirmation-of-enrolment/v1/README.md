@@ -10,7 +10,7 @@ This directory defines the **v1 structure** of the Confirmation of Enrolment cre
 - [user-consent](user-consent) - Mapping between consent groups and input fields
 
 <!-- 
-## Reference
+## References
 
 For more information on the Confirmation of Enrolment credential type and its structure, see: 
 [Confirmation of Enrolment specification](TODO).

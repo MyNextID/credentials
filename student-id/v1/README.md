@@ -10,7 +10,7 @@ This directory defines the **v1 structure** of the Student ID credential, includ
 - [user-consent](user-consent) - Mapping between consent groups and input fields
 
 <!-- 
-## Reference
+## References
 
 For more information on the Student ID credential type and its structure, see: 
 [Student ID specification](TODO).

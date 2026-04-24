@@ -9,7 +9,7 @@ This directory defines the **v1 structure** of the Mobile Driving Licence (mDL) 
 - [translations](translations) - Translated credential display data
 - [user-consent](user-consent) - Mapping between consent groups and input fields
 
-## Reference
+## References
 
 For more information on the Mobile Driving Licence credential type and its structure, see:
 [Mobile Driving Licence specification](https://www.iso.org/standard/69084.html).

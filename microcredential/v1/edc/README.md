@@ -6,6 +6,6 @@ This directory provides the repository’s implementation of the European Digita
 
 - [w3c-vc](w3c-vc) - W3C Verifiable Credentials representation of the profile
   
-## Reference
+## References
 
 For details, including a link to the European Digital Credentials specification, see the [profile documentation](../../../_resources/documentation/profiles.md#edc-european-digital-credential-for-learning).

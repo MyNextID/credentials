@@ -1,93 +1,110 @@
 # Credential Type Folder Structure
 
-Each credential type must be placed in its own folder and follow the structure shown below.
-This structure ensures that all credentials can be validated, generated, and translated consistently across the system.
+This document defines the internal folder structure of a credential type within the repository.
+
+It is intended to be used alongside the root `README.md`, which provides an overview of the repository, its purpose, usage, and contribution guidelines. While the root documentation explains how the repository is used, this document focuses specifically on how individual credential types must be structured.
+
+Each credential type must be placed in its own folder and follow the structure shown below. This ensures that all credentials can be validated, generated, and translated consistently across the system.
 
 ```text
-/<credential-type>/v1
-  ├── <profile>/
-  │     ├── <data-modal>
-  │     │     ├── examples/
-  │     │     │     ├── <data-modal>-<credential-type-initials>-example.json
-  │     │     │     └── <data-modal>-<credential-type-initials>-signed.jsonld
-  │     │     ├── schema.json
-  │     │     ├── input-fields-to-credential-map.json
-  │     │     └── README.md
-  ├── input-fields/ 
-  │     ├── translations/
-  │     │     └── en.json
-  │     ├── example.json
-  │     ├── schema.json
-  │     └── README.md
-  ├── translations/
-  │     └── en.json
-  ├── user-consent/
-  │     └── user-consent-map.json
-  └── README.md
+/<credential-type>/
+  ├── README.md
+  └── <version>/
+    ├── input-fields/ 
+    │     ├── translations/
+    │     │     └── en.json
+    │     ├── example.json
+    │     ├── schema.json
+    │     └── README.md
+    ├── translations/
+    │     └── en.json
+    ├── user-consent/
+    │     └── user-consent-map.json
+    ├── <profile>/
+    │     ├── <format>/
+    │     │     ├── examples/
+    │     │     │     ├── <profile>-<credential-type-initials>-example.json
+    │     │     │     └── <profile>-<credential-type-initials>-signed.jsonld
+    │     │     ├── input-fields-to-credential-map.json
+    │     │     ├── schema.json
+    │     │     ├── <namespace>-schema.json (optional)
+    │     │     └── README.md
+    │     └── README.md
+    └── README.md
 ```
 
-`<credential-type-initials>` must be an acronym derived from the credential type name and used consistently across all files in the edc folder.
+## Folder and File Descriptions
 
-For example, acronym for credential type  `certificate-of-attendance` is `coa`.
+### README.md
 
-`<format>` must represent the credential format or standard.
+Each credential type includes a `README.md` file located in the **root of its folder**. It includes details of the credential type and the folder structure.
 
-For example, if the format is `EDC`, the folder should be named `edc` and all files under it should follow the same naming convention.
+### `<version>`
 
-## Folder Descriptions
+The `<version>` folder (e.g., `v1`, `v2`) represents a specific version of the credential type. Each version contains a complete and independent definition, including input fields, schemas, mappings, translations, and one or more `<profile>` folders.
+Multiple versions of the same credential type may coexist within the repository. The selection of which version to use is determined externally by the consumer.
+Adding a new version results in an additional `<version>` folder. Existing versions are not modified or replaced.
 
-### Format/
-
-The `<format>` folder (e.g., `edc`) contains all files related to the European Digital Credential (EDC) representation of the credential type and must be used consistently across the folder. These files define how the credential is structured, validated, and represented within the system. Together they provide the schema definition, an example credential instance, and a signed credential example used for reference and testing.
-
-`schema.json` defines the JSON Schema for the credential according to the format (e.g., EDC) data model. This schema describes the structure, required fields, and validation rules that every credential of this type must follow. It is used by the system to ensure that generated credentials conform to the expected format.
-
-`edc-<credential-type-initials>-example.json` contains an unsigned example credential that follows the schema definition. This file serves as a reference implementation of the credential structure and demonstrates how the credential data should be organized before it is signed or issued.
-
-`edc-<credential-type-initials>-signed.jsonld` provides a signed example credential in JSON-LD format. It illustrates how a valid issued credential should appear after the signing process, including the digital proof information required for verification.
-
-`input-fields-to-credential-map.json` defines the mapping between input field keys and the corresponding fields in the EDC credential schema. This mapping allows the credential generation system to transform user-provided input data into the correct credential structure.
+Each version must include a `README.md` file that outlines the folder structure and highlights any significant differences from other versions (if applicable).
 
 ### input-fields/
 
-The input-fields folder defines the user-facing input fields used to collect the data required to generate the credential. These input fields act as a format-agnostic abstraction layer, allowing credential data to be provided as simple key-value pairs. This approach ensures that the same input data can be reused to construct credentials in different formats while keeping the credential generation process consistent and flexible.
+The `input-fields` folder defines the user-facing input fields used to collect the data required to generate the credential. These fields act as a format-agnostic abstraction layer, allowing credential data to be provided as simple key-value pairs. This approach ensures that the same input data can be reused to construct credentials in different profiles and/or formats while maintaining consistency and flexibility.
 
-`schema.json` defines the JSON Schema that specifies the structure and rules for all allowed input fields. It ensures that input data follows the expected format and validation constraints.
+* `schema.json` defines the JSON Schema for the input fields, specifying their structure, rules, and validation constraints.
 
-`example.json` provides example input data that demonstrates how the defined fields can be populated. This file helps contributors understand how credential data should be supplied before being mapped into the credential format.
+* `example.json` provides example input data to demonstrate how the fields can be populated, helping contributors understand how to supply the data before mapping it into the credential format.
 
-`README.md` file must also be included in this folder to provide additional documentation or explanations specific to the input fields of this credential type. To ensure consistency across credential types, contributors should reference the **README.md file of an existing credential type** and follow the same documentation structure when creating a new one.
+* `README.md` file is included in the folder, outlining the folder structure and providing details specific to the input fields for this credential type.
 
 #### input-fields/translations/
 
 The `input-fields/translations` folder contains translations for **input field labels and descriptions** used in user interfaces. These translations ensure that input fields can be displayed in multiple languages while maintaining consistent field identifiers internally.
 
-The file `en.json` provides the **English translations** for input field labels and descriptions. Additional language files may be added using **ISO language codes**.
+The file `en.json` provides the **English translations** for input field labels and descriptions. Additional language files can be added using **ISO language codes**.
 
-> Each translation file should contain the same set of keys to ensure consistent localization across all supported languages.
+> Each translation file should include the same set of keys to ensure consistent localization across all supported languages.
 
 ### translations/
 
-The `translations` folder contains translations related to the **credential itself**, rather than the individual input fields. These translations are typically used when displaying the credential in user interfaces or credential viewers.
+The `translations` folder contains translations for the **credential metadata**. These are used when displaying the credential in user interfaces or credential viewers.
 
-> The file `en.json` provides the **English translations for credential metadata**. Additional languages can be added using ISO language codes, ensuring that the credential can be presented consistently across different languages.
+* The `en.json` file contains the **English translations**. Additional languages can be added using ISO language codes to ensure consistent presentation across languages.
 
 ### user-consent/
 
-The `user-consent` folder defines the relationship between user **consent groups** and the **input fields** used to generate the credential. This configuration determines which pieces of information require explicit user consent before they can be processed or included in a credential.
+The `user-consent` folder defines the relationship between user **consent groups** and the **input fields** used to generate the credential. It determines which information requires explicit user consent before being processed or included in the credential.
 
-User consent groups allow the system to logically group related data fields under a specific consent category. When a credential is issued, the system can verify that the user has granted consent for the relevant group before the associated input fields are used.
+* The `user-consent-map.json` file maps input fields to their corresponding consent groups. Each input field defined in the `input-fields/` must be assigned to the appropriate consent group, enabling the system to determine which consent is required before credential generation.
 
-The file `user-consent-map.json` contains the mapping between **input fields and their corresponding consent groups**. Each input field defined in the `input-fields` configuration should be mapped to the appropriate consent group. This mapping enables the system to determine which user consent must be obtained before credential generation can proceed.
+The list of available consent groups can be found in the `_resources/user-consent/` folder in the repository.
 
-Contributors defining this mapping may not always know which consent groups are available. The list of all supported consent groups can be found in the `_resources` directory of the repository. Specifically, the `_resources/user-consent/` folder contains the definitions and documentation for all available consent groups. Contributors should review these resources and assign input fields to the appropriate consent group when creating or updating the `user-consent-map.json` file.
+All input fields must be mapped to a valid consent group defined in `_resources/user-consent/`.
 
-To maintain consistency across credential types, contributors should ensure that **all input fields are mapped to an appropriate consent group** and that the mapping aligns with the existing consent group definitions provided in the `_resources/user-consent/` folder.
+### `<profile>`
 
-### README.md
+`<profile>` represents a specific credential profile, written in lowercase (e.g., `edc`, `open-badge`) defined for this credential type. Each profile defines how the credential is structured, secured, and exchanged within a given ecosystem or use case, ensuring interoperability between systems and platforms.
 
-Each credential type must include a `README.md` file located in the **root of its folder**. This document provides an overview of the credential and any relevant implementation details.
+* The folder may contain one or more `<format>` folders, which define the supported credential formats (e.g., W3C VC, SD-JWT VC, mDoc) and include the necessary schema and mapping files for each format.
+* The folder includes a `README.md` file that outlines the folder structure
 
-The README should describe the purpose of the credential, its intended use, and any credential-specific considerations. It may also include references to related schemas, standards, or documentation that are relevant to the credential definition.
+For more detailed information on each profile and the supported formats, refer to the [profiles document](profiles.md), which includes a list of all current profiles and their specifications.
 
-To ensure consistency across the repository, contributors **should reference the `README.md` file of an existing credential type** and follow the same documentation structure when creating a new credential `README`. This helps maintain a consistent format and level of detail across all credential documentation.
+#### `<format>`
+
+`<format>` represents a specific credential format within a profile, written in lowercase (e.g., `w3c-vc`, `mdoc`). It defines how the credential is structured, validated, and represented in a given standard, ensuring consistency across implementations within the system.
+
+* The `examples` folder contains example credentials used for reference and testing, including both unsigned and signed representations where applicable.
+* `input-fields-to-credential-map.json` defines the mapping between input field keys and the corresponding fields in the credential schema for this format. This mapping allows the credential generation system to transform user-provided input data into the correct credential structure.
+* `schema.json` defines the JSON Schema for credentials in this format. It specifies the structure, required fields, and validation rules that all credentials of this format must follow.
+* `<namespace>-schema.json` is an optional file used only in formats where additional namespace-specific constraints or extensions are required. When present, it is applied in addition to `schema.json` and further restricts or extends the credential schema for that format. The `<namespace>` is replaced by the actual namespace identifier (e.g., `eu.europa.ec.av.1`, resulting in `eu.europa.ec.av.1-schema.json`).
+* The `README.md` file outlines the folder structure and provides a link to relevant documentation for the format and its usage within the profile.
+
+##### examples/
+
+`/examples` folder contains example credentials that demonstrate how the credential is structured before and after issuance. They are used for reference, testing, and validation of the format implementation.
+
+* `<profile>-<credential-type-initials>-example.json` contains an unsigned example credential that follows the schema definition. It serves as a reference for how the credential data should be structured before it is signed or issued.
+* `<profile>-<credential-type-initials>-signed.jsonld` provides a signed example credential in JSON-LD format. It shows the final issued form of the credential, including the digital proof information required for verification.
+
+`<credential-type-initials>` is an acronym derived from the credential type name and used consistently across all files within the format folder (e.g., `certificate-of-attendance` → `coa`).
