@@ -147,7 +147,7 @@ An age verification credential enables an individual to demonstrate that they me
 
 It is implemented as a verifiable credential and relies on privacy-preserving mechanisms such as selective disclosure and zero-knowledge proofs (ZKPs) to confirm eligibility while minimising personal data exposure. This makes it suitable for accessing age-restricted services – online platforms, retail, gambling, alcohol – where only the age check is relevant and broader identity disclosure would be disproportionate.
 
-- **ISO-18013-5**: [Schema](/age-verification/v1/iso-18013-5/mdoc/schema.json)
+- **EUDI AV**: [Schema](/age-verification/v1/eudi.av/mdoc/schema.json)
   
 ### [Mobile Driving Licence](/mobile-driving-licence)
 
@@ -163,7 +163,7 @@ Person Identification Data (PID) is a structured set of personal attributes that
 
 PID supports secure authentication and identification across public and private services, and serves as the foundational reference layer of the EUDI Wallet ecosystem. It is designed to be interoperable across Member States, enabling cross-border identity verification while complying with applicable data protection obligations under EU law.
 
-- **ISO-18013-5**: [Schema](/personal-id/v2/iso-18013-5/mdoc/schema.json)
+- **EUDI PID**: [Schema](/personal-id/v2/eudi.pid/mdoc/schema.json)
   
 ### [Student ID](/student-id)
 
@@ -171,8 +171,7 @@ A student ID credential confirms an individual's current enrollment or affiliati
 
 It is commonly used to access campus services, academic resources, libraries, and student discounts – both on-site and online. As a verifiable credential, it supports selective disclosure, allowing students to share only the relevant attributes for a given context (for instance, confirming student status without revealing their home institution).
 
-
-- **ISO-18013-5**: [Schema](/student-id/v1/edc/w3c-vc/schema.json)
+- **EDC**: [Schema](/student-id/v1/edc/w3c-vc/schema.json)
   
 ## Standards and Compliance
 

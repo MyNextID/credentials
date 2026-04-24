@@ -1,6 +1,6 @@
 # mDoc (Mobile Document)
 
-This directory contains the **mDoc data model implementation** for the ISO/IEC 18013-5 Person Identification Data (PID) profile.
+This directory contains the **mDoc data model implementation** for the EUDI PID (eudi.pid) Person Identification Data (PID) profile.
 It defines the structure, validation rules, and mapping logic used to transform input fields into an mDoc credential representation.
 
 ## Contents

@@ -5,7 +5,7 @@ This directory defines the **v2 structure** of the Person Identification Data cr
 ## Contents
 
 - [input-fields](input-fields) - User input schema, examples, and translations
-- [iso-18013-5](iso-18013-5) - ISO/IEC 18013-5 schemas and mappings
+- [eudi.pid](eudi.pid) - eudi.pid schemas and mappings
 - [translations](translations) - Translated credential display data
 - [user-consent](user-consent) - Mapping between consent groups and input fields
 

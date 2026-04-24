@@ -1,6 +1,6 @@
-# ISO/IEC 18013-5 (ORG.ISO.18013.5.1)
+# EUDI AV (eudi.av)
 
-This directory provides the repository’s implementation of the ISO/IEC 18013-5 Age Verification profile,  
+This directory provides the repository’s implementation of the EUDI AV (eudi.av) Age Verification profile,  
 serving as a container for the profile’s supported data models, with links to their implementations.
 
 ## Contents – Available Data Models

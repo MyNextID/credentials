@@ -5,7 +5,7 @@ This directory defines the **v1 structure** of the Age Verification redential, i
 ## Contents
 
 - [input-fields](input-fields) - User input schema, examples, and translations
-- [iso-18013-5](iso-18013-5) - ISO/IEC 18013-5 schemas and mappings
+- [eudi.av](eudi.av) - eudi.av schemas and mappings
 - [translations](translations) - Translated credential display data
 - [user-consent](user-consent) - Mapping between consent groups and input fields
 

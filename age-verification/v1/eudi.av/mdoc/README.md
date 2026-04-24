@@ -1,6 +1,6 @@
 # mDoc (Mobile Document)
 
-This directory contains the **mDoc data model implementation** for the ISO/IEC 18013-5 Age Verification profile.
+This directory contains the **mDoc data model implementation** for the EUDI AV (eudi.av) Age Verification profile.
 It defines the structure, validation rules, and mapping logic used to transform input fields into an mDoc credential representation.
 
 ## Contents
