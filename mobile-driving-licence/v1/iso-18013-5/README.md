@@ -9,4 +9,4 @@ serving as a container for the profile’s supported data models, with links to 
 
 ## References
 
-For details, including a link to the ISO/IEC 18013-5 specification, see the [profile documentation](../../../_resources/documentation/profiles.md#iso-18013-5).
+For details, including a link to the ISO/IEC 18013-5 specification, see the [profile documentation](../../../resources/documentation/profiles.md#iso-18013-5).

@@ -24,9 +24,11 @@ function getCredentialTypeMappingPath(credentialType,format) {
 }
 
 const entries = fs.readdirSync("./", {withFileTypes: true});
+
+const excludedFolders = ["resources"]; // To not include it inside the 'types'
 const types = entries.filter((e) => {
     // Get directories, whose name does not begin with _ or .
-    return e.isDirectory() && !e.name.startsWith("_") && !e.name.startsWith(".");
+    return e.isDirectory() && !e.name.startsWith("_") && !e.name.startsWith(".") && !excludedFolders.includes(e.name.toLowerCase());
 })
 
 // Make sure folder exists

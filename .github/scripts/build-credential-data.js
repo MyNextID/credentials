@@ -5,7 +5,7 @@ const path = require("path");
 const outputDir = "_autogen";
 
 // Paths 
-const userConsentResourcePath = `_resources/user-consent`
+const userConsentResourcePath = `resources/user-consent`
 const userConsentTranslationsPath = userConsentResourcePath + "/translations"
 function getUserConsentTranslationPath(lang) {
     return userConsentTranslationsPath + `/${lang}.json`
@@ -131,6 +131,8 @@ Object.keys(claimsGroups).map((group => {
 
 // 2. Get all credential types
 const credentialTypes = readFileOrThrow(credentialTypesPath);
+
+console.log("credentials types: ", credentialTypes);
 
 Object.keys(credentialTypes).forEach(credentialType => {
 

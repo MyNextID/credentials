@@ -77,9 +77,9 @@ The `user-consent` folder defines the relationship between user **consent groups
 
 * The `user-consent-map.json` file maps input fields to their corresponding consent groups. Each input field defined in the `input-fields/` must be assigned to the appropriate consent group, enabling the system to determine which consent is required before credential generation.
 
-The list of available consent groups can be found in the `_resources/user-consent/` folder in the repository.
+The list of available consent groups can be found in the `resources/user-consent/` folder in the repository.
 
-All input fields must be mapped to a valid consent group defined in `_resources/user-consent/`.
+All input fields must be mapped to a valid consent group defined in `resources/user-consent/`.
 
 ### `<profile>`
 

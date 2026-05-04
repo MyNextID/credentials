@@ -95,7 +95,7 @@ If a new profile is introduced:
 
 Translations are used across multiple parts of the system, including credential versions, user consent resources, and input fields. All translation sets MUST follow the same rules.
 
-The following rules apply to every translations directory in the repository (e.g., `<credential-type><version>/translations/`, `<credential-type><version>/input-fields/translations/` or `_resources/user-consent/translations`):
+The following rules apply to every translations directory in the repository (e.g., `<credential-type><version>/translations/`, `<credential-type><version>/input-fields/translations/` or `resources/user-consent/translations`):
 
 - `en.json` MUST always be present and serves as the source of truth for all translation keys.
 - All other language files must contain the same keys as en.json.
@@ -111,8 +111,8 @@ The `en.json` file:
 User consent is defined through a strict mapping between input fields and predefined consent groups:
 
 - All input fields defined for a credential must be mapped in `<credential-type><version>/user-consent/user-consent-map.json`.
-- Each mapped value must reference an existing consent group defined in `_resources/user-consent/consent-groups.json`.
-- Only consent groups defined in `_resources/user-consent/consent-groups.json` are allowed.
+- Each mapped value must reference an existing consent group defined in `resources/user-consent/consent-groups.json`.
+- Only consent groups defined in `resources/user-consent/consent-groups.json` are allowed.
 
 ## PR Checklist
 

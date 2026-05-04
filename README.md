@@ -20,7 +20,7 @@ challenging. This repository provides:
 
 This table shows which verifiable credential profiles support each credential type.
 
-| Credential Type                               | [edc](/_resources/documentation/profiles.md#edc-european-digital-credential-for-learning)   | [open-badge](/_resources/documentation/profiles.md#open-badge)  | [eaa](/_resources/documentation/profiles.md#eaa-electronic-attestation-of-attributes)   | [qeaa](/_resources/documentation/profiles.md#qeaa-qualified-electronic-attestation-of-attributes)  | [pub-eaa](/_resources/documentation/profiles.md#pub-eaa-public-body-electronic-attestation-of-attributes) | [iso-18013-5](/_resources/documentation/profiles.md#iso-18013-5)  | [eudi.av](/_resources/documentation/profiles.md#eudiav-eu-age-verification) | [eudi.pid](/_resources/documentation/profiles.md#eudipid-person-identification-data) |
+| Credential Type                               | [edc](/resources/documentation/profiles.md#edc-european-digital-credential-for-learning)   | [open-badge](/resources/documentation/profiles.md#open-badge)  | [eaa](/resources/documentation/profiles.md#eaa-electronic-attestation-of-attributes)   | [qeaa](/resources/documentation/profiles.md#qeaa-qualified-electronic-attestation-of-attributes)  | [pub-eaa](/resources/documentation/profiles.md#pub-eaa-public-body-electronic-attestation-of-attributes) | [iso-18013-5](/resources/documentation/profiles.md#iso-18013-5)  | [eudi.av](/resources/documentation/profiles.md#eudiav-eu-age-verification) | [eudi.pid](/resources/documentation/profiles.md#eudipid-person-identification-data) |
 |-----------------------------------------------|-----|------------|-----|------|---------|-------------|---------|----------|
 | [age-verification](/age-verification)                         |     |            | 🟨 | 🟨 | 🟨 |     | ✅ |     |
 | [certificate-of-advanced-study](/certificate-of-advanced-study/)                  | ✅  |            | 🟨 | 🟨 | 🟨 |     |     |     |
@@ -204,7 +204,7 @@ To add a new credential type, please follow these steps:
 
 1. Fork the repository
 2. Create a new credential type directory following the established naming conventions.
-3. Implement the required folder structure and files as described in the [credential-type-structure](_resources/documentation/credential-type-structure.md) documentation.
+3. Implement the required folder structure and files as described in the [credential-type-structure](resources/documentation/credential-type-structure.md) documentation.
 4. Add all required assets, including:
    - EDC schema
    - Example credential
@@ -217,7 +217,7 @@ To add a new credential type, please follow these steps:
 6. Validate your files to ensure schemas and examples are consistent.
 7. Submit a **Pull Request** with a clear description of the credential and its intended use.
 
-Before submitting your pull request, please review the [credential-type-structure](_resources/documentation/credential-type-structure.md) to ensure that your credential implementation follows the required structure and naming conventions.
+Before submitting your pull request, please review the [credential-type-structure](resources/documentation/credential-type-structure.md) to ensure that your credential implementation follows the required structure and naming conventions.
 
 ## License
 

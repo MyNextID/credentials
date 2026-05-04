@@ -10,4 +10,4 @@ serving as a container for the profile’s supported data models, with links to 
 ## References
 
 This profile is defined within the EUDI AV framework and is based on the ISO/IEC 18013-5 specification.  
-For details, see the [profile documentation](../../../_resources/documentation/profiles.md#eudiav-eu-age-verification).
+For details, see the [profile documentation](../../../resources/documentation/profiles.md#eudiav-eu-age-verification).

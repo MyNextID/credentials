@@ -119,7 +119,7 @@ The file is a single JSON object with two main top-level keys:
             "identity-profile": {
                 "label": {"en": "Identity Profile"},
                 "description": {"en": "Core personal details that establish and verify an individual’s identity."},
-                "icon": "_resources/user-consent/icons/user.svg"
+                "icon": "resources/user-consent/icons/user.svg"
             },
         }
     },
