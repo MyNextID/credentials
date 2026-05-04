@@ -132,8 +132,6 @@ Object.keys(claimsGroups).map((group => {
 // 2. Get all credential types
 const credentialTypes = readFileOrThrow(credentialTypesPath);
 
-console.log("credentials types: ", credentialTypes);
-
 Object.keys(credentialTypes).forEach(credentialType => {
 
     // a) Get all versions in credential type folder
