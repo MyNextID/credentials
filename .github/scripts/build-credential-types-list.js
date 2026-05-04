@@ -2,7 +2,7 @@ const fs = require("fs");
 
 const path = require("path");
 
-const outputDir = "_generated";
+const outputDir = "_autogen";
 
 // Helpers
 function getCredentialTypeVersions(credentialType){

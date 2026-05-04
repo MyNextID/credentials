@@ -2,7 +2,7 @@ const fs = require("fs");
 
 const path = require("path");
 
-const outputDir = "_generated";
+const outputDir = "_autogen";
 
 // Paths 
 const userConsentResourcePath = `_resources/user-consent`

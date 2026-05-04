@@ -78,9 +78,9 @@ Both files are automatically updated whenever new credential types or versions a
 
 The `credentials.json` file contains the full dataset of all supported credential types for UI/UX integration. The file includes translations, claims, version details, and associated consent groups.
 
-The file is located in the `_generated` directory and is automatically updated whenever new credential types are merged or existing ones are versioned or extended (e.g., adding new translations). It is accessible via the following link:
+The file is located in the `_autogen` directory and is automatically updated whenever new credential types are merged or existing ones are versioned or extended (e.g., adding new translations). It is accessible via the following link:
 
-- [credentials.json](https://mynextid.github.io/credentials/_generated/credentials.json)
+- [credentials.json](https://mynextid.github.io/credentials/_autogen/credentials.json)
 
 >**Note:** If you maintain a local copy of this file within your project, it is recommended to periodically synchronize it with the repository (e.g., daily or as needed) to ensure you have the latest credential definitions. To manually regenerate the file from the repository, run:
 `node .\.github\scripts\build-credential-data.js`
@@ -158,9 +158,9 @@ The default icon supports out-of-the-box implementation of a user consent screen
 
 The `credential-types.json` file provides a structured index of all supported credential types, their versions, and related schema definitions. It is useful for discovery, validation, and building dynamic integrations.
 
-The file is located in the `_generated` directory and is automatically updated whenever new credential types are merged or existing ones are versioned or extended (e.g., adding new translations). It is accessible via the following link:
+The file is located in the `_autogen` directory and is automatically updated whenever new credential types are merged or existing ones are versioned or extended (e.g., adding new translations). It is accessible via the following link:
 
-- [credential-types.json](https://mynextid.github.io/credentials/_generated/credential-types.json)
+- [credential-types.json](https://mynextid.github.io/credentials/_autogen/credential-types.json)
 
 >**Note:** If you maintain a local copy of this file within your project, it is recommended to periodically synchronize it with the repository (e.g., daily or as needed) to ensure you have the latest credential definitions. To manually regenerate the file from the repository, run:
 `node .\.github\scripts\build-credential-types-list.js`
