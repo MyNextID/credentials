@@ -196,37 +196,10 @@ It is commonly used to access campus services, academic resources, libraries, an
 
 ## Contributing
 
-We welcome contributions! Here's how you can help:
+We welcome contributions to improve and extend the credential type system.
 
-### Report Issues
-
-Found a bug or have a suggestion? [Open an issue](https://github.com/MyNextID/credentials/issues/new) with:
-
-- A clear description of the problem or proposal
-- The relevant credential type and standard
-- Expected vs. actual behavior (for bugs)
-- Any additional context or examples that may help reproduce the issue
-
-### Submit Credentials
-
-To add a new credential type, please follow these steps:
-
-1. Fork the repository
-2. Create a new credential type directory following the established naming conventions.
-3. Implement the required folder structure and files as described in the [credential-type-structure](resources/documentation/credential-type-structure.md) documentation.
-4. Add all required assets, including:
-   - EDC schema
-   - Example credential
-   - Signed credential example
-   - Input field definitions and mappings
-   - Translations
-   - User consent mappings
-
-5. Add the required README files and ensure they follow the structure of existing credential documentation.
-6. Validate your files to ensure schemas and examples are consistent.
-7. Submit a **Pull Request** with a clear description of the credential and its intended use.
-
-Before submitting your pull request, please review the [credential-type-structure](resources/documentation/credential-type-structure.md) to ensure that your credential implementation follows the required structure and naming conventions.
+- For issues and suggestions, see [Issue Reporting Guidelines](./resources/documentation/issue-reporting.md).
+- For code contributions and new credential types, see [Contributing Guidelines](./resources/documentation/CONTRIBUTING.md).
 
 ## License
 

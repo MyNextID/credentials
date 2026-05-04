@@ -2,7 +2,7 @@
 
 This document defines the internal folder structure of a credential type within the repository.
 
-It is intended to be used alongside the root `README.md`, which provides an overview of the repository, its purpose, usage, and contribution guidelines. While the root documentation explains how the repository is used, this document focuses specifically on how individual credential types must be structured.
+It is intended to be used alongside the root `README.md`, which provides an overview of the repository, its purpose, usage, and contributing guidelines. While the root documentation explains how the repository is used, this document focuses specifically on how individual credential types must be structured.
 
 Each credential type must be placed in its own folder and follow the structure shown below. This ensures that all credentials can be validated, generated, and translated consistently across the system.
 

@@ -22,7 +22,7 @@ Auto-generated JSON files can be consumed directly by applications, supporting t
   
 ### 3. Versioned and Extensible
 
-Credential types are versioned to ensure backward compatibility, and new types can be added over time through a defined contribution workflow.
+Credential types are versioned to ensure backward compatibility, and new types can be added over time through a defined contributing workflow.
   
 ### 4. Flexible Data Modeling
 
@@ -233,4 +233,6 @@ Illustrates backend usage, including mapping input fields to specific credential
 
 ## Contributing
 
-New credential types can be introduced by contributing to this repository. Once a pull request is reviewed and approved, the new credential type becomes available to all integrated applications. More information about the contribution process can be found in [credential-type-structure](credential-type-structure.md).
+New credential types can be introduced by contributing to this repository. Once a pull request is reviewed and approved, the credential becomes available to all integrated applications.
+
+For details on how to contribute, see [Contributing Guidelines](CONTRIBUTING.md).

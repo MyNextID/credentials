@@ -19,7 +19,7 @@ Before opening a pull request (PR), please review the following guidelines. They
 6. **Review and address feedback**: Make adjustments as requested by reviewers.
 
 >Always keep your fork up to date with the main repository to avoid conflicts.
-
+>
 >For larger changes, feel free to open a draft PR early to get feedback on your approach before finishing your work.
   
 ## PR Requirements
