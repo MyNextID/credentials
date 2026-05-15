@@ -1,0 +1,12 @@
+{
+    "fullName":  {
+        "en": "John Doe"
+    },
+    "flightNumber": "KL1986",
+    "date": "2026-01-02T15:04:05Z",
+    "boardingTime": "2026-01-02T15:04:05Z",
+    "locationFrom": "Ljubljana Jože Pučnik Airport (LJU)",
+    "locationTo": "Amsterdam Airport Schiphol (AMS)",
+    "gateNumber" : "A12",
+    "seatNumber":  "14C"
+}
