@@ -1,6 +1,6 @@
-# Visa Certificate
+# Visa
 
-This folder contains all technical assets related to the **Visa Certificate**.  
+This folder contains all technical assets related to the **Visa**.  
 It includes credential schemas, field definitions, mappings, and translation files used for credential generation and validation.
 
 ## Available Versions
