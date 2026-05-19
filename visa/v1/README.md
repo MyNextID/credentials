@@ -1,6 +1,6 @@
-# Boarding Pass Certificate (v1)
+# Visa (v1)
 
-This folder defines the structure and resources for the v1 implementation of **Boarding Pass Certificate**.
+This folder defines the structure and resources for the v1 implementation of **Visa**.
 
 ## Contents
 
