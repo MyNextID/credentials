@@ -1,0 +1,23 @@
+{
+    "fullName": {
+        "en": "John Doe"
+    },
+    "durationOfStay": "PT60H",
+    "issuanceDate":"2026-01-02T15:04:05Z",
+    "validUntil": "2030-01-02T15:04:05Z",
+    "visaNumber": "123456",
+    "passportNumber": "654321",
+    "placeOfIssue": {
+        "en": "Slovenia"
+    },
+    "nationality": {
+        "en": "Slovenian"
+    },
+    "dateOfBirth" : "1990-01-01T00:00:00Z",
+    "typeOfVisa": {
+        "en":"Tourist Visa"
+    },
+    "entryType": {
+        "en":"Single Entry"
+    }
+}
