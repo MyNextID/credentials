@@ -1,14 +1,10 @@
 {
-    "credentialTitle":{
-        "en": "Microcredential"
-    },
     "fullName": {
         "en": "John Doe"
     },
     "achievementDescription":{
         "en": "For the completion of the short course on Developmental Psychology I., at the Department of Psychology, Faculty of Social Sciences, Lalaland University, on the 5th May 2025."
     },
-    "dateIssued":"2026-01-02T15:04:05Z",
     "gradeAchieved":{
         "en": "Pass"
     },

@@ -1,7 +1,5 @@
 {
-    "credentialTitle":{
-        "en":  "Certificate of Participation in Summer School"
-    },"fullName":{
+    "fullName":{
         "en":"John Doe"
     },"dateOfBirth":"1990-01-01T00:00:00Z",
     "placeOfBirth":{
@@ -12,6 +10,5 @@
     "academicYear":"2026",
     "programmeTitle":{
         "en": "Mechanical Engineering"
-    },"workload": "PT60H", 
-    "validUntil":"2030-01-01T00:00:00Z"
+    },"workload": "PT60H"
 }

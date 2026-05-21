@@ -56,11 +56,6 @@
             "title": "Professional Role",
             "description": "",
             "type": "string"
-        }, "validUntil":{
-            "title": "Valid until",
-            "description": "Date the certificate becomes expired.",
-            "type": "string",
-            "format": "date-time"
         }
     }, "required": [
 

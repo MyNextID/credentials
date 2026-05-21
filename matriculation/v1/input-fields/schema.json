@@ -91,11 +91,6 @@
             "description": "",
             "type": "string",
             "enum": ["current", "withoutDegree", "withDegree"]
-        }, "validUntil":{
-            "title": "Valid until",
-            "description": "Date the certificate becomes expired.",
-            "type": "string",
-            "format": "date-time"
         }
     }, "required": [
         "credentialTitle",

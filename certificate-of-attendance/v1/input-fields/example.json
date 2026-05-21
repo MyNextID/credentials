@@ -1,7 +1,5 @@
 {
-    "credentialTitle":{
-        "en": "Certificate of Attendance"
-    }, "fullName" : {
+     "fullName" : {
         "en": "John Doe"
     }, "achievementTitle":{
         "en": "Title of your Conference"

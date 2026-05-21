@@ -1,10 +1,7 @@
 {
-    "credentialTitle": "credential-info",
     "fullName": "identity-profile",
     "dateOfBirth": "identity-profile",
     "placeOfBirth": "identity-profile",
     "fullAddress": "identity-profile",
-    "ectsPoints": "education-qualifications",
-    "qrCode": "credential-info",
-    "validUntil": "credential-info"
+    "ectsPoints": "education-qualifications"
 }

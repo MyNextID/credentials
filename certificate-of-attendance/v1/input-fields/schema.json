@@ -3,19 +3,7 @@
     "title": "Certificate of Attendance Schema",
     "type": "object",
     "properties": {
-        "credentialTitle":{
-            "title": "Credential title",
-            "description": "The official title of the credential being issued",
-            "type": "object",
-            "x-format": "languageMap",
-            "patternProperties": {
-                "^[a-z]{2}$": {
-                    "type": "string",
-                    "description": "A string value for a specific language code."
-                }
-            },
-            "additionalProperties": false
-        }, "fullName" : {
+        "fullName" : {
             "title": "Full name",
             "description": "The full name of the recipient of this credential",
             "type": "object",
@@ -122,7 +110,6 @@
         }
     },
     "required": [
-        "credentialTitle",
         "achievementTitle",
         "country",
         "address",

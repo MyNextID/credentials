@@ -9,6 +9,5 @@
     "cardNumber":"auth-privileges",
     "libraryCode": "auth-privileges",
     "organisationalResponsibility": "auth-privileges",
-    "professionalRole": "auth-privileges",
-    "validUntil": "credential-info"
+    "professionalRole": "auth-privileges"
 }

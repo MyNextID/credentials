@@ -10,6 +10,5 @@
     "matriculationStart": "education-qualifications",
     "matriculationEnd": "education-qualifications",
     "programmeTitle": "education-qualifications",
-    "programmeStatus":"education-qualifications",
-    "validUntil": "credential-info"
+    "programmeStatus":"education-qualifications"
 }

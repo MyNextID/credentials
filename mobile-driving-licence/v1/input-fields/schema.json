@@ -34,36 +34,6 @@
             "type": "string",
             "format": "date"
         },
-        "issueDate": {
-            "title": "Issue date",
-            "description": "The date on which this credential was officially issued to the recipient.",
-            "type": "string",
-            "format": "date"
-        },
-        "expiryDate": {
-            "title": "Expiry date",
-            "description": "The date after which this credential is no longer considered valid.",
-            "type": "string",
-            "format": "date"
-        },
-        "issuingCountry": {
-            "title": "Issuing country",
-            "description": "Alpha-2 ISO 3166-1 country code",
-            "type": "string",
-            "pattern": "^[A-Z]{2}$"
-        },
-        "issuingAuthority": {
-            "title": "Issuing authority",
-            "description": "Name of the issuing authority",
-            "type": "string",
-            "maxLength": 150
-        },
-        "documentNumber": {
-            "title": "Document number",
-            "description": "The unique identifier assigned to this credential document by the issuing authority.",
-            "type": "string",
-            "maxLength": 150
-        },
         "portrait": {
             "title": "Portrait",
             "description": "Base64-encoded image",
@@ -128,12 +98,6 @@
             "title": "Undistinguishing sign",
             "description": "",
             "type": "string"
-        },
-        "administrativeNumber": {
-            "title": "Administrative number",
-            "description": "The administrative reference number assigned to this credential.",
-            "type": "string",
-            "maxLength": 150
         },
         "sex": {
             "title": "Sex",
@@ -212,11 +176,6 @@
             "description": "The year of birth of the recipient.",
             "type": "integer"
         },
-        "issuingJurisdiction": {
-            "title": "Issuing jurisdiction",
-            "description": "The official jurisdiction or authority that issued this credential.",
-            "type": "string"
-        },
         "nationality": {
             "title": "Nationality",
             "description": "The nationality or citizenship of the recipient.",
@@ -267,11 +226,6 @@
         "familyName",
         "givenName",
         "birthDate",
-        "issueDate",
-        "expiryDate",
-        "issuingCountry",
-        "issuingAuthority",
-        "documentNumber",
         "portrait",
         "drivingPrivileges",
         "unDistinguishingSign"

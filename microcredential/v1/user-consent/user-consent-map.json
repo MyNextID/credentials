@@ -1,8 +1,6 @@
 {
-    "credentialTitle": "credential-info",
     "fullName": "identity-profile",
     "achievementDescription": "education-qualifications",
-    "dateIssued": "credential-info",
     "gradeAchieved": "education-qualifications",
     "verificationMethod": "education-qualifications",
     "type": "education-qualifications",

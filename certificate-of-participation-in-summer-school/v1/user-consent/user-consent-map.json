@@ -1,5 +1,4 @@
 {
-    "credentialTitle": "credential-info",
     "fullName": "identity-profile",
     "dateOfBirth": "identity-profile",
     "placeOfBirth":"identity-profile",
@@ -7,6 +6,5 @@
     "studentNumber": "identity-profile",
     "academicYear":"education-qualifications",
     "programmeTitle":"education-qualifications",
-    "workload": "education-qualifications",
-    "validUntil": "credential-info"
+    "workload": "education-qualifications"
 }

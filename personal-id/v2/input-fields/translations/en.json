@@ -1,5 +1,4 @@
 {
-    "vct": "Verifiable credential type",
     "familyName": "Family name",
     "givenName": "Given name",
     "birthDate": "Date of birth",
@@ -17,13 +16,6 @@
     "emailAddress": "Email",
     "mobilePhoneNumber":"Phone number", 
     "portrait": "Portrait",
-    "expiryDate": "Expiry date",
-    "issuanceDate": "Issuance date",
     "personalAdministrativeNumber": "Personal administrative number",
-    "sex": "Sex",
-    "issuingAuthority": "Issuing authority",
-    "issuingCountry": "Issuing country",
-    "documentNumber": "Document number",
-    "issuingJurisdiction": "Issuing jurisdiction",
-    "trustAnchor": "Trust anchor"
+    "sex": "Sex"
 }

@@ -1,8 +1,6 @@
 {
-    "credentialTitle":  "Credential title",
     "fullName": "Full name",
     "achievementDescription": "Achievement description",
-    "dateIssued": "Date",
     "gradeAchieved": "Grade achieved",
     "verificationMethod": "Method",
     "type": "Type",
