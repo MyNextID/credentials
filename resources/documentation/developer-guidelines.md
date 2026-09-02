@@ -80,7 +80,7 @@ The `credentials.json` file contains the full dataset of all supported credentia
 
 The file is located in the `_autogen` directory and is automatically updated whenever new credential types are merged or existing ones are versioned or extended (e.g., adding new translations). It is accessible via the following link:
 
-- [credentials.json](https://mynextid.github.io/credentials/_autogen/credentials.json)
+- [credentials.json](../../_autogen/credentials.json)
 
 >**Note:** If you maintain a local copy of this file within your project, it is recommended to periodically synchronize it with the repository (e.g., daily or as needed) to ensure you have the latest credential definitions. To manually regenerate the file from the repository, run:
 `node .\.github\scripts\build-credential-data.js`
@@ -160,7 +160,7 @@ The `credential-types.json` file provides a structured index of all supported cr
 
 The file is located in the `_autogen` directory and is automatically updated whenever new credential types are merged or existing ones are versioned or extended (e.g., adding new translations). It is accessible via the following link:
 
-- [credential-types.json](https://mynextid.github.io/credentials/_autogen/credential-types.json)
+- [credential-types.json](../../_autogen/credential-types.json)
 
 >**Note:** If you maintain a local copy of this file within your project, it is recommended to periodically synchronize it with the repository (e.g., daily or as needed) to ensure you have the latest credential definitions. To manually regenerate the file from the repository, run:
 `node .\.github\scripts\build-credential-types-list.js`

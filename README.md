@@ -39,7 +39,7 @@ This table shows which verifiable credential profiles support each credential ty
 | [degree-certificate](/degree-certificate/)                              | ✅  |            | 🟨 | 🟨 | 🟨 |     |     |     |
 | [matriculation](/matriculation/)                                   | ✅  |            | 🟨 | 🟨 | 🟨 |     |     |     |
 | [microcredential](/microcredential/)                                 | ✅  | ✅         | 🟨 | 🟨 | 🟨 |     |     |     |
-| [mobile-drivers-licence](/mobile-drivers-licence/)                           |     |            | 🟨 | 🟨 | 🟨 | ✅  |     |     |
+| [mobile-driving-licence](/mobile-driving-licence/)                           |     |            | 🟨 | 🟨 | 🟨 | ✅  |     |     |
 | [personal-id](/personal-id/)                                     |     |            | 🟨 | 🟨 | 🟨 | ✅  |     | ✅  |
 | [student-id](/student-id/)                                      | ✅  |            | 🟨 | 🟨 | 🟨 |     |     |     |
 
