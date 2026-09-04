@@ -50,10 +50,10 @@ When adding a new credential type, ensure the following structure and files are 
 - Create a new `<credential-type>/` directory following the [Naming Conventions](./naming-conventions.md).
 - Include at least one version folder (e.g. `v1`).
 - Implement the required folder structure within each version (e.g. `input-fields/`, `translations/`, `<profile>/`, `user-consent`, etc.).
-- Update the main repository documentation [README.md](../../README.md) to include the new credential type, including:
-  - Its placement in the appropriate section (e.g. [Education Credentials](../../README.md#education-credentials) or [Personal Credentials](../../README.md#personal-credentials))
+- Update the main repository documentation [README.md](../README.md) to include the new credential type, including:
+  - Its placement in the appropriate section (e.g. [Education Credentials](../README.md#education-credentials) or [Personal Credentials](../README.md#personal-credentials))
   - Links to its schema and example files (if available)
-- Ensure the [supported standards table](../../README.md#supported-standards) in the main documentation is updated to reflect the new credential type and its capabilities. Contributors are expected to include this update in their PR. Maintainers will review and adjust if needed.
+- Ensure the [supported standards table](../README.md#supported-standards) in the main documentation is updated to reflect the new credential type and its capabilities. Contributors are expected to include this update in their PR. Maintainers will review and adjust if needed.
 
 ### New Versions
 
@@ -67,7 +67,7 @@ The version `README.md` must:
 
 - Clearly describe the main changes compared to the previous version
 
-If the new version introduces a new profile or changes supported capabilities, the main repository documentation [README.md](../../README.md) must also be updated (including the [supported standards table](../../README.md#supported-standards) and relevant sections/links).
+If the new version introduces a new profile or changes supported capabilities, the main repository documentation [README.md](../README.md) must also be updated (including the [supported standards table](../README.md#supported-standards) and relevant sections/links).
 Contributors are expected to include these updates in their PR. Maintainers will review and adjust if needed.
 
 ### Profiles / Formats
@@ -88,8 +88,8 @@ Additional requirements:
 
 If a new profile is introduced:
 
-- the main repository documentation [README.md](../../README.md) MUST be updated (relevant links/sections).
-- This includes updates to the [supported standards table](../../README.md#supported-standards).
+- the main repository documentation [README.md](../README.md) MUST be updated (relevant links/sections).
+- This includes updates to the [supported standards table](../README.md#supported-standards).
 
 ### Translations
 

@@ -8,4 +8,4 @@ This directory provides the repository’s implementation of the European Digita
   
 ## References
 
-For details, including a link to the European Digital Credentials specification, see the [profile documentation](../../../specifications/profiles.md#edc-european-digital-credential-for-learning).
+For details, including a link to the European Digital Credentials specification, see the [profile documentation](../../../../specifications/profiles.md#edc-european-digital-credential-for-learning).

@@ -8,4 +8,4 @@ This directory provides the repository’s implementation of the Open Badge prof
   
 ## References
 
-For details, including a link to the Open Badge specification, see the [profile documentation](../../../specifications/profiles.md#open-badge).
+For details, including a link to the Open Badge specification, see the [profile documentation](../../../../specifications/profiles.md#open-badge).
