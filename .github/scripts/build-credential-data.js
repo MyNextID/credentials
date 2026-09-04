@@ -2,7 +2,12 @@ const fs = require("fs");
 
 const path = require("path");
 
-const outputDir = "_autogen";
+const outputDir = ".autogen";
+
+// credentialTypeToDirectory function
+function getCredentialTypePath(credentialType) {
+    return `credential-definitions/${credentialType}`
+}
 
 // Paths 
 const userConsentResourcePath = `resources/user-consent`
@@ -15,22 +20,22 @@ const userConsentGroupsPath = userConsentResourcePath + "/consent-groups.json"
 const credentialTypesPath = outputDir + "/credential-types.json"
 function getCredentialTypeTranslationPath(credentialType, lang) {
     if(lang) {
-        return `${credentialType}/translations/${lang}.json`
+        return `${getCredentialTypePath(credentialType)}/translations/${lang}.json`
     }
-    return `${credentialType}/translations`
+    return `${getCredentialTypePath(credentialType)}/translations`
 }
 function getCredentialTypeUserConsentPath(credentialType) {
-    return `${credentialType}/user-consent/user-consent-map.json`
+    return `${getCredentialTypePath(credentialType)}/user-consent/user-consent-map.json`
 }
 function getCredentialTypeInputFieldsTranslationPath(credentialType, lang) {
-    return `${credentialType}/input-fields/translations/${lang}.json`
+    return `${getCredentialTypePath(credentialType)}/input-fields/translations/${lang}.json`
 }
 function getCredentialTypeChangelogPath(credentialType) {
-    return `${credentialType}/changelog.md`
+    return `${getCredentialTypePath(credentialType)}/changelog.md`
 }
 
 function getCredentialTypeVersions(credentialType){
-    const entries = fs.readdirSync(`./${credentialType}`, {withFileTypes: true});
+    const entries = fs.readdirSync(`./${getCredentialTypePath(credentialType)}`, {withFileTypes: true});
     return entries.filter((e) => {
         // get directories
         return e.isDirectory();

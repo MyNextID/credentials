@@ -2,11 +2,17 @@ const fs = require("fs");
 
 const path = require("path");
 
-const outputDir = "_autogen";
+const outputDir = ".autogen";
 
 // Helpers
+
+// credentialTypeToDirectory function
+function getCredentialTypePath(credentialType) {
+    return `credential-definitions/${credentialType}`
+}
+
 function getCredentialTypeVersions(credentialType){
-    const entries = fs.readdirSync(`./${credentialType}`, {withFileTypes: true});
+    const entries = fs.readdirSync(`./${getCredentialTypePath(credentialType)}`, {withFileTypes: true});
     return entries.filter((e) => {
         // get directories
         return e.isDirectory();
@@ -14,18 +20,18 @@ function getCredentialTypeVersions(credentialType){
 }
 
 function getCredentialTypeInputfieldsSchemaPath(credentialType) {
-    return `${credentialType}/input-fields/schema.json`
+    return `${getCredentialTypePath(credentialType)}/input-fields/schema.json`
 }
 function getCredentialTypeFormatSchemaPath(credentialType,format) {
-    return `${credentialType}/${format}/schema.json`
+    return `${getCredentialTypePath(credentialType)}/${format}/schema.json`
 }
 function getCredentialTypeMappingPath(credentialType,format) {
-    return `${credentialType}/${format}/input-fields-to-credential-map.json`
+    return `${getCredentialTypePath(credentialType)}/${format}/input-fields-to-credential-map.json`
 }
 
-const entries = fs.readdirSync("./", {withFileTypes: true});
+const entries = fs.readdirSync("./credential-definitions", {withFileTypes: true});
 
-const excludedFolders = ["resources"]; // To not include it inside the 'types'
+const excludedFolders = []; // To not include it inside the 'types'
 const types = entries.filter((e) => {
     // Get directories, whose name does not begin with _ or .
     return e.isDirectory() && !e.name.startsWith("_") && !e.name.startsWith(".") && !excludedFolders.includes(e.name.toLowerCase());
@@ -75,7 +81,7 @@ types.map(type => type.name).forEach(credentialType => {
         };
 
         // c) Get all folders inside version and filter out only profiles. Ignoring all files.
-        const folders = fs.readdirSync("./"+key, {withFileTypes: true});
+        const folders = fs.readdirSync("./"+getCredentialTypePath(key), {withFileTypes: true});
 
         // Excluded files that are NOT PROFILE
         const excluded = ["input-fields", "translations", "user-consent"];
@@ -92,7 +98,7 @@ types.map(type => type.name).forEach(credentialType => {
             data[credentialType][version]["profiles"][profile] = {"formats":{}}
 
             // d) Get all folders inside version and filter out only formats. Ignoring all files.
-            const formatfolders = fs.readdirSync("./"+key+"/"+ profile, {withFileTypes: true});
+            const formatfolders = fs.readdirSync("./"+getCredentialTypePath(key)+"/"+ profile, {withFileTypes: true});
 
             // Excluded files that are NOT FORMAT
             const excluded = [""];
