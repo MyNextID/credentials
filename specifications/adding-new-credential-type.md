@@ -14,6 +14,8 @@ Before adding a new credential type, make sure that:
 
 For details about the repository structure and the files required for a credential type, see  [Credential Type Folder Structure](credential-type-structure.md).
 
+For more information about profile(s) and format(s), see [Profiles](profiles.md).
+
 For the contribution and Pull Request process, see [Contribution Guidelines](CONTRIBUTING.md).
 
 ### Process overview
