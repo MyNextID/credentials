@@ -110,6 +110,9 @@ const logFilePath = path.join(logDirectory, "script.log");
 
 fs.mkdirSync(logDirectory, { recursive: true });
 
+// Clear the previous run's log
+fs.writeFileSync(logFilePath, "");
+
 function log(message) {
   console.log(message);
   fs.appendFileSync(logFilePath, message + "\n");

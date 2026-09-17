@@ -25,83 +25,9 @@ personal-id
 
 student-id
 
-test
-- Invalid JSON in test/v1/translations/en.json
-- Invalid JSON in test/v1/translations/we.json
-- Invalid JSON in test/v1/input-fields/schema.json
-- Invalid JSON file name: test/v1/input-fields/translations/eee.json
-- credential-definitions/test/v1/user-consent/user-consent-map.json: Consent group 'true' is invalid. Use a consent group defined in the default groups file: ./resources/user-consent/consent-groups.json
-- Missing profile folder in test/v1
-
-visa
-
-Credential-definitions folder structure validation completed.
-
-Validating credential-definitions folder structure
-
-age-verification
-
-boarding-pass
-
-certificate-of-advanced-study
-
-certificate-of-attendance
-
-certificate-of-participation-in-summer-school
-
-confirmation-of-enrolment
-
-degree-certificate
-
-matriculation
-
-microcredential
-- Missing input-fields-to-credential-map.json in microcredential/v1/open-badge/w3c-vc
-
-mobile-driving-licence
-
-personal-id
-
-student-id
-
-test
-- Invalid JSON in test/v1/translations/en.json
-- Invalid JSON in test/v1/translations/we.json
-- Invalid JSON in test/v1/input-fields/schema.json
-- Invalid JSON file name: test/v1/input-fields/translations/eee.json
-- credential-definitions/test/v1/user-consent/user-consent-map.json: Consent group 'true' is invalid. Use a consent group defined in the default groups file: ./resources/user-consent/consent-groups.json
-- Missing profile folder in test/v1
-
-visa
-
-Credential-definitions folder structure validation completed.
-
-Validating credential-definitions folder structure
-
-age-verification
-
-boarding-pass
-
-certificate-of-advanced-study
-
-certificate-of-attendance
-
-certificate-of-participation-in-summer-school
-
-confirmation-of-enrolment
-
-degree-certificate
-
-matriculation
-
-microcredential
-- Missing input-fields-to-credential-map.json in microcredential/v1/open-badge/w3c-vc
-
-mobile-driving-licence
-
-personal-id
-
-student-id
+test1
+- README.md is missing
+- Default version folder is missing (e.g. v1)
 
 visa
 
