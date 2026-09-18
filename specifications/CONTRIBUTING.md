@@ -34,14 +34,24 @@ Before submitting a PR, ensure all of the following requirements are met:
 
 ### Validation
 
-All contributions must pass automated validation checks enforced by CI. Contributors are encouraged to validate changes locally when possible.
+All contributions must pass automated validation checks enforced by CI. Contributors are encouraged to run the validation script `validate-credential-definitions.js` locally before creating a pull request to identify and fix structural or schema-related issues early.
 
-- All JSON files must be syntactically valid.
-- All schema definitions must be valid and pass schema validation.
-- All example files must conform to their corresponding schema definitions.
-- Schema validation must pass for all defined inputs and mapped structures.
+Run the credential definition validation script from the repository root: `npm ./.github/scripts
+/validate-credential-definitions.js.`
 
-Any violations will result in CI failure and may lead to PR rejection.
+The script:
+
+- Validates the structure of credential definitions.
+- Checks that all JSON files are syntactically valid.
+- Verifies that schema definitions pass schema validation.
+- Ensures that example files conform to their corresponding schemas.
+- Validates all defined inputs and mapped structures.
+- Reports validation errors in the console to help contributors resolve them.
+  
+A copy of the validation output is also written to:
+`.github/logs/script.log`
+
+Contributors should review and resolve all reported errors before opening a pull request. Any violations detected by CI will cause the validation checks to fail and may result in the pull request being rejected.
 
 ### New Credential Types
 

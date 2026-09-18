@@ -164,9 +164,12 @@ At a minimum, check that:
 * Repository documentation has been updated.
 * All links are correct.
 
-The repository's automated CI checks will validate the contribution when the Pull Request is opened.
+You can run the local validation script from the repository root before opening a pull request:
+`node .github/scripts/validate-credential-definitions.js`
 
-If validation fails, fix the reported issues before the changes can be accepted.
+The script checks the structure of credential definitions and reports validation errors in the console. It also writes the validation output to `.github/logs/script.log`.
+
+Review the console output and log file, and fix all reported issues before submitting your changes. The repository’s automated CI checks will run the same validation when the pull request is opened. If validation fails, the reported issues must be resolved before the contribution can be accepted.
 
 ## 6. Submit a Pull Request
 
