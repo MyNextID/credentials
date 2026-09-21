@@ -170,10 +170,10 @@ Commit messages must be clear, concise, and follow the conventional commit forma
 - `docs: update README instructions`
 - `update: adjust example files to match schema`
 
-## Issue Reporting Guidelines
+## Issue and Suggestion Reporting Guidelines
 
 Please follow the dedicated guidelines:
-[Issue Reporting Guidelines](./issue-reporting.md)
+[Issue and Suggestion Reporting Guidelines](./issue-and-suggestion-reporting.md)
 
 ## Thank You for Your Contribution
 

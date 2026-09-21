@@ -198,7 +198,7 @@ It is commonly used to access campus services, academic resources, libraries, an
 
 We welcome contributions to improve and extend the credential type system.
 
-- For issues and suggestions, see [Issue Reporting Guidelines](./specifications/issue-reporting.md).
+- For issues and suggestions, see [Issue and Suggestion Reporting Guidelines](./specifications/issue-and-suggestion-reporting.md).
 - For code contributions and new credential types, see [Contributing Guidelines](./specifications/CONTRIBUTING.md).
 
 ## License
