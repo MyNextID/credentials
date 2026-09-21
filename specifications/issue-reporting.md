@@ -4,9 +4,8 @@ This document explains how to report issues in a way that helps us reproduce, un
 
 Well-structured issues reduce iteration cycles and speed up validation and fixes across credential types, schemas, and examples.
 
-## Before opening an issue
+>To report an issue, [open a new issue](https://github.com/MyNextID/credentials/issues/new) in the GitHub repository. Please review the existing issues first to check whether the problem has already been reported.
 
-- Check existing issues to avoid duplicates.
 
 ## What to include
 
