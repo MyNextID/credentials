@@ -97,6 +97,48 @@ const data = {
     "credential_types": {}
 };
 
+// Getting the date of file creation
+
+const { execFileSync } = require("child_process");
+
+function getGitCreationDate(filePath) {
+    try {
+        const date = execFileSync(
+            "git",
+            [
+                "log",
+                "--diff-filter=A",
+                "--follow",
+                "--reverse",
+                "--format=%aI",
+                "--",
+                filePath
+            ],
+            { encoding: "utf8" }
+        )
+            .trim()
+            .split("\n")[0];
+
+        if (!date) {
+            return "";
+        }
+
+        const match = date.match(
+            /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/
+        );
+
+        if (!match) {
+            return "";
+        }
+
+        const [, year, month, day, hour, minute] = match;
+
+        return `${year}.${month}.${day} ${hour}:${minute}`;
+    } catch {
+        return "";
+    }
+}
+
 // 1. Get user consent groups
 
 const translations = loadTranslations(userConsentTranslationsPath);
@@ -155,7 +197,8 @@ Object.keys(credentialTypes).forEach(credentialType => {
         const  hasChangelog = fs.existsSync(getCredentialTypeChangelogPath(key));
 
         const versionMetadata = {
-            "changelogs:":  hasChangelog ? ("/"+ getCredentialTypeChangelogPath(key)) : "",
+            "changelogs":  hasChangelog ? ("/"+ getCredentialTypeChangelogPath(key)) : "",
+            "created_at": getGitCreationDate(key),
         }
 
         data.credential_types[credentialType][version] = {
