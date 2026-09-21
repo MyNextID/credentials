@@ -97,7 +97,7 @@ const data = {
     "credential_types": {}
 };
 
-// Getting the date of file creation
+// Getting the date of version file creation
 
 const { execFileSync } = require("child_process");
 
