@@ -117,7 +117,7 @@ fs.writeFileSync(logFilePath, "");
 
 function log(message) {
   console.log(message);
-  fs.appendFileSync(logFilePath, message + "\n");
+  fs.appendFileSync(logFilePath, message + "\n", "utf8");
 }
 
 let hasErrors = false;
@@ -126,7 +126,6 @@ function validationError(message) {
   hasErrors = true;
   log(message);
 }
-
 
 log("Validating credential-definitions folder structure");
 
