@@ -14,10 +14,11 @@ confirmation-of-enrolment
 
 degree-certificate
 
+fakecredential
+
 matriculation
 
 microcredential
-- Missing input-fields-to-credential-map.json in microcredential/v1/open-badge/w3c-vc
 
 mobile-driving-licence
 
@@ -27,5 +28,5 @@ student-id
 
 visa
 
-Credential-definitions folder structure validation failed
+Credential-definitions folder structure is valid
 
