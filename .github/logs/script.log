@@ -14,11 +14,21 @@ confirmation-of-enrolment
 
 degree-certificate
 
-fakecredential
-
 matriculation
 
 microcredential
+- credential-definitions/microcredential/v1/open-badge/w3c-vc/input-fields-to-credential-map.json: key fullName found in credential-definitions/microcredential/v1/input-fields/example.json is missing in input-fields-to-credential-map.json
+- credential-definitions/microcredential/v1/open-badge/w3c-vc/input-fields-to-credential-map.json: key achievementDescription found in credential-definitions/microcredential/v1/input-fields/example.json is missing in input-fields-to-credential-map.json
+- credential-definitions/microcredential/v1/open-badge/w3c-vc/input-fields-to-credential-map.json: key gradeAchieved found in credential-definitions/microcredential/v1/input-fields/example.json is missing in input-fields-to-credential-map.json
+- credential-definitions/microcredential/v1/open-badge/w3c-vc/input-fields-to-credential-map.json: key verificationMethod found in credential-definitions/microcredential/v1/input-fields/example.json is missing in input-fields-to-credential-map.json
+- credential-definitions/microcredential/v1/open-badge/w3c-vc/input-fields-to-credential-map.json: key type found in credential-definitions/microcredential/v1/input-fields/example.json is missing in input-fields-to-credential-map.json
+- credential-definitions/microcredential/v1/open-badge/w3c-vc/input-fields-to-credential-map.json: key mode found in credential-definitions/microcredential/v1/input-fields/example.json is missing in input-fields-to-credential-map.json
+- credential-definitions/microcredential/v1/open-badge/w3c-vc/input-fields-to-credential-map.json: key title found in credential-definitions/microcredential/v1/input-fields/example.json is missing in input-fields-to-credential-map.json
+- credential-definitions/microcredential/v1/open-badge/w3c-vc/input-fields-to-credential-map.json: key ectsPoints found in credential-definitions/microcredential/v1/input-fields/example.json is missing in input-fields-to-credential-map.json
+- credential-definitions/microcredential/v1/open-badge/w3c-vc/input-fields-to-credential-map.json: key achievementTitle found in credential-definitions/microcredential/v1/input-fields/example.json is missing in input-fields-to-credential-map.json
+- credential-definitions/microcredential/v1/open-badge/w3c-vc/input-fields-to-credential-map.json: key hoursOfLearning found in credential-definitions/microcredential/v1/input-fields/example.json is missing in input-fields-to-credential-map.json
+- credential-definitions/microcredential/v1/open-badge/w3c-vc/input-fields-to-credential-map.json: key nationalId found in credential-definitions/microcredential/v1/input-fields/example.json is missing in input-fields-to-credential-map.json
+- credential-definitions/microcredential/v1/open-badge/w3c-vc/input-fields-to-credential-map.json: key awardingStatement found in credential-definitions/microcredential/v1/input-fields/example.json is missing in input-fields-to-credential-map.json
 
 mobile-driving-licence
 
