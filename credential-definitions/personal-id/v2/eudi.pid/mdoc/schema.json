@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "EUDI Personal Identification Data (PID)",
+    "type": "object",
+    "required": ["docType", "namespace"],
+    "additionalProperties": false,
+    "properties": {
+      "docType": {
+        "type": "string",
+        "const": "eu.europa.ec.eudi.pid.1"
+      },
+      "namespace": {
+        "type": "object",
+        "required": ["eu.europa.ec.eudi.pid.1"],
+        "additionalProperties": false,
+        "properties": {
+          "eu.europa.ec.eudi.pid.1": {
+            "$ref": "./eu.europa.ec.eudi.pid.1-schema.json"
+          }
+        }
+      }
+    }
+  }

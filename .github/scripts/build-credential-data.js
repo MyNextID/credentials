@@ -2,10 +2,15 @@ const fs = require("fs");
 
 const path = require("path");
 
-const outputDir = "_generated";
+const outputDir = ".autogen";
+
+// credentialTypeToDirectory function
+function getCredentialTypePath(credentialType) {
+    return `credential-definitions/${credentialType}`
+}
 
 // Paths 
-const userConsentResourcePath = `_resources/user-consent`
+const userConsentResourcePath = `resources/user-consent`
 const userConsentTranslationsPath = userConsentResourcePath + "/translations"
 function getUserConsentTranslationPath(lang) {
     return userConsentTranslationsPath + `/${lang}.json`
@@ -15,22 +20,22 @@ const userConsentGroupsPath = userConsentResourcePath + "/consent-groups.json"
 const credentialTypesPath = outputDir + "/credential-types.json"
 function getCredentialTypeTranslationPath(credentialType, lang) {
     if(lang) {
-        return `${credentialType}/translations/${lang}.json`
+        return `${getCredentialTypePath(credentialType)}/translations/${lang}.json`
     }
-    return `${credentialType}/translations`
+    return `${getCredentialTypePath(credentialType)}/translations`
 }
 function getCredentialTypeUserConsentPath(credentialType) {
-    return `${credentialType}/user-consent/user-consent-map.json`
+    return `${getCredentialTypePath(credentialType)}/user-consent/user-consent-map.json`
 }
 function getCredentialTypeInputFieldsTranslationPath(credentialType, lang) {
-    return `${credentialType}/input-fields/translations/${lang}.json`
+    return `${getCredentialTypePath(credentialType)}/input-fields/translations/${lang}.json`
 }
 function getCredentialTypeChangelogPath(credentialType) {
-    return `${credentialType}/changelog.md`
+    return `${getCredentialTypePath(credentialType)}/changelog.md`
 }
 
 function getCredentialTypeVersions(credentialType){
-    const entries = fs.readdirSync(`./${credentialType}`, {withFileTypes: true});
+    const entries = fs.readdirSync(`./${getCredentialTypePath(credentialType)}`, {withFileTypes: true});
     return entries.filter((e) => {
         // get directories
         return e.isDirectory();
@@ -92,6 +97,48 @@ const data = {
     "credential_types": {}
 };
 
+// Getting the date of version file creation
+
+const { execFileSync } = require("child_process");
+
+function getGitCreationDate(filePath) {
+    try {
+        const date = execFileSync(
+            "git",
+            [
+                "log",
+                "--diff-filter=A",
+                "--follow",
+                "--reverse",
+                "--format=%aI",
+                "--",
+                filePath
+            ],
+            { encoding: "utf8" }
+        )
+            .trim()
+            .split("\n")[0];
+
+        if (!date) {
+            return "";
+        }
+
+        const match = date.match(
+            /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/
+        );
+
+        if (!match) {
+            return "";
+        }
+
+        const [, year, month, day, hour, minute] = match;
+
+        return `${year}.${month}.${day} ${hour}:${minute}`;
+    } catch {
+        return "";
+    }
+}
+
 // 1. Get user consent groups
 
 const translations = loadTranslations(userConsentTranslationsPath);
@@ -148,8 +195,10 @@ Object.keys(credentialTypes).forEach(credentialType => {
 
         // c) Get version metadata - changelog link if exists
         const  hasChangelog = fs.existsSync(getCredentialTypeChangelogPath(key));
+
         const versionMetadata = {
-            "changelogs:":  hasChangelog ? ("/"+ getCredentialTypeChangelogPath(key)) : "",
+            "changelogs":  hasChangelog ? ("/"+ getCredentialTypeChangelogPath(key)) : "",
+            "created_at": getGitCreationDate(key),
         }
 
         data.credential_types[credentialType][version] = {

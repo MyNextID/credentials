@@ -1,0 +1,21 @@
+{
+    "familyName": "identity-profile",
+    "givenName": "identity-profile",
+    "birthDate": "identity-profile",
+    "birthPlace": "identity-profile",
+    "nationality": "identity-profile",
+    "residentAddress": "identity-profile",
+    "residentCountry": "identity-profile",
+    "residentState": "identity-profile",
+    "residentCity": "identity-profile",
+    "residentPostalCode": "identity-profile",
+    "residentStreet": "identity-profile",
+    "residentHouseNumber": "identity-profile",
+    "familyNameBirth":  "identity-profile",
+    "givenNameBirth":  "identity-profile",
+    "emailAddress":  "identity-profile",
+    "mobilePhoneNumber":  "identity-profile",
+    "portrait":  "identity-profile",
+    "personalAdministrativeNumber": "identity-profile",
+    "sex": "identity-profile"
+}
