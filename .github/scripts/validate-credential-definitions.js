@@ -5,7 +5,9 @@ const fs = require("fs");
 
 const path = require("path");
 
-const entries = fs.readdirSync("./credential-definitions", {withFileTypes: true});
+const entries = fs
+    .readdirSync("./credential-definitions", { withFileTypes: true })
+    .filter((entry) => entry.isDirectory());
 
 // Helpers
 
