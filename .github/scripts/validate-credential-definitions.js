@@ -82,11 +82,11 @@ function crossCheckJsonKeys(json1, json2, json1Path, json2Path, fileName) {
                 }
                 return false;
             })) {
-                log("- " + json1Path + ": pattern key " + key1 + " found in " + fileName + " is missing in " + json2Path);
+                validationError("- " + json1Path + ": pattern key " + key1 + " found in " + fileName + " is missing in " + json2Path);
             }
             regexPrefixes.push(prefix)
         } else if(json2[key1] === undefined) {
-            log("- " + json1Path + ": key " + key1 + " found in " + fileName + " is missing in " + json2Path);
+            validationError("- " + json1Path + ": key " + key1 + " found in " + fileName + " is missing in " + json2Path);
         }
     })
     Object.keys(json2).forEach((key2) => {
@@ -96,10 +96,10 @@ function crossCheckJsonKeys(json1, json2, json1Path, json2Path, fileName) {
                 if (!regexPrefixes.some((prefix) => {
                     return key2.startsWith(prefix)
                 })) {
-                    log("- " + json1Path + ": pattern key " + key2 + " found in " + json2Path + " is missing in " + fileName);
+                    validationError("- " + json1Path + ": pattern key " + key2 + " found in " + json2Path + " is missing in " + fileName);
                 }
             } else {
-                log("- " + json1Path + ": key " + key2 + " found in " + json2Path + " is missing in " + fileName);
+                validationError("- " + json1Path + ": key " + key2 + " found in " + json2Path + " is missing in " + fileName);
             }
         }
     })
