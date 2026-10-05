@@ -365,7 +365,9 @@ entries.map(type => type.name).forEach(credentialType => {
                                     }else{
                                         // 3.c) check if example json is valid, then crossmatch example json keys with input-fields-to-credential-map.json keys
                                         const filePath = getCredentialTypePath(formatPath)+"/input-fields-to-credential-map.json";
-                                        if(exampleJson) {
+                                        // CEL maps are keyed by output pointer and are checked by apply-credential-map.js
+                                        const isCelMap = Object.keys(jsonConent).every((key) => key.startsWith("/"));
+                                        if(exampleJson && !isCelMap) {
                                             crossCheckJsonKeys(jsonConent, exampleJson, filePath, exampleJsonFilePath, 'input-fields-to-credential-map.json');
                                         }
                                     }

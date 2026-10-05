@@ -229,5 +229,15 @@
         "portrait",
         "drivingPrivileges",
         "unDistinguishingSign"
+    ],
+    "x-cel-rules": [
+        {
+            "rule": "input.drivingPrivileges.all(p, !has(p.issueDate) || !has(p.expiryDate) || p.issueDate < p.expiryDate)",
+            "message": "Each driving privilege must expire after it was issued."
+        },
+        {
+            "rule": "!has(input.ageInYears) || !has(input.ageOver18) || input.ageOver18 == (input.ageInYears >= 18)",
+            "message": "ageOver18 must agree with ageInYears."
+        }
     ]
 }
