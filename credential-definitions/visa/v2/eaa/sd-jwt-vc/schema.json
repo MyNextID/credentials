@@ -7,7 +7,7 @@
         "vct": {
             "type": "string",
             "description": "Verifiable credential type.",
-            "const": "urn:mynextid:visa:2"
+            "const": "https://raw.githubusercontent.com/MyNextID/credentials/main/credential-definitions/visa/v2/eaa/sd-jwt-vc/type-metadata.json"
         },
         "iss": {
             "type": "string",

@@ -40,6 +40,7 @@
             },
             "additionalProperties": false
         }, "country":{
+            "x-vocabulary": "country",
             "title": "Country",
             "description": "The full country name in text format (e.g., not an ISO code)",
             "type": "object",

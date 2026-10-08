@@ -21,6 +21,7 @@
             "type": "string",
             "format": "date-time"
         }, "placeOfBirth":{
+            "x-vocabulary": "country",
             "title": "Country of birth",
             "description": "The country where the recipient was born",
             "type": "object",

@@ -30,4 +30,4 @@ Open Badges 3.0. Only the JSON Schema of each format folder is checked, no JSON-
 
 ## eaa/sd-jwt-vc
 
-Electronic Attestations of Attributes as SD-JWT VC. The base map only sets `iss` from `meta.issuer`. Only the JSON Schema of each format folder is checked. The issuer adds `iat`, `nbf`, `exp`, `cnf` and `status` and the selective-disclosure encoding when it signs.
+Electronic Attestations of Attributes as SD-JWT VC. The base map only sets `iss` from `meta.issuer`. Each format folder's JSON Schema is checked, and its `type-metadata.json` must have the same `vct` and describe every claim. The issuer adds `iat`, `nbf`, `exp`, `cnf` and `status` and the selective-disclosure encoding when it signs.

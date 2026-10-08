@@ -1,5 +1,7 @@
 # Matriculation (v1)
 
+> **Deprecated.** The v1 EDC puts most type-specific fields into properties the ELM JSON-LD context does not define, so Europass and other verifiers drop them. Use [v2](../v2/), which is modelled on ELM.
+
 This directory defines the **v1 structure** of the Matriculation credential, including its profiles, input definitions, and supporting resources.
 
 ## Contents

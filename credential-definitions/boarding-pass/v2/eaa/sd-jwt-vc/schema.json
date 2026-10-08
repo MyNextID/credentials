@@ -7,7 +7,7 @@
         "vct": {
             "type": "string",
             "description": "Verifiable credential type.",
-            "const": "urn:mynextid:boarding-pass:2"
+            "const": "https://raw.githubusercontent.com/MyNextID/credentials/main/credential-definitions/boarding-pass/v2/eaa/sd-jwt-vc/type-metadata.json"
         },
         "iss": {
             "type": "string",

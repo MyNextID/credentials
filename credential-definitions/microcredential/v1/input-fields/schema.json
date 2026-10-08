@@ -46,6 +46,7 @@
             "additionalProperties": false
         },
         "verificationMethod": {
+            "x-vocabulary": "supervision",
             "title": "Method",
             "description": "",
             "type": "object",
@@ -59,6 +60,7 @@
             "additionalProperties": false
         },
         "type": {
+            "x-vocabulary": "assessmentType",
             "title": "Type",
             "description": "",
             "type": "object",
@@ -72,6 +74,7 @@
             "additionalProperties": false
         },
         "mode":{
+            "x-vocabulary": "learningMode",
             "title":"Mode",
             "description": "",
             "type": "object",
@@ -128,6 +131,7 @@
             "type": "string"
         },
         "nationalIdCountry":{
+            "x-vocabulary": "country",
             "title":"National ID country",
             "description": "Country that issued the national ID, as an English country name from resources/vocabularies/country.json (e.g. Slovenia).",
             "type": "object",

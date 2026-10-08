@@ -59,6 +59,7 @@
             "additionalProperties": false
         },
         "nationality":{
+            "x-vocabulary": "country",
             "title":"Nationality",
             "description": "Nationality of the recipient of this credential",
             "type": "object",

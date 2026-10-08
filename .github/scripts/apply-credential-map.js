@@ -138,14 +138,45 @@ function loadFormat(formatDir) {
     };
 }
 
+// Input fields marked "x-vocabulary": "<table>" must use a label from resources/vocabularies/<table>.json.
+// A language map is checked by its English value.
+function vocabularyErrors(inputSchema, input) {
+    const errors = [];
+    for (const [field, schema] of Object.entries(inputSchema.properties || {})) {
+        const table = schema["x-vocabulary"];
+        if (!table || input[field] === undefined) continue;
+        if (!vocab[table]) {
+            errors.push(`/${field} unknown vocabulary "${table}"`);
+            continue;
+        }
+        const label = typeof input[field] === "object" ? input[field].en : input[field];
+        if (!Object.hasOwn(vocab[table], label)) errors.push(`/${field} "${label}" is not in resources/vocabularies/${table}.json`);
+    }
+    return errors;
+}
+
+// SD-JWT VC Type Metadata (type-metadata.json) must describe the vct and every claim the map builds.
+const REGISTERED_CLAIMS = new Set(["vct", "iss", "iat", "nbf", "exp", "cnf", "status", "sub"]);
+function typeMetadataErrors(formatDir, credential) {
+    const metadata = readJson(path.join(formatDir, "type-metadata.json"), null);
+    if (!metadata) return [];
+    const errors = metadata.vct === credential.vct ? [] : [`vct is ${credential.vct}, type-metadata.json says ${metadata.vct}`];
+    const described = new Set((metadata.claims || []).map((c) => c.path.join("/")));
+    for (const claim of Object.keys(credential).filter((k) => !REGISTERED_CLAIMS.has(k))) {
+        if (!described.has(claim)) errors.push(`claim ${claim} is missing from type-metadata.json`);
+    }
+    return errors;
+}
+
 // Builds the credential for a format folder. input, rules, meta and map default to the files on disk.
 function build(formatDir, overrides = {}) {
     const { input, rules, translations, meta, map, legacy, now = TEST_NOW, uuid = testUuids() } = { ...loadFormat(formatDir), ...overrides };
     const typeVersionDir = path.join(formatDir, "..", "..");
     nextUuid = uuid;
 
-    const validateInput = validator(path.join(typeVersionDir, "input-fields", "schema.json"));
-    const inputErrors = validateInput(input) ? [] : schemaErrors(validateInput);
+    const inputSchemaFile = path.join(typeVersionDir, "input-fields", "schema.json");
+    const validateInput = validator(inputSchemaFile);
+    const inputErrors = [...(validateInput(input) ? [] : schemaErrors(validateInput)), ...vocabularyErrors(readJson(inputSchemaFile), input)];
 
     const ruleResults = rules.map(({ rule, message }) => {
         try {
@@ -174,6 +205,7 @@ function build(formatDir, overrides = {}) {
         ...ruleResults.filter((r) => !r.ok).map((r) => r.error ? `input rule error: ${r.rule}: ${r.error}` : `input rule failed: ${r.message}`),
         ...entries.filter((e) => e.error).map((e) => `map ${e.pointer}: ${e.error}`),
         ...outputErrors.map((e) => `output ${e}`),
+        ...typeMetadataErrors(formatDir, credential).map((e) => `type metadata: ${e}`),
     ];
     return { credential, entries, ruleResults, inputErrors, outputErrors, errors, legacy };
 }

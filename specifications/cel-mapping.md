@@ -55,7 +55,7 @@ The key is a JSON pointer into the output credential. The value is a CEL express
 - **Optional objects:** write `has(input.x) ? optional.of({...}) : optional.none()`. CEL does not allow `cond ? {...} : null`, because the two branches have different types.
 - **`null` and empty optionals** are left out wherever they appear, including inside objects.
 - **Language fallback:** `input.title[?meta.primaryLanguage].orValue(input.title.en)` picks one language from a language map (used by Open Badge, whose strings are not multilingual).
-- **Vocabulary lookups** fail with a map error when the label is not in the table, e.g. `No such key: By carrier pigeon`.
+- **Vocabulary lookups** need a label from the table. Mark the input field with `x-vocabulary` (see below), so a wrong label is reported as an input error before the map runs.
 - **Map type:** a map is a CEL map when every key starts with `/`. Older maps keyed by input field still work, read as `"<pointer>": "input.?<key>"`.
 - **Keep it simple:** most entries stay a plain `input.<field>`. Use CEL only where a value must be reshaped.
 
@@ -93,6 +93,15 @@ Organisation nodes come from onboarding with stable ids, so the map places them 
 
 JSON Schema still handles single fields: types, formats and required fields. `x-cel-rules` covers only what JSON Schema cannot express.
 
+A field whose value must be a vocabulary label carries `x-vocabulary` with the table name. The runner rejects any other value as an input error, and a form can offer the labels in [`resources/vocabularies/<table>.json`](../resources/vocabularies) as a dropdown. For a language map, the English value is checked:
+
+```json
+"placeOfBirth": {
+    "x-vocabulary": "country",
+    "type": "object"
+}
+```
+
 ## Running it
 
 ```bash
@@ -104,9 +113,9 @@ npm test                     # tests for the runner itself
 
 For each format folder, the runner:
 
-1. validates `input-fields/example.json` against `input-fields/schema.json` and its `x-cel-rules`
+1. validates `input-fields/example.json` against `input-fields/schema.json`, its `x-vocabulary` fields and its `x-cel-rules`
 2. builds the credential from the base map and the format map
-3. validates the result against the format `schema.json`
+3. validates the result against the format `schema.json`, and for SD-JWT VC checks that `type-metadata.json` has the same `vct` and describes every claim
 4. if the profile has a `shacl.json` (EDC): expands the credential as JSON-LD with the vendored contexts and validates the RDF against the ELM SHACL shapes (`EDC-generic-full`). This runs offline.
 
 The output is the unsigned claim set. Holder binding (`cnf`), status entries, evidence, encoding and signing (CBOR/MSO, SD-JWT, JAdES) stay with the issuer.
@@ -123,9 +132,12 @@ The runner uses [`@marcbachmann/cel-js`](https://www.npmjs.com/package/@marcbach
 - no `string(timestamp)`, which is why `now` is a string
 - no `list.indexOf` and no `optMap`
 
+## SD-JWT VC type metadata
+
+Each `eaa/sd-jwt-vc` format folder has a `type-metadata.json` ([SD-JWT VC Type Metadata](https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/), draft 19). It names the type, labels every claim, and sets which claims are selectively disclosable (`sd`). The `vct` is the file's raw GitHub URL on `main`, so a wallet can fetch it once the PR is merged. The issuer still adds `iat`, `nbf`, `exp`, `cnf` and `status` and signs, as it does for every format.
+
 ## Open questions
 
 - The v1 EDC maps of eight types (boarding-pass, visa, student-id, degree-certificate, matriculation, confirmation-of-enrolment, certificate-of-participation-in-summer-school, certificate-of-advanced-study) carry fields that are not in the ELM context (`studentNumber`, `degreeProgramme`, `flightInformation`, `visaNumber`, …). v2 of these types fixes this: the six learning types are modelled on ELM, and visa and boarding-pass move to `eaa/sd-jwt-vc`. When can v1 be retired?
-- The SD-JWT VC `vct` values (`urn:mynextid:visa:2`, `urn:mynextid:boarding-pass:2`) are placeholders. Should they be resolvable URLs with SD-JWT VC type metadata?
 - Should the PID and age-verification maps be converted too?
 - Should the per-format `examples/*-example.json` files be regenerated from the maps?

@@ -13,5 +13,4 @@ licensing.
 Select a version to view its full specification. The latest version is:
 
 - [`v2`](v2/) – ELM-modelled EDC
-- [`v1`](v1/) – Initial version of the Degree Certificate
-  
+- [`v1`](v1/) – Initial version of the Degree Certificate (deprecated, use v2)

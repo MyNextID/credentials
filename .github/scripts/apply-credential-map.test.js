@@ -14,9 +14,15 @@ test("uuid() follows a fixed sequence and an absent optional input is left out",
     assert.strictEqual(credential.credentialSubject.nationalID, undefined);
 });
 
-test("a label missing from the vocabulary is a map error", () => {
+test("a label missing from the vocabulary is an input error", () => {
     const { errors } = build(MC_EDC, { input: { ...input, mode: { en: "By carrier pigeon" } } });
-    assert.match(errors.join("\n"), /^map \/credentialSubject\/hasClaim\/provenBy\/specifiedBy: /m);
+    assert.match(errors.join("\n"), /^input \/mode "By carrier pigeon" is not in resources\/vocabularies\/learningMode\.json$/m);
+});
+
+test("SD-JWT VC claims must be described in type-metadata.json", () => {
+    const dir = "credential-definitions/visa/v2/eaa/sd-jwt-vc";
+    const { map } = loadFormat(dir);
+    assert.deepStrictEqual(build(dir, { map: { ...map, "/extra": "'x'" } }).errors, ["type metadata: claim extra is missing from type-metadata.json"]);
 });
 
 test("SHACL rejects an issuer without an eIDAS identifier and reports dropped terms", async () => {

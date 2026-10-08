@@ -1,0 +1,167 @@
+{
+    "vct": "https://raw.githubusercontent.com/MyNextID/credentials/main/credential-definitions/visa/v2/eaa/sd-jwt-vc/type-metadata.json",
+    "name": "Visa",
+    "description": "Claims of the Visa SD-JWT VC (EAA profile), before selective-disclosure encoding and signing.",
+    "display": [
+        {
+            "locale": "en",
+            "name": "Visa"
+        }
+    ],
+    "claims": [
+        {
+            "path": [
+                "full_name"
+            ],
+            "display": [
+                {
+                    "locale": "en",
+                    "label": "Full name",
+                    "description": "Full name of the visa holder."
+                }
+            ],
+            "mandatory": true,
+            "sd": "allowed"
+        },
+        {
+            "path": [
+                "date_of_birth"
+            ],
+            "display": [
+                {
+                    "locale": "en",
+                    "label": "Date of birth",
+                    "description": "Date of birth."
+                }
+            ],
+            "mandatory": false,
+            "sd": "allowed"
+        },
+        {
+            "path": [
+                "nationality"
+            ],
+            "display": [
+                {
+                    "locale": "en",
+                    "label": "Nationality",
+                    "description": "Nationality as an ISO 3166-1 alpha-3 code."
+                }
+            ],
+            "mandatory": false,
+            "sd": "allowed"
+        },
+        {
+            "path": [
+                "passport_number"
+            ],
+            "display": [
+                {
+                    "locale": "en",
+                    "label": "Passport number",
+                    "description": "Passport number."
+                }
+            ],
+            "mandatory": false,
+            "sd": "allowed"
+        },
+        {
+            "path": [
+                "visa_number"
+            ],
+            "display": [
+                {
+                    "locale": "en",
+                    "label": "Visa number",
+                    "description": "Visa number."
+                }
+            ],
+            "mandatory": false,
+            "sd": "allowed"
+        },
+        {
+            "path": [
+                "type_of_visa"
+            ],
+            "display": [
+                {
+                    "locale": "en",
+                    "label": "Type of visa",
+                    "description": "Type of visa, e.g. Tourist Visa."
+                }
+            ],
+            "mandatory": false,
+            "sd": "allowed"
+        },
+        {
+            "path": [
+                "entry_type"
+            ],
+            "display": [
+                {
+                    "locale": "en",
+                    "label": "Entry type",
+                    "description": "Entry type, e.g. Single Entry."
+                }
+            ],
+            "mandatory": false,
+            "sd": "allowed"
+        },
+        {
+            "path": [
+                "place_of_issue"
+            ],
+            "display": [
+                {
+                    "locale": "en",
+                    "label": "Place of issue",
+                    "description": "Place where the visa was issued."
+                }
+            ],
+            "mandatory": false,
+            "sd": "allowed"
+        },
+        {
+            "path": [
+                "duration_of_stay"
+            ],
+            "display": [
+                {
+                    "locale": "en",
+                    "label": "Duration of stay",
+                    "description": "Permitted duration of stay (ISO 8601 duration)."
+                }
+            ],
+            "mandatory": false,
+            "sd": "allowed"
+        },
+        {
+            "path": [
+                "date_of_issuance"
+            ],
+            "display": [
+                {
+                    "locale": "en",
+                    "label": "Issuance date",
+                    "description": "Date the visa was issued."
+                }
+            ],
+            "mandatory": false,
+            "sd": "allowed"
+        },
+        {
+            "path": [
+                "date_of_expiry"
+            ],
+            "display": [
+                {
+                    "locale": "en",
+                    "label": "Valid until",
+                    "description": "Date the visa expires."
+                }
+            ],
+            "mandatory": false,
+            "sd": "allowed"
+        }
+    ]
+}
