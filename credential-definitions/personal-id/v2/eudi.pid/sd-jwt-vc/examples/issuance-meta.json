@@ -1,0 +1,8 @@
+{
+    "issueDate": "2026-01-01",
+    "expiryDate": "2031-01-01",
+    "issuingAuthority": "Example Civil Registry",
+    "issuingCountry": "DE",
+    "documentNumber": "PID-0000-1234",
+    "trustAnchor": "https://issuer.example.com/trust-anchor"
+}

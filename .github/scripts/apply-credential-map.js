@@ -1,14 +1,13 @@
 // CEL in input-fields-to-credential-map.json and input-fields/schema.json. See specifications/cel-mapping.md.
 //
-// For each format folder: validate input-fields/example.json (JSON Schema and x-cel-rules), build the credential
+// For each format folder: validate input-fields/example.json (JSON Schema, x-vocabulary, x-cel-rules), build the credential
 // with the profile base map and the format map, validate it against the format schema.json and, for EDC, against
 // the ELM SHACL shapes.
 //
 //   npm install
 //   node .github/scripts/apply-credential-map.js [--print] [format-folder ...]
 //
-// Without folders it runs over every format folder in credential-definitions/. It exits non-zero only when a
-// CEL map fails. Legacy maps (keyed by input field) are reported but not enforced.
+// Without folders it runs over every format folder in credential-definitions/. It exits non-zero when any map fails.
 
 const fs = require("fs");
 const path = require("path");
@@ -43,24 +42,24 @@ const vocab = Object.fromEntries(fs.readdirSync("resources/vocabularies")
     .filter((f) => f.endsWith(".json"))
     .map((f) => [path.basename(f, ".json"), readJson(path.join("resources/vocabularies", f))]));
 
-const isCelMap = (map) => Object.keys(map).every((k) => k.startsWith("/"));
-
-// Older maps are keyed by input field and are read as "copy input.<key> to <pointer> if present".
-function toCelMap(map, input) {
-    if (isCelMap(map)) return map;
-    const celMap = {};
-    for (const [key, pointer] of Object.entries(map)) {
-        if (key.includes("{{NN}}")) {
-            const re = new RegExp("^" + key.replace("{{NN}}", "(\\d+)") + "$");
-            for (const k of Object.keys(input)) {
-                const m = k.match(re);
-                if (m) celMap[pointer.replace("{{NN}}", m[1])] = `input.?${k}`;
-            }
-        } else {
-            celMap[pointer] = `input.?${key}`;
+// A CEL map key with {{NN}} is a template: the entry repeats for every input field that matches the
+// input.<field> in its expression, with {{NN}} standing for digits ("ageOver{{NN}}" → ageOver21).
+function expandTemplates(map, input) {
+    const out = {};
+    for (const [pointer, expr] of Object.entries(map)) {
+        if (!pointer.includes("{{NN}}")) {
+            out[pointer] = expr;
+            continue;
+        }
+        const field = expr.match(/input\.\??(\w*\{\{NN\}\}\w*)/)?.[1];
+        if (!field) throw new Error(`map ${pointer}: a {{NN}} key needs an input.<field>{{NN}} in its expression`);
+        const re = new RegExp("^" + field.replace("{{NN}}", "(\\d+)") + "$");
+        for (const key of Object.keys(input)) {
+            const nn = key.match(re)?.[1];
+            if (nn) out[pointer.replaceAll("{{NN}}", nn)] = expr.replaceAll("{{NN}}", nn);
         }
     }
-    return celMap;
+    return out;
 }
 
 // An empty optional or null means "leave the field out".
@@ -132,9 +131,8 @@ function loadFormat(formatDir) {
         translations: loadTranslations(typeVersionDir),
         // Profile defaults first, then the format folder's own values.
         meta: { ...readJson(path.join(profile, "examples", "issuance-meta.json"), {}), ...readJson(path.join(formatDir, "examples", "issuance-meta.json"), {}) },
-        // The profile base map applies to CEL maps only. Format map entries override base entries.
-        map: isCelMap(map) ? { ...readJson(path.join(profile, "base-map.json"), {}), ...map } : map,
-        legacy: !isCelMap(map),
+        // Format map entries override profile base map entries.
+        map: { ...readJson(path.join(profile, "base-map.json"), {}), ...map },
     };
 }
 
@@ -170,7 +168,7 @@ function typeMetadataErrors(formatDir, credential) {
 
 // Builds the credential for a format folder. input, rules, meta and map default to the files on disk.
 function build(formatDir, overrides = {}) {
-    const { input, rules, translations, meta, map, legacy, now = TEST_NOW, uuid = testUuids() } = { ...loadFormat(formatDir), ...overrides };
+    const { input, rules, translations, meta, map, now = TEST_NOW, uuid = testUuids() } = { ...loadFormat(formatDir), ...overrides };
     const typeVersionDir = path.join(formatDir, "..", "..");
     nextUuid = uuid;
 
@@ -187,7 +185,14 @@ function build(formatDir, overrides = {}) {
     });
 
     const credential = {};
-    const entries = Object.entries(toCelMap(map, input)).map(([pointer, expr]) => {
+    const mapErrors = Object.keys(map).filter((k) => !k.startsWith("/")).map((k) => `map key "${k}" is not a JSON pointer (CEL maps are keyed by output pointer)`);
+    let expanded = {};
+    try {
+        expanded = expandTemplates(map, input);
+    } catch (e) {
+        mapErrors.push(e.message);
+    }
+    const entries = Object.entries(expanded).map(([pointer, expr]) => {
         try {
             const value = clean(env.evaluate(expr, { input, meta, vocab, translations, now }));
             if (value !== undefined) setPointer(credential, pointer, value);
@@ -203,11 +208,12 @@ function build(formatDir, overrides = {}) {
     const errors = [
         ...inputErrors.map((e) => `input ${e}`),
         ...ruleResults.filter((r) => !r.ok).map((r) => r.error ? `input rule error: ${r.rule}: ${r.error}` : `input rule failed: ${r.message}`),
+        ...mapErrors,
         ...entries.filter((e) => e.error).map((e) => `map ${e.pointer}: ${e.error}`),
         ...outputErrors.map((e) => `output ${e}`),
         ...typeMetadataErrors(formatDir, credential).map((e) => `type metadata: ${e}`),
     ];
-    return { credential, entries, ruleResults, inputErrors, outputErrors, errors, legacy };
+    return { credential, entries, ruleResults, inputErrors, outputErrors, errors };
 }
 
 // JSON-LD + SHACL check for profiles that ship shapes: profiles/<profile>/<format>/shacl.json lists the
@@ -270,7 +276,7 @@ function formatDirs() {
         .sort();
 }
 
-module.exports = { build, check, shacl, loadFormat, formatDirs, toCelMap };
+module.exports = { build, check, shacl, loadFormat, formatDirs, expandTemplates };
 
 if (require.main === module) {
     (async () => {
@@ -279,13 +285,12 @@ if (require.main === module) {
         const dirs = args.filter((a) => a !== "--print");
         let failed = 0;
         for (const dir of dirs.length ? dirs : formatDirs()) {
-            const { credential, errors, warnings, legacy } = await check(path.normalize(dir).replace(/[\\/]+$/, ""));
-            const note = [errors.length && `${errors.length} errors`, legacy && "legacy map, not enforced"].filter(Boolean).join(", ");
-            console.log(`${errors.length ? "✗" : "✓"} ${dir}${note ? ` (${note})` : ""}`);
+            const { credential, errors, warnings } = await check(path.normalize(dir).replace(/[\\/]+$/, ""));
+            console.log(`${errors.length ? "✗" : "✓"} ${dir}${errors.length ? ` (${errors.length} errors)` : ""}`);
             for (const e of errors) console.log(`    ${e}`);
             for (const w of warnings) console.log(`    warning: ${w}`);
             if (print) console.log(JSON.stringify(credential, null, 2));
-            if (errors.length && !legacy) failed++;
+            if (errors.length) failed++;
         }
         process.exit(failed ? 1 : 0);
     })().catch((e) => {

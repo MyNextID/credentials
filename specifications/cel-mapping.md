@@ -1,6 +1,6 @@
 # CEL in credential maps and input fields
 
-> **Status:** proof of concept. These maps use it: `mobile-driving-licence/v1` (mdoc), every `edc/w3c-vc` map, `microcredential/v1` (`open-badge/w3c-vc`), and the v2 `eaa/sd-jwt-vc` maps of visa and boarding-pass. The PID and age-verification maps still use the older format.
+> **Status:** proof of concept. Every map in the repository uses it.
 
 This adds [CEL (Common Expression Language)](https://cel.dev) in two places:
 
@@ -20,7 +20,7 @@ Today's map copies each input field 1:1 to a JSON pointer. It cannot:
 - turn a label into a controlled-vocabulary concept (`"Slovenia"` → `http://publications.europa.eu/resource/authority/country/SVN`)
 - express checks between fields (a privilege's `expiryDate` after its `issueDate`)
 
-With the old maps, none of the mDL, EDC or Open Badge examples produced a valid credential. With the CEL maps they validate against the format JSON Schema, and EDCs also against the ELM SHACL shapes.
+With the old maps, none of the mDL, EDC, Open Badge, PID or age-verification examples produced a valid credential. With the CEL maps they validate against the format JSON Schema, and EDCs also against the ELM SHACL shapes.
 
 ## 1. Credential map
 
@@ -56,14 +56,13 @@ The key is a JSON pointer into the output credential. The value is a CEL express
 - **`null` and empty optionals** are left out wherever they appear, including inside objects.
 - **Language fallback:** `input.title[?meta.primaryLanguage].orValue(input.title.en)` picks one language from a language map (used by Open Badge, whose strings are not multilingual).
 - **Vocabulary lookups** need a label from the table. Mark the input field with `x-vocabulary` (see below), so a wrong label is reported as an input error before the map runs.
-- **Map type:** a map is a CEL map when every key starts with `/`. Older maps keyed by input field still work, read as `"<pointer>": "input.?<key>"`.
+- **Keys are JSON pointers.** A key that does not start with `/` is a map error. (Maps used to be keyed by input field; none are left.)
+- **Repeated fields:** a key with `{{NN}}` is a template. It repeats for every input field that matches the `input.<field>{{NN}}` in its expression, with `{{NN}}` standing for digits: `"/namespace/eu.europa.ec.av.1/age_over_{{NN}}": "input.ageOver{{NN}}"` turns `ageOver21` into `age_over_21`. Standard CEL cannot build a map with computed keys, so the issuer expands these keys before evaluating, as the runner does.
 - **Keep it simple:** most entries stay a plain `input.<field>`. Use CEL only where a value must be reshaped.
 
 ### Profile base maps
 
 Constants and structure that every type of a profile shares live in `profiles/<profile>/<format>/base-map.json`, for example the EDC `@context`, `type`, `credentialSchema`, `issuer`, `displayParameter` and the awarding process. The runner applies the base map first and then the type's map, and a type entry with the same pointer replaces the base entry. A type map can also write below a base entry, e.g. `/displayParameter/description`.
-
-The base map applies to CEL maps only.
 
 ### Issuance metadata
 
@@ -74,6 +73,7 @@ The base map applies to CEL maps only.
 | `edc/w3c-vc` | `issuer`, `awardingBody` (EDC `Organisation` nodes; the issuer needs an `eIDASIdentifier`), `primaryLanguage` (`en`), `recipientEmail`, `validFrom`, `validUntil`, `preview` (`{format, pages: [{page, content}]}`, the rendered pages as base64) |
 | `open-badge/w3c-vc` | `issuer`, `awardingBody` (OB `Profile` objects), `primaryLanguage`, `recipientIdentity` (a hashed OB `IdentityObject`), `validFrom`, `validUntil` |
 | `eaa/sd-jwt-vc` | `issuer` (the issuer URL, used as `iss`), `primaryLanguage` |
+| `eudi.pid/mdoc`, `eudi.pid/sd-jwt-vc` | `issueDate`, `expiryDate`, `issuingAuthority`, `issuingCountry`, `issuingJurisdiction`, `documentNumber`, `trustAnchor` |
 | `iso-18013-5/mdoc` | `issueDate`, `expiryDate`, `issuingCountry`, `issuingAuthority`, `documentNumber` |
 
 Organisation nodes come from onboarding with stable ids, so the map places them and does not rebuild them. For testing, `meta` is `profiles/<profile>/<format>/examples/issuance-meta.json` merged with the format folder's own `examples/issuance-meta.json`, if there is one.
@@ -122,7 +122,7 @@ The output is the unsigned claim set. Holder binding (`cnf`), status entries, ev
 
 Fields the JSON-LD context does not define are dropped from the RDF, so verifiers and SHACL never see them. The runner reports them as warnings, e.g. `not in the JSON-LD context, dropped from RDF: studentNumber`. They do not fail the build.
 
-CI runs `npm run apply-map` and `npm test`. A failing CEL map fails the build. Failures of older maps are printed with `legacy map, not enforced`.
+CI runs `npm run apply-map` and `npm test`. Any failing map fails the build.
 
 ## Runtime compatibility
 
@@ -139,5 +139,4 @@ Each `eaa/sd-jwt-vc` format folder has a `type-metadata.json` ([SD-JWT VC Type M
 ## Open questions
 
 - The v1 EDC maps of eight types (boarding-pass, visa, student-id, degree-certificate, matriculation, confirmation-of-enrolment, certificate-of-participation-in-summer-school, certificate-of-advanced-study) carry fields that are not in the ELM context (`studentNumber`, `degreeProgramme`, `flightInformation`, `visaNumber`, …). v2 of these types fixes this: the six learning types are modelled on ELM, and visa and boarding-pass move to `eaa/sd-jwt-vc`. When can v1 be retired?
-- Should the PID and age-verification maps be converted too?
 - Should the per-format `examples/*-example.json` files be regenerated from the maps?

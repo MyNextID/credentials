@@ -27,9 +27,13 @@
 
         "nationality":{
             "title": "Nationalities",
-            "description": "ISO 3166-1 alpha-2 country code",
-            "type": "string",
-            "pattern": "^[A-Z]{2}$"
+            "description": "ISO 3166-1 alpha-2 country codes, one per nationality",
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "string",
+                "pattern": "^[A-Z]{2}$"
+            }
         },
 
         "residentAddress":{

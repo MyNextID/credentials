@@ -25,7 +25,7 @@
         "$ref": "#/$defs/place_of_birth"
       },
   
-      "nationality ": {
+      "nationality": {
         "type": "array",
         "items": {
           "$ref": "#/$defs/country_code"

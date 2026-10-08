@@ -32,3 +32,9 @@ test("SHACL rejects an issuer without an eIDAS identifier and reports dropped te
     assert.match(errors.join("\n"), /IssuerNodeShape/);
     assert.deepStrictEqual(warnings, ["not in the JSON-LD context, dropped from RDF: studentNumber"]);
 });
+
+test("a {{NN}} key repeats for every matching input field", () => {
+    const { credential, errors } = build("credential-definitions/age-verification/v1/eudi.av/mdoc", { input: { ageOver18: true, ageOver21: false, ageOver65: false } });
+    assert.deepStrictEqual(errors, []);
+    assert.deepStrictEqual(credential.namespace["eu.europa.ec.av.1"], { age_over_18: true, age_over_21: false, age_over_65: false });
+});
