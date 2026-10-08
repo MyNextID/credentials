@@ -52,3 +52,12 @@ test("Open Badge fields outside the OB and VC contexts are reported", async () =
     const { credential } = build(dir);
     assert.deepStrictEqual((await linkedData(dir, { ...credential, programmeCode: "X1" })).warnings, ["not in the JSON-LD context, dropped from RDF: programmeCode"]);
 });
+
+test("a {{XX}} key repeats for every matching input field, in snake case in the pointer", () => {
+    const dir = "credential-definitions/mobile-driving-licence/v1/iso-18013-5/mdoc";
+    const { input } = loadFormat(dir);
+    const { credential, errors } = build(dir, { input: { ...input, biometricTemplateSignatureSign: "c2lnbg==" } });
+    assert.deepStrictEqual(errors, []);
+    const ns = credential.namespace["org.iso.18013.5.1"];
+    assert.ok(ns.biometric_template_face && ns.biometric_template_signature_sign);
+});

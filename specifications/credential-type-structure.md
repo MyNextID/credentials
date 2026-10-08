@@ -23,8 +23,7 @@ Each credential type must be placed in its own folder inside the `credential-def
     ├── <profile>/
     │     ├── <format>/
     │     │     ├── examples/
-    │     │     │     ├── <profile>-<credential-type-initials>-example.json
-    │     │     │     └── <profile>-<credential-type-initials>-signed.jsonld
+    │     │     │     └── <profile>-<credential-type-initials>-example.json
     │     │     ├── input-fields-to-credential-map.json
     │     │     ├── schema.json
     │     │     ├── <namespace>-schema.json (optional)
@@ -105,6 +104,6 @@ For more detailed information on each profile and the supported formats, refer t
 `/examples` folder contains example credentials that demonstrate how the credential is structured before and after issuance. They are used for reference, testing, and validation of the format implementation.
 
 * `<profile>-<credential-type-initials>-example.json` contains an unsigned example credential that follows the schema definition. It serves as a reference for how the credential data should be structured before it is signed or issued. It is generated from `input-fields/example.json` by the map (`npm run apply-map -- --write-examples`), and CI fails when it is out of date. Do not edit it by hand.
-* `<profile>-<credential-type-initials>-signed.jsonld` provides a signed example credential in JSON-LD format. It shows the final issued form of the credential, including the digital proof information required for verification. Signed examples are not regenerated, so they may show an earlier version of the credential.
+* Signed examples are not kept in the repository: they would go stale with every map change, and they carried personal data. To see a credential signed and verified in each format, use the [playground](../demo/README.md).
 
 `<credential-type-initials>` is an acronym derived from the credential type name and used consistently across all files within the format folder (e.g., `certificate-of-attendance` → `coa`).

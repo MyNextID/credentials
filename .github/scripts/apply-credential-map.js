@@ -44,21 +44,29 @@ const vocab = Object.fromEntries(fs.readdirSync("resources/vocabularies")
     .filter((f) => f.endsWith(".json"))
     .map((f) => [path.basename(f, ".json"), readJson(path.join("resources/vocabularies", f))]));
 
-// A CEL map key with {{NN}} is a template: the entry repeats for every input field that matches the
-// input.<field> in its expression, with {{NN}} standing for digits ("ageOver{{NN}}" → ageOver21).
+// A CEL map key with {{NN}} or {{XX}} is a template: the entry repeats for every input field that matches the
+// input.<field> in its expression. {{NN}} stands for digits ("ageOver{{NN}}" → ageOver21 → age_over_21).
+// {{XX}} stands for a capitalised word, written in snake case in the pointer
+// ("biometricTemplate{{XX}}" → biometricTemplateSignatureSign → biometric_template_signature_sign).
+const PLACEHOLDERS = {
+    NN: { pattern: "(\\d+)", pointer: (v) => v },
+    XX: { pattern: "([A-Z][A-Za-z0-9]*)", pointer: (v) => v.replace(/([a-z0-9])([A-Z])/g, "$1_$2").toLowerCase() },
+};
 function expandTemplates(map, input) {
     const out = {};
     for (const [pointer, expr] of Object.entries(map)) {
-        if (!pointer.includes("{{NN}}")) {
+        const name = Object.keys(PLACEHOLDERS).find((p) => pointer.includes(`{{${p}}}`));
+        if (!name) {
             out[pointer] = expr;
             continue;
         }
-        const field = expr.match(/input\.\??(\w*\{\{NN\}\}\w*)/)?.[1];
-        if (!field) throw new Error(`map ${pointer}: a {{NN}} key needs an input.<field>{{NN}} in its expression`);
-        const re = new RegExp("^" + field.replace("{{NN}}", "(\\d+)") + "$");
+        const token = `{{${name}}}`;
+        const field = expr.match(new RegExp(`input\\.\\??(\\w*\\{\\{${name}\\}\\}\\w*)`))?.[1];
+        if (!field) throw new Error(`map ${pointer}: a ${token} key needs an input.<field>${token} in its expression`);
+        const re = new RegExp("^" + field.replace(token, PLACEHOLDERS[name].pattern) + "$");
         for (const key of Object.keys(input)) {
-            const nn = key.match(re)?.[1];
-            if (nn) out[pointer.replaceAll("{{NN}}", nn)] = expr.replaceAll("{{NN}}", nn);
+            const value = key.match(re)?.[1];
+            if (value) out[pointer.replaceAll(token, PLACEHOLDERS[name].pointer(value))] = expr.replaceAll(token, value);
         }
     }
     return out;

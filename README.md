@@ -71,8 +71,7 @@ continuing education requirements, and participation in conferences, seminars,
 or short courses.
 
 - **EDC**: [Schema](/credential-definitions/certificate-of-attendance/v1/edc/w3c-vc/schema.json) |
-   [Example](/credential-definitions/certificate-of-attendance/v1/edc/w3c-vc/examples/edc-coa-example.json) | 
-   [Signed](/credential-definitions/certificate-of-attendance/v1/edc/w3c-vc/examples/edc-coa-signed.jsonld)
+   [Example](/credential-definitions/certificate-of-attendance/v1/edc/w3c-vc/examples/edc-coa-example.json)
 
 ### [Certificate of Advanced Study](/credential-definitions/certificate-of-advanced-study)
 
@@ -84,8 +83,7 @@ program. Often pursued by professionals seeking expertise in a specialised area
 without committing to a full graduate degree.
 
 - **EDC**: [Schema](/credential-definitions/certificate-of-advanced-study/v1/edc/w3c-vc/schema.json) | 
-  [Example](/credential-definitions/certificate-of-advanced-study/v1/edc/w3c-vc/examples/edc-cas-example.json) | 
-  [Signed](/credential-definitions/certificate-of-advanced-study/v1/edc/w3c-vc/examples/edc-cas-signed.jsonld)
+  [Example](/credential-definitions/certificate-of-advanced-study/v1/edc/w3c-vc/examples/edc-cas-example.json)
 
 ### [Certificate of Participation in Summer School](/credential-definitions/certificate-of-participation-in-summer-school)
 
@@ -97,8 +95,7 @@ youth participation initiatives). They often include interdisciplinary approache
 and international participants, and are commonly used to recognise engagement in supplementary learning and development opportunities outside regular academic or professional contexts.
 
 - **EDC**: [Schema](/credential-definitions/certificate-of-participation-in-summer-school/v1/edc/w3c-vc/schema.json) | 
-  [Example](/credential-definitions/certificate-of-participation-in-summer-school/v1/edc/w3c-vc/examples/edc-cps-example.json) | 
-  [Signed](/credential-definitions/certificate-of-participation-in-summer-school/v1/edc/w3c-vc/examples/edc-cps-signed.jsonld)
+  [Example](/credential-definitions/certificate-of-participation-in-summer-school/v1/edc/w3c-vc/examples/edc-cps-example.json)
 
 ### [Confirmation of Enrolment](/credential-definitions/confirmation-of-enrolment)
 
@@ -110,8 +107,7 @@ purposes. It typically includes details such as enrollment status
 (full-time/part-time), program of study, and expected completion date.
 
 - **EDC**: [Schema](/credential-definitions/confirmation-of-enrolment/v1/edc/w3c-vc/schema.json) | 
-  [Example](/credential-definitions/confirmation-of-enrolment/v1/edc/w3c-vc/examples/edc-coe-example.json) | 
-  [Signed](/credential-definitions/confirmation-of-enrolment/v1/edc/w3c-vc/examples/edc-coe-signed.jsonld)
+  [Example](/credential-definitions/confirmation-of-enrolment/v1/edc/w3c-vc/examples/edc-coe-example.json)
 
 ### [Degree Certificate](/credential-definitions/degree-certificate)
 
@@ -124,8 +120,7 @@ employment verification, further education applications, and professional
 licensing.
 
 - **EDC**: [Schema](/credential-definitions/degree-certificate/v1/edc/w3c-vc/schema.json) | 
-  [Example](/credential-definitions/degree-certificate/v1/edc/w3c-vc/examples/edc-dc-example.json) | 
-  [Signed](/credential-definitions/degree-certificate/v1/edc/w3c-vc/examples/edc-dc-signed.jsonld)
+  [Example](/credential-definitions/degree-certificate/v1/edc/w3c-vc/examples/edc-dc-example.json)
 
 ### [Matriculation](/credential-definitions/matriculation)
 
@@ -138,8 +133,7 @@ is distinct from confirmation of enrollment as it represents the initial
 acceptance and registration rather than ongoing status.
 
 - **EDC**: [Schema](/credential-definitions/matriculation/v1/edc/w3c-vc/schema.json) | 
-  [Example](/credential-definitions/matriculation/v1/edc/w3c-vc/examples/edc-mat-example.json) | 
-  [Signed](/credential-definitions/matriculation/v1/edc/w3c-vc/examples/edc-mat-signed.jsonld)
+  [Example](/credential-definitions/matriculation/v1/edc/w3c-vc/examples/edc-mat-example.json)
 
 ### [Microcredential](/credential-definitions/microcredential)
 
@@ -153,11 +147,9 @@ to emerging skill demands while being recognised within established quality assu
 frameworks such as the European Qualifications Framework.
 
 - **EDC**: [Schema](/credential-definitions/microcredential/v1/edc/w3c-vc/schema.json) | 
-  [Example](/credential-definitions/microcredential/v1/edc/w3c-vc/examples/edc-mc-example.json) | 
-  [Signed](/credential-definitions/microcredential/v1/edc/w3c-vc/examples/edc-mc-signed.jsonld)
+  [Example](/credential-definitions/microcredential/v1/edc/w3c-vc/examples/edc-mc-example.json)
 - **Open Badges**: [Schema](/credential-definitions/microcredential/v1/open-badge/w3c-vc/schema.json) | 
-  [Example](/credential-definitions/microcredential/v1/open-badge/w3c-vc/examples/open-badge-mc-example.json) | 
-  [Signed (JWT)](/credential-definitions/microcredential/v1/open-badge/w3c-vc/examples/open-badge-mc-signed.jwt)
+  [Example](/credential-definitions/microcredential/v1/open-badge/w3c-vc/examples/open-badge-mc-example.json)
 
 ## Personal Credentials
 

@@ -57,7 +57,7 @@ The key is a JSON pointer into the output credential. The value is a CEL express
 - **Language fallback:** `input.title[?meta.primaryLanguage].orValue(input.title.en)` picks one language from a language map (used by Open Badge, whose strings are not multilingual).
 - **Vocabulary lookups** need a label from the table. Mark the input field with `x-vocabulary` (see below), so a wrong label is reported as an input error before the map runs.
 - **Keys are JSON pointers.** A key that does not start with `/` is a map error. (Maps used to be keyed by input field; none are left.)
-- **Repeated fields:** a key with `{{NN}}` is a template. It repeats for every input field that matches the `input.<field>{{NN}}` in its expression, with `{{NN}}` standing for digits: `"/namespace/eu.europa.ec.av.1/age_over_{{NN}}": "input.ageOver{{NN}}"` turns `ageOver21` into `age_over_21`. Standard CEL cannot build a map with computed keys, so the issuer expands these keys before evaluating, as the runner does.
+- **Repeated fields:** a key with `{{NN}}` is a template. It repeats for every input field that matches the `input.<field>{{NN}}` in its expression, with `{{NN}}` standing for digits: `"/namespace/eu.europa.ec.av.1/age_over_{{NN}}": "input.ageOver{{NN}}"` turns `ageOver21` into `age_over_21`. `{{XX}}` works the same for a capitalised word, written in snake case in the pointer: `"/namespace/org.iso.18013.5.1/biometric_template_{{XX}}": "input.biometricTemplate{{XX}}"` turns `biometricTemplateSignatureSign` into `biometric_template_signature_sign` (ISO/IEC 18013-5 §7.2.6). Standard CEL cannot build a map with computed keys, so the issuer expands these keys before evaluating, as the runner does.
 - **Keep it simple:** most entries stay a plain `input.<field>`. Use CEL only where a value must be reshaped.
 
 ### Profile base maps
@@ -146,7 +146,7 @@ The EUDI rulebooks are published as Markdown. [`build-rulebooks.js`](../.github/
 | [PID Rulebook](https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog/blob/36f8adcf914ac06cac18d685add04e0a8a06d685/rulebooks/pid/pid-rulebook.md) (ARF Annex 3.01) | `profiles/eudi.pid/mdoc/rulebook.json`, `profiles/eudi.pid/sd-jwt-vc/rulebook.json` |
 | [Age Verification Profile](https://github.com/eu-digital-identity-wallet/av-doc-technical-specification/blob/8b9728752bd8d8eede6077ade4be8900949de2d9/docs/annexes/annex-A/annex-A-av-profile.md) (Annex A) | `profiles/eudi.av/mdoc/rulebook.json` |
 
-The mDL rulebook (ARF Annex 3.02) defers entirely to ISO/IEC 18013-5, which is not freely available, so mDL has no rulebook file; its `schema.json` is the reference. Dates and bytes are checked in their JSON form (`full-date` as `YYYY-MM-DD`, `bstr` as base64); the CBOR encoding belongs to the issuer.
+The mDL rulebook (ARF Annex 3.02) defers entirely to ISO/IEC 18013-5, whose data element table is not published in a machine-readable form, so mDL has no rulebook file; its `schema.json` is the reference. (The standard itself is readable through its [incorporation by reference](https://law.resource.org/pub/us/cfr/ibr/inc/iec/iec.18013-5.2021.pdf).) Dates and bytes are checked in their JSON form (`full-date` as `YYYY-MM-DD`, `bstr` as base64); the CBOR encoding belongs to the issuer.
 
 ## SD-JWT VC type metadata
 

@@ -4,7 +4,7 @@ This directory defines the **v1 structure** of the Microcredential credential, i
 
 ## Contents
 
-- [edc](edc) - European Digital Credentials (EDC) schemas, mappings, examples, and signed files
+- [edc](edc) - European Digital Credentials (EDC) schemas, mappings and examples
 - [open-badge](open-badge) - Open Badge schemas, mappings, examples, and signed JWT files
 - [input-fields](input-fields) - User input schema, examples, and translations
 - [translations](translations) - Translated credential display data

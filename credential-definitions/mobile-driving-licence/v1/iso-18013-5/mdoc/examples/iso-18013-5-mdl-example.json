@@ -60,7 +60,7 @@
             "resident_state": "England",
             "resident_postal_code": "SW1A 1AA",
             "resident_country": "GB",
-            "biometric_template_xx": "RXhhbXBsZSBCaW9tZXRyaWMgdGVtcGxhdGU=",
+            "biometric_template_face": "RXhhbXBsZSBCaW9tZXRyaWMgdGVtcGxhdGU=",
             "family_name_national_character": "Smith",
             "given_name_national_character": "James",
             "signature_usual_mark": "RXhhbXBsZSBTaWduYXR1cmUgb3IgdXN1YWwgbWFyaw=="

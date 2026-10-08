@@ -32,7 +32,6 @@ All naming conventions MUST be followed. Violations may result in PR rejection.
 Example files are located in the `examples/` directory and MUST follow this naming pattern:
 
 - `<profile>-<credential-type>-example.json`
-- `<profile>-<credential-type>-signed.jsonld`
   
 ### Translation files
 

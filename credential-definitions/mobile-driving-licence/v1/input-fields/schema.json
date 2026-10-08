@@ -8,9 +8,9 @@
             "title": "Age over NN",
             "description": "Dynamic age-over flags, e.g., ageOver18, ageOver21."
         },
-        "^biometricTemplate[A-Za-z0-9]{5}$": {
+        "^biometricTemplate[A-Z][A-Za-z0-9]*$": {
             "title": "Biometric template",
-            "description": "A digital representation of the recipient's biometric data used for identification purposes.",
+            "description": "A biometric template per ISO/IEC 18013-5 7.2.6, named after the ISO/IEC 19785-3 biometric type in camel case: biometricTemplateFace, biometricTemplateSignatureSign.",
             "type": "string",
             "contentEncoding": "base64"
         }
