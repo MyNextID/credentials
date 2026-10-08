@@ -1,0 +1,10 @@
+{
+    "fullName": "identity-profile",
+    "flightNumber": "credential-info",
+    "date": "credential-info",
+    "boardingTime": "credential-info",
+    "locationFrom": "credential-info",
+    "locationTo": "credential-info",
+    "gateNumber" : "credential-info",
+    "seatNumber":  "credential-info"
+}

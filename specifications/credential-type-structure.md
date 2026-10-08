@@ -23,8 +23,7 @@ Each credential type must be placed in its own folder inside the `credential-def
     ├── <profile>/
     │     ├── <format>/
     │     │     ├── examples/
-    │     │     │     ├── <profile>-<credential-type-initials>-example.json
-    │     │     │     └── <profile>-<credential-type-initials>-signed.jsonld
+    │     │     │     └── <profile>-<credential-type-initials>-example.json
     │     │     ├── input-fields-to-credential-map.json
     │     │     ├── schema.json
     │     │     ├── <namespace>-schema.json (optional)
@@ -43,7 +42,7 @@ Each credential type includes a `README.md` file located in the **root of its fo
 
 The `<version>` folder (e.g., `v1`, `v2`) represents a specific version of the credential type. Each version contains a complete and independent definition, including input fields, schemas, mappings, translations, and one or more `<profile>` folders.
 Multiple versions of the same credential type may coexist within the repository. The selection of which version to use is determined externally by the consumer.
-Adding a new version results in an additional `<version>` folder. Existing versions are not modified or replaced.
+Adding a new version results in an additional `<version>` folder. Existing versions are not modified or replaced, except to fix a confirmed bug (see [CONTRIBUTING](CONTRIBUTING.md)).
 
 Each version must include a `README.md` file that outlines the folder structure and highlights any significant differences from other versions (if applicable).
 
@@ -95,7 +94,7 @@ For more detailed information on each profile and the supported formats, refer t
 `<format>` represents a specific credential format within a profile, written in lowercase (e.g., `w3c-vc`, `mdoc`). It defines how the credential is structured, validated, and represented in a given standard, ensuring consistency across implementations within the system.
 
 * The `examples` folder contains example credentials used for reference and testing, including both unsigned and signed representations where applicable.
-* `input-fields-to-credential-map.json` defines the mapping between input field keys and the corresponding fields in the credential schema for this format. This mapping allows the credential generation system to transform user-provided input data into the correct credential structure.
+* `input-fields-to-credential-map.json` defines the mapping between input field keys and the corresponding fields in the credential schema for this format. This mapping allows the credential generation system to transform user-provided input data into the correct credential structure. A map may instead use CEL expressions keyed by output pointer, see [CEL mapping](cel-mapping.md).
 * `schema.json` defines the JSON Schema for credentials in this format. It specifies the structure, required fields, and validation rules that all credentials of this format must follow.
 * `<namespace>-schema.json` is an optional file used only in formats where additional namespace-specific constraints or extensions are required. When present, it is applied in addition to `schema.json` and further restricts or extends the credential schema for that format. The `<namespace>` is replaced by the actual namespace identifier (e.g., `eu.europa.ec.av.1`, resulting in `eu.europa.ec.av.1-schema.json`).
 * The `README.md` file outlines the folder structure and provides a link to relevant documentation for the format and its usage within the profile.
@@ -104,7 +103,7 @@ For more detailed information on each profile and the supported formats, refer t
 
 `/examples` folder contains example credentials that demonstrate how the credential is structured before and after issuance. They are used for reference, testing, and validation of the format implementation.
 
-* `<profile>-<credential-type-initials>-example.json` contains an unsigned example credential that follows the schema definition. It serves as a reference for how the credential data should be structured before it is signed or issued.
-* `<profile>-<credential-type-initials>-signed.jsonld` provides a signed example credential in JSON-LD format. It shows the final issued form of the credential, including the digital proof information required for verification.
+* `<profile>-<credential-type-initials>-example.json` contains an unsigned example credential that follows the schema definition. It serves as a reference for how the credential data should be structured before it is signed or issued. It is generated from `input-fields/example.json` by the map (`npm run apply-map -- --write-examples`), and CI fails when it is out of date. Do not edit it by hand.
+* Signed examples are not kept in the repository: they would go stale with every map change, and they carried personal data. To see a credential signed and verified in each format, use the [playground](../demo/README.md).
 
 `<credential-type-initials>` is an acronym derived from the credential type name and used consistently across all files within the format folder (e.g., `certificate-of-attendance` → `coa`).

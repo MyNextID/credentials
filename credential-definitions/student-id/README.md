@@ -8,5 +8,5 @@ It is commonly used to access campus services, academic resources, libraries, an
 
 Select a version to view its full specification. The latest version is:
 
-- [`v1`](v1/) – Initial version of the Student ID
-  
+- [`v2`](v2/) – ELM-modelled EDC
+- [`v1`](v1/) – Initial version of the Student ID (deprecated, use v2)

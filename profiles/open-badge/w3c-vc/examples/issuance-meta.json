@@ -1,0 +1,24 @@
+{
+    "primaryLanguage": "en",
+    "validUntil": "2031-01-01T00:00:00Z",
+    "recipientIdentity": {
+        "type": "IdentityObject",
+        "identityType": "emailAddress",
+        "hashed": true,
+        "identityHash": "sha256$e5ebde24258d48c0d3166fcfa4919fb82df2a06dce96e97a85e7ef1045043ae8",
+        "salt": "8b2f6c1e04"
+    },
+    "issuer": {
+        "id": "https://issuer.example.com",
+        "type": ["Profile"],
+        "name": "Example Credential Services d.o.o.",
+        "url": "https://issuer.example.com",
+        "email": "info@issuer.example.com"
+    },
+    "awardingBody": {
+        "id": "https://university.example.com",
+        "type": ["Profile"],
+        "name": "Example University",
+        "url": "https://university.example.com"
+    }
+}

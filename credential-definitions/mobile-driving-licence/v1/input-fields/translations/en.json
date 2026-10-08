@@ -21,7 +21,7 @@
     "residentState": "Resident state",
     "residentPostalCode": "Resident postal code",
     "residentCountry": "Resident country",
-    "biometricTemplateXX": "Biometric template",
+    "biometricTemplate{{XX}}": "Biometric template ({{XX}})",
     "familyNameNationalCharacter": "Family name in national character",
     "givenNameNationalCharacter": "Given name in national character",
     "signatureUsualMark": "Signature or usual mark"

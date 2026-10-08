@@ -1,0 +1,90 @@
+{
+    "Level 1": {
+        "id": "http://data.europa.eu/snb/eqf/1",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/eqf/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Level 1"
+        }
+    },
+    "Level 2": {
+        "id": "http://data.europa.eu/snb/eqf/2",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/eqf/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Level 2"
+        }
+    },
+    "Level 3": {
+        "id": "http://data.europa.eu/snb/eqf/3",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/eqf/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Level 3"
+        }
+    },
+    "Level 4": {
+        "id": "http://data.europa.eu/snb/eqf/4",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/eqf/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Level 4"
+        }
+    },
+    "Level 5": {
+        "id": "http://data.europa.eu/snb/eqf/5",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/eqf/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Level 5"
+        }
+    },
+    "Level 6": {
+        "id": "http://data.europa.eu/snb/eqf/6",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/eqf/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Level 6"
+        }
+    },
+    "Level 7": {
+        "id": "http://data.europa.eu/snb/eqf/7",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/eqf/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Level 7"
+        }
+    },
+    "Level 8": {
+        "id": "http://data.europa.eu/snb/eqf/8",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/eqf/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Level 8"
+        }
+    }
+}

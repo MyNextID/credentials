@@ -1,0 +1,9 @@
+{
+    "docType": "eu.europa.ec.av.1",
+    "namespace": {
+        "eu.europa.ec.av.1": {
+            "age_over_18": true,
+            "age_over_21": false
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "fullName":{
+        "en":"John Doe"
+    },
+    "dateOfBirth":"1990-01-01T15:00:00Z"
+    ,"placeOfBirth":{
+        "en":"Slovenia"
+    },"fullAddress":{
+        "en": "Ljubljana"
+    },"ectsPoints": 10
+}

@@ -1,0 +1,24 @@
+{
+    "European credit system for vocational education and training": {
+        "id": "http://data.europa.eu/snb/education-credit/60b314e826",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/education-credit/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "European credit system for vocational education and training"
+        }
+    },
+    "European Credit Transfer System": {
+        "id": "http://data.europa.eu/snb/education-credit/6fcec5c5af",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/education-credit/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "European Credit Transfer System"
+        }
+    }
+}

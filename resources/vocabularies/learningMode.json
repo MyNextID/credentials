@@ -1,0 +1,68 @@
+{
+    "Blended": {
+        "id": "http://data.europa.eu/snb/learning-assessment/e92d221e4d",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/learning-assessment/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Blended"
+        }
+    },
+    "Online": {
+        "id": "http://data.europa.eu/snb/learning-assessment/920fbb3cbe",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/learning-assessment/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Online"
+        }
+    },
+    "Presential": {
+        "id": "http://data.europa.eu/snb/learning-assessment/9191af2ed9",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/learning-assessment/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Presential"
+        }
+    },
+    "Project based": {
+        "id": "http://data.europa.eu/snb/learning-assessment/7813801c77",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/learning-assessment/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Project based"
+        }
+    },
+    "Research-Lab based": {
+        "id": "http://data.europa.eu/snb/learning-assessment/ed4c557045",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/learning-assessment/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Research-Lab based"
+        }
+    },
+    "Workbased": {
+        "id": "http://data.europa.eu/snb/learning-assessment/729f3bed4b",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/learning-assessment/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Workbased"
+        }
+    }
+}

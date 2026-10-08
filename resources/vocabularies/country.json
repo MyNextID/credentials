@@ -1,0 +1,2785 @@
+{
+    "Afghanistan": {
+        "id": "http://publications.europa.eu/resource/authority/country/AFG",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Afghanistan"
+        }
+    },
+    "Åland Islands": {
+        "id": "http://publications.europa.eu/resource/authority/country/ALA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Åland Islands"
+        }
+    },
+    "Albania": {
+        "id": "http://publications.europa.eu/resource/authority/country/ALB",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Albania"
+        }
+    },
+    "Algeria": {
+        "id": "http://publications.europa.eu/resource/authority/country/DZA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Algeria"
+        }
+    },
+    "American Samoa": {
+        "id": "http://publications.europa.eu/resource/authority/country/ASM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "American Samoa"
+        }
+    },
+    "Andorra": {
+        "id": "http://publications.europa.eu/resource/authority/country/AND",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Andorra"
+        }
+    },
+    "Angola": {
+        "id": "http://publications.europa.eu/resource/authority/country/AGO",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Angola"
+        }
+    },
+    "Anguilla": {
+        "id": "http://publications.europa.eu/resource/authority/country/AIA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Anguilla"
+        }
+    },
+    "Antarctica": {
+        "id": "http://publications.europa.eu/resource/authority/country/ATA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Antarctica"
+        }
+    },
+    "Antigua and Barbuda": {
+        "id": "http://publications.europa.eu/resource/authority/country/ATG",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Antigua and Barbuda"
+        }
+    },
+    "Argentina": {
+        "id": "http://publications.europa.eu/resource/authority/country/ARG",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Argentina"
+        }
+    },
+    "Armenia": {
+        "id": "http://publications.europa.eu/resource/authority/country/ARM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Armenia"
+        }
+    },
+    "Aruba": {
+        "id": "http://publications.europa.eu/resource/authority/country/ABW",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Aruba"
+        }
+    },
+    "Australia": {
+        "id": "http://publications.europa.eu/resource/authority/country/AUS",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Australia"
+        }
+    },
+    "Austria": {
+        "id": "http://publications.europa.eu/resource/authority/country/AUT",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Austria"
+        }
+    },
+    "Azerbaijan": {
+        "id": "http://publications.europa.eu/resource/authority/country/AZE",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Azerbaijan"
+        }
+    },
+    "Bahamas": {
+        "id": "http://publications.europa.eu/resource/authority/country/BHS",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Bahamas"
+        }
+    },
+    "Bahrain": {
+        "id": "http://publications.europa.eu/resource/authority/country/BHR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Bahrain"
+        }
+    },
+    "Bangladesh": {
+        "id": "http://publications.europa.eu/resource/authority/country/BGD",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Bangladesh"
+        }
+    },
+    "Barbados": {
+        "id": "http://publications.europa.eu/resource/authority/country/BRB",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Barbados"
+        }
+    },
+    "Belarus": {
+        "id": "http://publications.europa.eu/resource/authority/country/BLR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Belarus"
+        }
+    },
+    "Belgium": {
+        "id": "http://publications.europa.eu/resource/authority/country/BEL",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Belgium"
+        }
+    },
+    "Belize": {
+        "id": "http://publications.europa.eu/resource/authority/country/BLZ",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Belize"
+        }
+    },
+    "Benin": {
+        "id": "http://publications.europa.eu/resource/authority/country/BEN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Benin"
+        }
+    },
+    "Bermuda": {
+        "id": "http://publications.europa.eu/resource/authority/country/BMU",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Bermuda"
+        }
+    },
+    "Bhutan": {
+        "id": "http://publications.europa.eu/resource/authority/country/BTN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Bhutan"
+        }
+    },
+    "Bolivia": {
+        "id": "http://publications.europa.eu/resource/authority/country/BOL",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Bolivia"
+        }
+    },
+    "Bonaire, Sint Eustatius and Saba": {
+        "id": "http://publications.europa.eu/resource/authority/country/BES",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Bonaire, Sint Eustatius and Saba"
+        }
+    },
+    "Bosnia and Herzegovina": {
+        "id": "http://publications.europa.eu/resource/authority/country/BIH",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Bosnia and Herzegovina"
+        }
+    },
+    "Botswana": {
+        "id": "http://publications.europa.eu/resource/authority/country/BWA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Botswana"
+        }
+    },
+    "Bouvet Island": {
+        "id": "http://publications.europa.eu/resource/authority/country/BVT",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Bouvet Island"
+        }
+    },
+    "Brazil": {
+        "id": "http://publications.europa.eu/resource/authority/country/BRA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Brazil"
+        }
+    },
+    "British Indian Ocean Territory": {
+        "id": "http://publications.europa.eu/resource/authority/country/IOT",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "British Indian Ocean Territory"
+        }
+    },
+    "British Virgin Islands": {
+        "id": "http://publications.europa.eu/resource/authority/country/VGB",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "British Virgin Islands"
+        }
+    },
+    "Brunei": {
+        "id": "http://publications.europa.eu/resource/authority/country/BRN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Brunei"
+        }
+    },
+    "Bulgaria": {
+        "id": "http://publications.europa.eu/resource/authority/country/BGR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Bulgaria"
+        }
+    },
+    "Burkina Faso": {
+        "id": "http://publications.europa.eu/resource/authority/country/BFA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Burkina Faso"
+        }
+    },
+    "Burundi": {
+        "id": "http://publications.europa.eu/resource/authority/country/BDI",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Burundi"
+        }
+    },
+    "Cabo Verde": {
+        "id": "http://publications.europa.eu/resource/authority/country/CPV",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Cabo Verde"
+        }
+    },
+    "Cambodia": {
+        "id": "http://publications.europa.eu/resource/authority/country/KHM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Cambodia"
+        }
+    },
+    "Cameroon": {
+        "id": "http://publications.europa.eu/resource/authority/country/CMR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Cameroon"
+        }
+    },
+    "Canada": {
+        "id": "http://publications.europa.eu/resource/authority/country/CAN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Canada"
+        }
+    },
+    "Cayman Islands": {
+        "id": "http://publications.europa.eu/resource/authority/country/CYM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Cayman Islands"
+        }
+    },
+    "Central African Republic": {
+        "id": "http://publications.europa.eu/resource/authority/country/CAF",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Central African Republic"
+        }
+    },
+    "Chad": {
+        "id": "http://publications.europa.eu/resource/authority/country/TCD",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Chad"
+        }
+    },
+    "Chile": {
+        "id": "http://publications.europa.eu/resource/authority/country/CHL",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Chile"
+        }
+    },
+    "China": {
+        "id": "http://publications.europa.eu/resource/authority/country/CHN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "China"
+        }
+    },
+    "Christmas Island": {
+        "id": "http://publications.europa.eu/resource/authority/country/CXR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Christmas Island"
+        }
+    },
+    "Clipperton": {
+        "id": "http://publications.europa.eu/resource/authority/country/CPT",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Clipperton"
+        }
+    },
+    "Cocos (Keeling) Islands": {
+        "id": "http://publications.europa.eu/resource/authority/country/CCK",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Cocos (Keeling) Islands"
+        }
+    },
+    "Colombia": {
+        "id": "http://publications.europa.eu/resource/authority/country/COL",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Colombia"
+        }
+    },
+    "Comoros": {
+        "id": "http://publications.europa.eu/resource/authority/country/COM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Comoros"
+        }
+    },
+    "Congo": {
+        "id": "http://publications.europa.eu/resource/authority/country/COG",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Congo"
+        }
+    },
+    "Cook Islands": {
+        "id": "http://publications.europa.eu/resource/authority/country/COK",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Cook Islands"
+        }
+    },
+    "Costa Rica": {
+        "id": "http://publications.europa.eu/resource/authority/country/CRI",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Costa Rica"
+        }
+    },
+    "Côte d’Ivoire": {
+        "id": "http://publications.europa.eu/resource/authority/country/CIV",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Côte d’Ivoire"
+        }
+    },
+    "Croatia": {
+        "id": "http://publications.europa.eu/resource/authority/country/HRV",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Croatia"
+        }
+    },
+    "Cuba": {
+        "id": "http://publications.europa.eu/resource/authority/country/CUB",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Cuba"
+        }
+    },
+    "Curaçao": {
+        "id": "http://publications.europa.eu/resource/authority/country/CUW",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Curaçao"
+        }
+    },
+    "Cyprus": {
+        "id": "http://publications.europa.eu/resource/authority/country/CYP",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Cyprus"
+        }
+    },
+    "Czechia": {
+        "id": "http://publications.europa.eu/resource/authority/country/CZE",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Czechia"
+        }
+    },
+    "Democratic Republic of the Congo": {
+        "id": "http://publications.europa.eu/resource/authority/country/COD",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Democratic Republic of the Congo"
+        }
+    },
+    "Denmark": {
+        "id": "http://publications.europa.eu/resource/authority/country/DNK",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Denmark"
+        }
+    },
+    "Djibouti": {
+        "id": "http://publications.europa.eu/resource/authority/country/DJI",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Djibouti"
+        }
+    },
+    "Dominica": {
+        "id": "http://publications.europa.eu/resource/authority/country/DMA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Dominica"
+        }
+    },
+    "Dominican Republic": {
+        "id": "http://publications.europa.eu/resource/authority/country/DOM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Dominican Republic"
+        }
+    },
+    "Ecuador": {
+        "id": "http://publications.europa.eu/resource/authority/country/ECU",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Ecuador"
+        }
+    },
+    "Egypt": {
+        "id": "http://publications.europa.eu/resource/authority/country/EGY",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Egypt"
+        }
+    },
+    "El Salvador": {
+        "id": "http://publications.europa.eu/resource/authority/country/SLV",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "El Salvador"
+        }
+    },
+    "Equatorial Guinea": {
+        "id": "http://publications.europa.eu/resource/authority/country/GNQ",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Equatorial Guinea"
+        }
+    },
+    "Eritrea": {
+        "id": "http://publications.europa.eu/resource/authority/country/ERI",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Eritrea"
+        }
+    },
+    "Estonia": {
+        "id": "http://publications.europa.eu/resource/authority/country/EST",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Estonia"
+        }
+    },
+    "Eswatini": {
+        "id": "http://publications.europa.eu/resource/authority/country/SWZ",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Eswatini"
+        }
+    },
+    "Ethiopia": {
+        "id": "http://publications.europa.eu/resource/authority/country/ETH",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Ethiopia"
+        }
+    },
+    "European Union": {
+        "id": "http://publications.europa.eu/resource/authority/country/EUR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "European Union"
+        }
+    },
+    "Falkland Islands": {
+        "id": "http://publications.europa.eu/resource/authority/country/FLK",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Falkland Islands"
+        }
+    },
+    "Faroes": {
+        "id": "http://publications.europa.eu/resource/authority/country/FRO",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Faroes"
+        }
+    },
+    "Fiji": {
+        "id": "http://publications.europa.eu/resource/authority/country/FJI",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Fiji"
+        }
+    },
+    "Finland": {
+        "id": "http://publications.europa.eu/resource/authority/country/FIN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Finland"
+        }
+    },
+    "France": {
+        "id": "http://publications.europa.eu/resource/authority/country/FRA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "France"
+        }
+    },
+    "French Guiana": {
+        "id": "http://publications.europa.eu/resource/authority/country/GUF",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "French Guiana"
+        }
+    },
+    "French Polynesia": {
+        "id": "http://publications.europa.eu/resource/authority/country/PYF",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "French Polynesia"
+        }
+    },
+    "French Southern and Antarctic Lands": {
+        "id": "http://publications.europa.eu/resource/authority/country/FQ0",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "French Southern and Antarctic Lands"
+        }
+    },
+    "Gabon": {
+        "id": "http://publications.europa.eu/resource/authority/country/GAB",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Gabon"
+        }
+    },
+    "Georgia": {
+        "id": "http://publications.europa.eu/resource/authority/country/GEO",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Georgia"
+        }
+    },
+    "Germany": {
+        "id": "http://publications.europa.eu/resource/authority/country/DEU",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Germany"
+        }
+    },
+    "Ghana": {
+        "id": "http://publications.europa.eu/resource/authority/country/GHA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Ghana"
+        }
+    },
+    "Gibraltar": {
+        "id": "http://publications.europa.eu/resource/authority/country/GIB",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Gibraltar"
+        }
+    },
+    "Greece": {
+        "id": "http://publications.europa.eu/resource/authority/country/GRC",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Greece"
+        }
+    },
+    "Greenland": {
+        "id": "http://publications.europa.eu/resource/authority/country/GRL",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Greenland"
+        }
+    },
+    "Grenada": {
+        "id": "http://publications.europa.eu/resource/authority/country/GRD",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Grenada"
+        }
+    },
+    "Guadeloupe": {
+        "id": "http://publications.europa.eu/resource/authority/country/GLP",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Guadeloupe"
+        }
+    },
+    "Guam": {
+        "id": "http://publications.europa.eu/resource/authority/country/GUM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Guam"
+        }
+    },
+    "Guatemala": {
+        "id": "http://publications.europa.eu/resource/authority/country/GTM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Guatemala"
+        }
+    },
+    "Guernsey": {
+        "id": "http://publications.europa.eu/resource/authority/country/GGY",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Guernsey"
+        }
+    },
+    "Guinea": {
+        "id": "http://publications.europa.eu/resource/authority/country/GIN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Guinea"
+        }
+    },
+    "Guinea-Bissau": {
+        "id": "http://publications.europa.eu/resource/authority/country/GNB",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Guinea-Bissau"
+        }
+    },
+    "Guyana": {
+        "id": "http://publications.europa.eu/resource/authority/country/GUY",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Guyana"
+        }
+    },
+    "Haiti": {
+        "id": "http://publications.europa.eu/resource/authority/country/HTI",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Haiti"
+        }
+    },
+    "Heard Island and McDonald Islands": {
+        "id": "http://publications.europa.eu/resource/authority/country/HMD",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Heard Island and McDonald Islands"
+        }
+    },
+    "Honduras": {
+        "id": "http://publications.europa.eu/resource/authority/country/HND",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Honduras"
+        }
+    },
+    "Hong Kong": {
+        "id": "http://publications.europa.eu/resource/authority/country/HKG",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Hong Kong"
+        }
+    },
+    "Hungary": {
+        "id": "http://publications.europa.eu/resource/authority/country/HUN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Hungary"
+        }
+    },
+    "Iceland": {
+        "id": "http://publications.europa.eu/resource/authority/country/ISL",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Iceland"
+        }
+    },
+    "India": {
+        "id": "http://publications.europa.eu/resource/authority/country/IND",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "India"
+        }
+    },
+    "Indonesia": {
+        "id": "http://publications.europa.eu/resource/authority/country/IDN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Indonesia"
+        }
+    },
+    "Iran": {
+        "id": "http://publications.europa.eu/resource/authority/country/IRN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Iran"
+        }
+    },
+    "Iraq": {
+        "id": "http://publications.europa.eu/resource/authority/country/IRQ",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Iraq"
+        }
+    },
+    "Ireland": {
+        "id": "http://publications.europa.eu/resource/authority/country/IRL",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Ireland"
+        }
+    },
+    "Isle of Man": {
+        "id": "http://publications.europa.eu/resource/authority/country/IMN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Isle of Man"
+        }
+    },
+    "Israel": {
+        "id": "http://publications.europa.eu/resource/authority/country/ISR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Israel"
+        }
+    },
+    "Italy": {
+        "id": "http://publications.europa.eu/resource/authority/country/ITA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Italy"
+        }
+    },
+    "Jamaica": {
+        "id": "http://publications.europa.eu/resource/authority/country/JAM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Jamaica"
+        }
+    },
+    "Japan": {
+        "id": "http://publications.europa.eu/resource/authority/country/JPN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Japan"
+        }
+    },
+    "Jersey": {
+        "id": "http://publications.europa.eu/resource/authority/country/JEY",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Jersey"
+        }
+    },
+    "Jordan": {
+        "id": "http://publications.europa.eu/resource/authority/country/JOR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Jordan"
+        }
+    },
+    "Kazakhstan": {
+        "id": "http://publications.europa.eu/resource/authority/country/KAZ",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Kazakhstan"
+        }
+    },
+    "Kenya": {
+        "id": "http://publications.europa.eu/resource/authority/country/KEN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Kenya"
+        }
+    },
+    "Kiribati": {
+        "id": "http://publications.europa.eu/resource/authority/country/KIR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Kiribati"
+        }
+    },
+    "Kosovo": {
+        "id": "http://publications.europa.eu/resource/authority/country/1A0",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Kosovo"
+        }
+    },
+    "Kuwait": {
+        "id": "http://publications.europa.eu/resource/authority/country/KWT",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Kuwait"
+        }
+    },
+    "Kyrgyzstan": {
+        "id": "http://publications.europa.eu/resource/authority/country/KGZ",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Kyrgyzstan"
+        }
+    },
+    "Laos": {
+        "id": "http://publications.europa.eu/resource/authority/country/LAO",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Laos"
+        }
+    },
+    "Latvia": {
+        "id": "http://publications.europa.eu/resource/authority/country/LVA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Latvia"
+        }
+    },
+    "Lebanon": {
+        "id": "http://publications.europa.eu/resource/authority/country/LBN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Lebanon"
+        }
+    },
+    "Lesotho": {
+        "id": "http://publications.europa.eu/resource/authority/country/LSO",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Lesotho"
+        }
+    },
+    "Liberia": {
+        "id": "http://publications.europa.eu/resource/authority/country/LBR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Liberia"
+        }
+    },
+    "Libya": {
+        "id": "http://publications.europa.eu/resource/authority/country/LBY",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Libya"
+        }
+    },
+    "Liechtenstein": {
+        "id": "http://publications.europa.eu/resource/authority/country/LIE",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Liechtenstein"
+        }
+    },
+    "Lithuania": {
+        "id": "http://publications.europa.eu/resource/authority/country/LTU",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Lithuania"
+        }
+    },
+    "Luxembourg": {
+        "id": "http://publications.europa.eu/resource/authority/country/LUX",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Luxembourg"
+        }
+    },
+    "Macau": {
+        "id": "http://publications.europa.eu/resource/authority/country/MAC",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Macau"
+        }
+    },
+    "Madagascar": {
+        "id": "http://publications.europa.eu/resource/authority/country/MDG",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Madagascar"
+        }
+    },
+    "Malawi": {
+        "id": "http://publications.europa.eu/resource/authority/country/MWI",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Malawi"
+        }
+    },
+    "Malaysia": {
+        "id": "http://publications.europa.eu/resource/authority/country/MYS",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Malaysia"
+        }
+    },
+    "Maldives": {
+        "id": "http://publications.europa.eu/resource/authority/country/MDV",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Maldives"
+        }
+    },
+    "Mali": {
+        "id": "http://publications.europa.eu/resource/authority/country/MLI",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Mali"
+        }
+    },
+    "Malta": {
+        "id": "http://publications.europa.eu/resource/authority/country/MLT",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Malta"
+        }
+    },
+    "Marshall Islands": {
+        "id": "http://publications.europa.eu/resource/authority/country/MHL",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Marshall Islands"
+        }
+    },
+    "Martinique": {
+        "id": "http://publications.europa.eu/resource/authority/country/MTQ",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Martinique"
+        }
+    },
+    "Mauritania": {
+        "id": "http://publications.europa.eu/resource/authority/country/MRT",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Mauritania"
+        }
+    },
+    "Mauritius": {
+        "id": "http://publications.europa.eu/resource/authority/country/MUS",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Mauritius"
+        }
+    },
+    "Mayotte": {
+        "id": "http://publications.europa.eu/resource/authority/country/MYT",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Mayotte"
+        }
+    },
+    "Mexico": {
+        "id": "http://publications.europa.eu/resource/authority/country/MEX",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Mexico"
+        }
+    },
+    "Micronesia": {
+        "id": "http://publications.europa.eu/resource/authority/country/FSM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Micronesia"
+        }
+    },
+    "Moldova": {
+        "id": "http://publications.europa.eu/resource/authority/country/MDA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Moldova"
+        }
+    },
+    "Monaco": {
+        "id": "http://publications.europa.eu/resource/authority/country/MCO",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Monaco"
+        }
+    },
+    "Mongolia": {
+        "id": "http://publications.europa.eu/resource/authority/country/MNG",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Mongolia"
+        }
+    },
+    "Montenegro": {
+        "id": "http://publications.europa.eu/resource/authority/country/MNE",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Montenegro"
+        }
+    },
+    "Montserrat": {
+        "id": "http://publications.europa.eu/resource/authority/country/MSR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Montserrat"
+        }
+    },
+    "Morocco": {
+        "id": "http://publications.europa.eu/resource/authority/country/MAR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Morocco"
+        }
+    },
+    "Mozambique": {
+        "id": "http://publications.europa.eu/resource/authority/country/MOZ",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Mozambique"
+        }
+    },
+    "Myanmar/Burma": {
+        "id": "http://publications.europa.eu/resource/authority/country/MMR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Myanmar/Burma"
+        }
+    },
+    "Namibia": {
+        "id": "http://publications.europa.eu/resource/authority/country/NAM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Namibia"
+        }
+    },
+    "Nauru": {
+        "id": "http://publications.europa.eu/resource/authority/country/NRU",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Nauru"
+        }
+    },
+    "Nepal": {
+        "id": "http://publications.europa.eu/resource/authority/country/NPL",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Nepal"
+        }
+    },
+    "Netherlands": {
+        "id": "http://publications.europa.eu/resource/authority/country/NLD",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Netherlands"
+        }
+    },
+    "New Caledonia": {
+        "id": "http://publications.europa.eu/resource/authority/country/NCL",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "New Caledonia"
+        }
+    },
+    "New Zealand": {
+        "id": "http://publications.europa.eu/resource/authority/country/NZL",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "New Zealand"
+        }
+    },
+    "Nicaragua": {
+        "id": "http://publications.europa.eu/resource/authority/country/NIC",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Nicaragua"
+        }
+    },
+    "Niger": {
+        "id": "http://publications.europa.eu/resource/authority/country/NER",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Niger"
+        }
+    },
+    "Nigeria": {
+        "id": "http://publications.europa.eu/resource/authority/country/NGA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Nigeria"
+        }
+    },
+    "Niue": {
+        "id": "http://publications.europa.eu/resource/authority/country/NIU",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Niue"
+        }
+    },
+    "Norfolk Island": {
+        "id": "http://publications.europa.eu/resource/authority/country/NFK",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Norfolk Island"
+        }
+    },
+    "North Korea": {
+        "id": "http://publications.europa.eu/resource/authority/country/PRK",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "North Korea"
+        }
+    },
+    "North Macedonia": {
+        "id": "http://publications.europa.eu/resource/authority/country/MKD",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "North Macedonia"
+        }
+    },
+    "Northern Mariana Islands": {
+        "id": "http://publications.europa.eu/resource/authority/country/MNP",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Northern Mariana Islands"
+        }
+    },
+    "Norway": {
+        "id": "http://publications.europa.eu/resource/authority/country/NOR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Norway"
+        }
+    },
+    "Oman": {
+        "id": "http://publications.europa.eu/resource/authority/country/OMN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Oman"
+        }
+    },
+    "Pakistan": {
+        "id": "http://publications.europa.eu/resource/authority/country/PAK",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Pakistan"
+        }
+    },
+    "Palau": {
+        "id": "http://publications.europa.eu/resource/authority/country/PLW",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Palau"
+        }
+    },
+    "Palestine": {
+        "id": "http://publications.europa.eu/resource/authority/country/PSE",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Palestine"
+        }
+    },
+    "Panama": {
+        "id": "http://publications.europa.eu/resource/authority/country/PAN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Panama"
+        }
+    },
+    "Papua New Guinea": {
+        "id": "http://publications.europa.eu/resource/authority/country/PNG",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Papua New Guinea"
+        }
+    },
+    "Paraguay": {
+        "id": "http://publications.europa.eu/resource/authority/country/PRY",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Paraguay"
+        }
+    },
+    "Peru": {
+        "id": "http://publications.europa.eu/resource/authority/country/PER",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Peru"
+        }
+    },
+    "Philippines": {
+        "id": "http://publications.europa.eu/resource/authority/country/PHL",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Philippines"
+        }
+    },
+    "Pitcairn Islands": {
+        "id": "http://publications.europa.eu/resource/authority/country/PCN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Pitcairn Islands"
+        }
+    },
+    "Poland": {
+        "id": "http://publications.europa.eu/resource/authority/country/POL",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Poland"
+        }
+    },
+    "Portugal": {
+        "id": "http://publications.europa.eu/resource/authority/country/PRT",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Portugal"
+        }
+    },
+    "Provisional data": {
+        "id": "http://publications.europa.eu/resource/authority/country/OP_DATPRO",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Provisional data"
+        }
+    },
+    "Puerto Rico": {
+        "id": "http://publications.europa.eu/resource/authority/country/PRI",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Puerto Rico"
+        }
+    },
+    "Qatar": {
+        "id": "http://publications.europa.eu/resource/authority/country/QAT",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Qatar"
+        }
+    },
+    "Réunion": {
+        "id": "http://publications.europa.eu/resource/authority/country/REU",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Réunion"
+        }
+    },
+    "Romania": {
+        "id": "http://publications.europa.eu/resource/authority/country/ROU",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Romania"
+        }
+    },
+    "Russia": {
+        "id": "http://publications.europa.eu/resource/authority/country/RUS",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Russia"
+        }
+    },
+    "Rwanda": {
+        "id": "http://publications.europa.eu/resource/authority/country/RWA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Rwanda"
+        }
+    },
+    "Saint Barthélemy": {
+        "id": "http://publications.europa.eu/resource/authority/country/BLM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Saint Barthélemy"
+        }
+    },
+    "Saint Helena, Ascension and Tristan da Cunha": {
+        "id": "http://publications.europa.eu/resource/authority/country/SHN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Saint Helena, Ascension and Tristan da Cunha"
+        }
+    },
+    "Saint Kitts and Nevis": {
+        "id": "http://publications.europa.eu/resource/authority/country/KNA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Saint Kitts and Nevis"
+        }
+    },
+    "Saint Lucia": {
+        "id": "http://publications.europa.eu/resource/authority/country/LCA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Saint Lucia"
+        }
+    },
+    "Saint Martin": {
+        "id": "http://publications.europa.eu/resource/authority/country/MAF",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Saint Martin"
+        }
+    },
+    "Saint Pierre and Miquelon": {
+        "id": "http://publications.europa.eu/resource/authority/country/SPM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Saint Pierre and Miquelon"
+        }
+    },
+    "Saint Vincent and the Grenadines": {
+        "id": "http://publications.europa.eu/resource/authority/country/VCT",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Saint Vincent and the Grenadines"
+        }
+    },
+    "Samoa": {
+        "id": "http://publications.europa.eu/resource/authority/country/WSM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Samoa"
+        }
+    },
+    "San Marino": {
+        "id": "http://publications.europa.eu/resource/authority/country/SMR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "San Marino"
+        }
+    },
+    "São Tomé and Príncipe": {
+        "id": "http://publications.europa.eu/resource/authority/country/STP",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "São Tomé and Príncipe"
+        }
+    },
+    "Saudi Arabia": {
+        "id": "http://publications.europa.eu/resource/authority/country/SAU",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Saudi Arabia"
+        }
+    },
+    "Senegal": {
+        "id": "http://publications.europa.eu/resource/authority/country/SEN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Senegal"
+        }
+    },
+    "Serbia": {
+        "id": "http://publications.europa.eu/resource/authority/country/SRB",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Serbia"
+        }
+    },
+    "Seychelles": {
+        "id": "http://publications.europa.eu/resource/authority/country/SYC",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Seychelles"
+        }
+    },
+    "Sierra Leone": {
+        "id": "http://publications.europa.eu/resource/authority/country/SLE",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Sierra Leone"
+        }
+    },
+    "Singapore": {
+        "id": "http://publications.europa.eu/resource/authority/country/SGP",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Singapore"
+        }
+    },
+    "Sint Maarten": {
+        "id": "http://publications.europa.eu/resource/authority/country/SXM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Sint Maarten"
+        }
+    },
+    "Slovakia": {
+        "id": "http://publications.europa.eu/resource/authority/country/SVK",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Slovakia"
+        }
+    },
+    "Slovenia": {
+        "id": "http://publications.europa.eu/resource/authority/country/SVN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Slovenia"
+        }
+    },
+    "Solomon Islands": {
+        "id": "http://publications.europa.eu/resource/authority/country/SLB",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Solomon Islands"
+        }
+    },
+    "Somalia": {
+        "id": "http://publications.europa.eu/resource/authority/country/SOM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Somalia"
+        }
+    },
+    "South Africa": {
+        "id": "http://publications.europa.eu/resource/authority/country/ZAF",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "South Africa"
+        }
+    },
+    "South Georgia and the South Sandwich Islands": {
+        "id": "http://publications.europa.eu/resource/authority/country/SGS",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "South Georgia and the South Sandwich Islands"
+        }
+    },
+    "South Korea": {
+        "id": "http://publications.europa.eu/resource/authority/country/KOR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "South Korea"
+        }
+    },
+    "South Sudan": {
+        "id": "http://publications.europa.eu/resource/authority/country/SSD",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "South Sudan"
+        }
+    },
+    "Spain": {
+        "id": "http://publications.europa.eu/resource/authority/country/ESP",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Spain"
+        }
+    },
+    "Sri Lanka": {
+        "id": "http://publications.europa.eu/resource/authority/country/LKA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Sri Lanka"
+        }
+    },
+    "Sudan": {
+        "id": "http://publications.europa.eu/resource/authority/country/SDN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Sudan"
+        }
+    },
+    "Suriname": {
+        "id": "http://publications.europa.eu/resource/authority/country/SUR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Suriname"
+        }
+    },
+    "Svalbard and Jan Mayen": {
+        "id": "http://publications.europa.eu/resource/authority/country/SJM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Svalbard and Jan Mayen"
+        }
+    },
+    "Sweden": {
+        "id": "http://publications.europa.eu/resource/authority/country/SWE",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Sweden"
+        }
+    },
+    "Switzerland": {
+        "id": "http://publications.europa.eu/resource/authority/country/CHE",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Switzerland"
+        }
+    },
+    "Syria": {
+        "id": "http://publications.europa.eu/resource/authority/country/SYR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Syria"
+        }
+    },
+    "Taiwan": {
+        "id": "http://publications.europa.eu/resource/authority/country/TWN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Taiwan"
+        }
+    },
+    "Tajikistan": {
+        "id": "http://publications.europa.eu/resource/authority/country/TJK",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Tajikistan"
+        }
+    },
+    "Tanzania": {
+        "id": "http://publications.europa.eu/resource/authority/country/TZA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Tanzania"
+        }
+    },
+    "Thailand": {
+        "id": "http://publications.europa.eu/resource/authority/country/THA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Thailand"
+        }
+    },
+    "The Gambia": {
+        "id": "http://publications.europa.eu/resource/authority/country/GMB",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "The Gambia"
+        }
+    },
+    "Timor-Leste": {
+        "id": "http://publications.europa.eu/resource/authority/country/TLS",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Timor-Leste"
+        }
+    },
+    "Togo": {
+        "id": "http://publications.europa.eu/resource/authority/country/TGO",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Togo"
+        }
+    },
+    "Tokelau": {
+        "id": "http://publications.europa.eu/resource/authority/country/TKL",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Tokelau"
+        }
+    },
+    "Tonga": {
+        "id": "http://publications.europa.eu/resource/authority/country/TON",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Tonga"
+        }
+    },
+    "Trinidad and Tobago": {
+        "id": "http://publications.europa.eu/resource/authority/country/TTO",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Trinidad and Tobago"
+        }
+    },
+    "Tunisia": {
+        "id": "http://publications.europa.eu/resource/authority/country/TUN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Tunisia"
+        }
+    },
+    "Turkey": {
+        "id": "http://publications.europa.eu/resource/authority/country/TUR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Turkey"
+        }
+    },
+    "Turkmenistan": {
+        "id": "http://publications.europa.eu/resource/authority/country/TKM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Turkmenistan"
+        }
+    },
+    "Turks and Caicos Islands": {
+        "id": "http://publications.europa.eu/resource/authority/country/TCA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Turks and Caicos Islands"
+        }
+    },
+    "Tuvalu": {
+        "id": "http://publications.europa.eu/resource/authority/country/TUV",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Tuvalu"
+        }
+    },
+    "Uganda": {
+        "id": "http://publications.europa.eu/resource/authority/country/UGA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Uganda"
+        }
+    },
+    "Ukraine": {
+        "id": "http://publications.europa.eu/resource/authority/country/UKR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Ukraine"
+        }
+    },
+    "United Arab Emirates": {
+        "id": "http://publications.europa.eu/resource/authority/country/ARE",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "United Arab Emirates"
+        }
+    },
+    "United Kingdom": {
+        "id": "http://publications.europa.eu/resource/authority/country/GBR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "United Kingdom"
+        }
+    },
+    "United States": {
+        "id": "http://publications.europa.eu/resource/authority/country/USA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "United States"
+        }
+    },
+    "United States Minor Outlying Islands": {
+        "id": "http://publications.europa.eu/resource/authority/country/UMI",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "United States Minor Outlying Islands"
+        }
+    },
+    "Uruguay": {
+        "id": "http://publications.europa.eu/resource/authority/country/URY",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Uruguay"
+        }
+    },
+    "US Virgin Islands": {
+        "id": "http://publications.europa.eu/resource/authority/country/VIR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "US Virgin Islands"
+        }
+    },
+    "Uzbekistan": {
+        "id": "http://publications.europa.eu/resource/authority/country/UZB",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Uzbekistan"
+        }
+    },
+    "Vanuatu": {
+        "id": "http://publications.europa.eu/resource/authority/country/VUT",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Vanuatu"
+        }
+    },
+    "Vatican City State": {
+        "id": "http://publications.europa.eu/resource/authority/country/VAT",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Vatican City State"
+        }
+    },
+    "Venezuela": {
+        "id": "http://publications.europa.eu/resource/authority/country/VEN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Venezuela"
+        }
+    },
+    "Vietnam": {
+        "id": "http://publications.europa.eu/resource/authority/country/VNM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Vietnam"
+        }
+    },
+    "Wallis and Futuna": {
+        "id": "http://publications.europa.eu/resource/authority/country/WLF",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Wallis and Futuna"
+        }
+    },
+    "Western Sahara": {
+        "id": "http://publications.europa.eu/resource/authority/country/ESH",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Western Sahara"
+        }
+    },
+    "Yemen": {
+        "id": "http://publications.europa.eu/resource/authority/country/YEM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Yemen"
+        }
+    },
+    "Zambia": {
+        "id": "http://publications.europa.eu/resource/authority/country/ZMB",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Zambia"
+        }
+    },
+    "Zimbabwe": {
+        "id": "http://publications.europa.eu/resource/authority/country/ZWE",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/country",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Zimbabwe"
+        }
+    }
+}

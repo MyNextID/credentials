@@ -1,0 +1,156 @@
+{
+    "artefact assessment": {
+        "id": "http://data.europa.eu/snb/assessment/de4d165a6c",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/assessment/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "artefact assessment"
+        }
+    },
+    "continuous evaluation": {
+        "id": "http://data.europa.eu/snb/assessment/3484bd7e51",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/assessment/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "continuous evaluation"
+        }
+    },
+    "group performance": {
+        "id": "http://data.europa.eu/snb/assessment/56539a6507",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/assessment/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "group performance"
+        }
+    },
+    "level of attendance": {
+        "id": "http://data.europa.eu/snb/assessment/7331eb4762",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/assessment/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "level of attendance"
+        }
+    },
+    "marked assignment": {
+        "id": "http://data.europa.eu/snb/assessment/2939dae15f",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/assessment/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "marked assignment"
+        }
+    },
+    "oral examination": {
+        "id": "http://data.europa.eu/snb/assessment/d30284d7df",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/assessment/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "oral examination"
+        }
+    },
+    "peer assessment": {
+        "id": "http://data.europa.eu/snb/assessment/19a2e5e671",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/assessment/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "peer assessment"
+        }
+    },
+    "peer review": {
+        "id": "http://data.europa.eu/snb/assessment/812e3b0ae1",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/assessment/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "peer review"
+        }
+    },
+    "portfolio": {
+        "id": "http://data.europa.eu/snb/assessment/4f03b91c0e",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/assessment/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "portfolio"
+        }
+    },
+    "practical assessment": {
+        "id": "http://data.europa.eu/snb/assessment/6a4db9f11d",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/assessment/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "practical assessment"
+        }
+    },
+    "problem based learning": {
+        "id": "http://data.europa.eu/snb/assessment/c4256a2726",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/assessment/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "problem based learning"
+        }
+    },
+    "project work": {
+        "id": "http://data.europa.eu/snb/assessment/795dac4096",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/assessment/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "project work"
+        }
+    },
+    "quiz": {
+        "id": "http://data.europa.eu/snb/assessment/b1b68f6735",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/assessment/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "quiz"
+        }
+    },
+    "written examination": {
+        "id": "http://data.europa.eu/snb/assessment/6e6cb2cc78",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/assessment/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "written examination"
+        }
+    }
+}

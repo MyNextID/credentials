@@ -27,9 +27,13 @@
 
         "nationality":{
             "title": "Nationalities",
-            "description": "ISO 3166-1 alpha-2 country code",
-            "type": "string",
-            "pattern": "^[A-Z]{2}$"
+            "description": "ISO 3166-1 alpha-2 country codes, one per nationality",
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "string",
+                "pattern": "^[A-Z]{2}$"
+            }
         },
 
         "residentAddress":{
@@ -105,7 +109,7 @@
             "title": "Sex",
             "description": "0 unknown, 1 male, 2 female, 9 not applicable",
             "type": "integer",
-            "enum": [0, 1, 2, 9]
+            "enum": [0, 1, 2, 3, 4, 5, 6, 9]
         }
     },
     "required": []

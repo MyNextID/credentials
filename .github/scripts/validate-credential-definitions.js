@@ -73,15 +73,12 @@ function crossCheckJsonKeys(json1, json2, json1Path, json2Path, fileName) {
     let errors = []
     let regexPrefixes = []
     Object.keys(json1).forEach((key1) => {
-        if(key1.match(/{{N+}}/g)) {
-            // regex search for ageOver{{NN}}
-            const prefix = key1.split(/{{N+}}/g)[0]
-            if (!Object.keys(json2).some((key2) => {
-                if(key2.startsWith(prefix)) {
-                    return key2.match(/[a-zA-Z]+[0-9]+/g)
-                }
-                return false;
-            })) {
+        const placeholder = key1.match(/{{(N+|X+)}}/);
+        if(placeholder) {
+            // pattern keys: ageOver{{NN}} stands for digits (ageOver21), biometricTemplate{{XX}} for a word (biometricTemplateFace)
+            const prefix = key1.split(placeholder[0])[0]
+            const tail = placeholder[1].startsWith("N") ? /^[0-9]+$/ : /^[A-Z][A-Za-z0-9]*$/
+            if (!Object.keys(json2).some((key2) => key2.startsWith(prefix) && tail.test(key2.slice(prefix.length)))) {
                 validationError("- " + json1Path + ": pattern key " + key1 + " found in " + fileName + " is missing in " + json2Path);
             }
             regexPrefixes.push(prefix)
@@ -365,7 +362,9 @@ entries.map(type => type.name).forEach(credentialType => {
                                     }else{
                                         // 3.c) check if example json is valid, then crossmatch example json keys with input-fields-to-credential-map.json keys
                                         const filePath = getCredentialTypePath(formatPath)+"/input-fields-to-credential-map.json";
-                                        if(exampleJson) {
+                                        // CEL maps are keyed by output pointer and are checked by apply-credential-map.js
+                                        const isCelMap = Object.keys(jsonConent).every((key) => key.startsWith("/"));
+                                        if(exampleJson && !isCelMap) {
                                             crossCheckJsonKeys(jsonConent, exampleJson, filePath, exampleJsonFilePath, 'input-fields-to-credential-map.json');
                                         }
                                     }

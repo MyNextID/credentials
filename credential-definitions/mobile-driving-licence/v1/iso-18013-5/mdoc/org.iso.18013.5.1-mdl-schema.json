@@ -21,7 +21,7 @@
       "type": "boolean",
       "description": "Dynamic age-over flags, e.g., age_over_18, age_over_21."
     },
-    "^biometric_template_[A-Za-z0-9]{2}$": {
+    "^biometric_template_[a-z0-9_]+$": {
       "type": "string",
       "contentEncoding": "base64"
     }

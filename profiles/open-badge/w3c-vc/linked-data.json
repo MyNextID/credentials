@@ -1,0 +1,6 @@
+{
+    "contexts": {
+        "https://www.w3.org/ns/credentials/v2": "contexts/credentials-v2.jsonld",
+        "https://purl.imsglobal.org/spec/ob/v3p0/context-3.0.3.json": "contexts/ob-context-3.0.3.jsonld"
+    }
+}

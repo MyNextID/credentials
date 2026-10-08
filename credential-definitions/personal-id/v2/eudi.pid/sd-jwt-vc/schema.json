@@ -9,7 +9,31 @@
         "const": "urn:eudi:pid:1",
         "description": "Credential type identifier"
       },
-  
+      "iss": {
+        "type": "string",
+        "description": "Issuer identifier. Set by the issuer when signing."
+      },
+      "iat": {
+        "type": "integer",
+        "description": "Issuance time (NumericDate). Set by the issuer when signing."
+      },
+      "nbf": {
+        "type": "integer",
+        "description": "Not valid before (NumericDate). Set by the issuer when signing."
+      },
+      "exp": {
+        "type": "integer",
+        "description": "Expiry (NumericDate). Set by the issuer when signing."
+      },
+      "cnf": {
+        "type": "object",
+        "description": "Holder key binding. Set by the issuer when signing."
+      },
+      "status": {
+        "type": "object",
+        "description": "Status list reference. Set by the issuer when signing."
+      },
+
       "family_name": {
         "type": "string"
       },
@@ -74,8 +98,8 @@
   
       "sex": {
         "type": "integer",
-        "enum": [0, 1, 2, 9],
-        "description": "0 unknown, 1 male, 2 female, 9 not applicable"
+        "enum": [0, 1, 2, 3, 4, 5, 6, 9],
+        "description": "0 not known, 1 male, 2 female, 3 other, 4 inter, 5 diverse, 6 open, 9 not applicable"
       },
   
       "issuing_authority": {

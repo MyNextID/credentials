@@ -11,4 +11,5 @@ without committing to a full graduate degree.
 
 Select a version to view its full specification. The latest version is:
 
-- [`v1`](v1/) – Initial version of the Certificate of Advanced Study
+- [`v2`](v2/) – ELM-modelled EDC
+- [`v1`](v1/) – Initial version of the Certificate of Advanced Study (deprecated, use v2)

@@ -12,5 +12,5 @@ acceptance and registration rather than ongoing status.
 
 Select a version to view its full specification. The latest version is:
 
-- [`v1`](v1/) – Initial version of the Matriculation
-  
+- [`v2`](v2/) – ELM-modelled EDC
+- [`v1`](v1/) – Initial version of the Matriculation (deprecated, use v2)

@@ -1,0 +1,15 @@
+{
+    "iss": "https://issuer.example.com",
+    "vct": "https://raw.githubusercontent.com/MyNextID/credentials/main/credential-definitions/visa/v2/eaa/sd-jwt-vc/type-metadata.json",
+    "full_name": "John Doe",
+    "date_of_birth": "1990-01-01T00:00:00Z",
+    "nationality": "SVN",
+    "passport_number": "654321",
+    "visa_number": "123456",
+    "type_of_visa": "Tourist Visa",
+    "entry_type": "Single Entry",
+    "place_of_issue": "Slovenia",
+    "duration_of_stay": "PT60H",
+    "date_of_issuance": "2026-01-02T15:04:05Z",
+    "date_of_expiry": "2030-01-02T15:04:05Z"
+}

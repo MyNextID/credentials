@@ -1,0 +1,19 @@
+{
+  "name": "credentials-cel-playground",
+  "private": true,
+  "description": "Local playground for the CEL credential maps. Uses the runner and its dependencies from the repository root.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@auth0/mdl": "3.0.1",
+    "@peculiar/x509": "1.14.3",
+    "@sd-jwt/sd-jwt-vc": "0.21.0",
+    "jose": "6.2.12"
+  },
+  "overrides": {
+    "@owf/identity-common": "0.4.0",
+    "@owf/cose": "0.4.0",
+    "@owf/token-status-list": "0.4.0"
+  }
+}

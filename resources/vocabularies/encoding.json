@@ -1,0 +1,13 @@
+{
+    "base64": {
+        "id": "http://data.europa.eu/snb/encoding/6146cde7dd",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/encoding/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "base64"
+        }
+    }
+}

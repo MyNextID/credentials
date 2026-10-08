@@ -1,0 +1,125 @@
+{
+    "vct": "https://raw.githubusercontent.com/MyNextID/credentials/main/credential-definitions/boarding-pass/v2/eaa/sd-jwt-vc/type-metadata.json",
+    "name": "Boarding Pass",
+    "description": "Claims of the Boarding Pass SD-JWT VC (EAA profile), before selective-disclosure encoding and signing.",
+    "display": [
+        {
+            "locale": "en",
+            "name": "Boarding Pass"
+        }
+    ],
+    "claims": [
+        {
+            "path": [
+                "full_name"
+            ],
+            "display": [
+                {
+                    "locale": "en",
+                    "label": "Full name",
+                    "description": "Full name of the passenger."
+                }
+            ],
+            "mandatory": true,
+            "sd": "allowed"
+        },
+        {
+            "path": [
+                "flight_number"
+            ],
+            "display": [
+                {
+                    "locale": "en",
+                    "label": "Flight number",
+                    "description": "Flight number."
+                }
+            ],
+            "mandatory": false,
+            "sd": "allowed"
+        },
+        {
+            "path": [
+                "flight_date"
+            ],
+            "display": [
+                {
+                    "locale": "en",
+                    "label": "Date",
+                    "description": "Date of the flight."
+                }
+            ],
+            "mandatory": false,
+            "sd": "allowed"
+        },
+        {
+            "path": [
+                "boarding_time"
+            ],
+            "display": [
+                {
+                    "locale": "en",
+                    "label": "Boarding time",
+                    "description": "Scheduled boarding time."
+                }
+            ],
+            "mandatory": false,
+            "sd": "allowed"
+        },
+        {
+            "path": [
+                "departure_airport"
+            ],
+            "display": [
+                {
+                    "locale": "en",
+                    "label": "Location from",
+                    "description": "Departure airport."
+                }
+            ],
+            "mandatory": false,
+            "sd": "allowed"
+        },
+        {
+            "path": [
+                "arrival_airport"
+            ],
+            "display": [
+                {
+                    "locale": "en",
+                    "label": "Location to",
+                    "description": "Arrival airport."
+                }
+            ],
+            "mandatory": false,
+            "sd": "allowed"
+        },
+        {
+            "path": [
+                "gate"
+            ],
+            "display": [
+                {
+                    "locale": "en",
+                    "label": "Gate number",
+                    "description": "Boarding gate."
+                }
+            ],
+            "mandatory": false,
+            "sd": "allowed"
+        },
+        {
+            "path": [
+                "seat"
+            ],
+            "display": [
+                {
+                    "locale": "en",
+                    "label": "Seat number",
+                    "description": "Seat number."
+                }
+            ],
+            "mandatory": false,
+            "sd": "allowed"
+        }
+    ]
+}

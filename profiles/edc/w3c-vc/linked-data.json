@@ -1,0 +1,10 @@
+{
+    "contexts": {
+        "https://www.w3.org/2018/credentials/v1": "contexts/credentials-v1.jsonld",
+        "http://data.europa.eu/snb/model/context/edc-ap": "contexts/edc-ap.jsonld"
+    },
+    "shapes": "shacl/EDC-generic-full.ttl",
+    "imports": {
+        "http://data.europa.eu/snb/model/ap/edc-generic-no-cv": "shacl/EDC-generic-no-cv.ttl"
+    }
+}

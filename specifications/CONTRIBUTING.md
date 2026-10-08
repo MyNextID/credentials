@@ -95,6 +95,7 @@ Additional requirements:
 
 - All examples must be valid and conform to the defined schema.
 - The `examples/` folder must include representative and correctly structured sample outputs.
+- The unsigned example (`<profile>-<initials>-example.json`) is generated from the map. After changing a map, its schema or the input example, run `npm run apply-map -- --write-examples` and commit the result. CI fails when it is out of date. See [CEL mapping](cel-mapping.md).
 
 If a new profile is introduced:
 

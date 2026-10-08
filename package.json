@@ -1,0 +1,18 @@
+{
+  "name": "credentials",
+  "private": true,
+  "scripts": {
+    "apply-map": "node .github/scripts/apply-credential-map.js",
+    "test": "node --test .github/scripts/apply-credential-map.test.js",
+    "build-vocabularies": "node .github/scripts/build-vocabularies.js",
+    "build-rulebooks": "node .github/scripts/build-rulebooks.js"
+  },
+  "devDependencies": {
+    "@marcbachmann/cel-js": "^8.0.0",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "jsonld": "9.0.0",
+    "n3": "1.26.0",
+    "rdf-validate-shacl": "0.6.5"
+  }
+}
