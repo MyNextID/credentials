@@ -108,6 +108,7 @@ A field whose value must be a vocabulary label carries `x-vocabulary` with the t
 npm install
 npm run apply-map -- credential-definitions/microcredential/v1/edc/w3c-vc --print
 npm run apply-map            # every format folder
+npm run apply-map -- --write-examples   # regenerate examples/<profile>-<initials>-example.json
 npm test                     # tests for the runner itself
 ```
 
@@ -116,7 +117,8 @@ For each format folder, the runner:
 1. validates `input-fields/example.json` against `input-fields/schema.json`, its `x-vocabulary` fields and its `x-cel-rules`
 2. builds the credential from the base map and the format map
 3. validates the result against the format `schema.json`, and for SD-JWT VC checks that `type-metadata.json` has the same `vct` and describes every claim
-4. if the profile has a `shacl.json` (EDC): expands the credential as JSON-LD with the vendored contexts and validates the RDF against the ELM SHACL shapes (`EDC-generic-full`). This runs offline.
+4. compares the result with the folder's `examples/<profile>-<initials>-example.json` and fails if it is missing or different. `--write-examples` rewrites it instead.
+5. if the profile has a `shacl.json` (EDC): expands the credential as JSON-LD with the vendored contexts and validates the RDF against the ELM SHACL shapes (`EDC-generic-full`). This runs offline.
 
 The output is the unsigned claim set. Holder binding (`cnf`), status entries, evidence, encoding and signing (CBOR/MSO, SD-JWT, JAdES) stay with the issuer.
 
@@ -136,7 +138,6 @@ The runner uses [`@marcbachmann/cel-js`](https://www.npmjs.com/package/@marcbach
 
 Each `eaa/sd-jwt-vc` format folder has a `type-metadata.json` ([SD-JWT VC Type Metadata](https://datatracker.ietf.org/doc/draft-ietf-oauth-sd-jwt-vc/), draft 19). It names the type, labels every claim, and sets which claims are selectively disclosable (`sd`). The `vct` is the file's raw GitHub URL on `main`, so a wallet can fetch it once the PR is merged. The issuer still adds `iat`, `nbf`, `exp`, `cnf` and `status` and signs, as it does for every format.
 
-## Open questions
+## Deprecated versions
 
-- The v1 EDC maps of eight types (boarding-pass, visa, student-id, degree-certificate, matriculation, confirmation-of-enrolment, certificate-of-participation-in-summer-school, certificate-of-advanced-study) carry fields that are not in the ELM context (`studentNumber`, `degreeProgramme`, `flightInformation`, `visaNumber`, …). v2 of these types fixes this: the six learning types are modelled on ELM, and visa and boarding-pass move to `eaa/sd-jwt-vc`. When can v1 be retired?
-- Should the per-format `examples/*-example.json` files be regenerated from the maps?
+The v1 EDC maps of eight types (boarding-pass, visa, student-id, degree-certificate, matriculation, confirmation-of-enrolment, certificate-of-participation-in-summer-school, certificate-of-advanced-study) carry fields that are not in the ELM context (`studentNumber`, `degreeProgramme`, `flightInformation`, `visaNumber`, …), so Europass drops them. v2 fixes this: the six learning types are modelled on ELM, and visa and boarding-pass move to `eaa/sd-jwt-vc`. v1 is marked deprecated and stays in the repository, because versions are never deleted.

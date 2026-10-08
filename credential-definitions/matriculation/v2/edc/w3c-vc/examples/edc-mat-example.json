@@ -123,6 +123,7 @@
     "issuanceDate": "2026-01-01T00:00:00Z",
     "issued": "2026-01-01T00:00:00Z",
     "validFrom": "2026-01-01T00:00:00Z",
+    "expirationDate": "2031-01-01T00:00:00Z",
     "credentialSubject": {
         "id": "urn:epass:person:00000000-0000-4000-8000-000000000002",
         "type": "Person",
@@ -135,10 +136,10 @@
             }
         },
         "hasClaim": {
-            "id": "urn:epass:learningActivity:00000000-0000-4000-8000-000000000003",
-            "type": "LearningActivity",
+            "id": "urn:epass:learningEntitlement:00000000-0000-4000-8000-000000000003",
+            "type": "LearningEntitlement",
             "title": {
-                "en": "Title of your Conference"
+                "en": "Mechanical Engineering BSc"
             },
             "awardedBy": {
                 "id": "urn:epass:awardingProcess:1",
@@ -225,67 +226,82 @@
                     }
                 }
             },
-            "description": {
-                "en": "Here you should describe the activity of the event for which the recipient is receiving the Certificate of Attendance."
-            },
             "specifiedBy": {
-                "id": "urn:epass:learningActivitySpecification:00000000-0000-4000-8000-000000000008",
-                "type": "LearningActivitySpecification",
+                "id": "urn:epass:learningEntitlementSpecification:00000000-0000-4000-8000-000000000009",
+                "type": "LearningEntitlementSpecification",
                 "title": {
-                    "en": "Title of your Conference"
+                    "en": "Mechanical Engineering BSc"
                 },
-                "homepage": {
-                    "id": "urn:epass:webResource:00000000-0000-4000-8000-000000000009",
-                    "type": "WebResource",
-                    "contentURL": "https://www.example.com"
-                }
-            },
-            "location": {
-                "id": "urn:epass:location:00000000-0000-4000-8000-000000000010",
-                "type": "Location",
-                "description": {
-                    "en": "Conference center"
-                },
-                "address": {
-                    "id": "urn:epass:address:00000000-0000-4000-8000-000000000011",
-                    "type": "Address",
-                    "countryCode": {
-                        "id": "http://publications.europa.eu/resource/authority/country/SVN",
-                        "type": "Concept",
-                        "inScheme": {
-                            "id": "http://publications.europa.eu/resource/authority/country",
-                            "type": "ConceptScheme"
-                        },
-                        "prefLabel": {
-                            "en": "Slovenia"
-                        }
+                "dcType": {
+                    "id": "http://data.europa.eu/snb/entitlement/64aad92881",
+                    "type": "Concept",
+                    "inScheme": {
+                        "id": "http://data.europa.eu/snb/entitlement/25831c2",
+                        "type": "ConceptScheme"
                     },
-                    "fullAddress": {
-                        "id": "urn:epass:note:00000000-0000-4000-8000-000000000012",
-                        "type": "Note",
-                        "noteLiteral": {
-                            "en": "A Great Address 2, 2025 Spicetown"
-                        }
+                    "prefLabel": {
+                        "en": "learning opportunity"
+                    }
+                },
+                "entitlementStatus": {
+                    "id": "http://data.europa.eu/snb/entitlement-status/b7015a8a8c",
+                    "type": "Concept",
+                    "inScheme": {
+                        "id": "http://data.europa.eu/snb/entitlement-status/25831c2",
+                        "type": "ConceptScheme"
+                    },
+                    "prefLabel": {
+                        "en": "actual"
                     }
                 }
             },
-            "temporal": {
-                "id": "urn:epass:periodOfTime:00000000-0000-4000-8000-000000000013",
-                "type": "PeriodOfTime",
-                "startDate": "2026-01-01T00:00:00Z",
-                "endDate": "2026-02-01T00:00:00Z"
-            },
-            "workload": "PT60H"
+            "dateIssued": "2026-01-01T00:00:00Z",
+            "expiryDate": "2026-12-01T00:00:00Z",
+            "additionalNote": [
+                {
+                    "id": "urn:epass:note:00000000-0000-4000-8000-000000000010",
+                    "type": "Note",
+                    "noteLiteral": {
+                        "en": "Programme status: finished with degree"
+                    }
+                },
+                {
+                    "id": "urn:epass:note:00000000-0000-4000-8000-000000000011",
+                    "type": "Note",
+                    "noteLiteral": {
+                        "en": "ECTS: 0 of 15"
+                    }
+                },
+                {
+                    "id": "urn:epass:note:00000000-0000-4000-8000-000000000012",
+                    "type": "Note",
+                    "noteLiteral": {
+                        "en": "Deadline: 2026-12-01T00:00:00Z"
+                    }
+                }
+            ]
         },
         "fullName": {
             "en": "John Doe"
-        }
+        },
+        "dateOfBirth": "1990-01-01T00:00:00Z",
+        "identifier": [
+            {
+                "id": "urn:epass:identifier:00000000-0000-4000-8000-000000000008",
+                "type": "Identifier",
+                "schemeName": "Student number",
+                "notation": "12-345-678",
+                "schemeAgency": {
+                    "en": "Example University"
+                }
+            }
+        ]
     },
     "displayParameter": {
         "id": "urn:epass:displayParameter:00000000-0000-4000-8000-000000000004",
         "type": "DisplayParameter",
         "title": {
-            "en": "Certificate of Attendance"
+            "en": "Confirmation of Matriculation for Spring Semester 2025"
         },
         "primaryLanguage": {
             "id": "http://publications.europa.eu/resource/authority/language/ENG",
@@ -361,9 +377,6 @@
                     }
                 ]
             }
-        ],
-        "description": {
-            "en": "is awarded to"
-        }
+        ]
     }
 }

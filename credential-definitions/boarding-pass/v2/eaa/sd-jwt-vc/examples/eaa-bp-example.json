@@ -1,0 +1,12 @@
+{
+    "iss": "https://issuer.example.com",
+    "vct": "https://raw.githubusercontent.com/MyNextID/credentials/main/credential-definitions/boarding-pass/v2/eaa/sd-jwt-vc/type-metadata.json",
+    "full_name": "John Doe",
+    "flight_number": "KL1986",
+    "flight_date": "2026-01-02T15:04:05Z",
+    "boarding_time": "2026-01-02T15:04:05Z",
+    "departure_airport": "Ljubljana Jože Pučnik Airport (LJU)",
+    "arrival_airport": "Amsterdam Airport Schiphol (AMS)",
+    "gate": "A12",
+    "seat": "14C"
+}

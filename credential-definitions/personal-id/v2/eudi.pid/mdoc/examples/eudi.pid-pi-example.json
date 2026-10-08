@@ -1,0 +1,40 @@
+{
+    "docType": "eu.europa.ec.eudi.pid.1",
+    "namespace": {
+        "eu.europa.ec.eudi.pid.1": {
+            "vct": "urn:eudi:pid:1",
+            "family_name": "Muller",
+            "given_name": "Erika",
+            "birth_date": "1985-03-15",
+            "place_of_birth": {
+                "locality": "Munich"
+            },
+            "nationality": [
+                "DE",
+                "AT"
+            ],
+            "address": {
+                "formatted": "Hauptstraße 123, 80331 München, Germany",
+                "country": "DE",
+                "region": "Bavaria",
+                "locality": "München",
+                "postal_code": "80331",
+                "street_address": "Hauptstraße",
+                "house_number": "123"
+            },
+            "personal_administrative_number": "123456789012",
+            "portrait": "data:image/jpeg;base64,...",
+            "family_name_birth": "Schmidt",
+            "given_name_birth": "Erika",
+            "sex": 2,
+            "email_address": "erika.muller@example.com",
+            "mobile_phone_number": "+49-89-12345678",
+            "expiry_date": "2031-01-01",
+            "issuance_date": "2026-01-01",
+            "issuing_authority": "Example Civil Registry",
+            "issuing_country": "DE",
+            "document_number": "PID-0000-1234",
+            "trust_anchor": "https://issuer.example.com/trust-anchor"
+        }
+    }
+}

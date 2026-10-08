@@ -13,7 +13,7 @@ All naming conventions MUST be followed. Violations may result in PR rejection.
   - MUST always be written in full (no abbreviations or initials)
 - Version (`<version>`)
   - MUST follow sequential versioning within the credential type (e.g., `v1`, `v2`, `v3`)
-  - MUST NOT modify or delete existing versions (only add new ones)
+  - MUST NOT modify or delete existing versions (only add new ones), except to fix a confirmed bug (see [CONTRIBUTING](CONTRIBUTING.md))
 - Profile (`<profile>`)
   - MUST be lowercase
   - MUST use hyphens for multi-word identifiers where applicable

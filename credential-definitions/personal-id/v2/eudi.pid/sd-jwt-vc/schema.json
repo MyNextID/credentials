@@ -9,7 +9,31 @@
         "const": "urn:eudi:pid:1",
         "description": "Credential type identifier"
       },
-  
+      "iss": {
+        "type": "string",
+        "description": "Issuer identifier. Set by the issuer when signing."
+      },
+      "iat": {
+        "type": "integer",
+        "description": "Issuance time (NumericDate). Set by the issuer when signing."
+      },
+      "nbf": {
+        "type": "integer",
+        "description": "Not valid before (NumericDate). Set by the issuer when signing."
+      },
+      "exp": {
+        "type": "integer",
+        "description": "Expiry (NumericDate). Set by the issuer when signing."
+      },
+      "cnf": {
+        "type": "object",
+        "description": "Holder key binding. Set by the issuer when signing."
+      },
+      "status": {
+        "type": "object",
+        "description": "Status list reference. Set by the issuer when signing."
+      },
+
       "family_name": {
         "type": "string"
       },

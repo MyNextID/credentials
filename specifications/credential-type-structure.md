@@ -43,7 +43,7 @@ Each credential type includes a `README.md` file located in the **root of its fo
 
 The `<version>` folder (e.g., `v1`, `v2`) represents a specific version of the credential type. Each version contains a complete and independent definition, including input fields, schemas, mappings, translations, and one or more `<profile>` folders.
 Multiple versions of the same credential type may coexist within the repository. The selection of which version to use is determined externally by the consumer.
-Adding a new version results in an additional `<version>` folder. Existing versions are not modified or replaced.
+Adding a new version results in an additional `<version>` folder. Existing versions are not modified or replaced, except to fix a confirmed bug (see [CONTRIBUTING](CONTRIBUTING.md)).
 
 Each version must include a `README.md` file that outlines the folder structure and highlights any significant differences from other versions (if applicable).
 
@@ -104,7 +104,7 @@ For more detailed information on each profile and the supported formats, refer t
 
 `/examples` folder contains example credentials that demonstrate how the credential is structured before and after issuance. They are used for reference, testing, and validation of the format implementation.
 
-* `<profile>-<credential-type-initials>-example.json` contains an unsigned example credential that follows the schema definition. It serves as a reference for how the credential data should be structured before it is signed or issued.
-* `<profile>-<credential-type-initials>-signed.jsonld` provides a signed example credential in JSON-LD format. It shows the final issued form of the credential, including the digital proof information required for verification.
+* `<profile>-<credential-type-initials>-example.json` contains an unsigned example credential that follows the schema definition. It serves as a reference for how the credential data should be structured before it is signed or issued. It is generated from `input-fields/example.json` by the map (`npm run apply-map -- --write-examples`), and CI fails when it is out of date. Do not edit it by hand.
+* `<profile>-<credential-type-initials>-signed.jsonld` provides a signed example credential in JSON-LD format. It shows the final issued form of the credential, including the digital proof information required for verification. Signed examples are not regenerated, so they may show an earlier version of the credential.
 
 `<credential-type-initials>` is an acronym derived from the credential type name and used consistently across all files within the format folder (e.g., `certificate-of-attendance` → `coa`).

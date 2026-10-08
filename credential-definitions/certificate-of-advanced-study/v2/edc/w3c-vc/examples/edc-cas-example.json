@@ -123,6 +123,7 @@
     "issuanceDate": "2026-01-01T00:00:00Z",
     "issued": "2026-01-01T00:00:00Z",
     "validFrom": "2026-01-01T00:00:00Z",
+    "expirationDate": "2031-01-01T00:00:00Z",
     "credentialSubject": {
         "id": "urn:epass:person:00000000-0000-4000-8000-000000000002",
         "type": "Person",
@@ -135,10 +136,10 @@
             }
         },
         "hasClaim": {
-            "id": "urn:epass:learningActivity:00000000-0000-4000-8000-000000000003",
-            "type": "LearningActivity",
+            "id": "urn:epass:learningAchievement:00000000-0000-4000-8000-000000000003",
+            "type": "LearningAchievement",
             "title": {
-                "en": "Title of your Conference"
+                "en": "Certificate of Advanced Study"
             },
             "awardedBy": {
                 "id": "urn:epass:awardingProcess:1",
@@ -225,67 +226,68 @@
                     }
                 }
             },
-            "description": {
-                "en": "Here you should describe the activity of the event for which the recipient is receiving the Certificate of Attendance."
-            },
-            "specifiedBy": {
-                "id": "urn:epass:learningActivitySpecification:00000000-0000-4000-8000-000000000008",
-                "type": "LearningActivitySpecification",
-                "title": {
-                    "en": "Title of your Conference"
-                },
-                "homepage": {
-                    "id": "urn:epass:webResource:00000000-0000-4000-8000-000000000009",
-                    "type": "WebResource",
-                    "contentURL": "https://www.example.com"
-                }
-            },
-            "location": {
-                "id": "urn:epass:location:00000000-0000-4000-8000-000000000010",
-                "type": "Location",
-                "description": {
-                    "en": "Conference center"
-                },
-                "address": {
-                    "id": "urn:epass:address:00000000-0000-4000-8000-000000000011",
-                    "type": "Address",
-                    "countryCode": {
-                        "id": "http://publications.europa.eu/resource/authority/country/SVN",
+            "creditReceived": [
+                {
+                    "id": "urn:epass:creditPoint:00000000-0000-4000-8000-000000000011",
+                    "type": "CreditPoint",
+                    "framework": {
+                        "id": "http://data.europa.eu/snb/education-credit/6fcec5c5af",
                         "type": "Concept",
                         "inScheme": {
-                            "id": "http://publications.europa.eu/resource/authority/country",
+                            "id": "http://data.europa.eu/snb/education-credit/25831c2",
                             "type": "ConceptScheme"
                         },
                         "prefLabel": {
-                            "en": "Slovenia"
+                            "en": "European Credit Transfer System"
                         }
                     },
-                    "fullAddress": {
-                        "id": "urn:epass:note:00000000-0000-4000-8000-000000000012",
-                        "type": "Note",
-                        "noteLiteral": {
-                            "en": "A Great Address 2, 2025 Spicetown"
-                        }
-                    }
+                    "point": "10"
                 }
-            },
-            "temporal": {
-                "id": "urn:epass:periodOfTime:00000000-0000-4000-8000-000000000013",
-                "type": "PeriodOfTime",
-                "startDate": "2026-01-01T00:00:00Z",
-                "endDate": "2026-02-01T00:00:00Z"
-            },
-            "workload": "PT60H"
+            ],
+            "specifiedBy": {
+                "id": "urn:epass:qualification:00000000-0000-4000-8000-000000000012",
+                "type": "Qualification",
+                "title": {
+                    "en": "Certificate of Advanced Study"
+                }
+            }
         },
         "fullName": {
             "en": "John Doe"
+        },
+        "dateOfBirth": "1990-01-01T15:00:00Z",
+        "placeOfBirth": {
+            "id": "urn:epass:location:00000000-0000-4000-8000-000000000008",
+            "type": "Location",
+            "address": {
+                "id": "urn:epass:address:00000000-0000-4000-8000-000000000009",
+                "type": "Address",
+                "countryCode": {
+                    "id": "http://publications.europa.eu/resource/authority/country/SVN",
+                    "type": "Concept",
+                    "inScheme": {
+                        "id": "http://publications.europa.eu/resource/authority/country",
+                        "type": "ConceptScheme"
+                    },
+                    "prefLabel": {
+                        "en": "Slovenia"
+                    }
+                },
+                "fullAddress": {
+                    "id": "urn:epass:note:00000000-0000-4000-8000-000000000010",
+                    "type": "Note",
+                    "noteLiteral": {
+                        "en": "Ljubljana"
+                    }
+                }
+            }
         }
     },
     "displayParameter": {
         "id": "urn:epass:displayParameter:00000000-0000-4000-8000-000000000004",
         "type": "DisplayParameter",
         "title": {
-            "en": "Certificate of Attendance"
+            "en": "Certificate of Advanced Study"
         },
         "primaryLanguage": {
             "id": "http://publications.europa.eu/resource/authority/language/ENG",
@@ -361,9 +363,6 @@
                     }
                 ]
             }
-        ],
-        "description": {
-            "en": "is awarded to"
-        }
+        ]
     }
 }

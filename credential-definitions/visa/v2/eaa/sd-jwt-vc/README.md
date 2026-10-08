@@ -6,8 +6,9 @@ The map builds the claim set before selective-disclosure encoding. [type-metadat
 
 ## Contents
 
+- [examples](examples) – Example credential generated from the example input (`npm run apply-map -- --write-examples`)
 - [input-fields-to-credential-map.json](input-fields-to-credential-map.json) – CEL map from input fields to credential claims
 - [schema.json](schema.json) – Schema of the claim set
 - [type-metadata.json](type-metadata.json) – SD-JWT VC Type Metadata (claim labels, selective disclosure)
 
-To see the claims this map builds from the example input, run `npm run apply-map -- credential-definitions/visa/v2/eaa/sd-jwt-vc --print`. See [CEL mapping](../../../../../specifications/cel-mapping.md).
+See [CEL mapping](../../../../../specifications/cel-mapping.md).

@@ -5,9 +5,11 @@
 // the ELM SHACL shapes.
 //
 //   npm install
-//   node .github/scripts/apply-credential-map.js [--print] [format-folder ...]
+//   node .github/scripts/apply-credential-map.js [--print] [--write-examples] [format-folder ...]
 //
-// Without folders it runs over every format folder in credential-definitions/. It exits non-zero when any map fails.
+// Without folders it runs over every format folder in credential-definitions/. It exits non-zero when any map fails,
+// or when a folder's generated example (examples/<profile>-<initials>-example.json) is missing or out of date.
+// --write-examples rewrites those files.
 
 const fs = require("fs");
 const path = require("path");
@@ -263,10 +265,31 @@ async function shacl(formatDir, credential) {
     return { errors, warnings };
 }
 
-async function check(formatDir) {
+// examples/<profile>-<initials>-example.json. The initials come from an existing example of the type
+// (edc-mat-example.json → mat), else from the words of its name (boarding-pass → bp).
+function examplePath(formatDir) {
+    const parts = formatDir.split(path.sep);
+    const [type, profile] = [parts.at(-4), parts.at(-2)];
+    const existing = fs.readdirSync(path.join("credential-definitions", type), { recursive: true })
+        .map((f) => path.basename(String(f)).match(/^.+-([a-z]+)-example\.json$/)?.[1])
+        .find(Boolean);
+    const initials = existing ?? type.split("-").map((w) => w[0]).join("");
+    return path.join(formatDir, "examples", `${profile}-${initials}-example.json`);
+}
+
+async function check(formatDir, { writeExamples = false } = {}) {
     const result = build(formatDir);
     const { errors, warnings } = await shacl(formatDir, result.credential);
-    return { ...result, errors: [...result.errors, ...errors], warnings };
+    const exampleErrors = [];
+    const file = examplePath(formatDir);
+    const example = JSON.stringify(result.credential, null, 4) + "\n";
+    if (writeExamples) {
+        fs.mkdirSync(path.dirname(file), { recursive: true });
+        fs.writeFileSync(file, example);
+    } else if (!fs.existsSync(file) || fs.readFileSync(file, "utf8") !== example) {
+        exampleErrors.push(`${path.relative(formatDir, file)} is missing or out of date: run npm run apply-map -- --write-examples`);
+    }
+    return { ...result, errors: [...result.errors, ...errors, ...exampleErrors], warnings };
 }
 
 function formatDirs() {
@@ -282,10 +305,11 @@ if (require.main === module) {
     (async () => {
         const args = process.argv.slice(2);
         const print = args.includes("--print");
-        const dirs = args.filter((a) => a !== "--print");
+        const writeExamples = args.includes("--write-examples");
+        const dirs = args.filter((a) => !a.startsWith("--"));
         let failed = 0;
         for (const dir of dirs.length ? dirs : formatDirs()) {
-            const { credential, errors, warnings } = await check(path.normalize(dir).replace(/[\\/]+$/, ""));
+            const { credential, errors, warnings } = await check(path.normalize(dir).replace(/[\\/]+$/, ""), { writeExamples });
             console.log(`${errors.length ? "✗" : "✓"} ${dir}${errors.length ? ` (${errors.length} errors)` : ""}`);
             for (const e of errors) console.log(`    ${e}`);
             for (const w of warnings) console.log(`    warning: ${w}`);

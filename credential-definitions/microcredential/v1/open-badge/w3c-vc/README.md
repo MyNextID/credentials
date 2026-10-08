@@ -6,6 +6,6 @@ It defines the structure and includes example credentials for validation and ref
 
 ## Contents
 
-- [examples](examples) – Example credentials (unsigned and/or signed) used for validation and reference
+- [examples](examples) – Example credential generated from the example input (`npm run apply-map -- --write-examples`); the signed files are historical and are not regenerated
 <!-- - [input-fields-to-credential-map](input-fields-to-credential-map.json) – Mapping rules from input fields to credential attributes-->
 - [schema.json](schema.json) – JSON Schema definition for the W3C Verifiable Credentials data model
