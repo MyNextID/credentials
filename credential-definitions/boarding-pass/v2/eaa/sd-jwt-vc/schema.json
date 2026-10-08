@@ -1,0 +1,76 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Boarding Pass SD-JWT VC claims",
+    "description": "Claims of the Boarding Pass SD-JWT VC (EAA profile), before selective-disclosure encoding and signing.",
+    "type": "object",
+    "properties": {
+        "vct": {
+            "type": "string",
+            "description": "Verifiable credential type.",
+            "const": "urn:mynextid:boarding-pass:2"
+        },
+        "iss": {
+            "type": "string",
+            "description": "Issuer identifier. Set from meta.issuer.",
+            "format": "uri"
+        },
+        "iat": {
+            "type": "integer",
+            "description": "Issuance time (NumericDate). Set by the issuer when signing."
+        },
+        "nbf": {
+            "type": "integer",
+            "description": "Not valid before (NumericDate). Set by the issuer when signing."
+        },
+        "exp": {
+            "type": "integer",
+            "description": "Expiry (NumericDate). Set by the issuer when signing."
+        },
+        "cnf": {
+            "type": "object",
+            "description": "Holder key binding. Set by the issuer when signing."
+        },
+        "status": {
+            "type": "object",
+            "description": "Status list reference. Set by the issuer when signing."
+        },
+        "full_name": {
+            "type": "string",
+            "description": "Full name of the passenger."
+        },
+        "flight_number": {
+            "type": "string",
+            "description": "Flight number."
+        },
+        "flight_date": {
+            "type": "string",
+            "description": "Date of the flight.",
+            "format": "date-time"
+        },
+        "boarding_time": {
+            "type": "string",
+            "description": "Scheduled boarding time."
+        },
+        "departure_airport": {
+            "type": "string",
+            "description": "Departure airport."
+        },
+        "arrival_airport": {
+            "type": "string",
+            "description": "Arrival airport."
+        },
+        "gate": {
+            "type": "string",
+            "description": "Boarding gate."
+        },
+        "seat": {
+            "type": "string",
+            "description": "Seat number."
+        }
+    },
+    "required": [
+        "vct",
+        "iss",
+        "full_name"
+    ]
+}

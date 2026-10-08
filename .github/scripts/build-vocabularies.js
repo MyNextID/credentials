@@ -31,6 +31,9 @@ const VOCABULARIES = {
     assessmentType: { xsd: "europass-learning-assessment-types" },
     creditSystem: { xsd: "credit-points" },
     eqf: { xsd: "eqf" },
+    entitlementType: { xsd: "europass-learning-entitlement-types" },
+    entitlementStatus: { xsd: "europass-learning-entitlement-statuses" },
+    learningActivityType: { xsd: "europass-learning-activity-types" },
     supervision: { scheme: "http://data.europa.eu/snb/supervision-verification/25831c2" },
 };
 
@@ -75,6 +78,12 @@ async function fromSparql(scheme) {
         }
         fs.writeFileSync(path.join(OUT, `${name}.json`), JSON.stringify(table, null, 4) + "\n");
         console.log(`${name}: ${Object.keys(table).length} concepts`);
+        // Formats without linked data (SD-JWT VC) use the ISO 3166-1 alpha-3 code, the last segment of the URI.
+        if (name === "country") {
+            const codes = Object.fromEntries(Object.entries(table).map(([label, c]) => [label, c.id.split("/").pop()]));
+            fs.writeFileSync(path.join(OUT, "countryCode.json"), JSON.stringify(codes, null, 4) + "\n");
+            console.log(`countryCode: ${Object.keys(codes).length} codes`);
+        }
     }
 })().catch((e) => {
     console.error(e.message);

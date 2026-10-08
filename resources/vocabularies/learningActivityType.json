@@ -1,0 +1,123 @@
+{
+    "apprenticeship": {
+        "id": "http://data.europa.eu/snb/learning-activity/d46a826a39",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/learning-activity/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "apprenticeship"
+        }
+    },
+    "classroom coursework": {
+        "id": "http://data.europa.eu/snb/learning-activity/ff436ea7c9",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/learning-activity/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "classroom coursework"
+        }
+    },
+    "e-learning coursework": {
+        "id": "http://data.europa.eu/snb/learning-activity/bf2e3a7bae",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/learning-activity/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "e-learning coursework"
+        }
+    },
+    "educational programme": {
+        "id": "http://data.europa.eu/snb/learning-activity/fd33e234ae",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/learning-activity/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "educational programme"
+        }
+    },
+    "internship": {
+        "id": "http://data.europa.eu/snb/learning-activity/bf5588ff84",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/learning-activity/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "internship"
+        }
+    },
+    "job experience": {
+        "id": "http://data.europa.eu/snb/learning-activity/4357e0e681",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/learning-activity/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "job experience"
+        }
+    },
+    "lab / simulation / practice coursework": {
+        "id": "http://data.europa.eu/snb/learning-activity/3c8bd58d62",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/learning-activity/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "lab / simulation / practice coursework"
+        }
+    },
+    "research": {
+        "id": "http://data.europa.eu/snb/learning-activity/a7e556215a",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/learning-activity/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "research"
+        }
+    },
+    "self-motivated study": {
+        "id": "http://data.europa.eu/snb/learning-activity/b660f5dcea",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/learning-activity/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "self-motivated study"
+        }
+    },
+    "volunteering": {
+        "id": "http://data.europa.eu/snb/learning-activity/59eaf34fab",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/learning-activity/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "volunteering"
+        }
+    },
+    "workshop, seminar or conference": {
+        "id": "http://data.europa.eu/snb/learning-activity/efff75e10a",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/learning-activity/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "workshop, seminar or conference"
+        }
+    }
+}

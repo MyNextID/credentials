@@ -1,0 +1,24 @@
+{
+    "actual": {
+        "id": "http://data.europa.eu/snb/entitlement-status/b7015a8a8c",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/entitlement-status/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "actual"
+        }
+    },
+    "prospective": {
+        "id": "http://data.europa.eu/snb/entitlement-status/5b8d6b34fb",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/entitlement-status/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "prospective"
+        }
+    }
+}

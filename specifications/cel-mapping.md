@@ -1,6 +1,6 @@
 # CEL in credential maps and input fields
 
-> **Status:** proof of concept. These maps use it: `mobile-driving-licence/v1` (mdoc), every `edc/w3c-vc` map, and `microcredential/v1` (`open-badge/w3c-vc`). The PID and age-verification maps still use the older format.
+> **Status:** proof of concept. These maps use it: `mobile-driving-licence/v1` (mdoc), every `edc/w3c-vc` map, `microcredential/v1` (`open-badge/w3c-vc`), and the v2 `eaa/sd-jwt-vc` maps of visa and boarding-pass. The PID and age-verification maps still use the older format.
 
 This adds [CEL (Common Expression Language)](https://cel.dev) in two places:
 
@@ -42,7 +42,7 @@ The key is a JSON pointer into the output credential. The value is a CEL express
 |---|---|
 | `input` | The input fields, shaped like `input-fields/example.json` |
 | `meta` | Values the issuer supplies at issuance, shaped for the profile (see [Issuance metadata](#issuance-metadata)) |
-| `vocab` | Controlled-vocabulary tables from [`resources/vocabularies`](../resources/vocabularies): `vocab.<table>[<English label>]` returns a full `Concept` node |
+| `vocab` | Controlled-vocabulary tables from [`resources/vocabularies`](../resources/vocabularies): `vocab.<table>[<English label>]` returns a full `Concept` node. `vocab.countryCode[<label>]` returns the ISO 3166-1 alpha-3 code, for formats without linked data |
 | `translations` | The type's `translations/<lang>.json` `credential` values, by language: `translations.title` is `{"en": "Degree Certificate", …}` |
 | `now` | Issuance time as an RFC 3339 string, e.g. `2026-01-01T00:00:00Z` |
 | `uuid()` | A new random UUID string on every call, for node ids such as `'urn:epass:note:' + uuid()` |
@@ -73,6 +73,7 @@ The base map applies to CEL maps only.
 |---|---|
 | `edc/w3c-vc` | `issuer`, `awardingBody` (EDC `Organisation` nodes; the issuer needs an `eIDASIdentifier`), `primaryLanguage` (`en`), `recipientEmail`, `validFrom`, `validUntil`, `preview` (`{format, pages: [{page, content}]}`, the rendered pages as base64) |
 | `open-badge/w3c-vc` | `issuer`, `awardingBody` (OB `Profile` objects), `primaryLanguage`, `recipientIdentity` (a hashed OB `IdentityObject`), `validFrom`, `validUntil` |
+| `eaa/sd-jwt-vc` | `issuer` (the issuer URL, used as `iss`), `primaryLanguage` |
 | `iso-18013-5/mdoc` | `issueDate`, `expiryDate`, `issuingCountry`, `issuingAuthority`, `documentNumber` |
 
 Organisation nodes come from onboarding with stable ids, so the map places them and does not rebuild them. For testing, `meta` is `profiles/<profile>/<format>/examples/issuance-meta.json` merged with the format folder's own `examples/issuance-meta.json`, if there is one.
@@ -124,6 +125,7 @@ The runner uses [`@marcbachmann/cel-js`](https://www.npmjs.com/package/@marcbach
 
 ## Open questions
 
-- Eight EDC types (boarding-pass, visa, student-id, degree-certificate, matriculation, confirmation-of-enrolment, certificate-of-participation-in-summer-school, certificate-of-advanced-study) carry type-specific fields that are not in the ELM context (`studentNumber`, `degreeProgramme`, `flightInformation`, `visaNumber`, …). Should they be remodelled onto ELM properties, or described by a published extension context?
+- The v1 EDC maps of eight types (boarding-pass, visa, student-id, degree-certificate, matriculation, confirmation-of-enrolment, certificate-of-participation-in-summer-school, certificate-of-advanced-study) carry fields that are not in the ELM context (`studentNumber`, `degreeProgramme`, `flightInformation`, `visaNumber`, …). v2 of these types fixes this: the six learning types are modelled on ELM, and visa and boarding-pass move to `eaa/sd-jwt-vc`. When can v1 be retired?
+- The SD-JWT VC `vct` values (`urn:mynextid:visa:2`, `urn:mynextid:boarding-pass:2`) are placeholders. Should they be resolvable URLs with SD-JWT VC type metadata?
 - Should the PID and age-verification maps be converted too?
 - Should the per-format `examples/*-example.json` files be regenerated from the maps?

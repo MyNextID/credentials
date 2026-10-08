@@ -27,3 +27,7 @@ Europass Digital Credentials (European Learning Model, ELM 3). Validation runs o
 ## open-badge/w3c-vc
 
 Open Badges 3.0. Only the JSON Schema of each format folder is checked, no JSON-LD or SHACL.
+
+## eaa/sd-jwt-vc
+
+Electronic Attestations of Attributes as SD-JWT VC. The base map only sets `iss` from `meta.issuer`. Only the JSON Schema of each format folder is checked. The issuer adds `iat`, `nbf`, `exp`, `cnf` and `status` and the selective-disclosure encoding when it signs.

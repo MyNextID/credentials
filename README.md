@@ -39,6 +39,7 @@ This table shows which verifiable credential profiles support each credential ty
 | Credential Type                               | [edc](/specifications/profiles.md#edc-european-digital-credential-for-learning)   | [open-badge](/specifications/profiles.md#open-badge)  | [eaa](/specifications/profiles.md#eaa-electronic-attestation-of-attributes)   | [qeaa](/specifications/profiles.md#qeaa-qualified-electronic-attestation-of-attributes)  | [pub-eaa](/specifications/profiles.md#pub-eaa-public-body-electronic-attestation-of-attributes) | [iso-18013-5](/specifications/profiles.md#iso-18013-5)  | [eudi.av](/specifications/profiles.md#eudiav-eu-age-verification) | [eudi.pid](/specifications/profiles.md#eudipid-person-identification-data) |
 |-----------------------------------------------|-----|------------|-----|------|---------|-------------|---------|----------|
 | [age-verification](/credential-definitions/age-verification)                         |     |            | 🟨 | 🟨 | 🟨 |     | ✅ |     |
+| [boarding-pass](/credential-definitions/boarding-pass/) | ✅¹  |            | ✅² | 🟨 | 🟨 |     |     |     |
 | [certificate-of-advanced-study](/credential-definitions/certificate-of-advanced-study/)                  | ✅  |            | 🟨 | 🟨 | 🟨 |     |     |     |
 | [certificate-of-attendance](/credential-definitions/certificate-of-attendance/)                       | ✅  |            | 🟨 | 🟨 | 🟨 |     |     |     |
 | [certificate-of-participation-in-summer-school](/credential-definitions/certificate-of-participation-in-summer-school/) | ✅  |            | 🟨 | 🟨 | 🟨 |     |     |     |
@@ -49,11 +50,14 @@ This table shows which verifiable credential profiles support each credential ty
 | [mobile-driving-licence](/credential-definitions/mobile-driving-licence/)                           |     |            | 🟨 | 🟨 | 🟨 | ✅  |     |     |
 | [personal-id](/credential-definitions/personal-id/)                                     |     |            | 🟨 | 🟨 | 🟨 | ✅  |     | ✅  |
 | [student-id](/credential-definitions/student-id/)                                      | ✅  |            | 🟨 | 🟨 | 🟨 |     |     |     |
+| [visa](/credential-definitions/visa/)            | ✅¹  |            | ✅² | 🟨 | 🟨 |     |     |     |
 
 **Legend:**  
 
 - ✅ Already implemented in this repository
 - 🟨 Supported in the ecosystem but not yet in this repository
+- ¹ v1 only. Visa and boarding pass are not learning credentials, so v2 drops EDC.
+- ² v2, as an SD-JWT VC.
 
 ## Education Credentials
 

@@ -1,0 +1,13 @@
+{
+    "fullName": {
+        "en":"John Doe"     
+    },
+    "dateOfBirth":"1990-01-01T00:00:00Z",
+    "placeOfBirth":{
+        "en": "Slovenia"
+    }, "fullAddress":{
+        "en": "A Great Address 2, 2025 Spicetown"
+    },"programmeTitle": {
+        "en": "Master of science eth in electrical engineering and information technology"
+    }, "studentNumber": "12-345-678"
+}

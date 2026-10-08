@@ -1,0 +1,10 @@
+{
+    "fullName": "Full name",
+    "flightNumber": "Flight number",
+    "date": "Date",
+    "boardingTime": "Boarding time",
+    "locationFrom": "Location from",
+    "locationTo": "Location to",
+    "gateNumber" : "Gate number",
+    "seatNumber":  "Seat number"
+}

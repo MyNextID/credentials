@@ -1,0 +1,92 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Visa SD-JWT VC claims",
+    "description": "Claims of the Visa SD-JWT VC (EAA profile), before selective-disclosure encoding and signing.",
+    "type": "object",
+    "properties": {
+        "vct": {
+            "type": "string",
+            "description": "Verifiable credential type.",
+            "const": "urn:mynextid:visa:2"
+        },
+        "iss": {
+            "type": "string",
+            "description": "Issuer identifier. Set from meta.issuer.",
+            "format": "uri"
+        },
+        "iat": {
+            "type": "integer",
+            "description": "Issuance time (NumericDate). Set by the issuer when signing."
+        },
+        "nbf": {
+            "type": "integer",
+            "description": "Not valid before (NumericDate). Set by the issuer when signing."
+        },
+        "exp": {
+            "type": "integer",
+            "description": "Expiry (NumericDate). Set by the issuer when signing."
+        },
+        "cnf": {
+            "type": "object",
+            "description": "Holder key binding. Set by the issuer when signing."
+        },
+        "status": {
+            "type": "object",
+            "description": "Status list reference. Set by the issuer when signing."
+        },
+        "full_name": {
+            "type": "string",
+            "description": "Full name of the visa holder."
+        },
+        "date_of_birth": {
+            "type": "string",
+            "description": "Date of birth.",
+            "format": "date-time"
+        },
+        "nationality": {
+            "type": "string",
+            "description": "Nationality as an ISO 3166-1 alpha-3 code.",
+            "pattern": "^[A-Z]{3}$"
+        },
+        "passport_number": {
+            "type": "string",
+            "description": "Passport number."
+        },
+        "visa_number": {
+            "type": "string",
+            "description": "Visa number."
+        },
+        "type_of_visa": {
+            "type": "string",
+            "description": "Type of visa, e.g. Tourist Visa."
+        },
+        "entry_type": {
+            "type": "string",
+            "description": "Entry type, e.g. Single Entry."
+        },
+        "place_of_issue": {
+            "type": "string",
+            "description": "Place where the visa was issued."
+        },
+        "duration_of_stay": {
+            "type": "string",
+            "description": "Permitted duration of stay (ISO 8601 duration).",
+            "format": "duration"
+        },
+        "date_of_issuance": {
+            "type": "string",
+            "description": "Date the visa was issued.",
+            "format": "date-time"
+        },
+        "date_of_expiry": {
+            "type": "string",
+            "description": "Date the visa expires.",
+            "format": "date-time"
+        }
+    },
+    "required": [
+        "vct",
+        "iss",
+        "full_name"
+    ]
+}

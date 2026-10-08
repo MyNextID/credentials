@@ -1,0 +1,35 @@
+{
+    "learning opportunity": {
+        "id": "http://data.europa.eu/snb/entitlement/64aad92881",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/entitlement/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "learning opportunity"
+        }
+    },
+    "membership": {
+        "id": "http://data.europa.eu/snb/entitlement/bebd32e8e6",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/entitlement/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "membership"
+        }
+    },
+    "occupation": {
+        "id": "http://data.europa.eu/snb/entitlement/52f62180c2",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/entitlement/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "occupation"
+        }
+    }
+}
