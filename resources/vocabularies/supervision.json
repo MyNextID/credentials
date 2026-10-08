@@ -1,0 +1,46 @@
+{
+    "Supervised with ID Verification": {
+        "id": "http://data.europa.eu/snb/supervision-verification/70be69aaf9",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/supervision-verification/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Supervised with ID Verification"
+        }
+    },
+    "Supervised without ID Verification": {
+        "id": "http://data.europa.eu/snb/supervision-verification/44314532f9",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/supervision-verification/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Supervised without ID Verification"
+        }
+    },
+    "Unsupervised with ID Verification": {
+        "id": "http://data.europa.eu/snb/supervision-verification/df2880c5cb",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/supervision-verification/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Unsupervised with ID Verification"
+        }
+    },
+    "Unsupervised without ID Verification": {
+        "id": "http://data.europa.eu/snb/supervision-verification/c598449d64",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://data.europa.eu/snb/supervision-verification/25831c2",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Unsupervised without ID Verification"
+        }
+    }
+}

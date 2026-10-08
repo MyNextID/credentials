@@ -1,0 +1,266 @@
+{
+    "bg": {
+        "id": "http://publications.europa.eu/resource/authority/language/BUL",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Bulgarian"
+        }
+    },
+    "cs": {
+        "id": "http://publications.europa.eu/resource/authority/language/CES",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Czech"
+        }
+    },
+    "da": {
+        "id": "http://publications.europa.eu/resource/authority/language/DAN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Danish"
+        }
+    },
+    "de": {
+        "id": "http://publications.europa.eu/resource/authority/language/DEU",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "German"
+        }
+    },
+    "el": {
+        "id": "http://publications.europa.eu/resource/authority/language/ELL",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Greek"
+        }
+    },
+    "en": {
+        "id": "http://publications.europa.eu/resource/authority/language/ENG",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "English"
+        }
+    },
+    "es": {
+        "id": "http://publications.europa.eu/resource/authority/language/SPA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Spanish"
+        }
+    },
+    "et": {
+        "id": "http://publications.europa.eu/resource/authority/language/EST",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Estonian"
+        }
+    },
+    "fi": {
+        "id": "http://publications.europa.eu/resource/authority/language/FIN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Finnish"
+        }
+    },
+    "fr": {
+        "id": "http://publications.europa.eu/resource/authority/language/FRA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "French"
+        }
+    },
+    "ga": {
+        "id": "http://publications.europa.eu/resource/authority/language/GLE",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Irish"
+        }
+    },
+    "hr": {
+        "id": "http://publications.europa.eu/resource/authority/language/HRV",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Croatian"
+        }
+    },
+    "hu": {
+        "id": "http://publications.europa.eu/resource/authority/language/HUN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Hungarian"
+        }
+    },
+    "it": {
+        "id": "http://publications.europa.eu/resource/authority/language/ITA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Italian"
+        }
+    },
+    "lt": {
+        "id": "http://publications.europa.eu/resource/authority/language/LIT",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Lithuanian"
+        }
+    },
+    "lv": {
+        "id": "http://publications.europa.eu/resource/authority/language/LAV",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Latvian"
+        }
+    },
+    "mt": {
+        "id": "http://publications.europa.eu/resource/authority/language/MLT",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Maltese"
+        }
+    },
+    "nl": {
+        "id": "http://publications.europa.eu/resource/authority/language/NLD",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Dutch"
+        }
+    },
+    "pl": {
+        "id": "http://publications.europa.eu/resource/authority/language/POL",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Polish"
+        }
+    },
+    "pt": {
+        "id": "http://publications.europa.eu/resource/authority/language/POR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Portuguese"
+        }
+    },
+    "ro": {
+        "id": "http://publications.europa.eu/resource/authority/language/RON",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Romanian"
+        }
+    },
+    "sk": {
+        "id": "http://publications.europa.eu/resource/authority/language/SLK",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Slovak"
+        }
+    },
+    "sl": {
+        "id": "http://publications.europa.eu/resource/authority/language/SLV",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Slovenian"
+        }
+    },
+    "sv": {
+        "id": "http://publications.europa.eu/resource/authority/language/SWE",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/language",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Swedish"
+        }
+    }
+}

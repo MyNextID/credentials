@@ -10,5 +10,6 @@
     "achievementTitle": "Achievement title",
     "hoursOfLearning": "Hours of learning",
     "nationalId": "National ID",
+    "nationalIdCountry": "National ID country",
     "awardingStatement": "Awarding statement"
 }

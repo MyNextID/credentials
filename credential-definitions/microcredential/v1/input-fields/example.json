@@ -12,7 +12,7 @@
         "en": "Supervised with ID Verification"
     },
     "type":{
-        "en": "Graded exercises"
+        "en": "written examination"
     },
     "mode":{
         "en": "Online"
@@ -26,6 +26,9 @@
     },
     "hoursOfLearning":"PT60H",
     "nationalId":"12345",
+    "nationalIdCountry":{
+        "en": "Slovenia"
+    },
     "awardingStatement":{
         "en": "is awarded to"
     }

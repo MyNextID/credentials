@@ -10,5 +10,6 @@
     "achievementTitle": "education-qualifications",
     "hoursOfLearning": "education-qualifications",
     "nationalId": "identity-profile",
+    "nationalIdCountry": "identity-profile",
     "awardingStatement": "education-qualifications"
 }

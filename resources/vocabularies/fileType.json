@@ -1,0 +1,1597 @@
+{
+    "7z": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/7Z",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "7z"
+        }
+    },
+    "AAB": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/AAB",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "AAB"
+        }
+    },
+    "AAC": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/AAC",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "AAC"
+        }
+    },
+    "Amazon Kindle eBook": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/AZW",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Amazon Kindle eBook"
+        }
+    },
+    "APK": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/APK",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "APK"
+        }
+    },
+    "AppX": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/APPX",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "AppX"
+        }
+    },
+    "ARC": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/ARC",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "ARC"
+        }
+    },
+    "ARJ": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/ARJ",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "ARJ"
+        }
+    },
+    "Atom Feed": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/ATOM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Atom Feed"
+        }
+    },
+    "Binary Data": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/BIN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Binary Data"
+        }
+    },
+    "Bitmap Image File": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/BMP",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Bitmap Image File"
+        }
+    },
+    "BITS XML": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/BITS",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "BITS XML"
+        }
+    },
+    "BWF": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/BWF",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "BWF"
+        }
+    },
+    "bzip2": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/BZIP2",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "bzip2"
+        }
+    },
+    "Compressed LAS file": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/LAZ",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Compressed LAS file"
+        }
+    },
+    "CSS": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/CSS",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "CSS"
+        }
+    },
+    "CSV": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/CSV",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "CSV"
+        }
+    },
+    "DAPK": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/DAPK",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "DAPK"
+        }
+    },
+    "DBF": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/DBF",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "DBF"
+        }
+    },
+    "DCR File": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/DCR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "DCR File"
+        }
+    },
+    "deb": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/DEB",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "deb"
+        }
+    },
+    "DGN": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/DGN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "DGN"
+        }
+    },
+    "DMG": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/DMG",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "DMG"
+        }
+    },
+    "DWG": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/DWG",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "DWG"
+        }
+    },
+    "DXF": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/DXF",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "DXF"
+        }
+    },
+    "E00": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/E00",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "E00"
+        }
+    },
+    "EAR": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/EAR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "EAR"
+        }
+    },
+    "ECW": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/ECW",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "ECW"
+        }
+    },
+    "Encapsulated Postscript": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/EPS",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Encapsulated Postscript"
+        }
+    },
+    "EPUB": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/EPUB",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "EPUB"
+        }
+    },
+    "Esri binary grid": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/GRID",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Esri binary grid"
+        }
+    },
+    "Esri File Geodatabase": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/GDB",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Esri File Geodatabase"
+        }
+    },
+    "Esri REST": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/REST",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Esri REST"
+        }
+    },
+    "Esri Shape": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/SHP",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Esri Shape"
+        }
+    },
+    "Excel XLS": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/XLS",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Excel XLS"
+        }
+    },
+    "Excel XLSX": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/XLSX",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Excel XLSX"
+        }
+    },
+    "EXE": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/EXE",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "EXE"
+        }
+    },
+    "Formex 4": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/FMX4",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Formex 4"
+        }
+    },
+    "GeoPackage": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/GPKG",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "GeoPackage"
+        }
+    },
+    "GIF": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/GIF",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "GIF"
+        }
+    },
+    "GML": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/GML",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "GML"
+        }
+    },
+    "GNU zip": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/GZIP",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "GNU zip"
+        }
+    },
+    "GTFS": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/GTFS",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "GTFS"
+        }
+    },
+    "HDF": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/HDF",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "HDF"
+        }
+    },
+    "HDT": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/HDT",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "HDT"
+        }
+    },
+    "HTML": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/HTML",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "HTML"
+        }
+    },
+    "HTML5": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/HTML5",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "HTML5"
+        }
+    },
+    "ICalendar": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/ICS",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "ICalendar"
+        }
+    },
+    "INDD": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/INDD",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "INDD"
+        }
+    },
+    "IPA": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/IPA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "IPA"
+        }
+    },
+    "ISO image": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/ISO",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "ISO image"
+        }
+    },
+    "JAR": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/JAR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "JAR"
+        }
+    },
+    "JATS XML": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/JATS",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "JATS XML"
+        }
+    },
+    "JavaScript": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/JS",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "JavaScript"
+        }
+    },
+    "JPEG": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/JPEG",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "JPEG"
+        }
+    },
+    "JSON": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/JSON",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "JSON"
+        }
+    },
+    "KML": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/KML",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "KML"
+        }
+    },
+    "KMZ": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/KMZ",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "KMZ"
+        }
+    },
+    "LASer file": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/LAS",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "LASer file"
+        }
+    },
+    "Layer package": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/LPK",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Layer package"
+        }
+    },
+    "LHA": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/LHA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "LHA"
+        }
+    },
+    "lzip": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/LZIP",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "lzip"
+        }
+    },
+    "lzma": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/LZMA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "lzma"
+        }
+    },
+    "lzo": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/LZO",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "lzo"
+        }
+    },
+    "MapInfo TAB file": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/TAB",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "MapInfo TAB file"
+        }
+    },
+    "MBOX": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/MBOX",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "MBOX"
+        }
+    },
+    "MDB": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/MDB",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "MDB"
+        }
+    },
+    "METS XML": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/METS",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "METS XML"
+        }
+    },
+    "MHTML": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/MHTML",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "MHTML"
+        }
+    },
+    "Mobipocket eBook": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/MOBI",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Mobipocket eBook"
+        }
+    },
+    "MOP": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/MOP",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "MOP"
+        }
+    },
+    "MP3": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/MP3",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "MP3"
+        }
+    },
+    "MPEG-2": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/MPEG2",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "MPEG-2"
+        }
+    },
+    "MPEG-4": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/MPEG4",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "MPEG-4"
+        }
+    },
+    "MrSID": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/MRSID",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "MrSID"
+        }
+    },
+    "MSI": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/MSI",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "MSI"
+        }
+    },
+    "MXD": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/MXD",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "MXD"
+        }
+    },
+    "N3": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/N3",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "N3"
+        }
+    },
+    "OAPK": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/OAPK",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "OAPK"
+        }
+    },
+    "Octet Stream": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/OCTET",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Octet Stream"
+        }
+    },
+    "ODF": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/ODF",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "ODF"
+        }
+    },
+    "ODP": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/ODP",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "ODP"
+        }
+    },
+    "ODS": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/ODS",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "ODS"
+        }
+    },
+    "ODT": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/ODT",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "ODT"
+        }
+    },
+    "OpenDocument Chart": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/ODC",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "OpenDocument Chart"
+        }
+    },
+    "OpenDocument Database": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/ODB",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "OpenDocument Database"
+        }
+    },
+    "OpenDocument Image": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/ODG",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "OpenDocument Image"
+        }
+    },
+    "Oracle Dump": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/DMP",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Oracle Dump"
+        }
+    },
+    "OVF": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/OVF",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "OVF"
+        }
+    },
+    "OWL": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/OWL",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "OWL"
+        }
+    },
+    "PDF": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/PDF",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "PDF"
+        }
+    },
+    "PDF/UA": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/PDFUA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "PDF/UA"
+        }
+    },
+    "PDF/X": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/PDFX",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "PDF/X"
+        }
+    },
+    "PDF/X-4": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/PDFX4",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "PDF/X-4"
+        }
+    },
+    "PDF1X": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/PDF1X",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "PDF1X"
+        }
+    },
+    "PDFA-3": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/PDFA3",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "PDFA-3"
+        }
+    },
+    "Perl script": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/PL",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Perl script"
+        }
+    },
+    "Plain text": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/TXT",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Plain text"
+        }
+    },
+    "PNG": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/PNG",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "PNG"
+        }
+    },
+    "PowerPoint PPSX": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/PPSX",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "PowerPoint PPSX"
+        }
+    },
+    "PowerPoint PPT": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/PPT",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "PowerPoint PPT"
+        }
+    },
+    "PowerPoint PPTX": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/PPTX",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "PowerPoint PPTX"
+        }
+    },
+    "PowerPoint Slide Show": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/PPS",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "PowerPoint Slide Show"
+        }
+    },
+    "PS": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/PS",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "PS"
+        }
+    },
+    "PSD": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/PSD",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "PSD"
+        }
+    },
+    "PWP": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/PWP",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "PWP"
+        }
+    },
+    "QGS": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/QGS",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "QGS"
+        }
+    },
+    "RAR": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/RAR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "RAR"
+        }
+    },
+    "RDF": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/RDF",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "RDF"
+        }
+    },
+    "RDFa": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/RDFA",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "RDFa"
+        }
+    },
+    "RPM": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/RPM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "RPM"
+        }
+    },
+    "RSS feed": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/RSS",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "RSS feed"
+        }
+    },
+    "RTF": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/RTF",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "RTF"
+        }
+    },
+    "sb3": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/SB3",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "sb3"
+        }
+    },
+    "SDMX": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/SDMX",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "SDMX"
+        }
+    },
+    "SGML": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/SGML",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "SGML"
+        }
+    },
+    "SQL": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/SQL",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "SQL"
+        }
+    },
+    "StL": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/STL",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "StL"
+        }
+    },
+    "SVG": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/SVG",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "SVG"
+        }
+    },
+    "SWM": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/SWM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "SWM"
+        }
+    },
+    "TAR": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/TAR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "TAR"
+        }
+    },
+    "TIFF": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/TIFF",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "TIFF"
+        }
+    },
+    "TMX": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/TMX",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "TMX"
+        }
+    },
+    "TSV": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/TSV",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "TSV"
+        }
+    },
+    "Ungen": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/UNGEN",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Ungen"
+        }
+    },
+    "WAR": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/WAR",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "WAR"
+        }
+    },
+    "WARC": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/WARC",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "WARC"
+        }
+    },
+    "WAV": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/WAV",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "WAV"
+        }
+    },
+    "WIM": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/WIM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "WIM"
+        }
+    },
+    "Word DOC": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/DOC",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Word DOC"
+        }
+    },
+    "Word DOCX": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/DOCX",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Word DOCX"
+        }
+    },
+    "World file": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/WORLD",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "World file"
+        }
+    },
+    "XHTML": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/XHTML",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "XHTML"
+        }
+    },
+    "XLIFF": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/XLIFF",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "XLIFF"
+        }
+    },
+    "XLSB": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/XLSB",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "XLSB"
+        }
+    },
+    "XLSM": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/XLSM",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "XLSM"
+        }
+    },
+    "XML": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/XML",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "XML"
+        }
+    },
+    "XSL-FO": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/XSLFO",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "XSL-FO"
+        }
+    },
+    "XSLT": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/XSLT",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "XSLT"
+        }
+    },
+    "XYZ Chemical File": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/XYZ",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "XYZ Chemical File"
+        }
+    },
+    "xz": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/XZ",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "xz"
+        }
+    },
+    "YAML": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/YAML",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "YAML"
+        }
+    },
+    "Z": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/Z",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Z"
+        }
+    },
+    "ZIP": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/ZIP",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "ZIP"
+        }
+    },
+    "Zipped GML": {
+        "id": "http://publications.europa.eu/resource/authority/file-type/GMZ",
+        "type": "Concept",
+        "inScheme": {
+            "id": "http://publications.europa.eu/resource/authority/file-type",
+            "type": "ConceptScheme"
+        },
+        "prefLabel": {
+            "en": "Zipped GML"
+        }
+    }
+}

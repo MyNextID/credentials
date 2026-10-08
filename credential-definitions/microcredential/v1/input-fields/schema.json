@@ -127,6 +127,19 @@
             "description": "Notation or code for the legal identifier.",
             "type": "string"
         },
+        "nationalIdCountry":{
+            "title":"National ID country",
+            "description": "Country that issued the national ID, as an English country name from resources/vocabularies/country.json (e.g. Slovenia).",
+            "type": "object",
+            "x-format": "languageMap",
+            "patternProperties": {
+                "^[a-z]{2}$": {
+                    "type": "string",
+                    "description": "A string value for a specific language code."
+                }
+            },
+            "additionalProperties": false
+        },
         "awardingStatement":{
             "title":"Awarding Statement",
             "description": "The statement displayed on the credential indicating that it has been awarded to the recipient",
@@ -148,5 +161,11 @@
       "ectsPoints",
       "achievementTitle",
       "awardingStatement"
+    ],
+    "x-cel-rules": [
+        {
+            "rule": "!has(input.nationalId) || has(input.nationalIdCountry)",
+            "message": "nationalIdCountry is required when nationalId is set."
+        }
     ]
 }

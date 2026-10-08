@@ -1,0 +1,192 @@
+{
+    "primaryLanguage": "en",
+    "validUntil": "2031-01-01T00:00:00Z",
+    "recipientEmail": "recipient@example.com",
+    "issuer": {
+        "id": "urn:epass:org:8f1c2a4e-0000-4000-8000-00000000a001",
+        "type": "Organisation",
+        "legalName": {
+            "en": "Example Credential Services d.o.o."
+        },
+        "registration": {
+            "id": "urn:epass:legalIdentifier:8f1c2a4e-0000-4000-8000-00000000a001",
+            "type": "LegalIdentifier",
+            "notation": "1234567000",
+            "spatial": {
+                "id": "http://publications.europa.eu/resource/authority/country/SVN",
+                "type": "Concept",
+                "inScheme": {
+                    "id": "http://publications.europa.eu/resource/authority/country",
+                    "type": "ConceptScheme"
+                },
+                "prefLabel": {
+                    "en": "Slovenia"
+                }
+            }
+        },
+        "location": {
+            "id": "urn:epass:location:8f1c2a4e-0000-4000-8000-00000000a001",
+            "type": "Location",
+            "address": {
+                "id": "urn:epass:address:8f1c2a4e-0000-4000-8000-00000000a001",
+                "type": "Address",
+                "countryCode": {
+                    "id": "http://publications.europa.eu/resource/authority/country/SVN",
+                    "type": "Concept",
+                    "inScheme": {
+                        "id": "http://publications.europa.eu/resource/authority/country",
+                        "type": "ConceptScheme"
+                    },
+                    "prefLabel": {
+                        "en": "Slovenia"
+                    }
+                },
+                "fullAddress": {
+                    "id": "urn:epass:note:8f1c2a4e-0000-4000-8000-00000000a001",
+                    "type": "Note",
+                    "noteLiteral": {
+                        "en": "Example Street 1, 1000 Ljubljana"
+                    }
+                }
+            }
+        },
+        "homepage": {
+            "id": "urn:epass:webResource:8f1c2a4e-0000-4000-8000-00000000a001",
+            "type": "WebResource",
+            "contentURL": "https://issuer.example.com"
+        },
+        "logo": {
+            "id": "urn:epass:mediaObject:8f1c2a4e-0000-4000-8000-00000000a001",
+            "type": "MediaObject",
+            "content": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGP4//8/AAX+Av4N70a4AAAAAElFTkSuQmCC",
+            "contentEncoding": {
+                "id": "http://data.europa.eu/snb/encoding/6146cde7dd",
+                "type": "Concept",
+                "inScheme": {
+                    "id": "http://data.europa.eu/snb/encoding/25831c2",
+                    "type": "ConceptScheme"
+                },
+                "prefLabel": {
+                    "en": "base64"
+                }
+            },
+            "contentType": {
+                "id": "http://publications.europa.eu/resource/authority/file-type/PNG",
+                "type": "Concept",
+                "inScheme": {
+                    "id": "http://publications.europa.eu/resource/authority/file-type",
+                    "type": "ConceptScheme"
+                },
+                "prefLabel": {
+                    "en": "PNG"
+                }
+            }
+        },
+        "eIDASIdentifier": {
+            "id": "urn:epass:eidasIdentifier:8f1c2a4e-0000-4000-8000-00000000a001",
+            "type": "LegalIdentifier",
+            "notation": "1234567000",
+            "spatial": {
+                "id": "http://publications.europa.eu/resource/authority/country/SVN",
+                "type": "Concept",
+                "inScheme": {
+                    "id": "http://publications.europa.eu/resource/authority/country",
+                    "type": "ConceptScheme"
+                },
+                "prefLabel": {
+                    "en": "Slovenia"
+                }
+            }
+        }
+    },
+    "awardingBody": {
+        "id": "urn:epass:org:8f1c2a4e-0000-4000-8000-00000000b001",
+        "type": "Organisation",
+        "legalName": {
+            "en": "Example University"
+        },
+        "registration": {
+            "id": "urn:epass:legalIdentifier:8f1c2a4e-0000-4000-8000-00000000b001",
+            "type": "LegalIdentifier",
+            "notation": "7654321000",
+            "spatial": {
+                "id": "http://publications.europa.eu/resource/authority/country/SVN",
+                "type": "Concept",
+                "inScheme": {
+                    "id": "http://publications.europa.eu/resource/authority/country",
+                    "type": "ConceptScheme"
+                },
+                "prefLabel": {
+                    "en": "Slovenia"
+                }
+            }
+        },
+        "location": {
+            "id": "urn:epass:location:8f1c2a4e-0000-4000-8000-00000000b001",
+            "type": "Location",
+            "address": {
+                "id": "urn:epass:address:8f1c2a4e-0000-4000-8000-00000000b001",
+                "type": "Address",
+                "countryCode": {
+                    "id": "http://publications.europa.eu/resource/authority/country/SVN",
+                    "type": "Concept",
+                    "inScheme": {
+                        "id": "http://publications.europa.eu/resource/authority/country",
+                        "type": "ConceptScheme"
+                    },
+                    "prefLabel": {
+                        "en": "Slovenia"
+                    }
+                },
+                "fullAddress": {
+                    "id": "urn:epass:note:8f1c2a4e-0000-4000-8000-00000000b001",
+                    "type": "Note",
+                    "noteLiteral": {
+                        "en": "University Square 1, 1000 Ljubljana"
+                    }
+                }
+            }
+        },
+        "homepage": {
+            "id": "urn:epass:webResource:8f1c2a4e-0000-4000-8000-00000000b001",
+            "type": "WebResource",
+            "contentURL": "https://university.example.com"
+        },
+        "logo": {
+            "id": "urn:epass:mediaObject:8f1c2a4e-0000-4000-8000-00000000b001",
+            "type": "MediaObject",
+            "content": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGP4//8/AAX+Av4N70a4AAAAAElFTkSuQmCC",
+            "contentEncoding": {
+                "id": "http://data.europa.eu/snb/encoding/6146cde7dd",
+                "type": "Concept",
+                "inScheme": {
+                    "id": "http://data.europa.eu/snb/encoding/25831c2",
+                    "type": "ConceptScheme"
+                },
+                "prefLabel": {
+                    "en": "base64"
+                }
+            },
+            "contentType": {
+                "id": "http://publications.europa.eu/resource/authority/file-type/PNG",
+                "type": "Concept",
+                "inScheme": {
+                    "id": "http://publications.europa.eu/resource/authority/file-type",
+                    "type": "ConceptScheme"
+                },
+                "prefLabel": {
+                    "en": "PNG"
+                }
+            }
+        }
+    },
+    "preview": {
+        "format": "PNG",
+        "pages": [
+            {
+                "page": 1,
+                "content": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVR4nGP4//8/AAX+Av4N70a4AAAAAElFTkSuQmCC"
+            }
+        ]
+    }
+}
