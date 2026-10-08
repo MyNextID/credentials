@@ -211,7 +211,7 @@
                     "description": "Credential title to display on frontend"
                 },
                 "individualDisplay": {
-                    "type": "object",
+                    "type": ["object", "array"],
                     "properties": {
                         "id": {
                             "type": "string",
@@ -223,7 +223,7 @@
                             "description": "Defines the type of object."
                         },
                         "displayDetail": {
-                            "type": "object",
+                            "type": ["object", "array"],
                             "properties": {
                                 "id": {
                                     "type": "string",
@@ -242,16 +242,46 @@
                                     "type": "integer"
                                 }
                             },
-                            "required": ["id", "type", "image"]
+                            "required": ["id", "type", "image"],
+                            "minItems": 1,
+                            "items": {
+                                "$ref": "#/definitions/displayParameter/properties/individualDisplay/properties/displayDetail"
+                            }
                         },
                         "language": {
-                            "$ref": "#/definitions/concept"
+                            "anyOf": [
+                                {
+                                    "$ref": "#/definitions/concept"
+                                },
+                                {
+                                    "type": "array",
+                                    "minItems": 1,
+                                    "items": {
+                                        "$ref": "#/definitions/concept"
+                                    }
+                                }
+                            ]
                         }
                     },
-                    "required": ["id", "type", "language", "displayDetail"]
+                    "required": ["id", "type", "language", "displayDetail"],
+                    "minItems": 1,
+                    "items": {
+                        "$ref": "#/definitions/displayParameter/properties/individualDisplay"
+                    }
                 },
                 "language": {
-                    "$ref": "#/definitions/concept"
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/concept"
+                        },
+                        {
+                            "type": "array",
+                            "minItems": 1,
+                            "items": {
+                                "$ref": "#/definitions/concept"
+                            }
+                        }
+                    ]
                 },
                 "primaryLanguage": {
                     "$ref": "#/definitions/concept"
@@ -393,6 +423,9 @@
                 },
                 "homepage": {
                     "$ref": "#/definitions/webResource"
+                },
+                "eIDASIdentifier": {
+                    "$ref": "#/definitions/organisation/properties/registration"
                 }
             },
             "required": ["id", "type", "location", "legalName"],
