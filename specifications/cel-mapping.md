@@ -112,6 +112,8 @@ npm run apply-map -- --write-examples   # regenerate examples/<profile>-<initial
 npm test                     # tests for the runner itself
 ```
 
+To try maps interactively, and to see each format signed and verified, use the [playground](../demo/README.md).
+
 For each format folder, the runner:
 
 1. validates `input-fields/example.json` against `input-fields/schema.json`, its `x-vocabulary` fields and its `x-cel-rules`

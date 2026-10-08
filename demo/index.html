@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CEL Mapping Playground · MyNextID</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Crect width='18' height='18' fill='%23010B48'/%3E%3Crect x='3.75' y='4.5' width='1.5' height='1.5' fill='%23fff'/%3E%3Crect x='8.25' y='4.5' width='4.5' height='1.5' fill='%23fff'/%3E%3Crect x='8.25' y='12' width='4.5' height='1.5' fill='%23fff'/%3E%3Crect x='12.75' y='6' width='1.5' height='6' fill='%23fff'/%3E%3Crect x='6.75' y='4.5' width='1.5' height='9' fill='%23fff'/%3E%3Crect x='3.75' y='7.5' width='1.5' height='6' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* MyNextID styling: navy ground, Poppins, square corners, pixel-square motif (mynext.id, verifier-ui tokens). */
+:root {
+  --navy: #010b48; --indigo: #343c6d; --indigo-700: #4a5596; --indigo-50: #f0f2ff; --indigo-100: #e6e9ff;
+  --blue: #4161ff; --amber: #ffba34; --lime: #90ff11; --lime-light: #ecffd6;
+  --bg: #f4f4f4; --panel: #fff; --text: #231f20; --heading: #010b48; --muted: #5f6573; --border: #c0c3c9; --rule: #e3e5ea;
+  --ok: #1f8922; --ok-bg: #ecffd6; --bad: #b3261e; --bad-bg: #fdecea; --accent: #4161ff; --code-bg: #f0f2ff;
+  --pressed-bg: #010b48; --pressed-text: #fff;
+  --sans: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #010b48; --panel: #07114f; --text: #e6e9ff; --heading: #fff; --muted: #9ea5d1; --border: #343c6d; --rule: #1d2662;
+    --ok: #90ff11; --ok-bg: rgba(144, 255, 17, .12); --bad: #ff8a80; --bad-bg: rgba(255, 138, 128, .12); --accent: #8ea2ff; --code-bg: #030c3c;
+    --pressed-bg: #fff; --pressed-text: #010b48; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.5 var(--sans); }
+header { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; padding: 14px 24px; background: var(--navy); color: #fff; border-bottom: 4px solid var(--amber); }
+.brand { display: flex; align-items: center; gap: 12px; }
+.brand .logo { flex: none; outline: 1px solid rgba(255,255,255,.6); }
+h1 { font-size: 17px; font-weight: 700; margin: 0; line-height: 1.2; color: #fff; }
+h1 .hl { background: linear-gradient(transparent 55%, var(--amber) 55%); color: #fff; padding: 0 2px; }
+.brand small { display: block; font-size: 11px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: #b9bfe4; }
+h2 { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--heading); margin: 0 0 10px; }
+h2::before { content: ""; display: inline-block; width: 8px; height: 8px; background: var(--blue); margin-right: 8px; vertical-align: 1px; }
+h2 code { text-transform: none; letter-spacing: 0; font-weight: 500; }
+h3 { font-size: 13px; font-weight: 600; color: var(--heading); margin: 18px 0 6px; }
+select, button { font: 500 13px var(--sans); color: inherit; background: var(--panel); border: 1px solid var(--border); border-radius: 0; padding: 6px 12px; }
+button { cursor: pointer; text-transform: uppercase; letter-spacing: .04em; font-weight: 600; font-size: 12px; }
+button:hover { border-color: var(--accent); }
+:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+header select { background: transparent; color: #fff; border-color: rgba(255,255,255,.6); max-width: 100%; }
+header select option { color: #231f20; }
+.seg { display: inline-flex; border: 1px solid var(--border); }
+.seg button { border: 0; background: transparent; }
+.seg button[aria-pressed="true"] { background: var(--pressed-bg); color: var(--pressed-text); }
+header .seg { border-color: rgba(255,255,255,.6); }
+header .seg button { color: #fff; }
+header .seg button[aria-pressed="true"] { background: #fff; color: var(--navy); }
+header .seg button:disabled { opacity: .45; cursor: not-allowed; }
+.status { margin-left: auto; font-weight: 700; font-size: 13px; padding: 6px 12px; text-transform: uppercase; letter-spacing: .04em; }
+.status.ok { color: var(--navy); background: var(--lime); }
+.status.bad { color: #fff; background: #b3261e; }
+main { display: grid; grid-template-columns: minmax(260px, 1fr) minmax(380px, 1.6fr) minmax(280px, 1.1fr); gap: 20px; padding: 20px 24px; }
+@media (max-width: 1100px) { main { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { header, main { padding-left: 16px; padding-right: 16px; } .status { margin-left: 0; } }
+section { background: var(--panel); border: 1px solid var(--border); padding: 16px; min-width: 0; }
+section + section { margin-top: 20px; }
+textarea, input.expr { width: 100%; font: 12px/1.45 var(--mono); color: var(--text); background: var(--code-bg); border: 1px solid var(--border); border-radius: 0; padding: 8px; }
+textarea { resize: vertical; }
+textarea.invalid, input.invalid { border-color: var(--bad); box-shadow: inset 3px 0 0 var(--bad); }
+.hint { color: var(--muted); font-size: 12px; margin: 6px 0 0; }
+.rule { border-top: 1px solid var(--rule); padding: 12px 0 0; margin-top: 12px; }
+.rule:first-of-type { border-top: 0; margin-top: 0; padding-top: 0; }
+.pill { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 8px; text-transform: uppercase; letter-spacing: .04em; }
+.pill.ok { color: var(--ok); background: var(--ok-bg); }
+.pill.bad { color: var(--bad); background: var(--bad-bg); }
+.pill.omit { color: var(--muted); background: var(--code-bg); }
+table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+td { padding: 7px 4px; border-top: 1px solid var(--rule); vertical-align: top; }
+td.ptr { width: 34%; font: 12px var(--mono); word-break: break-all; color: var(--muted); }
+td.ptr input { width: 100%; font: 12px var(--mono); color: var(--text); background: transparent; border: 1px dashed var(--border); border-radius: 0; padding: 2px 4px; }
+td.res { width: 30%; font: 12px var(--mono); word-break: break-word; }
+td.res .err { color: var(--bad); }
+tr.cel td.ptr { color: var(--text); box-shadow: inset 3px 0 0 var(--amber); padding-left: 8px; }
+pre { margin: 0; font: 12px/1.45 var(--mono); background: var(--code-bg); border: 1px solid var(--border); padding: 10px; overflow: auto; max-height: 70vh; }
+ul.errors { margin: 0 0 12px; padding-left: 18px; font: 12px var(--mono); color: var(--bad); }
+ul.errors:empty { display: none; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.toolbar h2 { margin: 0; }
+a { color: var(--accent); font-weight: 500; }
+code { font-family: var(--mono); font-size: .92em; }
+.mdoc-head { margin: 0 0 4px; }
+.mdoc-head strong { font-size: 16px; color: var(--heading); }
+.verifier { border: 1px solid var(--border); padding: 8px 10px; margin-bottom: 8px; }
+.verifier summary { cursor: pointer; display: flex; gap: 8px; align-items: center; }
+.verifier ul { margin: 8px 0 0; padding-left: 18px; font-size: 12px; }
+.verifier li.bad { color: var(--bad); }
+dl.kv { display: grid; grid-template-columns: max-content 1fr; gap: 2px 12px; margin: 0; font-size: 12px; }
+dl.kv dt { color: var(--muted); }
+dl.kv dd { margin: 0; font-family: var(--mono); word-break: break-word; }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <svg class="logo" width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><path d="M40 0H0V40H40V0Z" fill="#000"/><path d="M10.1209 5.34651V9.99984H9.18761V6.97317L7.94094 9.99984H7.23428L5.98094 6.97317V9.99984H5.04761V5.34651H6.10761L7.58761 8.80651L9.06761 5.34651H10.1209ZM15.077 5.34651L13.5037 8.37984V9.99984H12.5703V8.37984L10.9903 5.34651H12.0437L13.0437 7.47317L14.037 5.34651H15.077ZM21.7172 9.99984H20.7838L18.6705 6.80651V9.99984H17.7372V5.33984H18.6705L20.7838 8.53984V5.33984H21.7172V9.99984ZM24.2395 6.09984V7.26651H25.8062V8.00651H24.2395V9.23984H26.0062V9.99984H23.3062V5.33984H26.0062V6.09984H24.2395ZM29.9743 9.99984L28.9677 8.43317L28.0543 9.99984H27.001L28.4677 7.65317L26.981 5.34651H28.0543L29.061 6.90651L29.9677 5.34651H31.021L29.561 7.68651L31.0477 9.99984H29.9743ZM35.1913 5.34651V6.09984H33.9513V9.99984H33.018V6.09984H31.778V5.34651H35.1913Z" fill="#fff"/><path d="M11.6673 15H8.33398V18.3333H11.6673V15Z" fill="#fff"/><path d="M28.3337 15H18.3337V18.3333H28.3337V15Z" fill="#fff"/><path d="M28.3337 31.6665H18.3337V34.9998H28.3337V31.6665Z" fill="#fff"/><path d="M31.6671 18.3335H28.3337V31.6668H31.6671V18.3335Z" fill="#fff"/><path d="M18.3338 15H15.0005V35H18.3338V15Z" fill="#fff"/><path d="M11.6673 21.6665H8.33398V34.9998H11.6673V21.6665Z" fill="#fff"/></svg>
+    <div><small>MyNextID · Credentials</small><h1><span class="hl">CEL</span> mapping playground</h1></div>
+  </div>
+  <select id="format" aria-label="Credential format folder"></select>
+  <div class="seg" role="group" aria-label="Map source">
+    <button id="src-branch" aria-pressed="true">CEL map (PR)</button>
+    <button id="src-main" aria-pressed="false">Map on main</button>
+  </div>
+  <span id="status" class="status" role="status"></span>
+</header>
+
+<main>
+  <div>
+    <section>
+      <h2>Input fields</h2>
+      <textarea id="input" rows="16" wrap="off" spellcheck="false" aria-label="Input fields JSON"></textarea>
+      <p class="hint">Edit freely. Checked by <code>input-fields/schema.json</code>, its <code>x-vocabulary</code> fields and its <code>x-cel-rules</code>.</p>
+    </section>
+    <section>
+      <h2>Issuer-supplied (<code>meta</code>)</h2>
+      <textarea id="meta" rows="7" spellcheck="false" aria-label="Issuer-supplied meta JSON"></textarea>
+    </section>
+    <section>
+      <h2>Input rules (<code>x-cel-rules</code>)</h2>
+      <div id="rules"></div>
+      <p class="hint" id="no-rules" hidden>No rules for this type yet.</p>
+    </section>
+  </div>
+
+  <section>
+    <div class="toolbar">
+      <h2>Map: output pointer ← CEL</h2>
+      <span>
+        <button id="add">+ Add entry</button>
+        <button id="reset">Reset</button>
+      </span>
+    </div>
+    <p class="hint" id="legacy-note" hidden>This map is keyed by input field on main. It is shown as the copies it performs (<code>input.?field</code>).</p>
+    <table><tbody id="map"></tbody></table>
+  </section>
+
+  <section>
+    <h2>Validation</h2>
+    <ul class="errors" id="input-errors"></ul>
+    <ul class="errors" id="output-errors"></ul>
+    <ul class="hint" id="warnings"></ul>
+    <p class="hint" id="valid-note" hidden>The credential is valid against the format <code>schema.json</code>, and EDCs also against the ELM SHACL shapes.</p>
+    <div class="toolbar" style="margin-top:14px">
+      <h2 id="output-title">Credential (unsigned claim set)</h2>
+      <div class="seg" role="group" aria-label="Output view" id="view-seg" hidden>
+        <button id="view-claims" aria-pressed="true">Claim set</button>
+        <button id="view-mdoc" aria-pressed="false">Issued</button>
+      </div>
+    </div>
+    <pre id="output"></pre>
+    <div id="mdoc" hidden>
+      <p class="hint" id="mdoc-blocked" hidden></p>
+      <div id="mdoc-body">
+        <p class="mdoc-head"><strong id="mdoc-doctype"></strong><br><span class="hint" id="mdoc-size"></span></p>
+        <h3>Verification</h3>
+        <div id="verifiers"></div>
+        <h3>Mocked (issuer and wallet side)</h3>
+        <dl class="kv" id="mocked"></dl>
+        <p class="hint"><a href="/api/iaca.pem" download="playground-root.pem">Download the mock root certificate</a> to verify elsewhere.</p>
+        <h3 id="deliv-title"></h3>
+        <p class="hint" id="deliv-hint"></p>
+        <textarea id="mdoc-b64" rows="4" readonly spellcheck="false" aria-label="Issued credential"></textarea>
+        <p><button id="copy-b64">Copy</button> <button id="download-cbor">Download</button></p>
+        <h3 id="detail-title"></h3>
+        <pre id="mdoc-diag"></pre>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+const $ = (id) => document.getElementById(id);
+let format = null, source = "branch", timer = null;
+
+function parseJson(el) {
+  try { const v = JSON.parse(el.value); el.classList.remove("invalid"); return v; }
+  catch { el.classList.add("invalid"); return undefined; }
+}
+
+function brief(v) {
+  const s = JSON.stringify(v);
+  return s.length > 90 ? s.slice(0, 87) + "…" : s;
+}
+
+function renderMap(map) {
+  $("map").innerHTML = "";
+  for (const [pointer, expr] of Object.entries(map)) addRow(pointer, expr);
+}
+
+function addRow(pointer = "", expr = "") {
+  const tr = document.createElement("tr");
+  tr.innerHTML = `<td class="ptr"></td><td><input class="expr" spellcheck="false" aria-label="CEL expression"></td><td class="res"></td>`;
+  if (pointer) tr.querySelector(".ptr").textContent = pointer;
+  else tr.querySelector(".ptr").innerHTML = `<input placeholder="/path/in/output" aria-label="Output pointer">`;
+  tr.querySelector(".expr").value = expr;
+  tr.classList.toggle("cel", !/^input\.\??[A-Za-z0-9_]+$/.test(expr));
+  $("map").append(tr);
+  return tr;
+}
+
+function readMap() {
+  const map = {};
+  for (const tr of $("map").rows) {
+    const ptrInput = tr.querySelector(".ptr input");
+    const pointer = ptrInput ? ptrInput.value.trim() : tr.querySelector(".ptr").textContent;
+    const expr = tr.querySelector(".expr").value.trim();
+    tr.classList.toggle("cel", !/^input\.\??[A-Za-z0-9_]+$/.test(expr));
+    if (pointer.startsWith("/") && expr) map[pointer] = expr;
+  }
+  return map;
+}
+
+function renderRules(rules) {
+  $("rules").innerHTML = "";
+  $("no-rules").hidden = rules.length > 0;
+  for (const r of rules) {
+    const div = document.createElement("div");
+    div.className = "rule";
+    div.innerHTML = `<div class="toolbar"><span class="msg"></span><span class="pill"></span></div><textarea rows="3" spellcheck="false" aria-label="CEL rule"></textarea>`;
+    div.querySelector(".msg").textContent = r.message;
+    div.querySelector("textarea").value = r.rule;
+    div.dataset.message = r.message;
+    $("rules").append(div);
+  }
+}
+
+function readRules() {
+  return [...$("rules").children].map((d) => ({ rule: d.querySelector("textarea").value, message: d.dataset.message }));
+}
+
+function list(el, items) {
+  el.innerHTML = "";
+  for (const t of items) { const li = document.createElement("li"); li.textContent = t; el.append(li); }
+}
+
+async function load() {
+  const f = await (await fetch(`/api/format?dir=${encodeURIComponent($("format").value)}`)).json();
+  format = f;
+  $("src-main").disabled = !f.mainMap;
+  if (!f.mainMap) source = "branch";
+  $("src-branch").setAttribute("aria-pressed", source === "branch");
+  $("src-main").setAttribute("aria-pressed", source === "main");
+  $("input").value = JSON.stringify(f.input, null, 2);
+  $("meta").value = JSON.stringify(f.meta, null, 2);
+  renderRules(f.rules);
+  resetMap();
+}
+
+function resetMap() {
+  const map = source === "main" ? format.mainMap : format.map;
+  const isSame = JSON.stringify(format.mainMap) === JSON.stringify(format.map);
+  $("legacy-note").hidden = !(source === "main" || isSame);
+  renderMap(map);
+  evaluate();
+}
+
+async function evaluate() {
+  const input = parseJson($("input")), meta = parseJson($("meta"));
+  if (input === undefined || meta === undefined) return setStatus(false, "Invalid JSON");
+  const res = await fetch(`/api/build?dir=${encodeURIComponent($("format").value)}`, {
+    method: "POST", body: JSON.stringify({ input, meta, rules: readRules(), map: readMap() }),
+  });
+  const r = await res.json();
+  if (r.error) return setStatus(false, r.error);
+
+  const byPointer = new Map(r.entries.map((e) => [e.pointer, e]));
+  for (const tr of $("map").rows) {
+    const ptrInput = tr.querySelector(".ptr input");
+    const e = byPointer.get(ptrInput ? ptrInput.value.trim() : tr.querySelector(".ptr").textContent);
+    const cell = tr.querySelector(".res"), exprEl = tr.querySelector(".expr");
+    exprEl.classList.toggle("invalid", !!e?.error);
+    if (!e) cell.textContent = "";
+    else if (e.error) cell.innerHTML = `<span class="err"></span>`, cell.firstChild.textContent = e.error;
+    else if (e.omitted) cell.innerHTML = `<span class="pill omit">omitted</span>`;
+    else cell.textContent = brief(e.value);
+  }
+
+  [...$("rules").children].forEach((d, i) => {
+    const rr = r.ruleResults[i], pill = d.querySelector(".pill");
+    pill.className = "pill " + (rr.ok ? "ok" : "bad");
+    pill.textContent = rr.ok ? "passes" : rr.error ? "error" : "fails";
+    pill.title = rr.error || "";
+  });
+
+  list($("input-errors"), [
+    ...r.inputErrors.map((e) => `input ${e}`),
+    ...r.ruleResults.filter((x) => !x.ok).map((x) => x.error ? `rule error: ${x.error}` : `rule: ${x.message}`),
+  ]);
+  list($("output-errors"), r.outputErrors.map((e) => `output ${e}`));
+  list($("warnings"), (r.warnings || []).map((w) => `warning: ${w}`));
+  $("valid-note").hidden = r.outputErrors.length > 0;
+  $("output").textContent = JSON.stringify(r.credential, null, 2);
+  renderMdoc(r.issued);
+  const n = r.errors.length;
+  setStatus(n === 0, n === 0 ? "✓ Valid" : `✗ ${n} error${n > 1 ? "s" : ""}`);
+}
+
+let view = "claims", lastMdoc = null;
+function setView(v) {
+  view = v;
+  $("view-claims").setAttribute("aria-pressed", v === "claims");
+  $("view-mdoc").setAttribute("aria-pressed", v === "mdoc");
+  $("output").hidden = v === "mdoc";
+  $("mdoc").hidden = v !== "mdoc";
+  $("output-title").textContent = v === "mdoc" && lastMdoc?.title ? lastMdoc.title : "Credential (unsigned claim set)";
+}
+
+function renderMdoc(m) {
+  lastMdoc = m || null;
+  $("view-seg").hidden = !m;
+  if (!m) return setView("claims");
+  $("mdoc-blocked").hidden = !m.blocked;
+  $("mdoc-body").hidden = !!m.blocked;
+  if (m.blocked) { $("mdoc-blocked").textContent = m.blocked; return; }
+  $("view-mdoc").textContent = m.tab;
+  $("mdoc-doctype").textContent = m.headline;
+  $("mdoc-size").textContent = m.summary;
+  $("verifiers").innerHTML = "";
+  for (const v of Object.values(m.verifiers)) {
+    const d = document.createElement("details");
+    d.className = "verifier";
+    const ok = v.skipped ? null : v.checks ? v.ok : v.valid;
+    d.innerHTML = `<summary><span class="pill"></span><span class="name"></span></summary><ul></ul>`;
+    const pill = d.querySelector(".pill");
+    pill.className = "pill " + (ok === null ? "omit" : ok ? "ok" : "bad");
+    pill.textContent = ok === null ? "skipped" : ok ? "verified" : "failed";
+    d.querySelector(".name").textContent = v.name;
+    const items = v.checks ? v.checks.map((c) => [c.ok, `${c.category}: ${c.check}`])
+      : [[v.valid, v.chain || "Certificate chain"], [v.valid, v.digests || "Element digests"], ...(v.failed || []).map((f) => [false, JSON.stringify(f)]), ...(v.error ? [[false, v.error]] : []), ...(v.skipped ? [[null, v.skipped]] : [])];
+    for (const [okItem, text] of items) {
+      const li = document.createElement("li");
+      li.textContent = (okItem === false ? "✗ " : okItem ? "✓ " : "") + text;
+      if (okItem === false) li.className = "bad";
+      d.querySelector("ul").append(li);
+    }
+    if (v.checks) d.querySelector(".name").textContent += ` — ${v.checks.filter((c) => c.ok).length}/${v.checks.length} checks`;
+    if (ok === false) d.open = true;
+    $("verifiers").append(d);
+  }
+  $("mocked").innerHTML = "";
+  for (const [k, val] of Object.entries(m.mocked)) {
+    const dt = document.createElement("dt"), dd = document.createElement("dd");
+    dt.textContent = k; dd.textContent = val;
+    $("mocked").append(dt, dd);
+  }
+  $("deliv-title").textContent = m.deliverable.title;
+  $("deliv-hint").textContent = m.deliverable.hint;
+  $("mdoc-b64").value = m.deliverable.value;
+  $("download-cbor").textContent = `Download ${m.deliverable.filename}`;
+  $("detail-title").textContent = m.detail.title;
+  $("mdoc-diag").textContent = m.detail.text;
+  setView(view);
+}
+
+$("view-claims").onclick = () => setView("claims");
+$("view-mdoc").onclick = () => setView("mdoc");
+$("copy-b64").onclick = () => navigator.clipboard.writeText($("mdoc-b64").value);
+$("download-cbor").onclick = () => {
+  const d = lastMdoc.deliverable;
+  const data = d.base64url ? Uint8Array.from(atob(d.value.replace(/-/g, "+").replace(/_/g, "/")), (c) => c.charCodeAt(0)) : d.value;
+  const a = Object.assign(document.createElement("a"), { href: URL.createObjectURL(new Blob([data], { type: d.mime })), download: d.filename });
+  a.click();
+  URL.revokeObjectURL(a.href);
+};
+
+function setStatus(ok, text) {
+  $("status").className = "status " + (ok ? "ok" : "bad");
+  $("status").textContent = text;
+}
+
+function schedule() { clearTimeout(timer); timer = setTimeout(evaluate, 250); }
+
+document.addEventListener("input", (e) => { if (e.target.matches("textarea, input")) schedule(); });
+$("format").addEventListener("change", load);
+$("src-branch").onclick = () => { source = "branch"; $("src-branch").setAttribute("aria-pressed", true); $("src-main").setAttribute("aria-pressed", false); resetMap(); };
+$("src-main").onclick = () => { source = "main"; $("src-main").setAttribute("aria-pressed", true); $("src-branch").setAttribute("aria-pressed", false); resetMap(); };
+$("reset").onclick = resetMap;
+$("add").onclick = () => addRow().querySelector(".ptr input").focus();
+
+(async () => {
+  const dirs = await (await fetch("/api/formats")).json();
+  for (const d of dirs) $("format").add(new Option(d.replace("credential-definitions/", ""), d));
+  $("format").value = dirs.find((d) => d.includes("mobile-driving-licence")) || dirs[0];
+  load();
+})();
+</script>
+</body>
+</html>
