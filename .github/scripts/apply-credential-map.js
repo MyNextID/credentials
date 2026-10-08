@@ -1,8 +1,8 @@
 // CEL in input-fields-to-credential-map.json and input-fields/schema.json. See specifications/cel-mapping.md.
 //
 // For each format folder: validate input-fields/example.json (JSON Schema, x-vocabulary, x-cel-rules), build the credential
-// with the profile base map and the format map, validate it against the format schema.json and, for EDC, against
-// the ELM SHACL shapes.
+// with the profile base map and the format map, validate it against the format schema.json, the EUDI rulebook where
+// there is one, and the JSON-LD contexts (with the ELM SHACL shapes for EDC).
 //
 //   npm install
 //   node .github/scripts/apply-credential-map.js [--print] [--write-examples] [format-folder ...]
@@ -168,6 +168,62 @@ function typeMetadataErrors(formatDir, credential) {
     return errors;
 }
 
+// EUDI rulebooks (profiles/<profile>/<format>/rulebook.json, from build-rulebooks.js): docType or vct, allowed
+// elements or claims, mandatory ones and their encoding. Dates and bytes are checked in their JSON form.
+const ENCODINGS = {
+    tstr: (v) => typeof v === "string",
+    string: (v) => typeof v === "string",
+    bstr: (v) => typeof v === "string",
+    uint: (v) => Number.isInteger(v) && v >= 0,
+    number: (v) => typeof v === "number",
+    bool: (v) => typeof v === "boolean",
+    "full-date": (v) => /^\d{4}-\d{2}-\d{2}$/.test(v),
+    tdate: (v) => /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/.test(v),
+    nationalities: (v) => Array.isArray(v) && v.length > 0 && v.every((c) => /^[A-Z]{2}$/.test(c)),
+    "array of strings": (v) => Array.isArray(v) && v.every((c) => typeof c === "string"),
+    place_of_birth: (v) => typeof v === "object" && ["country", "region", "locality"].some((k) => k in v),
+    object: (v) => typeof v === "object" && v !== null && !Array.isArray(v),
+    "jpeg-data-url": (v) => typeof v === "string" && v.startsWith("data:image/jpeg;base64,"),
+};
+
+function rulebookErrors(formatDir, credential) {
+    const rulebook = readJson(path.join(profileDir(formatDir), "rulebook.json"), null);
+    if (!rulebook) return [];
+    const errors = [];
+    const rules = rulebook.elements || rulebook.claims;
+    // "age_over_NN" in a rulebook stands for any two digits.
+    const rule = (name) => rules[name] ?? Object.entries(rules).find(([k]) => k.includes("NN") && new RegExp(`^${k.replace("NN", "\\d{2}")}$`).test(name))?.[1];
+    const check = (name, value) => {
+        const r = rule(name);
+        if (!r) return errors.push(`${name} is not in the rulebook`);
+        if (!r.encoding.split("|").some((e) => (ENCODINGS[e] ?? (() => true))(value))) errors.push(`${name} is not encoded as ${r.encoding}`);
+    };
+    let values;
+    if (rulebook.docType) {
+        if (credential.docType !== rulebook.docType) errors.push(`docType is ${credential.docType}, the rulebook says ${rulebook.docType}`);
+        values = credential.namespace?.[rulebook.namespace] ?? {};
+        for (const [name, value] of Object.entries(values)) check(name, value);
+        if (rulebook.closed) {
+            for (const ns of Object.keys(credential.namespace ?? {}).filter((ns) => ns !== rulebook.namespace)) errors.push(`namespace ${ns} is not allowed`);
+        }
+    } else {
+        if (credential.vct !== rulebook.vct) errors.push(`vct is ${credential.vct}, the rulebook says ${rulebook.vct}`);
+        values = {};
+        for (const [name, value] of Object.entries(credential).filter(([k]) => !REGISTERED_CLAIMS.has(k))) {
+            // Objects the rulebook describes member by member (address.formatted, …) are checked per member.
+            if (!rule(name) && typeof value === "object" && Object.keys(rules).some((k) => k.startsWith(name + "."))) {
+                for (const [member, v] of Object.entries(value)) check(`${name}.${member}`, (values[`${name}.${member}`] = v));
+            } else {
+                check(name, (values[name] = value));
+            }
+        }
+    }
+    for (const [name, r] of Object.entries(rules)) {
+        if (r.mandatory && values[name] === undefined) errors.push(`${name} is mandatory`);
+    }
+    return errors;
+}
+
 // Builds the credential for a format folder. input, rules, meta and map default to the files on disk.
 function build(formatDir, overrides = {}) {
     const { input, rules, translations, meta, map, now = TEST_NOW, uuid = testUuids() } = { ...loadFormat(formatDir), ...overrides };
@@ -214,23 +270,23 @@ function build(formatDir, overrides = {}) {
         ...entries.filter((e) => e.error).map((e) => `map ${e.pointer}: ${e.error}`),
         ...outputErrors.map((e) => `output ${e}`),
         ...typeMetadataErrors(formatDir, credential).map((e) => `type metadata: ${e}`),
+        ...rulebookErrors(formatDir, credential).map((e) => `rulebook: ${e}`),
     ];
     return { credential, entries, ruleResults, inputErrors, outputErrors, errors };
 }
 
-// JSON-LD + SHACL check for profiles that ship shapes: profiles/<profile>/<format>/shacl.json lists the
-// vendored contexts, the shapes file and its owl:imports. Nothing is fetched from the network.
-const shaclConfigs = new Map();
-function shaclConfig(formatDir) {
+// JSON-LD check, plus SHACL where the profile ships shapes: profiles/<profile>/<format>/linked-data.json lists
+// the vendored contexts and, optionally, the shapes file and its owl:imports. Nothing is fetched from the network.
+const linkedDataConfigs = new Map();
+function linkedDataConfig(formatDir) {
     const dir = profileDir(formatDir);
-    if (!shaclConfigs.has(dir)) shaclConfigs.set(dir, readJson(path.join(dir, "shacl.json"), null));
-    return shaclConfigs.get(dir) && { dir, ...shaclConfigs.get(dir) };
+    if (!linkedDataConfigs.has(dir)) linkedDataConfigs.set(dir, readJson(path.join(dir, "linked-data.json"), null));
+    return linkedDataConfigs.get(dir) && { dir, ...linkedDataConfigs.get(dir) };
 }
 
-async function shacl(formatDir, credential) {
-    const config = shaclConfig(formatDir);
+async function linkedData(formatDir, credential) {
+    const config = linkedDataConfig(formatDir);
     if (!config) return { errors: [], warnings: [] };
-    const SHACLValidator = (await import("rdf-validate-shacl")).default;
     const file = (f) => path.join(config.dir, f);
     const turtle = (f) => new Store(new Parser().parse(fs.readFileSync(file(f), "utf8")));
 
@@ -251,6 +307,10 @@ async function shacl(formatDir, credential) {
         return { errors: [`json-ld ${e.message.split("\n")[0]}`], warnings: [] };
     }
 
+    const warnings = [...dropped].sort().map((p) => `not in the JSON-LD context, dropped from RDF: ${p}`);
+    if (!config.shapes) return { errors: [], warnings };
+
+    const SHACLValidator = (await import("rdf-validate-shacl")).default;
     const importGraph = async (url) => {
         if (!config.imports[url.value]) throw new Error(`SHACL import not vendored: ${url.value}`);
         return turtle(config.imports[url.value]);
@@ -261,7 +321,6 @@ async function shacl(formatDir, credential) {
         const message = r.message.map((m) => m.value).join("; ") || `${r.sourceConstraintComponent?.value.split("#")[1]} ${r.value?.value ?? ""}`.trim();
         return `shacl ${r.focusNode?.value} ${r.path?.value ?? ""}: ${message}`;
     });
-    const warnings = [...dropped].sort().map((p) => `not in the JSON-LD context, dropped from RDF: ${p}`);
     return { errors, warnings };
 }
 
@@ -279,7 +338,7 @@ function examplePath(formatDir) {
 
 async function check(formatDir, { writeExamples = false } = {}) {
     const result = build(formatDir);
-    const { errors, warnings } = await shacl(formatDir, result.credential);
+    const { errors, warnings } = await linkedData(formatDir, result.credential);
     const exampleErrors = [];
     const file = examplePath(formatDir);
     const example = JSON.stringify(result.credential, null, 4) + "\n";
@@ -299,7 +358,7 @@ function formatDirs() {
         .sort();
 }
 
-module.exports = { build, check, shacl, loadFormat, formatDirs, expandTemplates };
+module.exports = { build, check, linkedData, loadFormat, formatDirs, expandTemplates };
 
 if (require.main === module) {
     (async () => {

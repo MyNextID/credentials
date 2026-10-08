@@ -1,0 +1,16 @@
+{
+    "source": "https://github.com/eu-digital-identity-wallet/av-doc-technical-specification/blob/8b9728752bd8d8eede6077ade4be8900949de2d9/docs/annexes/annex-A/annex-A-av-profile.md",
+    "docType": "eu.europa.ec.av.1",
+    "namespace": "eu.europa.ec.av.1",
+    "closed": true,
+    "elements": {
+        "age_over_18": {
+            "mandatory": true,
+            "encoding": "bool"
+        },
+        "age_over_NN": {
+            "mandatory": false,
+            "encoding": "bool"
+        }
+    }
+}

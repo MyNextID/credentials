@@ -1,0 +1,111 @@
+{
+    "source": "https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog/blob/36f8adcf914ac06cac18d685add04e0a8a06d685/rulebooks/pid/pid-rulebook.md",
+    "docType": "eu.europa.ec.eudi.pid.1",
+    "namespace": "eu.europa.ec.eudi.pid.1",
+    "elements": {
+        "family_name": {
+            "mandatory": true,
+            "encoding": "tstr"
+        },
+        "given_name": {
+            "mandatory": true,
+            "encoding": "tstr"
+        },
+        "birth_date": {
+            "mandatory": true,
+            "encoding": "full-date"
+        },
+        "place_of_birth": {
+            "mandatory": true,
+            "encoding": "place_of_birth"
+        },
+        "nationality": {
+            "mandatory": true,
+            "encoding": "nationalities"
+        },
+        "resident_address": {
+            "mandatory": false,
+            "encoding": "tstr"
+        },
+        "resident_country": {
+            "mandatory": false,
+            "encoding": "tstr"
+        },
+        "resident_state": {
+            "mandatory": false,
+            "encoding": "tstr"
+        },
+        "resident_city": {
+            "mandatory": false,
+            "encoding": "tstr"
+        },
+        "resident_postal_code": {
+            "mandatory": false,
+            "encoding": "tstr"
+        },
+        "resident_street": {
+            "mandatory": false,
+            "encoding": "tstr"
+        },
+        "personal_administrative_number": {
+            "mandatory": false,
+            "encoding": "tstr"
+        },
+        "portrait": {
+            "mandatory": true,
+            "encoding": "bstr"
+        },
+        "family_name_birth": {
+            "mandatory": false,
+            "encoding": "tstr"
+        },
+        "given_name_birth": {
+            "mandatory": false,
+            "encoding": "tstr"
+        },
+        "sex": {
+            "mandatory": false,
+            "encoding": "uint"
+        },
+        "email_address": {
+            "mandatory": false,
+            "encoding": "tstr"
+        },
+        "mobile_phone_number": {
+            "mandatory": false,
+            "encoding": "tstr"
+        },
+        "expiry_date": {
+            "mandatory": false,
+            "encoding": "tdate|full-date"
+        },
+        "issuing_authority": {
+            "mandatory": true,
+            "encoding": "tstr"
+        },
+        "issuing_country": {
+            "mandatory": true,
+            "encoding": "tstr"
+        },
+        "document_number": {
+            "mandatory": false,
+            "encoding": "tstr"
+        },
+        "issuing_jurisdiction": {
+            "mandatory": false,
+            "encoding": "tstr"
+        },
+        "issuance_date": {
+            "mandatory": false,
+            "encoding": "tdate|full-date"
+        },
+        "trust_anchor": {
+            "mandatory": false,
+            "encoding": "tstr"
+        },
+        "attestation_legal_category": {
+            "mandatory": false,
+            "encoding": "tstr"
+        }
+    }
+}

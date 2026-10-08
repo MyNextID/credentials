@@ -2,14 +2,8 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "title": "EUDI Personal Identification Data (PID) Claims",
     "type": "object",
-    "required": ["vct", "expiry_date", "issuing_authority","issuing_country","trust_anchor"],
+    "required": ["expiry_date", "issuing_authority","issuing_country","trust_anchor"],
     "properties": {
-      "vct": {
-        "type": "string",
-        "const": "urn:eudi:pid:1",
-        "description": "Credential type identifier"
-      },
-  
       "family_name": {
         "type": "string"
       },
@@ -32,8 +26,25 @@
         }
       },
   
-      "address": {
-        "$ref": "#/$defs/address"
+      "resident_address": {
+        "type": "string",
+        "description": "Full address"
+      },
+      "resident_country": {
+        "$ref": "#/$defs/country_code"
+      },
+      "resident_state": {
+        "type": "string"
+      },
+      "resident_city": {
+        "type": "string"
+      },
+      "resident_postal_code": {
+        "type": "string"
+      },
+      "resident_street": {
+        "type": "string",
+        "description": "Street name, including the house number"
       },
 
       "personal_administrative_number": {
@@ -42,8 +53,8 @@
 
       "portrait": {
         "type": "string",
-        "pattern": "^data:image\\/jpeg;base64,",
-        "description": "JPEG data URL"
+        "contentEncoding": "base64",
+        "description": "JPEG image (bstr in the mdoc)"
       },
   
       "family_name_birth": {
@@ -54,8 +65,8 @@
       },
       "sex": {
         "type": "integer",
-        "enum": [0, 1, 2, 9],
-        "description": "0 unknown, 1 male, 2 female, 9 not applicable"
+        "enum": [0, 1, 2, 3, 4, 5, 6, 9],
+        "description": "0 not known, 1 male, 2 female, 3 other, 4 inter, 5 diverse, 6 open, 9 not applicable"
       },
       "email_address": {
         "type": "string",
@@ -107,20 +118,6 @@
         "properties": {
           "locality": { "type": "string" },
           "region": { "type": "string" }, 
-          "country": { "$ref": "#/$defs/country_code" }
-        },
-        "additionalProperties": false
-      },
-  
-      "address": {
-        "type": "object",
-        "properties": {
-          "formatted": { "type": "string" },
-          "street_address": { "type": "string" },
-          "house_number": { "type": "string" },
-          "locality": { "type": "string" },
-          "region": { "type": "string" },
-          "postal_code": { "type": "string" },
           "country": { "$ref": "#/$defs/country_code" }
         },
         "additionalProperties": false

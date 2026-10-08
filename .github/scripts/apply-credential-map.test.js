@@ -1,7 +1,7 @@
 // npm test
 const test = require("node:test");
 const assert = require("node:assert");
-const { build, shacl, loadFormat } = require("./apply-credential-map.js");
+const { build, linkedData, loadFormat } = require("./apply-credential-map.js");
 
 const MC_EDC = "credential-definitions/microcredential/v1/edc/w3c-vc";
 const { input } = loadFormat(MC_EDC);
@@ -28,7 +28,7 @@ test("SD-JWT VC claims must be described in type-metadata.json", () => {
 test("SHACL rejects an issuer without an eIDAS identifier and reports dropped terms", async () => {
     const { credential } = build(MC_EDC);
     delete credential.issuer.eIDASIdentifier;
-    const { errors, warnings } = await shacl(MC_EDC, { ...credential, studentNumber: "1" });
+    const { errors, warnings } = await linkedData(MC_EDC, { ...credential, studentNumber: "1" });
     assert.match(errors.join("\n"), /IssuerNodeShape/);
     assert.deepStrictEqual(warnings, ["not in the JSON-LD context, dropped from RDF: studentNumber"]);
 });
@@ -37,4 +37,18 @@ test("a {{NN}} key repeats for every matching input field", () => {
     const { credential, errors } = build("credential-definitions/age-verification/v1/eudi.av/mdoc", { input: { ageOver18: true, ageOver21: false, ageOver65: false } });
     assert.deepStrictEqual(errors, []);
     assert.deepStrictEqual(credential.namespace["eu.europa.ec.av.1"], { age_over_18: true, age_over_21: false, age_over_65: false });
+});
+
+test("the PID mdoc follows the EUDI PID rulebook", () => {
+    const dir = "credential-definitions/personal-id/v2/eudi.pid/mdoc";
+    const { map } = loadFormat(dir);
+    const ns = "/namespace/eu.europa.ec.eudi.pid.1/";
+    const { errors } = build(dir, { map: { ...map, [ns + "vct"]: "'urn:eudi:pid:1'", [ns + "given_name"]: "optional.none()" } });
+    assert.deepStrictEqual(errors.filter((e) => e.startsWith("rulebook")), ["rulebook: vct is not in the rulebook", "rulebook: given_name is mandatory"]);
+});
+
+test("Open Badge fields outside the OB and VC contexts are reported", async () => {
+    const dir = "credential-definitions/microcredential/v1/open-badge/w3c-vc";
+    const { credential } = build(dir);
+    assert.deepStrictEqual((await linkedData(dir, { ...credential, programmeCode: "X1" })).warnings, ["not in the JSON-LD context, dropped from RDF: programmeCode"]);
 });

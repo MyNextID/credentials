@@ -117,8 +117,9 @@ For each format folder, the runner:
 1. validates `input-fields/example.json` against `input-fields/schema.json`, its `x-vocabulary` fields and its `x-cel-rules`
 2. builds the credential from the base map and the format map
 3. validates the result against the format `schema.json`, and for SD-JWT VC checks that `type-metadata.json` has the same `vct` and describes every claim
-4. compares the result with the folder's `examples/<profile>-<initials>-example.json` and fails if it is missing or different. `--write-examples` rewrites it instead.
-5. if the profile has a `shacl.json` (EDC): expands the credential as JSON-LD with the vendored contexts and validates the RDF against the ELM SHACL shapes (`EDC-generic-full`). This runs offline.
+4. if the profile has a `rulebook.json` (EUDI PID, age verification): checks the `docType` or `vct`, that every element or claim is in the rulebook, that the mandatory ones are present, and their encoding (see [EUDI rulebooks](#eudi-rulebooks))
+5. compares the result with the folder's `examples/<profile>-<initials>-example.json` and fails if it is missing or different. `--write-examples` rewrites it instead.
+6. if the profile has a `linked-data.json` (EDC, Open Badge): expands the credential as JSON-LD with the vendored contexts, and for EDC validates the RDF against the ELM SHACL shapes (`EDC-generic-full`). This runs offline.
 
 The output is the unsigned claim set. Holder binding (`cnf`), status entries, evidence, encoding and signing (CBOR/MSO, SD-JWT, JAdES) stay with the issuer.
 
@@ -128,11 +129,22 @@ CI runs `npm run apply-map` and `npm test`. Any failing map fails the build.
 
 ## Runtime compatibility
 
-The runner uses [`@marcbachmann/cel-js`](https://www.npmjs.com/package/@marcbachmann/cel-js) with optional types enabled. Every expression in the CEL maps and rules was also evaluated with [cel-go](https://github.com/google/cel-go) v0.28 (`cel.OptionalTypes()`, `uuid()` registered as a function) and produced the same values. Stay within standard CEL plus optional types. Known gaps in cel-js:
+The runner uses [`@marcbachmann/cel-js`](https://www.npmjs.com/package/@marcbachmann/cel-js) with optional types enabled. Every expression in the CEL maps and rules was also evaluated with [cel-go](https://github.com/google/cel-go) v0.28 (`cel.OptionalTypes()`, `ext.Strings()`, `uuid()` registered as a function) and produced the same values. Stay within standard CEL plus optional types and the strings extension (`split`, `substring`, `indexOf`). Known gaps in cel-js:
 
 - no optional map-entry syntax `{?'key': value}`: use `optional.of`/`optional.none()` or `orValue(null)`
 - no `string(timestamp)`, which is why `now` is a string
 - no `list.indexOf` and no `optMap`
+
+## EUDI rulebooks
+
+The EUDI rulebooks are published as Markdown. [`build-rulebooks.js`](../.github/scripts/build-rulebooks.js) (`npm run build-rulebooks`) parses their attribute tables, at a pinned commit, into `profiles/<profile>/<format>/rulebook.json`:
+
+| Rulebook | Files |
+|---|---|
+| [PID Rulebook](https://github.com/eu-digital-identity-wallet/eudi-doc-attestation-rulebooks-catalog/blob/36f8adcf914ac06cac18d685add04e0a8a06d685/rulebooks/pid/pid-rulebook.md) (ARF Annex 3.01) | `profiles/eudi.pid/mdoc/rulebook.json`, `profiles/eudi.pid/sd-jwt-vc/rulebook.json` |
+| [Age Verification Profile](https://github.com/eu-digital-identity-wallet/av-doc-technical-specification/blob/8b9728752bd8d8eede6077ade4be8900949de2d9/docs/annexes/annex-A/annex-A-av-profile.md) (Annex A) | `profiles/eudi.av/mdoc/rulebook.json` |
+
+The mDL rulebook (ARF Annex 3.02) defers entirely to ISO/IEC 18013-5, which is not freely available, so mDL has no rulebook file; its `schema.json` is the reference. Dates and bytes are checked in their JSON form (`full-date` as `YYYY-MM-DD`, `bstr` as base64); the CBOR encoding belongs to the issuer.
 
 ## SD-JWT VC type metadata
 

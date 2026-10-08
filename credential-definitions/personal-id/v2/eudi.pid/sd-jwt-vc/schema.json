@@ -98,8 +98,8 @@
   
       "sex": {
         "type": "integer",
-        "enum": [0, 1, 2, 9],
-        "description": "0 unknown, 1 male, 2 female, 9 not applicable"
+        "enum": [0, 1, 2, 3, 4, 5, 6, 9],
+        "description": "0 not known, 1 male, 2 female, 3 other, 4 inter, 5 diverse, 6 open, 9 not applicable"
       },
   
       "issuing_authority": {

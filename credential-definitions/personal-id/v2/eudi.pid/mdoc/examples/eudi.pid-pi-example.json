@@ -2,7 +2,6 @@
     "docType": "eu.europa.ec.eudi.pid.1",
     "namespace": {
         "eu.europa.ec.eudi.pid.1": {
-            "vct": "urn:eudi:pid:1",
             "family_name": "Muller",
             "given_name": "Erika",
             "birth_date": "1985-03-15",
@@ -13,17 +12,14 @@
                 "DE",
                 "AT"
             ],
-            "address": {
-                "formatted": "Hauptstraße 123, 80331 München, Germany",
-                "country": "DE",
-                "region": "Bavaria",
-                "locality": "München",
-                "postal_code": "80331",
-                "street_address": "Hauptstraße",
-                "house_number": "123"
-            },
+            "resident_address": "Hauptstraße 123, 80331 München, Germany",
+            "resident_country": "DE",
+            "resident_state": "Bavaria",
+            "resident_city": "München",
+            "resident_postal_code": "80331",
+            "resident_street": "Hauptstraße 123",
             "personal_administrative_number": "123456789012",
-            "portrait": "data:image/jpeg;base64,...",
+            "portrait": "...",
             "family_name_birth": "Schmidt",
             "given_name_birth": "Erika",
             "sex": 2,

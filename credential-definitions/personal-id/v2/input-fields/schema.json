@@ -109,7 +109,7 @@
             "title": "Sex",
             "description": "0 unknown, 1 male, 2 female, 9 not applicable",
             "type": "integer",
-            "enum": [0, 1, 2, 9]
+            "enum": [0, 1, 2, 3, 4, 5, 6, 9]
         }
     },
     "required": []
